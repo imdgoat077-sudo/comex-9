@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<title>Comex agent</title>
+<style>
+  /*
+   * Drawn in a transparent native view stacked above the agent's tab. Because it is a separate view,
+   * the user's mouse and keyboard land here (the page underneath is untouchable), while the agent's
+   * own input, sent through the debugging protocol straight to the page, is unaffected.
+   */
+  @property --a { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+
+  :root { --c: #e5b44a; --rgb: 229, 180, 74; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: transparent; user-select: none; -webkit-user-select: none; cursor: default; }
+  * { box-sizing: border-box; }
+
+  .root { position: fixed; inset: 0; opacity: 0; transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+  .root.on { opacity: 1; }
+
+  /* Light: a soft feathered glow hugging all four inner edges of the page. Two layers breathe out of
+     phase (opacity only, so it stays cheap); a hairline keeps the edge defined. */
+  .light { position: absolute; inset: 0; transition: opacity 0.7s ease; }
+  .done .light { opacity: 0; }
+  .glow { position: absolute; inset: 0; }
+  .glow.tight {
+    box-shadow: inset 0 0 0 1px rgba(var(--rgb), 0.34), inset 0 0 30px 4px rgba(var(--rgb), 0.5);
+    animation: breathe 3.6s ease-in-out infinite alternate;
+  }
+  .glow.wide {
+    box-shadow: inset 0 0 140px 18px rgba(var(--rgb), 0.38);
+    animation: breathe 5.2s ease-in-out infinite alternate-reverse;
+  }
+  @keyframes breathe { from { opacity: 0.62; } to { opacity: 1; } }
+
+  /* Status pill */
+  .pill {
+    position: absolute;
+    left: 50%;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: min(560px, 84vw);
+    height: 34px;
+    padding: 0 14px 0 12px;
+    border: 1px solid #3d424a;
+    border-radius: 11px;
+    background: rgba(29, 32, 37, 0.94);
+    color: #ecedef;
+    font: 500 12.5px/1 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    letter-spacing: -0.005em;
+    box-shadow: 0 12px 32px rgba(4, 6, 10, 0.5);
+    transform: translateX(-50%) translateY(12px);
+    opacity: 0;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, border-color 0.3s ease;
+  }
+  .on .pill { transform: translateX(-50%); opacity: 1; }
+  .nudge .pill { border-color: rgba(var(--rgb), 0.7); }
+
+  .dot { width: 7px; height: 7px; flex: none; border-radius: 50%; background: var(--c); }
+  .working .dot { animation: dot 2.4s ease-in-out infinite; }
+  @keyframes dot { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+
+  .title { flex: none; font-weight: 600; }
+  .rule { flex: none; width: 1px; height: 12px; background: #3d424a; }
+  .stop {
+    display: inline-flex; align-items: center; gap: 7px; flex: none; height: 24px; margin: 0 -6px 0 2px; padding: 0 10px 0 9px;
+    border: 0; border-radius: 8px; background: #ecedef; color: #17191d; cursor: pointer;
+    font: 600 12px/1 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+  .stop:hover { background: #ffffff; }
+  .stop:active { transform: scale(0.96); }
+  .stop i { width: 8px; height: 8px; border-radius: 2px; background: currentColor; }
+  .done .stop { display: none; }
+  .text { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #a2a7b0; animation: rise 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .text:empty { display: none; }
+  .rule:has(+ .text:empty) { display: none; }
+  @keyframes rise { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .glow, .dot { animation: none; }
+    .text { animation: none; }
+  }
+</style>
+</head>
+<body>
+<div class="root working" id="root">
+  <div class="light">
+    <div class="glow wide"></div>
+    <div class="glow tight"></div>
+  </div>
+  <div class="pill" role="status" aria-live="polite">
+    <span class="dot"></span>
+    <span class="title" id="title">Comex agent</span>
+    <span class="rule"></span>
+    <span class="text" id="text"></span>
+    <button class="stop" id="stop" type="button" aria-label="Stop the agent and take over"><i></i>Stop</button>
+  </div>
+</div>
+<script>
+  const root = document.getElementById('root');
+  const titleEl = document.getElementById('title');
+  const textEl = document.getElementById('text');
+  const PALETTE = {
+    working: ['#e5b44a', '229, 180, 74', 'Comex agent'],
+    completed: ['#4fb286', '79, 178, 134', 'Done'],
+    failed: ['#e5675c', '229, 103, 92', 'Could not finish'],
+    blocked: ['#e5675c', '229, 103, 92', 'Blocked'],
+    cancelled: ['#a2a7b0', '162, 167, 176', 'Stopped'],
+  };
+  let current = { status: 'working', step: '' };
+  let hintTimer = 0;
+
+  function setText(value) {
+    if (textEl.textContent === value) return;
+    textEl.textContent = value;
+    textEl.style.animation = 'none';
+    void textEl.offsetWidth;
+    textEl.style.animation = '';
+  }
+
+  // Called by the main process whenever the agent's state changes.
+  window.__shield = (state, fresh) => {
+    current = state || current;
+    const [color, rgb, title] = PALETTE[current.status] || PALETTE.working;
+    document.documentElement.style.setProperty('--c', color);
+    document.documentElement.style.setProperty('--rgb', rgb);
+    root.classList.toggle('working', current.status === 'working');
+    root.classList.toggle('done', current.status !== 'working');
+    titleEl.textContent = title;
+    if (!hintTimer) setText(current.status === 'working' ? (current.step || 'Working in this tab') : '');
+    if (fresh) {
+      root.classList.remove('on');
+      void root.offsetWidth;
+    }
+    requestAnimationFrame(() => root.classList.add('on'));
+  };
+
+  // The page underneath is locked while the agent works; say so when the user tries to use it.
+  function hint() {
+    if (current.status !== 'working') return;
+    root.classList.add('nudge');
+    setText('The agent is working here. Press Stop to take over.');
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(() => {
+      hintTimer = 0;
+      root.classList.remove('nudge');
+      setText(current.status === 'working' ? (current.step || 'Working in this tab') : '');
+    }, 2600);
+  }
+  ['pointerdown', 'keydown', 'wheel'].forEach((type) => window.addEventListener(type, (e) => { if (!e.target.closest || !e.target.closest('.stop')) hint(); }, { passive: true }));
+  window.addEventListener('contextmenu', (e) => e.preventDefault());
+  document.getElementById('stop').addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (window.comexShield) window.comexShield.stop();
+  });
+</script>
+</body>
+</html>

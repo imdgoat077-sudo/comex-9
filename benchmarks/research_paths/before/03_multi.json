@@ -1,0 +1,443 @@
+{
+ "answer": "Key research papers on multi-agent orchestration fall into foundational frameworks and comprehensive architectural surveys.\n\n### Foundational Orchestration Frameworks\n\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)** ([PDF](https://arxiv.org/pdf/2308.08155))\n  - **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  - **Focus:** Customizable, conversable agents integrating LLMs, humans, and tool orchestration.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)** ([PDF](https://arxiv.org/pdf/2308.00352))\n  - **Authors:** Sirui Hong, Mingchen Zhuge, Jiaqi Chen, et al.\n  - **Focus:** Incorporates human Standard Operating Procedures (SOPs) into role-based multi-agent execution graphs.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)** ([PDF](https://arxiv.org/pdf/2307.07924))\n  - **Authors:** Chen Qian, Wei Liu, Hongzhang Liu, et al.\n  - **Focus:** Sequential multi-agent dialogue chains managing waterfall software development phases.\n- **[CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760)** ([PDF](https://arxiv.org/pdf/2303.17760))\n  - **Authors:** Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, et al.\n  - **Focus:** Inception prompting enabling autonomous cooperative multi-agent dialogue.\n- **[AutoGen Studio: A No-Code Developer Tool for Building and Debugging Multi-Agent Systems](https://arxiv.org/abs/2408.15247)** ([PDF](https://arxiv.org/pdf/2408.15247))\n  - **Authors:** Victor Dibia, Jingya Chen, Gagan Bansal, et al.\n  - **Focus:** Declarative orchestration and visual debugging interfaces.\n\n---\n\n### Survey and Architecture Papers\n\n- **[Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322)** ([PDF](https://arxiv.org/pdf/2501.06322))\n  - **Authors:** KT Tran, D Dao, MD Nguyen, QV Pham, et al.\n  - **Citations:** 820\n  - **Focus:** Categorizes topologies into centralized, decentralized, layered, and shared-memory collaboration mechanisms.\n- **[Multi-Agent Systems: A Survey](https://ieeexplore.ieee.org/abstract/document/8352646/)** ([PDF](https://ieeexplore.ieee.org/iel7/6287639/8274985/08352646.pdf))\n  - **Authors:** A Dorri, SS Kanhere, R Jurdak\n  - **Citations:** 1,811\n  - **Focus:** Foundational distributed problem-solving, negotiation, and communication structures.\n- **[Multi-Agent Coordination Across Diverse Applications: A Survey](https://arxiv.org/abs/2502.14743)** ([PDF](https://arxiv.org/pdf/2502.14743))\n  - **Authors:** L Sun, Y Yang, Q Duan, et al.\n  - **Citations:** 98\n  - **Focus:** Task allocation and coordination structures across robotics, software, and LLMs.\n- **[A Survey on Agent Workflow – Status and Future](https://ieeexplore.ieee.org/abstract/document/11082076/)** ([PDF](https://arxiv.org/pdf/2508.01186))\n  - **Authors:** C Yu, Z Cheng, H Cui, et al.\n  - **Citations:** 58\n  - **Focus:** Coordination graphs, runtime execution, and role assignments.\n- **[The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption](https://arxiv.org/abs/2601.13671)** ([PDF](https://arxiv.org/pdf/2601.13671))\n  - **Authors:** A Adimulam, R Gupta, S Kumar\n  - **Citations:** 44\n  - **Focus:** Enterprise workflow orchestration patterns and dynamic routing protocols.\n- **[A Survey of Multi-AI Agent Collaboration: Theories, Technologies and Applications](https://dl.acm.org/doi/abs/10.1145/3745238.3745531)** ([PDF](https://dl.acm.org/doi/pdf/10.1145/3745238.3745531))\n  - **Authors:** X Zhang, X Dong, Y Wang, et al.\n  - **Citations:** 42\n  - **Focus:** Inter-agent communication protocols and consensus mechanisms.\n\n---\n\n### Findings Comparison\n\n- **Agreement:** Sources complement each other without factual contradictions. One dataset identifies the primary open-source orchestration implementations (AutoGen, MetaGPT, CAMEL, ChatDev), while the other categorizes broader architectural taxonomies (centralized, decentralized, graph-based workflows).\n- **Missing Information:** Citation counts were reported for survey papers but not retrieved for the foundational framework papers.",
+ "success": true,
+ "wall_s": 124.6,
+ "planning_s": 10.69,
+ "after_workers_s": 16.27,
+ "workers": {
+  "survey_papers": {
+   "description": "Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures.",
+   "tool_calls": 3,
+   "navigate_labels": 0,
+   "start_s": 10.7,
+   "end_s": 41.82,
+   "status": "completed",
+   "duration_s": 31.12
+  },
+  "top_framework_papers": {
+   "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+   "tool_calls": 13,
+   "navigate_labels": 7,
+   "start_s": 10.7,
+   "end_s": 108.33,
+   "status": "completed",
+   "duration_s": 97.63
+  }
+ },
+ "slowest_worker_s": 97.63,
+ "tool_calls": 16,
+ "navigations": 7,
+ "backend_timing": {},
+ "follow_up": null,
+ "quality": {
+  "links": [
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/pdf/2308.08155",
+   "https://arxiv.org/abs/2308.00352",
+   "https://arxiv.org/pdf/2308.00352",
+   "https://arxiv.org/abs/2307.07924",
+   "https://arxiv.org/pdf/2307.07924",
+   "https://arxiv.org/abs/2303.17760",
+   "https://arxiv.org/pdf/2303.17760",
+   "https://arxiv.org/abs/2408.15247",
+   "https://arxiv.org/pdf/2408.15247",
+   "https://arxiv.org/abs/2501.06322",
+   "https://arxiv.org/pdf/2501.06322",
+   "https://ieeexplore.ieee.org/abstract/document/8352646/",
+   "https://ieeexplore.ieee.org/iel7/6287639/8274985/08352646.pdf",
+   "https://arxiv.org/abs/2502.14743",
+   "https://arxiv.org/pdf/2502.14743",
+   "https://ieeexplore.ieee.org/abstract/document/11082076/",
+   "https://arxiv.org/pdf/2508.01186",
+   "https://arxiv.org/abs/2601.13671",
+   "https://arxiv.org/pdf/2601.13671",
+   "https://dl.acm.org/doi/abs/10.1145/3745238.3745531",
+   "https://dl.acm.org/doi/pdf/10.1145/3745238.3745531"
+  ],
+  "paper_ids": [
+   "acm:10.1145/3745238.3745531",
+   "arxiv:2303.17760",
+   "arxiv:2307.07924",
+   "arxiv:2308.00352",
+   "arxiv:2308.08155",
+   "arxiv:2408.15247",
+   "arxiv:2501.06322",
+   "arxiv:2502.14743",
+   "arxiv:2508.01186",
+   "arxiv:2601.13671"
+  ],
+  "paper_links": [
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/abs/2308.00352",
+   "https://arxiv.org/abs/2307.07924",
+   "https://arxiv.org/abs/2303.17760",
+   "https://arxiv.org/abs/2408.15247",
+   "https://arxiv.org/abs/2501.06322",
+   "https://arxiv.org/abs/2502.14743",
+   "https://arxiv.org/pdf/2508.01186",
+   "https://arxiv.org/abs/2601.13671",
+   "https://dl.acm.org/doi/abs/10.1145/3745238.3745531"
+  ],
+  "paper_count": 10,
+  "link_status": {
+   "https://arxiv.org/abs/2308.08155": 200,
+   "https://arxiv.org/abs/2308.00352": 200,
+   "https://arxiv.org/abs/2307.07924": 200,
+   "https://arxiv.org/abs/2303.17760": 200,
+   "https://arxiv.org/abs/2408.15247": 200,
+   "https://arxiv.org/abs/2501.06322": 200,
+   "https://arxiv.org/abs/2502.14743": 200,
+   "https://arxiv.org/pdf/2508.01186": 200,
+   "https://arxiv.org/abs/2601.13671": 200,
+   "https://dl.acm.org/doi/abs/10.1145/3745238.3745531": 403
+  }
+ },
+ "mode": "multi",
+ "trial": 3,
+ "phase": "before",
+ "request": "Find me the best research papers on multi agent orchestration.",
+ "events": [
+  {
+   "t": 0.01,
+   "event": "planning",
+   "data": {}
+  },
+  {
+   "t": 10.69,
+   "event": "run_started",
+   "data": {
+    "run_id": "run_f16e05f759ed",
+    "task_count": 2,
+    "tasks": [
+     {
+      "task_id": "survey_papers",
+      "description": "Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures."
+     },
+     {
+      "task_id": "top_framework_papers",
+      "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures."
+     }
+    ],
+    "follow_up_action": null
+   }
+  },
+  {
+   "t": 10.7,
+   "event": "task_started",
+   "data": {
+    "task_id": "survey_papers",
+    "description": "Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures.",
+    "worker_id": "worker_survey_papers_da88b49d",
+    "tab_id": "tab_survey_papers_f759ed",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 10.7,
+   "event": "task_started",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 17.34,
+   "event": "task_progress",
+   "data": {
+    "task_id": "survey_papers",
+    "description": "Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures.",
+    "worker_id": "worker_survey_papers_da88b49d",
+    "tab_id": "tab_survey_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Looking at the page"
+   }
+  },
+  {
+   "t": 19.56,
+   "event": "task_progress",
+   "data": {
+    "task_id": "survey_papers",
+    "description": "Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures.",
+    "worker_id": "worker_survey_papers_da88b49d",
+    "tab_id": "tab_survey_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Searching for “\"multi-agent\" survey OR overvie…”"
+   }
+  },
+  {
+   "t": 22.3,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 28.05,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 32.86,
+   "event": "task_progress",
+   "data": {
+    "task_id": "survey_papers",
+    "description": "Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures.",
+    "worker_id": "worker_survey_papers_da88b49d",
+    "tab_id": "tab_survey_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 35.2,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 39.2,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 41.82,
+   "event": "task_completed",
+   "data": {
+    "task_id": "survey_papers",
+    "description": "Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures.",
+    "worker_id": "worker_survey_papers_da88b49d",
+    "tab_id": "tab_survey_papers_f759ed",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 43.15,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 48.63,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 51.94,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 56.53,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 65.17,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 69.49,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 73.87,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 84.5,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 89.07,
+   "event": "task_progress",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 108.33,
+   "event": "task_completed",
+   "data": {
+    "task_id": "top_framework_papers",
+    "description": "Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.",
+    "worker_id": "worker_top_framework_papers_fa77acd5",
+    "tab_id": "tab_top_framework_papers_f759ed",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 108.33,
+   "event": "synthesis_started",
+   "data": {
+    "completed": 2,
+    "total": 2
+   }
+  },
+  {
+   "t": 124.6,
+   "event": "done",
+   "data": {
+    "success": true,
+    "run_id": "run_f16e05f759ed",
+    "status": "completed",
+    "final_answer": "Key research papers on multi-agent orchestration fall into foundational frameworks and comprehensive architectural surveys.\n\n### Foundational Orchestration Frameworks\n\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)** ([PDF](https://arxiv.org/pdf/2308.08155))\n  - **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  - **Focus:** Customizable, conversable agents integrating LLMs, humans, and tool orchestration.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)** ([PDF](https://arxiv.org/pdf/2308.00352))\n  - **Authors:** Sirui Hong, Mingchen Zhuge, Jiaqi Chen, et al.\n  - **Focus:** Incorporates human Standard Operating Procedures (SOPs) into role-based multi-agent execution graphs.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)** ([PDF](https://arxiv.org/pdf/2307.07924))\n  - **Authors:** Chen Qian, Wei Liu, Hongzhang Liu, et al.\n  - **Focus:** Sequential multi-agent dialogue chains managing waterfall software development phases.\n- **[CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760)** ([PDF](https://arxiv.org/pdf/2303.17760))\n  - **Authors:** Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, et al.\n  - **Focus:** Inception prompting enabling autonomous cooperative multi-agent dialogue.\n- **[AutoGen Studio: A No-Code Developer Tool for Building and Debugging Multi-Agent Systems](https://arxiv.org/abs/2408.15247)** ([PDF](https://arxiv.org/pdf/2408.15247))\n  - **Authors:** Victor Dibia, Jingya Chen, Gagan Bansal, et al.\n  - **Focus:** Declarative orchestration and visual debugging interfaces.\n\n---\n\n### Survey and Architecture Papers\n\n- **[Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322)** ([PDF](https://arxiv.org/pdf/2501.06322))\n  - **Authors:** KT Tran, D Dao, MD Nguyen, QV Pham, et al.\n  - **Citations:** 820\n  - **Focus:** Categorizes topologies into centralized, decentralized, layered, and shared-memory collaboration mechanisms.\n- **[Multi-Agent Systems: A Survey](https://ieeexplore.ieee.org/abstract/document/8352646/)** ([PDF](https://ieeexplore.ieee.org/iel7/6287639/8274985/08352646.pdf))\n  - **Authors:** A Dorri, SS Kanhere, R Jurdak\n  - **Citations:** 1,811\n  - **Focus:** Foundational distributed problem-solving, negotiation, and communication structures.\n- **[Multi-Agent Coordination Across Diverse Applications: A Survey](https://arxiv.org/abs/2502.14743)** ([PDF](https://arxiv.org/pdf/2502.14743))\n  - **Authors:** L Sun, Y Yang, Q Duan, et al.\n  - **Citations:** 98\n  - **Focus:** Task allocation and coordination structures across robotics, software, and LLMs.\n- **[A Survey on Agent Workflow – Status and Future](https://ieeexplore.ieee.org/abstract/document/11082076/)** ([PDF](https://arxiv.org/pdf/2508.01186))\n  - **Authors:** C Yu, Z Cheng, H Cui, et al.\n  - **Citations:** 58\n  - **Focus:** Coordination graphs, runtime execution, and role assignments.\n- **[The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption](https://arxiv.org/abs/2601.13671)** ([PDF](https://arxiv.org/pdf/2601.13671))\n  - **Authors:** A Adimulam, R Gupta, S Kumar\n  - **Citations:** 44\n  - **Focus:** Enterprise workflow orchestration patterns and dynamic routing protocols.\n- **[A Survey of Multi-AI Agent Collaboration: Theories, Technologies and Applications](https://dl.acm.org/doi/abs/10.1145/3745238.3745531)** ([PDF](https://dl.acm.org/doi/pdf/10.1145/3745238.3745531))\n  - **Authors:** X Zhang, X Dong, Y Wang, et al.\n  - **Citations:** 42\n  - **Focus:** Inter-agent communication protocols and consensus mechanisms.\n\n---\n\n### Findings Comparison\n\n- **Agreement:** Sources complement each other without factual contradictions. One dataset identifies the primary open-source orchestration implementations (AutoGen, MetaGPT, CAMEL, ChatDev), while the other categorizes broader architectural taxonomies (centralized, decentralized, graph-based workflows).\n- **Missing Information:** Citation counts were reported for survey papers but not retrieved for the foundational framework papers.",
+    "summary": "Orchestration Summary for: 'Find me the best research papers on multi agent orchestration.'\n\n### Task: Search Google Scholar or arXiv for survey and overview papers covering multi-agent system orchestration and collaboration architectures.\n- Status: COMPLETED (Worker: worker_survey_papers_da88b49d, Tab: tab_survey_papers_f759ed)\n- Findings: #### Top Survey and Overview Papers on Multi-Agent Orchestration & Collaboration Architectures\n\n- **Multi-Agent Collaboration Mechanisms: A Survey of LLMs**\n  - **Authors:** KT Tran, D Dao, MD Nguyen, QV Pham, et al.\n  - **Citations:** 820\n  - **Summary:** Categorizes LLM multi-agent communication topologies and orchestration into centralized, decentralized/distributed, layered, and shared-memory collaboration mechanisms.\n  - **Link:** [arXiv:2501.06322](https://arxiv.org/abs/2501.06322) | [[PDF]](https://arxiv.org/pdf/2501.06322)\n\n- **The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption**\n  - **Authors:** A Adimulam, R Gupta, S Kumar\n  - **Citations:** 44\n  - **Summary:** Outlines architectural composition, communication protocols, dynamic routing, and workflow orchestration patterns for enterprise multi-agent collectives.\n  - **Link:** [arXiv:2601.13671](https://arxiv.org/abs/2601.13671) | [[PDF]](https://arxiv.org/pdf/2601.13671)\n\n- **A Survey on Agent Workflow – Status and Future**\n  - **Authors:** C Yu, Z Cheng, H Cui, Y Gao, Z Luo, et al.\n  - **Citations:** 58\n  - **Summary:** Analyzes multi-agent workflow systems, orchestration flows, agent roles, coordination graphs, and execution runtimes.\n  - **Link:** [IEEE Access / Paper](https://ieeexplore.ieee.org/abstract/document/11082076/) | [[PDF]](https://arxiv.org/pdf/2508.01186)\n\n- **Multi-Agent Coordination Across Diverse Applications: A Survey**\n  - **Authors:** L Sun, Y Yang, Q Duan, Y Shi, C Lyu, et al.\n  - **Citations:** 98\n  - **Summary:** Provides a unified taxonomy across software agents, robotics, and LLM collaboration pipelines, focusing on task allocation and coordination structures.\n  - **Link:** [arXiv:2502.14743](https://arxiv.org/abs/2502.14743) | [[PDF]](https://arxiv.org/pdf/2502.14743)\n\n- **A Survey of Multi-AI Agent Collaboration: Theories, Technologies and Applications**\n  - **Authors:** X Zhang, X Dong, Y Wang, D Zhang, et al.\n  - **Citations:** 42\n  - **Summary:** Reviews collaboration theories, inter-agent communication paradigms, role assignment protocols, and consensus mechanisms.\n  - **Link:** [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3745238.3745531) | [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3745238.3745531)\n\n- **Multi-Agent Systems: A Survey**\n  - **Authors:** A Dorri, SS Kanhere, R Jurdak\n  - **Citations:** 1,811\n  - **Summary:** Foundational architecture overview covering organizational structures, negotiation, communication schemes, and distributed problem-solving.\n  - **Link:** [IEEE Access](https://ieeexplore.ieee.org/abstract/document/8352646/) | [[PDF]](https://ieeexplore.ieee.org/iel7/6287639/8274985/08352646.pdf)\n### Task: Search arXiv for top-cited and influential research papers introducing multi-agent LLM orchestration frameworks such as AutoGen, MetaGPT, and related architectures.\n- Status: COMPLETED (Worker: worker_top_framework_papers_fa77acd5, Tab: tab_top_framework_papers_f759ed)\n- Findings: Found seminal and top-cited research papers introducing key multi-agent LLM orchestration frameworks on arXiv:\n\n#### 1. AutoGen\n- **Title:** AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation\n- **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu, Li Jiang, Xiaoyun Zhang, Shaokun Zhang, Jiale Liu, Ahmed Hassan Awadallah, Ryen W White, Doug Burger, Chi Wang\n- **arXiv ID:** [arXiv:2308.08155](https://arxiv.org/abs/2308.08155)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2308.08155)\n- **Key Contribution:** Introduces AutoGen, an open-source framework for building multi-agent conversational LLM applications with customizable, conversable agents that blend LLMs, human input, and tool orchestration.\n\n#### 2. MetaGPT\n- **Title:** MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework\n- **Authors:** Sirui Hong, Mingchen Zhuge, Jiaqi Chen, Xiawu Zheng, Yuheng Cheng, Ceyao Zhang, Jinlin Wang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran, Lingfeng Xiao, Chenglin Wu, Jürgen Schmidhuber\n- **arXiv ID:** [arXiv:2308.00352](https://arxiv.org/abs/2308.00352)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2308.00352)\n- **Key Contribution:** Incorporates human Standard Operating Procedures (SOPs) into multi-agent systems via role-based communication and meta-programming, drastically reducing logic inconsistencies and hallucinations in software development workflows.\n\n#### 3. ChatDev\n- **Title:** ChatDev: Communicative Agents for Software Development\n- **Authors:** Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang, Weize Chen, Yusheng Su, Xin Cong, Juyuan Xu, Dahai Li, Zhiyuan Liu, Maosong Sun\n- **arXiv ID:** [arXiv:2307.07924](https://arxiv.org/abs/2307.07924)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2307.07924)\n- **Key Contribution:** Explores role-playing LLM agents across a waterfall software development pipeline (design, coding, testing, documentation) to build software autonomously via conversational multi-agent chains.\n\n#### 4. CAMEL\n- **Title:** CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society\n- **Authors:** Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, Dmitrii Khizbullin, Bernard Ghanem\n- **arXiv ID:** [arXiv:2303.17760](https://arxiv.org/abs/2303.17760)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2303.17760)\n- **Key Contribution:** One of the earliest foundational frameworks establishing communicative agent societies using inception prompting to enable autonomous cooperative multi-agent dialogue.\n\n#### 5. AutoGen Studio (Ecosystem Extension)\n- **Title:** AutoGen Studio: A No-Code Developer Tool for Building and Debugging Multi-Agent Systems\n- **Authors:** Victor Dibia, Jingya Chen, Gagan Bansal, Suff Syed, Adam Fourney, Erkang Zhu, Chi Wang, Saleema Amershi\n- **arXiv ID:** [arXiv:2408.15247](https://arxiv.org/abs/2408.15247)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2408.15247)\n- **Key Contribution:** Introduces declarative orchestration and visual debugging interfaces for multi-agent workflows.",
+    "task_results": {
+     "survey_papers": {
+      "findings": "#### Top Survey and Overview Papers on Multi-Agent Orchestration & Collaboration Architectures\n\n- **Multi-Agent Collaboration Mechanisms: A Survey of LLMs**\n  - **Authors:** KT Tran, D Dao, MD Nguyen, QV Pham, et al.\n  - **Citations:** 820\n  - **Summary:** Categorizes LLM multi-agent communication topologies and orchestration into centralized, decentralized/distributed, layered, and shared-memory collaboration mechanisms.\n  - **Link:** [arXiv:2501.06322](https://arxiv.org/abs/2501.06322) | [[PDF]](https://arxiv.org/pdf/2501.06322)\n\n- **The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption**\n  - **Authors:** A Adimulam, R Gupta, S Kumar\n  - **Citations:** 44\n  - **Summary:** Outlines architectural composition, communication protocols, dynamic routing, and workflow orchestration patterns for enterprise multi-agent collectives.\n  - **Link:** [arXiv:2601.13671](https://arxiv.org/abs/2601.13671) | [[PDF]](https://arxiv.org/pdf/2601.13671)\n\n- **A Survey on Agent Workflow – Status and Future**\n  - **Authors:** C Yu, Z Cheng, H Cui, Y Gao, Z Luo, et al.\n  - **Citations:** 58\n  - **Summary:** Analyzes multi-agent workflow systems, orchestration flows, agent roles, coordination graphs, and execution runtimes.\n  - **Link:** [IEEE Access / Paper](https://ieeexplore.ieee.org/abstract/document/11082076/) | [[PDF]](https://arxiv.org/pdf/2508.01186)\n\n- **Multi-Agent Coordination Across Diverse Applications: A Survey**\n  - **Authors:** L Sun, Y Yang, Q Duan, Y Shi, C Lyu, et al.\n  - **Citations:** 98\n  - **Summary:** Provides a unified taxonomy across software agents, robotics, and LLM collaboration pipelines, focusing on task allocation and coordination structures.\n  - **Link:** [arXiv:2502.14743](https://arxiv.org/abs/2502.14743) | [[PDF]](https://arxiv.org/pdf/2502.14743)\n\n- **A Survey of Multi-AI Agent Collaboration: Theories, Technologies and Applications**\n  - **Authors:** X Zhang, X Dong, Y Wang, D Zhang, et al.\n  - **Citations:** 42\n  - **Summary:** Reviews collaboration theories, inter-agent communication paradigms, role assignment protocols, and consensus mechanisms.\n  - **Link:** [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3745238.3745531) | [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3745238.3745531)\n\n- **Multi-Agent Systems: A Survey**\n  - **Authors:** A Dorri, SS Kanhere, R Jurdak\n  - **Citations:** 1,811\n  - **Summary:** Foundational architecture overview covering organizational structures, negotiation, communication schemes, and distributed problem-solving.\n  - **Link:** [IEEE Access](https://ieeexplore.ieee.org/abstract/document/8352646/) | [[PDF]](https://ieeexplore.ieee.org/iel7/6287639/8274985/08352646.pdf)",
+      "success": true,
+      "sources": [
+       "https://scholar.google.com"
+      ],
+      "error": null,
+      "worker_id": "worker_survey_papers_da88b49d",
+      "tab_id": "tab_survey_papers_f759ed"
+     },
+     "top_framework_papers": {
+      "findings": "Found seminal and top-cited research papers introducing key multi-agent LLM orchestration frameworks on arXiv:\n\n#### 1. AutoGen\n- **Title:** AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation\n- **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu, Li Jiang, Xiaoyun Zhang, Shaokun Zhang, Jiale Liu, Ahmed Hassan Awadallah, Ryen W White, Doug Burger, Chi Wang\n- **arXiv ID:** [arXiv:2308.08155](https://arxiv.org/abs/2308.08155)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2308.08155)\n- **Key Contribution:** Introduces AutoGen, an open-source framework for building multi-agent conversational LLM applications with customizable, conversable agents that blend LLMs, human input, and tool orchestration.\n\n#### 2. MetaGPT\n- **Title:** MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework\n- **Authors:** Sirui Hong, Mingchen Zhuge, Jiaqi Chen, Xiawu Zheng, Yuheng Cheng, Ceyao Zhang, Jinlin Wang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran, Lingfeng Xiao, Chenglin Wu, Jürgen Schmidhuber\n- **arXiv ID:** [arXiv:2308.00352](https://arxiv.org/abs/2308.00352)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2308.00352)\n- **Key Contribution:** Incorporates human Standard Operating Procedures (SOPs) into multi-agent systems via role-based communication and meta-programming, drastically reducing logic inconsistencies and hallucinations in software development workflows.\n\n#### 3. ChatDev\n- **Title:** ChatDev: Communicative Agents for Software Development\n- **Authors:** Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang, Weize Chen, Yusheng Su, Xin Cong, Juyuan Xu, Dahai Li, Zhiyuan Liu, Maosong Sun\n- **arXiv ID:** [arXiv:2307.07924](https://arxiv.org/abs/2307.07924)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2307.07924)\n- **Key Contribution:** Explores role-playing LLM agents across a waterfall software development pipeline (design, coding, testing, documentation) to build software autonomously via conversational multi-agent chains.\n\n#### 4. CAMEL\n- **Title:** CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society\n- **Authors:** Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, Dmitrii Khizbullin, Bernard Ghanem\n- **arXiv ID:** [arXiv:2303.17760](https://arxiv.org/abs/2303.17760)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2303.17760)\n- **Key Contribution:** One of the earliest foundational frameworks establishing communicative agent societies using inception prompting to enable autonomous cooperative multi-agent dialogue.\n\n#### 5. AutoGen Studio (Ecosystem Extension)\n- **Title:** AutoGen Studio: A No-Code Developer Tool for Building and Debugging Multi-Agent Systems\n- **Authors:** Victor Dibia, Jingya Chen, Gagan Bansal, Suff Syed, Adam Fourney, Erkang Zhu, Chi Wang, Saleema Amershi\n- **arXiv ID:** [arXiv:2408.15247](https://arxiv.org/abs/2408.15247)\n- **PDF:** [Download PDF](https://arxiv.org/pdf/2408.15247)\n- **Key Contribution:** Introduces declarative orchestration and visual debugging interfaces for multi-agent workflows.",
+      "success": true,
+      "sources": [
+       "https://arxiv.org/search/?query=AutoGen+multi-agent&searchtype=all&source=header",
+       "https://arxiv.org/search/advanced?advanced=",
+       "https://arxiv.org/search/?query=%22AutoGen%22&searchtype=title",
+       "https://arxiv.org/search/?query=%22Enabling+Next-Gen+LLM+Applications+via+Multi-Agent+Conversation%22&searchtype=all",
+       "https://arxiv.org/search/?query=%22MetaGPT%22&searchtype=title",
+       "https://arxiv.org/search/?query=%22ChatDev%22&searchtype=title",
+       "https://arxiv.org/search/?query=%22CAMEL%22+communicative+agents&searchtype=all"
+      ],
+      "error": null,
+      "worker_id": "worker_top_framework_papers_fa77acd5",
+      "tab_id": "tab_top_framework_papers_f759ed"
+     }
+    },
+    "sources": [
+     "https://scholar.google.com",
+     "https://arxiv.org/search/?query=AutoGen+multi-agent&searchtype=all&source=header",
+     "https://arxiv.org/search/advanced?advanced=",
+     "https://arxiv.org/search/?query=%22AutoGen%22&searchtype=title",
+     "https://arxiv.org/search/?query=%22Enabling+Next-Gen+LLM+Applications+via+Multi-Agent+Conversation%22&searchtype=all",
+     "https://arxiv.org/search/?query=%22MetaGPT%22&searchtype=title",
+     "https://arxiv.org/search/?query=%22ChatDev%22&searchtype=title",
+     "https://arxiv.org/search/?query=%22CAMEL%22+communicative+agents&searchtype=all"
+    ],
+    "missing_information": [],
+    "follow_up": null,
+    "duration_ms": 113914.87,
+    "type": "result",
+    "done": true
+   }
+  }
+ ]
+}

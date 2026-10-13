@@ -1,0 +1,528 @@
+{
+  "summary": {
+    "model": "jev-1.13.0",
+    "tasks": 30,
+    "latency_ms": {
+      "min": 319,
+      "median": 368.5,
+      "p90": 442,
+      "max": 533
+    },
+    "parallel_burst_10": {
+      "wall_ms": 551,
+      "each_ms": [
+        378,
+        497,
+        500,
+        503,
+        505,
+        506,
+        512,
+        515,
+        520,
+        550
+      ]
+    },
+    "mode_accuracy": 0.8,
+    "program_vs_not_accuracy_from_mode": 0.833,
+    "program_vs_not_accuracy_from_many_ops": 0.967,
+    "mean_confidence_when_right": 0.933,
+    "mean_confidence_when_wrong": 0.657,
+    "wrong": [
+      {
+        "task": "Read the grade history table and list every course with its grade",
+        "want": "semantic",
+        "got": "program",
+        "conf": 0.27,
+        "many_ops": 0.86
+      },
+      {
+        "task": "Guess the hidden five letter word in this game",
+        "want": "visual",
+        "got": "semantic",
+        "conf": 0.74,
+        "many_ops": 0.18
+      },
+      {
+        "task": "Draw a detailed colourful rocket with about 20 shapes: body, nose, fin",
+        "want": "program",
+        "got": "visual",
+        "conf": 0.62,
+        "many_ops": 0.79
+      },
+      {
+        "task": "Draw a pixel art picture using 100 coloured squares on this canvas",
+        "want": "program",
+        "got": "visual",
+        "conf": 0.66,
+        "many_ops": 0.79
+      },
+      {
+        "task": "Draw a detailed map of a small island with roads, a river and 15 build",
+        "want": "program",
+        "got": "visual",
+        "conf": 0.67,
+        "many_ops": 0.88
+      },
+      {
+        "task": "Reorder these 20 cards by dragging each one to its target position",
+        "want": "program",
+        "got": "visual",
+        "conf": 0.98,
+        "many_ops": 0.79
+      }
+    ]
+  },
+  "rows": [
+    {
+      "task": "Search for the best laptop under 50000 rupees and read the top result",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.22,
+      "ms": 533,
+      "model": "jev-1.13.0",
+      "input_tokens": 435
+    },
+    {
+      "task": "Add the cheapest headphones to the cart",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.27,
+      "ms": 350,
+      "model": "jev-1.13.0",
+      "input_tokens": 429
+    },
+    {
+      "task": "Who is the CEO of Stripe? Find it and cite the page",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.1,
+      "ms": 412,
+      "model": "jev-1.13.0",
+      "input_tokens": 428
+    },
+    {
+      "task": "Fill the contact form with my name and email and submit it",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.12,
+      "ms": 500,
+      "model": "jev-1.13.0",
+      "input_tokens": 430
+    },
+    {
+      "task": "Summarise the top three stories on Hacker News",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.28,
+      "ms": 358,
+      "model": "jev-1.13.0",
+      "input_tokens": 425
+    },
+    {
+      "task": "Open the first result and tell me the price",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.12,
+      "ms": 382,
+      "model": "jev-1.13.0",
+      "input_tokens": 425
+    },
+    {
+      "task": "Read the grade history table and list every course with its grade",
+      "want": "semantic",
+      "got": "program",
+      "mode_conf": 0.27,
+      "mode_probs": {
+        "semantic": 0.49,
+        "visual": 0.0,
+        "program": 0.51
+      },
+      "many_ops": 0.86,
+      "ms": 423,
+      "model": "jev-1.13.0",
+      "input_tokens": 436
+    },
+    {
+      "task": "Log into the dashboard and download last month's invoice",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.32,
+      "ms": 354,
+      "model": "jev-1.13.0",
+      "input_tokens": 425
+    },
+    {
+      "task": "Find three research papers on multi-agent orchestration with links",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.4,
+      "ms": 413,
+      "model": "jev-1.13.0",
+      "input_tokens": 427
+    },
+    {
+      "task": "Check whether this flight is still available and report the fare",
+      "want": "semantic",
+      "got": "semantic",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 1.0,
+        "visual": 0.0,
+        "program": 0.0
+      },
+      "many_ops": 0.29,
+      "ms": 439,
+      "model": "jev-1.13.0",
+      "input_tokens": 427
+    },
+    {
+      "task": "Play the move that checkmates Black on this chess board",
+      "want": "visual",
+      "got": "visual",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 1.0,
+        "program": 0.0
+      },
+      "many_ops": 0.31,
+      "ms": 506,
+      "model": "jev-1.13.0",
+      "input_tokens": 436
+    },
+    {
+      "task": "Draw a rectangle and put a circle inside it",
+      "want": "visual",
+      "got": "visual",
+      "mode_conf": 0.98,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.99,
+        "program": 0.01
+      },
+      "many_ops": 0.05,
+      "ms": 422,
+      "model": "jev-1.13.0",
+      "input_tokens": 433
+    },
+    {
+      "task": "Click the red square that appears on the canvas",
+      "want": "visual",
+      "got": "visual",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 1.0,
+        "program": 0.0
+      },
+      "many_ops": 0.08,
+      "ms": 338,
+      "model": "jev-1.13.0",
+      "input_tokens": 424
+    },
+    {
+      "task": "Guess the hidden five letter word in this game",
+      "want": "visual",
+      "got": "semantic",
+      "mode_conf": 0.74,
+      "mode_probs": {
+        "semantic": 0.83,
+        "visual": 0.16,
+        "program": 0.01
+      },
+      "many_ops": 0.18,
+      "ms": 442,
+      "model": "jev-1.13.0",
+      "input_tokens": 428
+    },
+    {
+      "task": "Drag the slider handle to 70 percent on this chart",
+      "want": "visual",
+      "got": "visual",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 1.0,
+        "program": 0.0
+      },
+      "many_ops": 0.13,
+      "ms": 328,
+      "model": "jev-1.13.0",
+      "input_tokens": 431
+    },
+    {
+      "task": "Pick the highest bar in this chart and tell me its value",
+      "want": "visual",
+      "got": "visual",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 1.0,
+        "program": 0.0
+      },
+      "many_ops": 0.16,
+      "ms": 388,
+      "model": "jev-1.13.0",
+      "input_tokens": 429
+    },
+    {
+      "task": "Draw a detailed colourful rocket with about 20 shapes: body, nose, fins, porthole, flames and stars",
+      "want": "program",
+      "got": "visual",
+      "mode_conf": 0.62,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.75,
+        "program": 0.25
+      },
+      "many_ops": 0.79,
+      "ms": 368,
+      "model": "jev-1.13.0",
+      "input_tokens": 449
+    },
+    {
+      "task": "Enter all 40 rows from this list into the web form, one after another",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 1.0,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.0,
+        "program": 1.0
+      },
+      "many_ops": 0.96,
+      "ms": 331,
+      "model": "jev-1.13.0",
+      "input_tokens": 439
+    },
+    {
+      "task": "Click through all 30 pages of results and collect every price into one list",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.88,
+      "mode_probs": {
+        "semantic": 0.08,
+        "visual": 0.0,
+        "program": 0.92
+      },
+      "many_ops": 0.93,
+      "ms": 348,
+      "model": "jev-1.13.0",
+      "input_tokens": 437
+    },
+    {
+      "task": "Draw a pixel art picture using 100 coloured squares on this canvas",
+      "want": "program",
+      "got": "visual",
+      "mode_conf": 0.66,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.77,
+        "program": 0.23
+      },
+      "many_ops": 0.79,
+      "ms": 369,
+      "model": "jev-1.13.0",
+      "input_tokens": 434
+    },
+    {
+      "task": "Draw a 12 month calendar grid with labels on the whiteboard",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.49,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.34,
+        "program": 0.66
+      },
+      "many_ops": 0.86,
+      "ms": 410,
+      "model": "jev-1.13.0",
+      "input_tokens": 437
+    },
+    {
+      "task": "Type these 25 product codes into the order form and press add after each",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.85,
+      "mode_probs": {
+        "semantic": 0.1,
+        "visual": 0.0,
+        "program": 0.9
+      },
+      "many_ops": 0.91,
+      "ms": 320,
+      "model": "jev-1.13.0",
+      "input_tokens": 431
+    },
+    {
+      "task": "Tick every checkbox in this settings list and then save",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.97,
+      "mode_probs": {
+        "semantic": 0.02,
+        "visual": 0.0,
+        "program": 0.98
+      },
+      "many_ops": 0.95,
+      "ms": 353,
+      "model": "jev-1.13.0",
+      "input_tokens": 432
+    },
+    {
+      "task": "Draw a bar chart of these 12 values with axes and labels on the canvas",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.61,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.26,
+        "program": 0.74
+      },
+      "many_ops": 0.74,
+      "ms": 335,
+      "model": "jev-1.13.0",
+      "input_tokens": 435
+    },
+    {
+      "task": "Rename 35 files in this web file manager following a pattern",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.98,
+      "mode_probs": {
+        "semantic": 0.01,
+        "visual": 0.0,
+        "program": 0.99
+      },
+      "many_ops": 0.91,
+      "ms": 353,
+      "model": "jev-1.13.0",
+      "input_tokens": 434
+    },
+    {
+      "task": "Fill in the timetable grid with these 48 slots",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.86,
+      "mode_probs": {
+        "semantic": 0.05,
+        "visual": 0.04,
+        "program": 0.91
+      },
+      "many_ops": 0.78,
+      "ms": 319,
+      "model": "jev-1.13.0",
+      "input_tokens": 433
+    },
+    {
+      "task": "Draw a detailed map of a small island with roads, a river and 15 buildings",
+      "want": "program",
+      "got": "visual",
+      "mode_conf": 0.67,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.78,
+        "program": 0.22
+      },
+      "many_ops": 0.88,
+      "ms": 333,
+      "model": "jev-1.13.0",
+      "input_tokens": 439
+    },
+    {
+      "task": "Reorder these 20 cards by dragging each one to its target position",
+      "want": "program",
+      "got": "visual",
+      "mode_conf": 0.98,
+      "mode_probs": {
+        "semantic": 0.0,
+        "visual": 0.99,
+        "program": 0.01
+      },
+      "many_ops": 0.79,
+      "ms": 424,
+      "model": "jev-1.13.0",
+      "input_tokens": 438
+    },
+    {
+      "task": "Scroll the feed and open each of the first 30 posts to collect the author",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.8,
+      "mode_probs": {
+        "semantic": 0.13,
+        "visual": 0.0,
+        "program": 0.87
+      },
+      "many_ops": 0.91,
+      "ms": 371,
+      "model": "jev-1.13.0",
+      "input_tokens": 432
+    },
+    {
+      "task": "Set the quantity of each of the 24 line items to the values in this list",
+      "want": "program",
+      "got": "program",
+      "mode_conf": 0.97,
+      "mode_probs": {
+        "semantic": 0.02,
+        "visual": 0.0,
+        "program": 0.98
+      },
+      "many_ops": 0.93,
+      "ms": 340,
+      "model": "jev-1.13.0",
+      "input_tokens": 438
+    }
+  ]
+}

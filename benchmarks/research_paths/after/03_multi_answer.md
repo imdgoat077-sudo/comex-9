@@ -1,0 +1,23 @@
+The top research papers on multi-agent orchestration, grouped by focus:
+
+### Foundational Systems & Orchestration Architectures
+- [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) (Wu et al., 2023). Conversational multi-agent orchestration framework supporting flexible topologies, tool execution, and human-in-the-loop interaction.
+- [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) (Hong et al., 2023). Assembly line workflow orchestration using Standard Operating Procedures (SOPs) to assign structured prompt sequences and verify intermediate steps across complex tasks.
+- [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) (Qian et al., ACL 2024). Multi-stage sequential chat chains dividing the software lifecycle into structured peer dialogues with communicative de-hallucination.
+- [CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760) (Li et al., NeurIPS 2023). Autonomous peer-to-peer cooperative role-playing driven by inception prompting for task alignment without human intervention.
+
+### Surveys & Coordination Taxonomies
+- [Large Language Model based Multi-Agents: A Survey of Progress and Challenges](https://arxiv.org/abs/2402.01680) (Guo et al., 2024). Foundational survey (>2,500 citations) covering persona formulation, interaction dynamics (cooperative, competitive), environment simulation, and collective problem-solving workflows.
+- [A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges](https://link.springer.com/article/10.1007/s44336-024-00009-2) (Li et al., 2024, *Vicinagearth*). Categorizes mutual interaction mechanisms, communication topologies, execution workflows, and underlying infrastructure platforms.
+- [Multi-agent collaboration mechanisms: A survey of llms](https://arxiv.org/abs/2501.06322) (Tran et al., 2025). Focuses directly on task decomposition, collaboration mechanisms, and dynamic orchestration strategies.
+- [Beyond self-talk: A communication-centric survey of llm-based multi-agent systems](https://arxiv.org/abs/2502.14321) (Yan et al., 2025). Analyzes network orchestration from a communication perspective: message passing, routing protocols, and centralized vs. decentralized execution graphs.
+
+### Benchmarks, Coordination Failure Modes & Empirical Studies
+- [Multi-agent collaboration via evolving orchestration](https://proceedings.neurips.cc/paper_files/paper/2025/hash/f1320d2e2842169c6fc89dcbd80e94d0-Abstract-Conference.html) (Dang et al., NeurIPS 2025). Evaluates adaptive, evolving orchestration graphs optimized via Monte Carlo Tree Search against static topologies to reduce overhead and boost task success.
+- [Multiagentbench: Evaluating the collaboration and competition of llm agents](https://aclanthology.org/2025.acl-long.421/) (Zhu et al., ACL 2025). Benchmarks multi-agent coordination, competitive dynamics, communication overhead, and task completion rates across mixed environments.
+- [Silo-bench: A scalable environment for evaluating distributed coordination in multi-agent llm systems](https://aclanthology.org/2026.acl-long.1354/) (Zhang et al., ACL 2026). Evaluates distributed orchestration failure modes across 30 tasks; isolates the coordination gap and communication failure rates.
+- [Architectural Design, Not Only Model Intelligence, Governs Multi-Agent LLM Performance](https://www.researchgate.net/profile/Abdelghny-Orogat/publication/400414944_Understanding_Multi-Agent_LLM_Frameworks_A_Unified_Benchmark_and_Experimental_Analysis/links/6983aae812f837212a1795e5/Understanding-Multi-Agent-LLM-Frameworks-A-Unified-Benchmark-and-Experimental-Analysis.pdf) (Orogat et al., arXiv:2602.03128, 2026). Introduces MAFBench to isolate how orchestration topology and coordination architectures dictate execution cost (tokens, latency) and task accuracy independent of the underlying base LLM.
+- [OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality](https://arxiv.org/abs/2608.05263) (Chen et al., arXiv:2608.05263, 2026). Benchmarks task decomposition quality, coordination breakdown patterns, error propagation, and failure recovery.
+
+### Missing & Uncertain
+Metadata for *Generative Agents* (arXiv:2304.03442) was not retrieved due to browser action limits. Exact quantitative citation counts and GitHub star metrics are missing for the system architecture papers, though peer-reviewed venue acceptances (NeurIPS, ACL) confirm their impact. Several benchmark works (*OrchestraBench*, *MAFBench*) remain preprints.

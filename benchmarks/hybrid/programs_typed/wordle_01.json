@@ -1,0 +1,137 @@
+{
+  "scenario": "wordle",
+  "mode": "typed",
+  "trial": 1,
+  "seed": 1,
+  "error": null,
+  "wall_s": 41.79,
+  "tool_calls": 8,
+  "tools": [
+    "browser_evaluate",
+    "browser_evaluate",
+    "browser_sequence",
+    "browser_sequence",
+    "browser_sequence",
+    "browser_sequence",
+    "browser_sequence",
+    "browser_sequence"
+  ],
+  "llm_calls_derived": 9,
+  "llm_calls_measured": 9,
+  "failed_tool_calls": 0,
+  "llm_ms": 36551.6,
+  "tool_ms": 5132.64,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "program_calls": 0,
+  "success": true,
+  "state": {
+    "s": "won",
+    "rows": 3
+  },
+  "claimed_in_answer": "Word solved.\n\n- **Word:** `SLATE`\n- **Guesses used:** 3\n\n#### Guess History\n1. `CRANE` -> `_ _ A _ E`\n2. `FLAME` -> `_ L A _ E`\n3. `SLATE` -> `S L A T E` (correct)",
+  "quality": 1.0,
+  "recovered": false,
+  "answer": "Word solved.\n\n- **Word:** `SLATE`\n- **Guesses used:** 3\n\n#### Guess History\n1. `CRANE` -> `_ _ A _ E`\n2. `FLAME` -> `_ L A _ E`\n3. `SLATE` -> `S L A T E` (correct)",
+  "trace": [
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    title: document.title,\\n    html: document.body.innerHTML\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"title\": \"Word game fixture\", \"html\": \"<div id=\\\"game\\\" data-status=\\\"playing\\\" tabindex=\\\"-1\\\">\\n  <h1>Word game</h1>\\n  <div id=\\\"rows\\\" role=\\\"group\\\" aria-label=\\\"Guesses\\\"><div class=\\\"row\\\" role=\\\"group\\\" aria-label=\\\"Row 1\\\"><div class=\\\"tile\\\" data-state=\\\"empty\\\" aria-label=\\\"empty\\\"></div",
+      "ms": 22.56
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    rowsCount: document.getElementById('rows').children.length,\\n    status: document.getElementById('game').dataset.status\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"rowsCount\": 6, \"status\": \"playing\"}",
+      "ms": 24.29
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"action\": \"keys\", \"text\": \"crane\", \"reason\": \"Type first guess CRANE\"}, {\"keys\": [\"Enter\"], \"action\": \"keys\", \"reason\": \"Submit guess\"}, {\"action\": \"wait\", \"condition\": {\"reason\": \"Wait for row feedback\", \"type\": \"idle\"}}, {\"expression\": \"(() => {\\n    const tiles = [...document.querySel",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"keys\", \"data\": {\"pressed\": [\"c\", \"r\", \"a\", \"n\", \"e\"], \"count\": 5, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 204}, {\"step_index\": 1, \"action\": \"keys\", \"data\": {\"pressed\": [\"Enter\"], \"count\": 1, \"page_changed\": fals",
+      "ms": 740.22
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"reason\": \"Type second guess SHAME\", \"action\": \"keys\", \"text\": \"shame\"}, {\"action\": \"keys\", \"keys\": [\"Enter\"], \"reason\": \"Submit guess\"}, {\"condition\": {\"type\": \"idle\", \"reason\": \"Wait for score response\"}, \"action\": \"wait\"}, {\"action\": \"evaluate\", \"reason\": \"Check feedback for guess 2\",",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"keys\", \"data\": {\"pressed\": [\"s\", \"h\", \"a\", \"m\", \"e\"], \"count\": 5, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 202}, {\"step_index\": 1, \"action\": \"keys\", \"data\": {\"pressed\": [\"Enter\"], \"count\": 1, \"page_changed\": true",
+      "ms": 741.83
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"keys\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\"], \"action\": \"keys\", \"reason\": \"Clear invalid word\"}, {\"text\": \"flame\", \"reason\": \"Type valid guess FLAME\", \"action\": \"keys\"}, {\"keys\": [\"Enter\"], \"action\": \"keys\", \"reason\": \"Submit FLAME\"}, {\"condition\": {\"type\": \"",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"keys\", \"data\": {\"pressed\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\"], \"count\": 5, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 207}, {\"step_index\": 1, \"action\": \"keys\", \"data\": {\"pressed\": [\"f",
+      "ms": 957.15
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"reason\": \"Type third guess BLADE\", \"text\": \"blade\", \"action\": \"keys\"}, {\"keys\": [\"Enter\"], \"reason\": \"Submit BLADE\", \"action\": \"keys\"}, {\"condition\": {\"reason\": \"Wait for response\", \"type\": \"idle\"}, \"action\": \"wait\"}, {\"action\": \"evaluate\", \"reason\": \"Check feedback\", \"expression\": \"(()",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"keys\", \"data\": {\"pressed\": [\"b\", \"l\", \"a\", \"d\", \"e\"], \"count\": 5, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 203}, {\"step_index\": 1, \"action\": \"keys\", \"data\": {\"pressed\": [\"Enter\"], \"count\": 1, \"page_changed\": true",
+      "ms": 746.84
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"reason\": \"Clear invalid word\", \"action\": \"keys\", \"keys\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\"]}, {\"action\": \"keys\", \"reason\": \"Type third guess GLAZE\", \"text\": \"glaze\"}, {\"reason\": \"Submit GLAZE\", \"keys\": [\"Enter\"], \"action\": \"keys\"}, {\"action\": \"wait\", \"cond",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"keys\", \"data\": {\"pressed\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\"], \"count\": 5, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 202}, {\"step_index\": 1, \"action\": \"keys\", \"data\": {\"pressed\": [\"g",
+      "ms": 954.98
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"action\": \"keys\", \"reason\": \"Clear word\", \"keys\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\"]}, {\"reason\": \"Type third guess SLATE\", \"action\": \"keys\", \"text\": \"slate\"}, {\"action\": \"keys\", \"keys\": [\"Enter\"], \"reason\": \"Submit SLATE\"}, {\"condition\": {\"reason\": \"Wait f",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"keys\", \"data\": {\"pressed\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\"], \"count\": 5, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 203}, {\"step_index\": 1, \"action\": \"keys\", \"data\": {\"pressed\": [\"s",
+      "ms": 944.77
+    }
+  ],
+  "steps": [
+    {
+      "t": 5.41,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 11.94,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 15.21,
+      "tool": "browser_sequence",
+      "label": "Doing 4 steps on the page"
+    },
+    {
+      "t": 19.09,
+      "tool": "browser_sequence",
+      "label": "Doing 4 steps on the page"
+    },
+    {
+      "t": 23.19,
+      "tool": "browser_sequence",
+      "label": "Doing 5 steps on the page"
+    },
+    {
+      "t": 27.6,
+      "tool": "browser_sequence",
+      "label": "Doing 4 steps on the page"
+    },
+    {
+      "t": 32.53,
+      "tool": "browser_sequence",
+      "label": "Doing 5 steps on the page"
+    },
+    {
+      "t": 37.56,
+      "tool": "browser_sequence",
+      "label": "Doing 5 steps on the page"
+    }
+  ]
+}

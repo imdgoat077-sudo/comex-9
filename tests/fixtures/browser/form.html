@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Form</title>
+<!-- A framework-style input: the "framework" only learns the value from input/change events, like React does. -->
+<input id="name"><button id="go" disabled>Save</button><div id="box" tabindex="0">box</div><p id="log"></p>
+<script>
+const state = {name: '', events: 0, keys: []};
+const input = document.getElementById('name');
+input.addEventListener('input', () => { state.name = input.value; state.events++; document.getElementById('go').disabled = !state.name; });
+input.addEventListener('change', () => { state.events++; });
+document.getElementById('box').addEventListener('keypress', (e) => state.keys.push(e.key));
+window.formState = () => state;
+</script>

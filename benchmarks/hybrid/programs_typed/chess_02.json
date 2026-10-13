@@ -1,0 +1,88 @@
+{
+  "scenario": "chess",
+  "mode": "typed",
+  "trial": 2,
+  "seed": 2,
+  "error": null,
+  "wall_s": 24.36,
+  "tool_calls": 4,
+  "tools": [
+    "browser_evaluate",
+    "browser_evaluate",
+    "browser_sequence",
+    "browser_evaluate"
+  ],
+  "llm_calls_derived": 5,
+  "llm_calls_measured": 5,
+  "failed_tool_calls": 0,
+  "llm_ms": 24012.0,
+  "tool_ms": 241.34,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "program_calls": 0,
+  "success": true,
+  "state": {
+    "s": "checkmate",
+    "h": [
+      "Ra1-a8#"
+    ],
+    "ill": 0
+  },
+  "claimed_in_answer": "- **Move played:** `Ra1-a8#` (Rook from **a1** to **a8**)\n- **Game status:** The game is over. Black is in checkmate, and White wins.",
+  "quality": 1.0,
+  "recovered": false,
+  "answer": "- **Move played:** `Ra1-a8#` (Rook from **a1** to **a8**)\n- **Game status:** The game is over. Black is in checkmate, and White wins.",
+  "trace": [
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    title: document.title,\\n    body: document.body.innerHTML,\\n    statusText: document.body.innerText\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"title\": \"Chess fixture\", \"body\": \"<div id=\\\"wrap\\\">\\n  <div id=\\\"board\\\" aria-label=\\\"Chess board\\\"><div class=\\\"piece black king\\\" style=\\\"transform: translate(360px, 0px);\\\">\u265a</div><div class=\\\"piece black pawn\\\" style=\\\"transform: translate(300px, 60px);\\\">\u265f</div><div class=\\\"piece black pawn\\\"",
+      "ms": 24.53
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const r = document.getElementById('board').getBoundingClientRect();\\n  return {\\n    rect: { left: r.left, top: r.top, width: r.width, height: r.height },\\n    a1: { x: r.left + 30, y: r.top + 420 + 30 },\\n    a8: { x: r.left + 30, y: r.top + 30 }\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"rect\": {\"left\": 24, \"top\": 24, \"width\": 480, \"height\": 480}, \"a1\": {\"x\": 54, \"y\": 474}, \"a8\": {\"x\": 54, \"y\": 54}}",
+      "ms": 28.94
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"y\": 474, \"reason\": \"Select rook at a1\", \"action\": \"click_at\", \"x\": 54}, {\"postconditions\": [{\"type\": \"text_contains\", \"expected\": \"Checkmate\"}], \"reason\": \"Move rook to a8 to deliver back-rank checkmate\", \"action\": \"click_at\", \"y\": 54, \"x\": 54}]}",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"click_at\", \"data\": {\"kind\": \"click\", \"target\": {\"found\": true, \"tag\": \"div\", \"id\": \"board\", \"class\": \"\", \"label\": \"Chess board\", \"backend_node_id\": 10}, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 70}, {\"step_index\"",
+      "ms": 164.11
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    statusText: document.getElementById('status').textContent,\\n    moves: Array.from(document.querySelectorAll('#moves li')).map(li => li.textContent),\\n    gameStatus: window.__game ? window.__game.status : null,\\n    winner: window.__game ? window.__game.winn",
+      "ok": true,
+      "result": "{\"statusText\": \"Checkmate. White wins.\", \"moves\": [\"Ra1-a8#\"], \"gameStatus\": \"checkmate\", \"winner\": \"w\"}",
+      "ms": 23.76
+    }
+  ],
+  "steps": [
+    {
+      "t": 5.96,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 15.2,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 18.68,
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page"
+    },
+    {
+      "t": 21.64,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    }
+  ]
+}

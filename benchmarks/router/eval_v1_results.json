@@ -1,0 +1,6400 @@
+{
+  "set_sha256": "9afae8327bd4c6dadbb56ec88309753f9f6eb424b251703ffcb4008d1574326c",
+  "router_sha256": "44d0dd1441f9f79568fb6cf70b7016e6ac34eed13cccc6354316c1ff7bf1c215",
+  "ran_at": "2026-10-12 14:08:59",
+  "jev_key_present": true,
+  "arms": {
+    "always_typed": {
+      "arm": "always_typed",
+      "cases": 68,
+      "execution_accuracy": 0.765,
+      "accuracy_excluding_ambiguous": 0.733,
+      "per_category": {
+        "ambiguous": "8/8",
+        "bulk_dom": "0/8",
+        "few_repetitive": "8/8",
+        "game_few_actions": "8/8",
+        "long_drawing": "0/8",
+        "ordinary": "10/10",
+        "research": "4/4",
+        "table_extraction": "8/8",
+        "visual_only": "6/6"
+      },
+      "program_recall": 0.0,
+      "program_false_positives": 0,
+      "ambiguous_flagged_uncertain": "0/8",
+      "clear_tasks_wrongly_flagged_uncertain": "0/60",
+      "perception_visual": {
+        "precision": null,
+        "recall": 0.0,
+        "false_requests": 0,
+        "misses": 23
+      },
+      "perception_structured": {
+        "precision": null,
+        "recall": 0.0,
+        "false_requests": 0,
+        "misses": 8
+      },
+      "jev_called": 0,
+      "fallbacks": {},
+      "decision_latency_ms": {
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0,
+        "total_ms": 0.0
+      },
+      "mistakes": [
+        {
+          "want": "program",
+          "got": "typed",
+          "value": "measured_program_needed",
+          "count": 8,
+          "effect": "measured: typed tools scored 1/9 on the rocket in both runs (306 s and 569 s); the Original's script agent scored 9/9"
+        },
+        {
+          "want": "program",
+          "got": "typed",
+          "value": "hypothesis_program_helps",
+          "count": 8,
+          "effect": "NOT measured: possible missed speedup on bulk DOM work"
+        }
+      ]
+    },
+    "deterministic_only": {
+      "arm": "deterministic_only",
+      "cases": 68,
+      "execution_accuracy": 0.985,
+      "accuracy_excluding_ambiguous": 0.983,
+      "per_category": {
+        "ambiguous": "8/8",
+        "bulk_dom": "8/8",
+        "few_repetitive": "8/8",
+        "game_few_actions": "8/8",
+        "long_drawing": "7/8",
+        "ordinary": "10/10",
+        "research": "4/4",
+        "table_extraction": "8/8",
+        "visual_only": "6/6"
+      },
+      "program_recall": 0.938,
+      "program_false_positives": 0,
+      "ambiguous_flagged_uncertain": "8/8",
+      "clear_tasks_wrongly_flagged_uncertain": "2/60",
+      "perception_visual": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_requests": 0,
+        "misses": 0
+      },
+      "perception_structured": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_requests": 0,
+        "misses": 0
+      },
+      "jev_called": 0,
+      "fallbacks": {
+        "jev_not_enabled": 2
+      },
+      "decision_latency_ms": {
+        "median": 0.02,
+        "p90": 0.022,
+        "max": 0.141,
+        "total_ms": 1.4
+      },
+      "mistakes": [
+        {
+          "want": "program",
+          "got": "typed",
+          "value": "measured_program_needed",
+          "count": 1,
+          "effect": "measured: typed tools scored 1/9 on the rocket in both runs (306 s and 569 s); the Original's script agent scored 9/9"
+        }
+      ]
+    },
+    "production": {
+      "arm": "production",
+      "cases": 68,
+      "execution_accuracy": 1.0,
+      "accuracy_excluding_ambiguous": 1.0,
+      "per_category": {
+        "ambiguous": "8/8",
+        "bulk_dom": "8/8",
+        "few_repetitive": "8/8",
+        "game_few_actions": "8/8",
+        "long_drawing": "8/8",
+        "ordinary": "10/10",
+        "research": "4/4",
+        "table_extraction": "8/8",
+        "visual_only": "6/6"
+      },
+      "program_recall": 1.0,
+      "program_false_positives": 0,
+      "ambiguous_flagged_uncertain": "8/8",
+      "clear_tasks_wrongly_flagged_uncertain": "0/60",
+      "perception_visual": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_requests": 0,
+        "misses": 0
+      },
+      "perception_structured": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_requests": 0,
+        "misses": 0
+      },
+      "jev_called": 2,
+      "fallbacks": {},
+      "decision_latency_ms": {
+        "median": 0.04,
+        "p90": 0.083,
+        "max": 1138.282,
+        "total_ms": 1624.8
+      },
+      "mistakes": []
+    },
+    "jev_every_task": {
+      "arm": "jev_every_task",
+      "cases": 68,
+      "execution_accuracy": 0.956,
+      "accuracy_excluding_ambiguous": 0.95,
+      "per_category": {
+        "ambiguous": "8/8",
+        "bulk_dom": "8/8",
+        "few_repetitive": "8/8",
+        "game_few_actions": "8/8",
+        "long_drawing": "8/8",
+        "ordinary": "10/10",
+        "research": "1/4",
+        "table_extraction": "8/8",
+        "visual_only": "6/6"
+      },
+      "program_recall": 1.0,
+      "program_false_positives": 3,
+      "ambiguous_flagged_uncertain": "0/8",
+      "clear_tasks_wrongly_flagged_uncertain": "0/60",
+      "perception_visual": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_requests": 0,
+        "misses": 0
+      },
+      "perception_structured": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_requests": 0,
+        "misses": 0
+      },
+      "jev_called": 68,
+      "fallbacks": {},
+      "decision_latency_ms": {
+        "median": 510.65,
+        "p90": 591.1,
+        "max": 727.1,
+        "total_ms": 35220.2
+      },
+      "mistakes": [
+        {
+          "want": "typed",
+          "got": "program",
+          "value": "typed_expected",
+          "count": 3,
+          "effect": "NOT measured: possibly an unnecessary program on an ordinary task"
+        }
+      ]
+    }
+  },
+  "rows": {
+    "always_typed": [
+      {
+        "id": "E001",
+        "category": "ordinary",
+        "task": "Go to Wikipedia and find out when the Eiffel Tower was completed",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E002",
+        "category": "ordinary",
+        "task": "Search for a vegetarian lasagna recipe and read me the ingredient list",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E003",
+        "category": "ordinary",
+        "task": "Open the BBC homepage and tell me the top headline",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E004",
+        "category": "ordinary",
+        "task": "Log in with the saved credentials and open my orders page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E005",
+        "category": "ordinary",
+        "task": "Put my email in the newsletter signup box and press subscribe",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E006",
+        "category": "ordinary",
+        "task": "Find the opening hours of the nearest pharmacy on Google Maps",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E007",
+        "category": "ordinary",
+        "task": "Compare the price of the iPhone 16 on Amazon and on Flipkart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E008",
+        "category": "ordinary",
+        "task": "Open the pricing page and tell me what the Pro plan costs",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E009",
+        "category": "ordinary",
+        "task": "Book the earliest available slot on the clinic's appointment page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E010",
+        "category": "ordinary",
+        "task": "Go back to the previous page and click the second link",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E011",
+        "category": "few_repetitive",
+        "task": "Add these three books to the cart: Dune, Emma and Ulysses",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E012",
+        "category": "few_repetitive",
+        "task": "Tick the boxes for Monday, Wednesday and Friday and then save",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E013",
+        "category": "few_repetitive",
+        "task": "Open the first four search results in separate tabs and report their titles",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E014",
+        "category": "few_repetitive",
+        "task": "Fill the five fields of the shipping address form with this address",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E015",
+        "category": "few_repetitive",
+        "task": "Upvote the top three comments",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E016",
+        "category": "few_repetitive",
+        "task": "Select size M, colour blue and quantity 2, then add it to the cart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E017",
+        "category": "few_repetitive",
+        "task": "Change the language, the currency and the timezone in the settings page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E018",
+        "category": "few_repetitive",
+        "task": "Click each of the six tabs on this page and read out their headings",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E019",
+        "category": "game_few_actions",
+        "task": "Play e2 to e4 as White's opening move",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E020",
+        "category": "game_few_actions",
+        "task": "It is White's move in this chess position: play the best capture",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E021",
+        "category": "game_few_actions",
+        "task": "Make the next Wordle guess from the feedback shown so far",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E022",
+        "category": "game_few_actions",
+        "task": "Draw a single arrow from the box to the circle on the whiteboard",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E023",
+        "category": "game_few_actions",
+        "task": "Draw one red rectangle on the Excalidraw canvas",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E024",
+        "category": "game_few_actions",
+        "task": "Click the highlighted cell in this minesweeper grid",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E025",
+        "category": "game_few_actions",
+        "task": "Move the pawn on d2 forward two squares",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E026",
+        "category": "game_few_actions",
+        "task": "Add a text label that says Start next to the first shape",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E027",
+        "category": "long_drawing",
+        "task": "Draw a detailed sailing ship on the sea with three sails, waves, a sun and ten clouds in Excalidraw",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E028",
+        "category": "long_drawing",
+        "task": "Draw a full chessboard with all 64 squares coloured and the pieces in their starting positions on the whiteboard",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E029",
+        "category": "long_drawing",
+        "task": "Draw a floor plan of a three bedroom house with doors, windows and furniture labels",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E030",
+        "category": "long_drawing",
+        "task": "Draw a solar system diagram with the sun, eight planets and their orbits",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E031",
+        "category": "long_drawing",
+        "task": "Draw a detailed city skyline with 25 buildings, lit windows and a moon",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E032",
+        "category": "long_drawing",
+        "task": "Draw a mind map with one central idea and 20 connected branches",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E033",
+        "category": "long_drawing",
+        "task": "Draw a 10 by 10 grid and colour in the cells so they spell the letter H",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E034",
+        "category": "long_drawing",
+        "task": "Draw a flowchart with 15 boxes joined by arrows for a login process",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E035",
+        "category": "table_extraction",
+        "task": "Extract all 57 rows of the grade history table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E036",
+        "category": "table_extraction",
+        "task": "Copy every row of the attendance table into a list, including the other pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E037",
+        "category": "table_extraction",
+        "task": "List all employees with their department and salary from the directory table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E038",
+        "category": "table_extraction",
+        "task": "Get the whole price table, every page of it",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E039",
+        "category": "table_extraction",
+        "task": "Read the full standings table and tell me who is in 7th place",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E040",
+        "category": "table_extraction",
+        "task": "Export all 200 rows of this results table as text",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E041",
+        "category": "table_extraction",
+        "task": "Collect the complete fixtures table, all pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E042",
+        "category": "table_extraction",
+        "task": "List every course with its credits and grade from the transcript table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E043",
+        "category": "visual_only",
+        "task": "Look at this bar chart and tell me which month had the highest sales",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E044",
+        "category": "visual_only",
+        "task": "What does the logo in the top left corner look like?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E045",
+        "category": "visual_only",
+        "task": "Describe the layout of this dashboard and say what the red marker means",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E046",
+        "category": "visual_only",
+        "task": "Which of the pictures on this page shows a dog?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E047",
+        "category": "visual_only",
+        "task": "Read the number shown on the gauge",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E048",
+        "category": "visual_only",
+        "task": "Check whether the map pin is inside the shaded region",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E049",
+        "category": "bulk_dom",
+        "task": "Enter these 45 customer records into the CRM form, one after another",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E050",
+        "category": "bulk_dom",
+        "task": "Go through all 50 pages of search results and collect each product title",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E051",
+        "category": "bulk_dom",
+        "task": "Tick the box next to each of the 80 emails in this list and archive them",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E052",
+        "category": "bulk_dom",
+        "task": "Fill in the 30 line items of this purchase order from the values below",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E053",
+        "category": "bulk_dom",
+        "task": "Set the price of each of the 36 products in the admin panel to the new values I give you",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E054",
+        "category": "bulk_dom",
+        "task": "Open every one of the 25 profile links and note the job title on each",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E055",
+        "category": "bulk_dom",
+        "task": "Rename the 40 tags following the pattern tag-01 to tag-40",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E056",
+        "category": "bulk_dom",
+        "task": "Click Accept on each of the 22 pending requests",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E057",
+        "category": "ambiguous",
+        "task": "Make the drawing look nicer",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E058",
+        "category": "ambiguous",
+        "task": "Fill out the form",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E059",
+        "category": "ambiguous",
+        "task": "Clean up this page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E060",
+        "category": "ambiguous",
+        "task": "Do the same thing for the rest of them",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E061",
+        "category": "ambiguous",
+        "task": "Handle the pending items",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E062",
+        "category": "ambiguous",
+        "task": "Organise this board",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E063",
+        "category": "ambiguous",
+        "task": "Finish the order",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E064",
+        "category": "ambiguous",
+        "task": "Update the records",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E065",
+        "category": "research",
+        "task": "Find five recent papers on retrieval augmented generation with links",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E066",
+        "category": "research",
+        "task": "Compare the specs of four laptops across three shopping sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E067",
+        "category": "research",
+        "task": "Research the history of the abacus and give me sources",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "E068",
+        "category": "research",
+        "task": "Gather reviews of this restaurant from three review sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "static",
+        "confidence": 1.0,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.0
+      }
+    ],
+    "deterministic_only": [
+      {
+        "id": "E001",
+        "category": "ordinary",
+        "task": "Go to Wikipedia and find out when the Eiffel Tower was completed",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.141
+      },
+      {
+        "id": "E002",
+        "category": "ordinary",
+        "task": "Search for a vegetarian lasagna recipe and read me the ingredient list",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.028
+      },
+      {
+        "id": "E003",
+        "category": "ordinary",
+        "task": "Open the BBC homepage and tell me the top headline",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E004",
+        "category": "ordinary",
+        "task": "Log in with the saved credentials and open my orders page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.021
+      },
+      {
+        "id": "E005",
+        "category": "ordinary",
+        "task": "Put my email in the newsletter signup box and press subscribe",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.021
+      },
+      {
+        "id": "E006",
+        "category": "ordinary",
+        "task": "Find the opening hours of the nearest pharmacy on Google Maps",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E007",
+        "category": "ordinary",
+        "task": "Compare the price of the iPhone 16 on Amazon and on Flipkart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E008",
+        "category": "ordinary",
+        "task": "Open the pricing page and tell me what the Pro plan costs",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E009",
+        "category": "ordinary",
+        "task": "Book the earliest available slot on the clinic's appointment page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.021
+      },
+      {
+        "id": "E010",
+        "category": "ordinary",
+        "task": "Go back to the previous page and click the second link",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E011",
+        "category": "few_repetitive",
+        "task": "Add these three books to the cart: Dune, Emma and Ulysses",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E012",
+        "category": "few_repetitive",
+        "task": "Tick the boxes for Monday, Wednesday and Friday and then save",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E013",
+        "category": "few_repetitive",
+        "task": "Open the first four search results in separate tabs and report their titles",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E014",
+        "category": "few_repetitive",
+        "task": "Fill the five fields of the shipping address form with this address",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E015",
+        "category": "few_repetitive",
+        "task": "Upvote the top three comments",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.011
+      },
+      {
+        "id": "E016",
+        "category": "few_repetitive",
+        "task": "Select size M, colour blue and quantity 2, then add it to the cart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E017",
+        "category": "few_repetitive",
+        "task": "Change the language, the currency and the timezone in the settings page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E018",
+        "category": "few_repetitive",
+        "task": "Click each of the six tabs on this page and read out their headings",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": "jev_not_enabled",
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E019",
+        "category": "game_few_actions",
+        "task": "Play e2 to e4 as White's opening move",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.014
+      },
+      {
+        "id": "E020",
+        "category": "game_few_actions",
+        "task": "It is White's move in this chess position: play the best capture",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E021",
+        "category": "game_few_actions",
+        "task": "Make the next Wordle guess from the feedback shown so far",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E022",
+        "category": "game_few_actions",
+        "task": "Draw a single arrow from the box to the circle on the whiteboard",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.8,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.044
+      },
+      {
+        "id": "E023",
+        "category": "game_few_actions",
+        "task": "Draw one red rectangle on the Excalidraw canvas",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.8,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.014
+      },
+      {
+        "id": "E024",
+        "category": "game_few_actions",
+        "task": "Click the highlighted cell in this minesweeper grid",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.012
+      },
+      {
+        "id": "E025",
+        "category": "game_few_actions",
+        "task": "Move the pawn on d2 forward two squares",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.014
+      },
+      {
+        "id": "E026",
+        "category": "game_few_actions",
+        "task": "Add a text label that says Start next to the first shape",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "E027",
+        "category": "long_drawing",
+        "task": "Draw a detailed sailing ship on the sea with three sails, waves, a sun and ten clouds in Excalidraw",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.051
+      },
+      {
+        "id": "E028",
+        "category": "long_drawing",
+        "task": "Draw a full chessboard with all 64 squares coloured and the pieces in their starting positions on the whiteboard",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.026
+      },
+      {
+        "id": "E029",
+        "category": "long_drawing",
+        "task": "Draw a floor plan of a three bedroom house with doors, windows and furniture labels",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": "jev_not_enabled",
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E030",
+        "category": "long_drawing",
+        "task": "Draw a solar system diagram with the sun, eight planets and their orbits",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E031",
+        "category": "long_drawing",
+        "task": "Draw a detailed city skyline with 25 buildings, lit windows and a moon",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E032",
+        "category": "long_drawing",
+        "task": "Draw a mind map with one central idea and 20 connected branches",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E033",
+        "category": "long_drawing",
+        "task": "Draw a 10 by 10 grid and colour in the cells so they spell the letter H",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E034",
+        "category": "long_drawing",
+        "task": "Draw a flowchart with 15 boxes joined by arrows for a login process",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E035",
+        "category": "table_extraction",
+        "task": "Extract all 57 rows of the grade history table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.016
+      },
+      {
+        "id": "E036",
+        "category": "table_extraction",
+        "task": "Copy every row of the attendance table into a list, including the other pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.023
+      },
+      {
+        "id": "E037",
+        "category": "table_extraction",
+        "task": "List all employees with their department and salary from the directory table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E038",
+        "category": "table_extraction",
+        "task": "Get the whole price table, every page of it",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.015
+      },
+      {
+        "id": "E039",
+        "category": "table_extraction",
+        "task": "Read the full standings table and tell me who is in 7th place",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E040",
+        "category": "table_extraction",
+        "task": "Export all 200 rows of this results table as text",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.016
+      },
+      {
+        "id": "E041",
+        "category": "table_extraction",
+        "task": "Collect the complete fixtures table, all pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.014
+      },
+      {
+        "id": "E042",
+        "category": "table_extraction",
+        "task": "List every course with its credits and grade from the transcript table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E043",
+        "category": "visual_only",
+        "task": "Look at this bar chart and tell me which month had the highest sales",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E044",
+        "category": "visual_only",
+        "task": "What does the logo in the top left corner look like?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.016
+      },
+      {
+        "id": "E045",
+        "category": "visual_only",
+        "task": "Describe the layout of this dashboard and say what the red marker means",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E046",
+        "category": "visual_only",
+        "task": "Which of the pictures on this page shows a dog?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.015
+      },
+      {
+        "id": "E047",
+        "category": "visual_only",
+        "task": "Read the number shown on the gauge",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.014
+      },
+      {
+        "id": "E048",
+        "category": "visual_only",
+        "task": "Check whether the map pin is inside the shaded region",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "E049",
+        "category": "bulk_dom",
+        "task": "Enter these 45 customer records into the CRM form, one after another",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E050",
+        "category": "bulk_dom",
+        "task": "Go through all 50 pages of search results and collect each product title",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E051",
+        "category": "bulk_dom",
+        "task": "Tick the box next to each of the 80 emails in this list and archive them",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E052",
+        "category": "bulk_dom",
+        "task": "Fill in the 30 line items of this purchase order from the values below",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E053",
+        "category": "bulk_dom",
+        "task": "Set the price of each of the 36 products in the admin panel to the new values I give you",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.026
+      },
+      {
+        "id": "E054",
+        "category": "bulk_dom",
+        "task": "Open every one of the 25 profile links and note the job title on each",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E055",
+        "category": "bulk_dom",
+        "task": "Rename the 40 tags following the pattern tag-01 to tag-40",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E056",
+        "category": "bulk_dom",
+        "task": "Click Accept on each of the 22 pending requests",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.015
+      },
+      {
+        "id": "E057",
+        "category": "ambiguous",
+        "task": "Make the drawing look nicer",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.01
+      },
+      {
+        "id": "E058",
+        "category": "ambiguous",
+        "task": "Fill out the form",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.008
+      },
+      {
+        "id": "E059",
+        "category": "ambiguous",
+        "task": "Clean up this page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.009
+      },
+      {
+        "id": "E060",
+        "category": "ambiguous",
+        "task": "Do the same thing for the rest of them",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.016
+      },
+      {
+        "id": "E061",
+        "category": "ambiguous",
+        "task": "Handle the pending items",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.009
+      },
+      {
+        "id": "E062",
+        "category": "ambiguous",
+        "task": "Organise this board",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.007
+      },
+      {
+        "id": "E063",
+        "category": "ambiguous",
+        "task": "Finish the order",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.007
+      },
+      {
+        "id": "E064",
+        "category": "ambiguous",
+        "task": "Update the records",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.007
+      },
+      {
+        "id": "E065",
+        "category": "research",
+        "task": "Find five recent papers on retrieval augmented generation with links",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E066",
+        "category": "research",
+        "task": "Compare the specs of four laptops across three shopping sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E067",
+        "category": "research",
+        "task": "Research the history of the abacus and give me sources",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E068",
+        "category": "research",
+        "task": "Gather reviews of this restaurant from three review sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      }
+    ],
+    "production": [
+      {
+        "id": "E001",
+        "category": "ordinary",
+        "task": "Go to Wikipedia and find out when the Eiffel Tower was completed",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E002",
+        "category": "ordinary",
+        "task": "Search for a vegetarian lasagna recipe and read me the ingredient list",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E003",
+        "category": "ordinary",
+        "task": "Open the BBC homepage and tell me the top headline",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "E004",
+        "category": "ordinary",
+        "task": "Log in with the saved credentials and open my orders page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E005",
+        "category": "ordinary",
+        "task": "Put my email in the newsletter signup box and press subscribe",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E006",
+        "category": "ordinary",
+        "task": "Find the opening hours of the nearest pharmacy on Google Maps",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E007",
+        "category": "ordinary",
+        "task": "Compare the price of the iPhone 16 on Amazon and on Flipkart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.021
+      },
+      {
+        "id": "E008",
+        "category": "ordinary",
+        "task": "Open the pricing page and tell me what the Pro plan costs",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E009",
+        "category": "ordinary",
+        "task": "Book the earliest available slot on the clinic's appointment page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.02
+      },
+      {
+        "id": "E010",
+        "category": "ordinary",
+        "task": "Go back to the previous page and click the second link",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E011",
+        "category": "few_repetitive",
+        "task": "Add these three books to the cart: Dune, Emma and Ulysses",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E012",
+        "category": "few_repetitive",
+        "task": "Tick the boxes for Monday, Wednesday and Friday and then save",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "E013",
+        "category": "few_repetitive",
+        "task": "Open the first four search results in separate tabs and report their titles",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.021
+      },
+      {
+        "id": "E014",
+        "category": "few_repetitive",
+        "task": "Fill the five fields of the shipping address form with this address",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "E015",
+        "category": "few_repetitive",
+        "task": "Upvote the top three comments",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.01
+      },
+      {
+        "id": "E016",
+        "category": "few_repetitive",
+        "task": "Select size M, colour blue and quantity 2, then add it to the cart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.021
+      },
+      {
+        "id": "E017",
+        "category": "few_repetitive",
+        "task": "Change the language, the currency and the timezone in the settings page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E018",
+        "category": "few_repetitive",
+        "task": "Click each of the six tabs on this page and read out their headings",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.86,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.14,
+        "latency_ms": 1138.282
+      },
+      {
+        "id": "E019",
+        "category": "game_few_actions",
+        "task": "Play e2 to e4 as White's opening move",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.083
+      },
+      {
+        "id": "E020",
+        "category": "game_few_actions",
+        "task": "It is White's move in this chess position: play the best capture",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.067
+      },
+      {
+        "id": "E021",
+        "category": "game_few_actions",
+        "task": "Make the next Wordle guess from the feedback shown so far",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.056
+      },
+      {
+        "id": "E022",
+        "category": "game_few_actions",
+        "task": "Draw a single arrow from the box to the circle on the whiteboard",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.8,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.092
+      },
+      {
+        "id": "E023",
+        "category": "game_few_actions",
+        "task": "Draw one red rectangle on the Excalidraw canvas",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.8,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.046
+      },
+      {
+        "id": "E024",
+        "category": "game_few_actions",
+        "task": "Click the highlighted cell in this minesweeper grid",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.073
+      },
+      {
+        "id": "E025",
+        "category": "game_few_actions",
+        "task": "Move the pawn on d2 forward two squares",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.051
+      },
+      {
+        "id": "E026",
+        "category": "game_few_actions",
+        "task": "Add a text label that says Start next to the first shape",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.091
+      },
+      {
+        "id": "E027",
+        "category": "long_drawing",
+        "task": "Draw a detailed sailing ship on the sea with three sails, waves, a sun and ten clouds in Excalidraw",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.106
+      },
+      {
+        "id": "E028",
+        "category": "long_drawing",
+        "task": "Draw a full chessboard with all 64 squares coloured and the pieces in their starting positions on the whiteboard",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.078
+      },
+      {
+        "id": "E029",
+        "category": "long_drawing",
+        "task": "Draw a floor plan of a three bedroom house with doors, windows and furniture labels",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.74,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.74,
+        "latency_ms": 483.558
+      },
+      {
+        "id": "E030",
+        "category": "long_drawing",
+        "task": "Draw a solar system diagram with the sun, eight planets and their orbits",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.106
+      },
+      {
+        "id": "E031",
+        "category": "long_drawing",
+        "task": "Draw a detailed city skyline with 25 buildings, lit windows and a moon",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.067
+      },
+      {
+        "id": "E032",
+        "category": "long_drawing",
+        "task": "Draw a mind map with one central idea and 20 connected branches",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.064
+      },
+      {
+        "id": "E033",
+        "category": "long_drawing",
+        "task": "Draw a 10 by 10 grid and colour in the cells so they spell the letter H",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.076
+      },
+      {
+        "id": "E034",
+        "category": "long_drawing",
+        "task": "Draw a flowchart with 15 boxes joined by arrows for a login process",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.059
+      },
+      {
+        "id": "E035",
+        "category": "table_extraction",
+        "task": "Extract all 57 rows of the grade history table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.052
+      },
+      {
+        "id": "E036",
+        "category": "table_extraction",
+        "task": "Copy every row of the attendance table into a list, including the other pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.065
+      },
+      {
+        "id": "E037",
+        "category": "table_extraction",
+        "task": "List all employees with their department and salary from the directory table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.062
+      },
+      {
+        "id": "E038",
+        "category": "table_extraction",
+        "task": "Get the whole price table, every page of it",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.044
+      },
+      {
+        "id": "E039",
+        "category": "table_extraction",
+        "task": "Read the full standings table and tell me who is in 7th place",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.057
+      },
+      {
+        "id": "E040",
+        "category": "table_extraction",
+        "task": "Export all 200 rows of this results table as text",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.047
+      },
+      {
+        "id": "E041",
+        "category": "table_extraction",
+        "task": "Collect the complete fixtures table, all pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.04
+      },
+      {
+        "id": "E042",
+        "category": "table_extraction",
+        "task": "List every course with its credits and grade from the transcript table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "override_table",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.058
+      },
+      {
+        "id": "E043",
+        "category": "visual_only",
+        "task": "Look at this bar chart and tell me which month had the highest sales",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.057
+      },
+      {
+        "id": "E044",
+        "category": "visual_only",
+        "task": "What does the logo in the top left corner look like?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.047
+      },
+      {
+        "id": "E045",
+        "category": "visual_only",
+        "task": "Describe the layout of this dashboard and say what the red marker means",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.059
+      },
+      {
+        "id": "E046",
+        "category": "visual_only",
+        "task": "Which of the pictures on this page shows a dog?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.045
+      },
+      {
+        "id": "E047",
+        "category": "visual_only",
+        "task": "Read the number shown on the gauge",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.033
+      },
+      {
+        "id": "E048",
+        "category": "visual_only",
+        "task": "Check whether the map pin is inside the shaded region",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.048
+      },
+      {
+        "id": "E049",
+        "category": "bulk_dom",
+        "task": "Enter these 45 customer records into the CRM form, one after another",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.088
+      },
+      {
+        "id": "E050",
+        "category": "bulk_dom",
+        "task": "Go through all 50 pages of search results and collect each product title",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.082
+      },
+      {
+        "id": "E051",
+        "category": "bulk_dom",
+        "task": "Tick the box next to each of the 80 emails in this list and archive them",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.057
+      },
+      {
+        "id": "E052",
+        "category": "bulk_dom",
+        "task": "Fill in the 30 line items of this purchase order from the values below",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.045
+      },
+      {
+        "id": "E053",
+        "category": "bulk_dom",
+        "task": "Set the price of each of the 36 products in the admin panel to the new values I give you",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.055
+      },
+      {
+        "id": "E054",
+        "category": "bulk_dom",
+        "task": "Open every one of the 25 profile links and note the job title on each",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.046
+      },
+      {
+        "id": "E055",
+        "category": "bulk_dom",
+        "task": "Rename the 40 tags following the pattern tag-01 to tag-40",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.042
+      },
+      {
+        "id": "E056",
+        "category": "bulk_dom",
+        "task": "Click Accept on each of the 22 pending requests",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.032
+      },
+      {
+        "id": "E057",
+        "category": "ambiguous",
+        "task": "Make the drawing look nicer",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "E058",
+        "category": "ambiguous",
+        "task": "Fill out the form",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "E059",
+        "category": "ambiguous",
+        "task": "Clean up this page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E060",
+        "category": "ambiguous",
+        "task": "Do the same thing for the rest of them",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.033
+      },
+      {
+        "id": "E061",
+        "category": "ambiguous",
+        "task": "Handle the pending items",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.019
+      },
+      {
+        "id": "E062",
+        "category": "ambiguous",
+        "task": "Organise this board",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.016
+      },
+      {
+        "id": "E063",
+        "category": "ambiguous",
+        "task": "Finish the order",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "E064",
+        "category": "ambiguous",
+        "task": "Update the records",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.5,
+        "uncertain": true,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.015
+      },
+      {
+        "id": "E065",
+        "category": "research",
+        "task": "Find five recent papers on retrieval augmented generation with links",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.04
+      },
+      {
+        "id": "E066",
+        "category": "research",
+        "task": "Compare the specs of four laptops across three shopping sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.05
+      },
+      {
+        "id": "E067",
+        "category": "research",
+        "task": "Research the history of the abacus and give me sources",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.039
+      },
+      {
+        "id": "E068",
+        "category": "research",
+        "task": "Gather reviews of this restaurant from three review sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "deterministic",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": false,
+        "jev_p": null,
+        "latency_ms": 0.036
+      }
+    ],
+    "jev_every_task": [
+      {
+        "id": "E001",
+        "category": "ordinary",
+        "task": "Go to Wikipedia and find out when the Eiffel Tower was completed",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.91,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.09,
+        "latency_ms": 520.6
+      },
+      {
+        "id": "E002",
+        "category": "ordinary",
+        "task": "Search for a vegetarian lasagna recipe and read me the ingredient list",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.79,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.21,
+        "latency_ms": 510.0
+      },
+      {
+        "id": "E003",
+        "category": "ordinary",
+        "task": "Open the BBC homepage and tell me the top headline",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.91,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.09,
+        "latency_ms": 435.8
+      },
+      {
+        "id": "E004",
+        "category": "ordinary",
+        "task": "Log in with the saved credentials and open my orders page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.75,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.25,
+        "latency_ms": 480.4
+      },
+      {
+        "id": "E005",
+        "category": "ordinary",
+        "task": "Put my email in the newsletter signup box and press subscribe",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.1,
+        "latency_ms": 556.0
+      },
+      {
+        "id": "E006",
+        "category": "ordinary",
+        "task": "Find the opening hours of the nearest pharmacy on Google Maps",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.75,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.25,
+        "latency_ms": 508.5
+      },
+      {
+        "id": "E007",
+        "category": "ordinary",
+        "task": "Compare the price of the iPhone 16 on Amazon and on Flipkart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.74,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.26,
+        "latency_ms": 453.2
+      },
+      {
+        "id": "E008",
+        "category": "ordinary",
+        "task": "Open the pricing page and tell me what the Pro plan costs",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.1,
+        "latency_ms": 519.9
+      },
+      {
+        "id": "E009",
+        "category": "ordinary",
+        "task": "Book the earliest available slot on the clinic's appointment page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.64,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.36,
+        "latency_ms": 487.7
+      },
+      {
+        "id": "E010",
+        "category": "ordinary",
+        "task": "Go back to the previous page and click the second link",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.1,
+        "latency_ms": 481.9
+      },
+      {
+        "id": "E011",
+        "category": "few_repetitive",
+        "task": "Add these three books to the cart: Dune, Emma and Ulysses",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.15,
+        "latency_ms": 467.2
+      },
+      {
+        "id": "E012",
+        "category": "few_repetitive",
+        "task": "Tick the boxes for Monday, Wednesday and Friday and then save",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.91,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.09,
+        "latency_ms": 549.6
+      },
+      {
+        "id": "E013",
+        "category": "few_repetitive",
+        "task": "Open the first four search results in separate tabs and report their titles",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.84,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.16,
+        "latency_ms": 486.4
+      },
+      {
+        "id": "E014",
+        "category": "few_repetitive",
+        "task": "Fill the five fields of the shipping address form with this address",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.15,
+        "latency_ms": 506.1
+      },
+      {
+        "id": "E015",
+        "category": "few_repetitive",
+        "task": "Upvote the top three comments",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.88,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.12,
+        "latency_ms": 488.0
+      },
+      {
+        "id": "E016",
+        "category": "few_repetitive",
+        "task": "Select size M, colour blue and quantity 2, then add it to the cart",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.89,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.11,
+        "latency_ms": 471.7
+      },
+      {
+        "id": "E017",
+        "category": "few_repetitive",
+        "task": "Change the language, the currency and the timezone in the settings page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.78,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.22,
+        "latency_ms": 573.6
+      },
+      {
+        "id": "E018",
+        "category": "few_repetitive",
+        "task": "Click each of the six tabs on this page and read out their headings",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.86,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.14,
+        "latency_ms": 661.0
+      },
+      {
+        "id": "E019",
+        "category": "game_few_actions",
+        "task": "Play e2 to e4 as White's opening move",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.1,
+        "latency_ms": 568.9
+      },
+      {
+        "id": "E020",
+        "category": "game_few_actions",
+        "task": "It is White's move in this chess position: play the best capture",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.81,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.19,
+        "latency_ms": 597.3
+      },
+      {
+        "id": "E021",
+        "category": "game_few_actions",
+        "task": "Make the next Wordle guess from the feedback shown so far",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.78,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.22,
+        "latency_ms": 511.0
+      },
+      {
+        "id": "E022",
+        "category": "game_few_actions",
+        "task": "Draw a single arrow from the box to the circle on the whiteboard",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.96,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.04,
+        "latency_ms": 523.4
+      },
+      {
+        "id": "E023",
+        "category": "game_few_actions",
+        "task": "Draw one red rectangle on the Excalidraw canvas",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.05,
+        "latency_ms": 437.6
+      },
+      {
+        "id": "E024",
+        "category": "game_few_actions",
+        "task": "Click the highlighted cell in this minesweeper grid",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.1,
+        "latency_ms": 510.3
+      },
+      {
+        "id": "E025",
+        "category": "game_few_actions",
+        "task": "Move the pawn on d2 forward two squares",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.91,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.09,
+        "latency_ms": 530.7
+      },
+      {
+        "id": "E026",
+        "category": "game_few_actions",
+        "task": "Add a text label that says Start next to the first shape",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.08,
+        "latency_ms": 585.0
+      },
+      {
+        "id": "E027",
+        "category": "long_drawing",
+        "task": "Draw a detailed sailing ship on the sea with three sails, waves, a sun and ten clouds in Excalidraw",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.87,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.87,
+        "latency_ms": 520.8
+      },
+      {
+        "id": "E028",
+        "category": "long_drawing",
+        "task": "Draw a full chessboard with all 64 squares coloured and the pieces in their starting positions on the whiteboard",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.88,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.88,
+        "latency_ms": 467.7
+      },
+      {
+        "id": "E029",
+        "category": "long_drawing",
+        "task": "Draw a floor plan of a three bedroom house with doors, windows and furniture labels",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.73,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.73,
+        "latency_ms": 591.1
+      },
+      {
+        "id": "E030",
+        "category": "long_drawing",
+        "task": "Draw a solar system diagram with the sun, eight planets and their orbits",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.64,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.64,
+        "latency_ms": 555.2
+      },
+      {
+        "id": "E031",
+        "category": "long_drawing",
+        "task": "Draw a detailed city skyline with 25 buildings, lit windows and a moon",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.87,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.87,
+        "latency_ms": 491.4
+      },
+      {
+        "id": "E032",
+        "category": "long_drawing",
+        "task": "Draw a mind map with one central idea and 20 connected branches",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.85,
+        "latency_ms": 537.5
+      },
+      {
+        "id": "E033",
+        "category": "long_drawing",
+        "task": "Draw a 10 by 10 grid and colour in the cells so they spell the letter H",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.58,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.58,
+        "latency_ms": 572.6
+      },
+      {
+        "id": "E034",
+        "category": "long_drawing",
+        "task": "Draw a flowchart with 15 boxes joined by arrows for a login process",
+        "want": "program",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "measured_program_needed",
+        "execution": "program",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.8,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.8,
+        "latency_ms": 638.1
+      },
+      {
+        "id": "E035",
+        "category": "table_extraction",
+        "task": "Extract all 57 rows of the grade history table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.85,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.85,
+        "latency_ms": 533.1
+      },
+      {
+        "id": "E036",
+        "category": "table_extraction",
+        "task": "Copy every row of the attendance table into a list, including the other pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.74,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.74,
+        "latency_ms": 504.5
+      },
+      {
+        "id": "E037",
+        "category": "table_extraction",
+        "task": "List all employees with their department and salary from the directory table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.68,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.32,
+        "latency_ms": 504.9
+      },
+      {
+        "id": "E038",
+        "category": "table_extraction",
+        "task": "Get the whole price table, every page of it",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.7,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.7,
+        "latency_ms": 582.6
+      },
+      {
+        "id": "E039",
+        "category": "table_extraction",
+        "task": "Read the full standings table and tell me who is in 7th place",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.81,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.19,
+        "latency_ms": 598.8
+      },
+      {
+        "id": "E040",
+        "category": "table_extraction",
+        "task": "Export all 200 rows of this results table as text",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.77,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.77,
+        "latency_ms": 485.4
+      },
+      {
+        "id": "E041",
+        "category": "table_extraction",
+        "task": "Collect the complete fixtures table, all pages",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.76,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.76,
+        "latency_ms": 515.8
+      },
+      {
+        "id": "E042",
+        "category": "table_extraction",
+        "task": "List every course with its credits and grade from the transcript table",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "structured"
+        ],
+        "ambiguous": false,
+        "value": "measured_typed_better",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "structured"
+        ],
+        "source": "jev",
+        "confidence": 0.64,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.36,
+        "latency_ms": 473.7
+      },
+      {
+        "id": "E043",
+        "category": "visual_only",
+        "task": "Look at this bar chart and tell me which month had the highest sales",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.9,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.1,
+        "latency_ms": 481.6
+      },
+      {
+        "id": "E044",
+        "category": "visual_only",
+        "task": "What does the logo in the top left corner look like?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.89,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.11,
+        "latency_ms": 443.9
+      },
+      {
+        "id": "E045",
+        "category": "visual_only",
+        "task": "Describe the layout of this dashboard and say what the red marker means",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.79,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.21,
+        "latency_ms": 499.6
+      },
+      {
+        "id": "E046",
+        "category": "visual_only",
+        "task": "Which of the pictures on this page shows a dog?",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.86,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.14,
+        "latency_ms": 431.4
+      },
+      {
+        "id": "E047",
+        "category": "visual_only",
+        "task": "Read the number shown on the gauge",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.89,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.11,
+        "latency_ms": 509.4
+      },
+      {
+        "id": "E048",
+        "category": "visual_only",
+        "task": "Check whether the map pin is inside the shaded region",
+        "want": "typed",
+        "want_perception": [
+          "visual"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.86,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.14,
+        "latency_ms": 483.0
+      },
+      {
+        "id": "E049",
+        "category": "bulk_dom",
+        "task": "Enter these 45 customer records into the CRM form, one after another",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.95,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.95,
+        "latency_ms": 476.4
+      },
+      {
+        "id": "E050",
+        "category": "bulk_dom",
+        "task": "Go through all 50 pages of search results and collect each product title",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.92,
+        "latency_ms": 394.6
+      },
+      {
+        "id": "E051",
+        "category": "bulk_dom",
+        "task": "Tick the box next to each of the 80 emails in this list and archive them",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.92,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.92,
+        "latency_ms": 521.2
+      },
+      {
+        "id": "E052",
+        "category": "bulk_dom",
+        "task": "Fill in the 30 line items of this purchase order from the values below",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.82,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.82,
+        "latency_ms": 489.2
+      },
+      {
+        "id": "E053",
+        "category": "bulk_dom",
+        "task": "Set the price of each of the 36 products in the admin panel to the new values I give you",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.94,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.94,
+        "latency_ms": 470.5
+      },
+      {
+        "id": "E054",
+        "category": "bulk_dom",
+        "task": "Open every one of the 25 profile links and note the job title on each",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.93,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.93,
+        "latency_ms": 518.3
+      },
+      {
+        "id": "E055",
+        "category": "bulk_dom",
+        "task": "Rename the 40 tags following the pattern tag-01 to tag-40",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.81,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.81,
+        "latency_ms": 546.7
+      },
+      {
+        "id": "E056",
+        "category": "bulk_dom",
+        "task": "Click Accept on each of the 22 pending requests",
+        "want": "program",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "hypothesis_program_helps",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.94,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.94,
+        "latency_ms": 727.1
+      },
+      {
+        "id": "E057",
+        "category": "ambiguous",
+        "task": "Make the drawing look nicer",
+        "want": "typed",
+        "want_perception": [
+          "semantic",
+          "visual"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic",
+          "visual"
+        ],
+        "source": "jev",
+        "confidence": 0.73,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.27,
+        "latency_ms": 519.3
+      },
+      {
+        "id": "E058",
+        "category": "ambiguous",
+        "task": "Fill out the form",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.65,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.35,
+        "latency_ms": 600.1
+      },
+      {
+        "id": "E059",
+        "category": "ambiguous",
+        "task": "Clean up this page",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.71,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.29,
+        "latency_ms": 518.0
+      },
+      {
+        "id": "E060",
+        "category": "ambiguous",
+        "task": "Do the same thing for the rest of them",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.55,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.45,
+        "latency_ms": 466.0
+      },
+      {
+        "id": "E061",
+        "category": "ambiguous",
+        "task": "Handle the pending items",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.61,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.39,
+        "latency_ms": 520.9
+      },
+      {
+        "id": "E062",
+        "category": "ambiguous",
+        "task": "Organise this board",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.62,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.38,
+        "latency_ms": 540.2
+      },
+      {
+        "id": "E063",
+        "category": "ambiguous",
+        "task": "Finish the order",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.66,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.34,
+        "latency_ms": 483.8
+      },
+      {
+        "id": "E064",
+        "category": "ambiguous",
+        "task": "Update the records",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": true,
+        "value": "unknown",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.63,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.37,
+        "latency_ms": 524.4
+      },
+      {
+        "id": "E065",
+        "category": "research",
+        "task": "Find five recent papers on retrieval augmented generation with links",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.5,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.5,
+        "latency_ms": 527.3
+      },
+      {
+        "id": "E066",
+        "category": "research",
+        "task": "Compare the specs of four laptops across three shopping sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.81,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.81,
+        "latency_ms": 612.0
+      },
+      {
+        "id": "E067",
+        "category": "research",
+        "task": "Research the history of the abacus and give me sources",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "typed",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.68,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.32,
+        "latency_ms": 412.6
+      },
+      {
+        "id": "E068",
+        "category": "research",
+        "task": "Gather reviews of this restaurant from three review sites",
+        "want": "typed",
+        "want_perception": [
+          "semantic"
+        ],
+        "ambiguous": false,
+        "value": "typed_expected",
+        "execution": "program",
+        "perception": [
+          "semantic"
+        ],
+        "source": "jev",
+        "confidence": 0.65,
+        "uncertain": false,
+        "fallback": null,
+        "jev_called": true,
+        "jev_p": 0.65,
+        "latency_ms": 507.7
+      }
+    ]
+  }
+}

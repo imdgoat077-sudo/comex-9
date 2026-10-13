@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "DISABLED",
+    "token": "TKN-X25SJE2O",
+    "write_result": "#### Secret Experiment Token Extraction\n\n- **Page URL:** `data:text/html,%3Chtml%3E%3Cbody%3EThe%20secret%20experiment%20token%20is%20TKN-X25SJE2O.%3C/body%3E%3C/html%3E`\n- **Extracted Content:** \"The secret experiment token is TKN-X25SJE2O.\"\n- **Secret Experiment Token:** `TKN-X25SJE2O`",
+    "recall_result": "The requested memory for the experiment token from your previous task is unavailable. No relevant memory records or tokens were found.",
+    "used_search": false,
+    "used_browser": false,
+    "match": false
+  },
+  {
+    "condition": "ENABLED",
+    "token": "TKN-HGHMR1KK",
+    "write_result": "The secret experiment token is **TKN-HGHMR1KK**.",
+    "recall_result": "Based on the retrieved persistent memory from your previous task, the experiment token is:\n\n**`TKN-HGHMR1KK`**",
+    "used_search": true,
+    "used_browser": false,
+    "match": true
+  }
+]

@@ -1,0 +1,275 @@
+{
+  "scenario": "chess",
+  "trial": 2,
+  "seed": 2,
+  "error": "timeout",
+  "wall_s": 180.07,
+  "tool_calls": 41,
+  "tools": [
+    "browser_extract",
+    "browser_inspect",
+    "browser_extract",
+    "browser_extract",
+    "browser_navigate",
+    "browser_find",
+    "browser_find",
+    "browser_click",
+    "browser_extract",
+    "browser_find",
+    "browser_find",
+    "browser_find",
+    "browser_click",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_find",
+    "browser_click",
+    "browser_extract",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "browser_extract",
+    "browser_find",
+    "browser_find",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "browser_extract",
+    "browser_extract",
+    "browser_sequence",
+    "browser_sequence",
+    "browser_extract",
+    "save_skill",
+    "browser_extract"
+  ],
+  "llm_calls_derived": 42,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": false,
+  "state": {
+    "s": "playing",
+    "h": [],
+    "ill": 0
+  },
+  "claimed_in_answer": "",
+  "answer": "",
+  "trace": null,
+  "steps": [
+    {
+      "t": 6.22,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 9.66,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 14.38,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 18.58,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 28.34,
+      "tool": "browser_navigate",
+      "label": "Opening javascript:console.log(1)"
+    },
+    {
+      "t": 30.75,
+      "tool": "browser_find",
+      "label": "Finding \u201cWhite to move\u201d"
+    },
+    {
+      "t": 32.46,
+      "tool": "browser_find",
+      "label": "Finding \u201cChess fixture\u201d"
+    },
+    {
+      "t": 35.06,
+      "tool": "browser_click",
+      "label": "Clicking an element"
+    },
+    {
+      "t": 37.86,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 39.79,
+      "tool": "browser_find",
+      "label": "Finding \u201c\u265c\u201d"
+    },
+    {
+      "t": 43.39,
+      "tool": "browser_find",
+      "label": "Finding \u201c\u265a\u201d"
+    },
+    {
+      "t": 46.86,
+      "tool": "browser_find",
+      "label": "Finding \u201c.sel\u201d"
+    },
+    {
+      "t": 49.57,
+      "tool": "browser_click",
+      "label": "Clicking \u201c\u265c\u201d"
+    },
+    {
+      "t": 53.73,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 56.3,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 67.79,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 70.12,
+      "tool": "browser_find",
+      "label": "Finding \u201cplaying\u201d"
+    },
+    {
+      "t": 72.43,
+      "tool": "browser_click",
+      "label": "Clicking an element"
+    },
+    {
+      "t": 74.97,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 78.07,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cchess\u201d"
+    },
+    {
+      "t": 88.38,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cchess_runner\u201d"
+    },
+    {
+      "t": 91.44,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cskl_efa53922\u201d"
+    },
+    {
+      "t": 93.9,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cchess\u201d"
+    },
+    {
+      "t": 97.22,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201c433227b2-4baf-406a-911e-f2f331a1c17f\u201d"
+    },
+    {
+      "t": 100.25,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cpointerdown\u201d"
+    },
+    {
+      "t": 103.34,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cMethodEFailed\u201d"
+    },
+    {
+      "t": 106.92,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 109.87,
+      "tool": "browser_find",
+      "label": "Finding \u201c#board\u201d"
+    },
+    {
+      "t": 112.62,
+      "tool": "browser_find",
+      "label": "Finding \u201cWhite\u201d"
+    },
+    {
+      "t": 115.69,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201crun_browser_harness\u201d"
+    },
+    {
+      "t": 118.19,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cchess.html\u201d"
+    },
+    {
+      "t": 121.42,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cselector\u201d"
+    },
+    {
+      "t": 124.27,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cskl_\u201d"
+    },
+    {
+      "t": 127.49,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cchess_runner\u201d"
+    },
+    {
+      "t": 131.08,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 133.96,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 137.78,
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page"
+    },
+    {
+      "t": 141.08,
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page"
+    },
+    {
+      "t": 144.52,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 147.33,
+      "tool": "save_skill",
+      "label": "Learning how to \u201ctest_skill\u201d"
+    },
+    {
+      "t": 158.45,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    }
+  ]
+}

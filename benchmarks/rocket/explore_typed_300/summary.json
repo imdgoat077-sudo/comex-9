@@ -1,0 +1,16 @@
+{
+  "label": "explore_typed_300",
+  "trials": 1,
+  "complete": 0,
+  "score_median": 1,
+  "scores": [
+    1
+  ],
+  "wall_median_s": 305.8,
+  "walls": [
+    305.8
+  ],
+  "tool_calls_median": 59,
+  "llm_calls_median": 60,
+  "lease_expired_in": 1
+}

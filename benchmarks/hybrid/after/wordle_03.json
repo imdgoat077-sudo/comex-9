@@ -1,0 +1,312 @@
+{
+  "scenario": "wordle",
+  "trial": 3,
+  "seed": 3,
+  "error": "timeout",
+  "wall_s": 180.09,
+  "tool_calls": 47,
+  "tools": [
+    "browser_evaluate",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate"
+  ],
+  "llm_calls_derived": 48,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [
+    "browser_keys"
+  ],
+  "success": false,
+  "state": {
+    "s": "playing",
+    "rows": 4
+  },
+  "claimed_in_answer": "",
+  "answer": "",
+  "trace": null,
+  "steps": [
+    {
+      "t": 5.04,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 11.08,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 14.64,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cs l a t e Enter\u201d"
+    },
+    {
+      "t": 17.83,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 29.64,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 31.85,
+      "tool": "browser_keys",
+      "label": "Pressing \u201ct o k e n Enter\u201d"
+    },
+    {
+      "t": 35.48,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 41.99,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 45.27,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 47.94,
+      "tool": "browser_keys",
+      "label": "Pressing \u201co f t e n Enter\u201d"
+    },
+    {
+      "t": 50.95,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 57.07,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 59.66,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 62.36,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 65.87,
+      "tool": "browser_keys",
+      "label": "Pressing \u201ct r i e d Enter\u201d"
+    },
+    {
+      "t": 68.71,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 72.07,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 74.8,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 78.69,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cc r a n e Enter\u201d"
+    },
+    {
+      "t": 82.66,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 87.4,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 90.26,
+      "tool": "browser_keys",
+      "label": "Pressing \u201ct h e i r Enter\u201d"
+    },
+    {
+      "t": 93.15,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 96.32,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 99.72,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 103.33,
+      "tool": "browser_keys",
+      "label": "Pressing \u201ct o w e r Enter\u201d"
+    },
+    {
+      "t": 107.2,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 111.26,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 114.82,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 118.37,
+      "tool": "browser_keys",
+      "label": "Pressing \u201ce n t e r Enter\u201d"
+    },
+    {
+      "t": 121.96,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 125.84,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 128.47,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 131.3,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cw r o t e Enter\u201d"
+    },
+    {
+      "t": 134.23,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 138.57,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 140.89,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 144.36,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cw a t e r Enter\u201d"
+    },
+    {
+      "t": 147.19,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 151.38,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 155.12,
+      "tool": "browser_keys",
+      "label": "Pressing \u201co t h e r Enter\u201d"
+    },
+    {
+      "t": 159.57,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 163.85,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 166.27,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 170.0,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cu n d e r Enter\u201d"
+    },
+    {
+      "t": 173.32,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 176.9,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    }
+  ]
+}

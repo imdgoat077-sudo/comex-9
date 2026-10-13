@@ -1,0 +1,97 @@
+{
+  "scenario": "table",
+  "trial": 1,
+  "seed": 1,
+  "error": null,
+  "wall_s": 59.83,
+  "tool_calls": 5,
+  "tools": [
+    "browser_read_table",
+    "browser_inspect",
+    "browser_evaluate",
+    "browser_select",
+    "browser_read_table"
+  ],
+  "llm_calls_derived": 6,
+  "llm_calls_measured": 6,
+  "failed_tool_calls": 0,
+  "llm_ms": 59414.1,
+  "tool_ms": 299.8,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [
+    "browser_select"
+  ],
+  "success": true,
+  "state": {
+    "rows_correct": 57,
+    "rows_expected": 57,
+    "totals_stated": true
+  },
+  "claimed_in_answer": "#### Grade History\n\n| Code | Title | Credits | Grade |\n|---|---|---|---|\n| TST1000 | Test Course 1 | 2 | C |\n| TST1001 | Test Course 2 | 1 | N |\n| TST1002 | Test Course 3 | 3 | D |\n| TST1003 | Test Course 4 | 2 | S |\n| TST1004 | Test Course 5 | 4 | S |\n| TST1005 | Test Course 6 | 4 | S |\n| TST1006 | Test Course 7 | 2 | E |\n| TST1007 | Test Course 8 | 1 | D |\n| TST1008 | Test Course 9 | 1 | A |\n| T",
+  "answer": "#### Grade History\n\n| Code | Title | Credits | Grade |\n|---|---|---|---|\n| TST1000 | Test Course 1 | 2 | C |\n| TST1001 | Test Course 2 | 1 | N |\n| TST1002 | Test Course 3 | 3 | D |\n| TST1003 | Test Course 4 | 2 | S |\n| TST1004 | Test Course 5 | 4 | S |\n| TST1005 | Test Course 6 | 4 | S |\n| TST1006 | Test Course 7 | 2 | E |\n| TST1007 | Test Course 8 | 1 | D |\n| TST1008 | Test Course 9 | 1 | A |\n| TST1009 | Test Course 10 | 2 | B |\n| TST1010 | Test Course 11 | 1 | D |\n| TST1011 | Test Course 12 | 2 | S |\n| TST1012 | Test Course 13 | 2 | B |\n| TST1013 | Test Course 14 | 1 | D |\n| TST1014 | Test Course 15 | 2 | C |\n| TST1015 | Test Course 16 | 4 | N |\n| TST1016 | Test Course 17 | 4 | B |\n| TST1017 | Test Course 18 | 2 | E |\n| TST1018 | Test Course 19 | 3 | D |\n| TST1019 | Test Course 20 | 4 | B |\n| TST1020 | Test Course 21 | 1 | D |\n| TST1021 | Test Course 22 | 3 | A |\n| TST1022 | Test Course 23 | 1 | E |\n| TST1023 | Test Course 24 | 3 | B |\n| TST1024 | Test Course 25 | 4 | D |\n| TST1025 | Test Course 26 | 1 | B |\n| TST1026 | Test Course 27 | 1 | S |\n| TST1027 | Test Course 28 | 3 | E |\n| TST1028 | Test Course 29 | 4 | B |\n| TST1029 | Test Course 30 | 3 | S |\n| TST1030 | Test Course 31 | 2 | D |\n| TST1031 | Test Course 32 | 1 | A |\n| TST1032 | Test Course 33 | 2 | C |\n| TST1033 | Test Course 34 | 1 | A |\n| TST1034 | Test Course 35 | 3 | A |\n| TST1035 | Test Course 36 | 3 | E |\n| TST1036 | Test Course 37 | 4 | A |\n| TST1037 | Test Course 38 | 2 | A |\n| TST1038 | Test Course 39 | 2 | S |\n| TST1039 | Test Course 40 | 2 | B |\n| TST1040 | Test Course 41 | 2 | C |\n| TST1041 | Test Course 42 | 3 | A |\n| TST1042 | Test Course 43 | 1 | C |\n| TST1043 | Test Course 44 | 4 | C |\n| TST1044 | Test Course 45 | 1 | C |\n| TST1045 | Test Course 46 | 1 | A |\n| TST1046 | Test Course 47 | 4 | A |\n| TST1047 | Test Course 48 | 1 | S |\n| TST1048 | Test Course 49 | 2 | D |\n| TST1049 | Test Course 50 | 1 | S |\n| TST1050 | Test Course 51 | 4 | A |\n| TST1051 | Test Course 52 | 3 | D |\n| TST1052 | Test Course 53 | 1 | S |\n| TST1053 | Test Course 54 | 4 | C |\n| TST1054 | Test Course 55 | 2 | S |\n| TST1055 | Test Course 56 | 3 | C |\n| TST1056 | Test Course 57 | 1 | A |\n\n#### Summary\n- **Total courses:** 57\n- **Total credits:** 131",
+  "trace": [
+    {
+      "tool": "browser_read_table",
+      "args": "{}",
+      "ok": true,
+      "result": "Table 0 \"Grade History (synthetic test data)\": 10 rows x 9 columns in the page; returning rows 1-10.\n| Sl.No. | Code | Title | Type | Credits | Grade | Month | Declared on | Distribution |\n|---|---|---|---|---|---|---|---|---|\n| 1 | TST1000 | Test Course 1 | Lab | 2 | C | Dec-2024 | 01-Feb-2025 | Re",
+      "ms": 38.45
+    },
+    {
+      "tool": "browser_inspect",
+      "args": "{}",
+      "ok": true,
+      "result": "Page: Grade history fixture (http://127.0.0.1:53248/grades.html)\n9 of 9 interactive elements returned (in view first). Act on them by ref number.\n[1] dropdown \"entries per page\"\n[2] button \"Previous\"\n[3] button \"1\"\n[4] button \"2\"\n[5] button \"3\"\n[6] button \"4\"\n[7] button \"5\"\n[8] button \"6\"\n[9] button",
+      "ms": 24.93
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const sel = document.querySelector('select');\\n  return sel ? Array.from(sel.options).map(o => ({ value: o.value, text: o.text })) : null;\\n})()\"}",
+      "ok": true,
+      "result": "[{\"value\": \"10\", \"text\": \"10\"}, {\"value\": \"25\", \"text\": \"25\"}, {\"value\": \"50\", \"text\": \"50\"}, {\"value\": \"100\", \"text\": \"100\"}]",
+      "ms": 32.21
+    },
+    {
+      "tool": "browser_select",
+      "args": "{\"value\": \"100\", \"ref\": 1}",
+      "ok": true,
+      "result": "Selected '100' in \u201centries per page\u201d. Page changed: yes.",
+      "ms": 111.34
+    },
+    {
+      "tool": "browser_read_table",
+      "args": "{}",
+      "ok": true,
+      "result": "Table 0 \"Grade History (synthetic test data)\": 57 rows x 9 columns in the page; returning rows 1-57.\n| Sl.No. | Code | Title | Type | Credits | Grade | Month | Declared on | Distribution |\n|---|---|---|---|---|---|---|---|---|\n| 1 | TST1000 | Test Course 1 | Lab | 2 | C | Dec-2024 | 01-Feb-2025 | Re",
+      "ms": 92.87
+    }
+  ],
+  "steps": [
+    {
+      "t": 29.29,
+      "tool": "browser_read_table",
+      "label": "Reading the table"
+    },
+    {
+      "t": 36.34,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 41.56,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 46.59,
+      "tool": "browser_select",
+      "label": "Choosing \u201c100\u201d"
+    },
+    {
+      "t": 49.92,
+      "tool": "browser_read_table",
+      "label": "Reading the table"
+    }
+  ]
+}

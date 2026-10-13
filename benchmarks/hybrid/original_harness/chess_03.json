@@ -1,0 +1,79 @@
+{
+  "scenario": "chess",
+  "trial": 3,
+  "seed": 3,
+  "error": null,
+  "wall_s": 41.18,
+  "tool_calls": 8,
+  "tools": [
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness"
+  ],
+  "llm_calls_derived": 9,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "s": "checkmate",
+    "h": [
+      "Ra1-a8#"
+    ],
+    "ill": 0
+  },
+  "claimed_in_answer": "- **Move played:** **Ra1-a8#** (Rook from a1 to a8).\n- **Game status:** The game is over (Checkmate. White wins).",
+  "answer": "- **Move played:** **Ra1-a8#** (Rook from a1 to a8).\n- **Game status:** The game is over (Checkmate. White wins).",
+  "trace": null,
+  "steps": [
+    {
+      "t": 6.11,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 12.29,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 15.48,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 19.26,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 23.42,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 28.3,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 32.76,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 36.98,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    }
+  ]
+}

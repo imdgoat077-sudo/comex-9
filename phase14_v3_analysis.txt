@@ -1,0 +1,88 @@
+# Phase 14 V3 — Replication Analysis
+
+## Task: T1_Overlay
+Baseline (n=9):
+  Success: 100.0%
+  Avg Tools: 2.00
+  Avg Duration: 14.6s
+
+Procedure: P2_Scroll (n=3)
+  Retrieved: 0/3 | Injected: 0/3
+  Success: 100.0%
+  Avg Tools: 1.33
+  Avg Duration: 19.3s
+  Classification: Neutral (Gated Out)
+
+Procedure: P3_Hover (n=3)
+  Retrieved: 3/3 | Injected: 0/3
+  Success: 100.0%
+  Avg Tools: 1.67
+  Avg Duration: 26.5s
+  Classification: Neutral (Gated Out)
+
+Procedure: P1_Overlay (n=3)
+  Retrieved: 3/3 | Injected: 3/3
+  Success: 100.0%
+  Avg Tools: 1.67
+  Avg Duration: 26.3s
+  Classification: Harmful
+
+## Task: T2_Scroll
+Baseline (n=9):
+  Success: 100.0%
+  Avg Tools: 2.78
+  Avg Duration: 19.7s
+
+Procedure: P2_Scroll (n=3)
+  Retrieved: 3/3 | Injected: 3/3
+  Success: 100.0%
+  Avg Tools: 1.33
+  Avg Duration: 24.3s
+  Classification: Neutral
+
+Procedure: P3_Hover (n=3)
+  Retrieved: 1/3 | Injected: 0/3
+  Success: 100.0%
+  Avg Tools: 3.33
+  Avg Duration: 33.3s
+  Classification: Neutral (Gated Out)
+
+Procedure: P1_Overlay (n=3)
+  Retrieved: 1/3 | Injected: 0/3
+  Success: 100.0%
+  Avg Tools: 7.00
+  Avg Duration: 40.1s
+  Classification: Neutral (Gated Out)
+
+## Task: T3_Hover
+Baseline (n=9):
+  Success: 100.0%
+  Avg Tools: 1.22
+  Avg Duration: 11.4s
+
+Procedure: P2_Scroll (n=3)
+  Retrieved: 0/3 | Injected: 0/3
+  Success: 100.0%
+  Avg Tools: 1.33
+  Avg Duration: 18.6s
+  Classification: Neutral (Gated Out)
+
+Procedure: P3_Hover (n=3)
+  Retrieved: 3/3 | Injected: 3/3
+  Success: 100.0%
+  Avg Tools: 2.67
+  Avg Duration: 31.0s
+  Classification: Harmful
+
+Procedure: P1_Overlay (n=3)
+  Retrieved: 3/3 | Injected: 0/3
+  Success: 100.0%
+  Avg Tools: 1.67
+  Avg Duration: 27.0s
+  Classification: Neutral (Gated Out)
+
+## Aggregate Summary
+Total Runs: 54
+Helpful Configurations: 0
+
+Final Verdict: C. No reproducible benefit

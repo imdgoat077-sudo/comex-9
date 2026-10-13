@@ -1,0 +1,22 @@
+{
+  "chess": {
+    "trials": 3,
+    "success": 3,
+    "wall_median_s": 41.18,
+    "wall_min_s": 30.25,
+    "wall_max_s": 41.69,
+    "tool_calls_median": 6,
+    "llm_calls_derived_median": 7,
+    "vision_used_in": 0
+  },
+  "draw": {
+    "trials": 3,
+    "success": 3,
+    "wall_median_s": 38.33,
+    "wall_min_s": 30.71,
+    "wall_max_s": 48.55,
+    "tool_calls_median": 6,
+    "llm_calls_derived_median": 7,
+    "vision_used_in": 0
+  }
+}

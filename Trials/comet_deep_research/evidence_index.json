@@ -1,0 +1,152 @@
+{
+  "target": {
+    "bundle_id": "ai.perplexity.comet",
+    "app_name": "Comet",
+    "version": "154.0.8037.179",
+    "build": "8037.179",
+    "architecture": "arm64",
+    "platform": "darwin",
+    "binary_path": "/Applications/Comet.app/Contents/Frameworks/Comet Framework.framework/Versions/Current/Comet Framework",
+    "agent_extension_id": "npclhjbddhklpbnacpjloidibaggcgon",
+    "core_extension_id": "mcjlamohcooanphmebaiigheeeoplihb",
+    "web_resources_extension_id": "mjdcklhepheaaemphcopihnmjlmjpcnh"
+  },
+  "evidence_items": [
+    {
+      "id": "EV-001",
+      "claim": "Native Model Context Protocol (MCP) daemon runs local child processes via /bin/zsh and manages JSON-RPC 2.0 stdio pipes",
+      "confidence": "A",
+      "artifact_path": "/Applications/Comet.app/Contents/Frameworks/Comet Framework.framework/Versions/Current/Comet Framework",
+      "symbols_and_sources": [
+        "../../components/perplexity/mcp/mcp_stdio_registry.cc",
+        "../../components/perplexity/mcp/mcp_stdio_client.cc",
+        "../../components/perplexity/mcp/stdio_process.cc",
+        "../../components/perplexity/mcp/stdio_process_posix.cc",
+        "../../components/perplexity/mcp/mcp_env_loader_mac.cc"
+      ],
+      "extracted_details": "Spawns /bin/zsh with inherited macOS PATH; implements initialize, tools/list, tools/call; enforces server name regex [a-zA-Z0-9_-]; persists in preferences perplexity.mcp.stdio_servers."
+    },
+    {
+      "id": "EV-002",
+      "claim": "Declarative WebMCP is integrated natively into Blink rendering engine via HTMLFormElement and InspectorWebMCPAgent",
+      "confidence": "A",
+      "artifact_path": "/Applications/Comet.app/Contents/Frameworks/Comet Framework.framework/Versions/Current/Comet Framework",
+      "symbols_and_sources": [
+        "void blink::HTMLFormElement::ScheduleDeclarativeWebMCPToolRegistration()",
+        "void blink::ModelContext::ExecuteDeclarativeTool(DeclarativeWebMCPTool *, const base::UnguessableToken &, const String &, AbortController *, ScriptToolExecutedCallback)",
+        "blink::InspectorWebMCPAgent",
+        "WebMCP.toolsAdded",
+        "WebMCP.toolsRemoved",
+        "WebMCP.invokeTool",
+        "WebMCP.toolInvoked",
+        "WebMCP.toolResponded"
+      ],
+      "extracted_details": "Allows web pages to declare MCP tools natively using HTML forms; exposed through dedicated CDP domain WebMCP."
+    },
+    {
+      "id": "EV-003",
+      "claim": "Comet Agent implements Anthropic Computer-Use batching with atomic coordinate scaling and viewport drift aborts",
+      "confidence": "A",
+      "artifact_path": "~/Library/Application Support/Comet/Default/Extensions/npclhjbddhklpbnacpjloidibaggcgon/0.0.231_0/background.js",
+      "symbols_and_sources": [
+        "class iP",
+        "ComputerBatch",
+        "hP",
+        "gP",
+        "_P",
+        "vP"
+      ],
+      "extracted_details": "Executes SCREENSHOT, WAIT, LEFT_CLICK, RIGHT_CLICK, DOUBLE_CLICK, TRIPLE_CLICK, TYPE, KEY, SCROLL, LEFT_CLICK_DRAG, SCROLL_TO; checks _P(lastViewport, currentViewport) before execution to prevent misclicking on drifted layouts."
+    },
+    {
+      "id": "EV-004",
+      "claim": "Hybrid perception combines Accessibility.getFullAXTree with DOMSnapshot.captureSnapshot into indexed YAML",
+      "confidence": "A",
+      "artifact_path": "~/Library/Application Support/Comet/Default/Extensions/npclhjbddhklpbnacpjloidibaggcgon/0.0.231_0/background.js",
+      "symbols_and_sources": [
+        "gN",
+        "_N",
+        "Accessibility.getFullAXTree",
+        "DOMSnapshot.captureSnapshot"
+      ],
+      "extracted_details": "Evaluates DPR and location.origin, captures computed cursor styles and full AX tree, filters out overlay elements, and generates token-efficient YAML indexed by backendNodeId references."
+    },
+    {
+      "id": "EV-005",
+      "claim": "Typing emulation uses clipboard swapping with state restoration to bypass synthetic input blockers",
+      "confidence": "A",
+      "artifact_path": "~/Library/Application Support/Comet/Default/Extensions/npclhjbddhklpbnacpjloidibaggcgon/0.0.231_0/background.js",
+      "symbols_and_sources": [
+        "uP",
+        "Input.pasteFromString",
+        "navigator.clipboard.read",
+        "navigator.clipboard.write",
+        "ClipboardItem"
+      ],
+      "extracted_details": "Attempts Input.pasteFromString first; falls back to saving existing clipboard, writing payload as ClipboardItem, dispatching ControlOrMeta+KeyV, and restoring previous clipboard."
+    },
+    {
+      "id": "EV-006",
+      "claim": "Agent loop features automatic CDP detachment reattachment and timeout reload recovery in RPC dispatcher",
+      "confidence": "A",
+      "artifact_path": "~/Library/Application Support/Comet/Default/Extensions/npclhjbddhklpbnacpjloidibaggcgon/0.0.231_0/background.js",
+      "symbols_and_sources": [
+        "class dM",
+        "dispatchRpcRequest",
+        "IA"
+      ],
+      "extracted_details": "Catches 'Debugger is not attached' and 'Detached while handling command', immediately calls IA(tabId) to reattach and retries command; catches timeouts and reloads tab before reattaching."
+    },
+    {
+      "id": "EV-007",
+      "claim": "Subagents are spawned concurrently in isolated, hidden background tabs",
+      "confidence": "A",
+      "artifact_path": "~/Library/Application Support/Comet/Default/Extensions/npclhjbddhklpbnacpjloidibaggcgon/0.0.231_0/background.js",
+      "symbols_and_sources": [
+        "CreateSubagent",
+        "class pM",
+        "kP"
+      ],
+      "extracted_details": "Dispatches kP with is_subagent: true and isHidden: true; groups subagent tabs separately without stealing foreground window focus."
+    },
+    {
+      "id": "EV-008",
+      "claim": "Frontend SPA intercepts streaming tool calls via StreamMiddlewares and connects to ASI WebSocket",
+      "confidence": "A",
+      "artifact_path": "~/Library/Application Support/Comet/Default/Extensions/mjdcklhepheaaemphcopihnmjlmjpcnh/2026.6.29.323_0/spa/assets/spa-shell-DjX4AiQc.js",
+      "symbols_and_sources": [
+        "StreamMiddlewares",
+        "entropy_request_content",
+        "connect_comet_to_asi_content",
+        "browser_get_cookies_content",
+        "browser_get_visible_tab_screenshot_content"
+      ],
+      "extracted_details": "Intercepts streaming response chunks directly in React state pipeline; dispatches START_AGENT, connectAsi, getCookies, or S3-uploaded tab screenshots."
+    },
+    {
+      "id": "EV-009",
+      "claim": "Live HUD injects glowing gradient boundary, ripple clicks, and pause/resume button with permission gating",
+      "confidence": "A",
+      "artifact_path": "~/Library/Application Support/Comet/Default/Extensions/npclhjbddhklpbnacpjloidibaggcgon/0.0.231_0/content.js",
+      "symbols_and_sources": [
+        "pplx-agent-0_0-overlay",
+        "pplx-agent-0_0-overlay-stop-button",
+        "WAIT_FOR_BROWSER_AGENT_CONFIRMATION",
+        "handleAlwaysAllowBrowserAgent"
+      ],
+      "extracted_details": "Creates rotating conic gradient HUD with pause/resume button; dispatches BROWSER_TASK_PAUSE_RESUME; presents confirmation prompts for sensitive actions (ALWAYS_ALLOW, ALLOW_ONCE, SKIP)."
+    },
+    {
+      "id": "EV-010",
+      "claim": "macOS Seatbelt sandbox uses custom PartitionAlloc allocator wrapper in libaperitif.dylib",
+      "confidence": "A",
+      "artifact_path": "/Applications/Comet.app/Contents/Frameworks/Comet Framework.framework/Versions/Current/Libraries/libaperitif.dylib",
+      "symbols_and_sources": [
+        "_AperitifCheckInitialized",
+        "DelegatingDefaultZoneForPartitionAlloc",
+        "org.chromium.sandbox"
+      ],
+      "extracted_details": "Initializes macOS seatbelt sandbox server and hooks default malloc zone to PartitionAlloc for browser helper processes."
+    }
+  ]
+}

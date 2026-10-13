@@ -1,0 +1,109 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Chess fixture</title>
+<style>
+  body { margin: 0; background: #262421; font: 15px system-ui, sans-serif; color: #ddd; }
+  #wrap { display: flex; gap: 28px; padding: 24px; }
+  /* One element for the whole board and absolutely positioned pieces, like real chess sites:
+     there are no per-square elements, so a square must be found from the board's geometry. */
+  #board { position: relative; width: 480px; height: 480px; flex: none; user-select: none; touch-action: none;
+           background: repeating-conic-gradient(#b58863 0 25%, #f0d9b5 0 50%) 0 0 / 120px 120px; }
+  .piece { position: absolute; left: 0; top: 0; width: 60px; height: 60px; font-size: 46px; line-height: 60px; text-align: center; pointer-events: none; }
+  .piece.white { color: #fff; text-shadow: 0 0 2px #000, 0 0 2px #000; }
+  .piece.black { color: #111; }
+  .sel { position: absolute; left: 0; top: 0; width: 60px; height: 60px; background: rgba(20, 200, 90, .45); pointer-events: none; }
+  #side { width: 220px; }
+  #status { font-weight: 600; margin-bottom: 12px; }
+  #moves { padding-left: 22px; }
+</style>
+<div id="wrap">
+  <div id="board" aria-label="Chess board"></div>
+  <div id="side"><div id="status" role="status">White to move</div><ol id="moves"></ol></div>
+</div>
+<script>
+const FILES = 'abcdefgh';
+const GLYPH = { k: '♚', q: '♛', r: '♜', b: '♝', n: '♞', p: '♟' };
+const NAME = { k: 'king', q: 'queen', r: 'rook', b: 'bishop', n: 'knight', p: 'pawn' };
+const DIRS = { n: [[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1]],
+  k: [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]], r: [[1,0],[-1,0],[0,1],[0,-1]], b: [[1,1],[1,-1],[-1,1],[-1,-1]] };
+DIRS.q = DIRS.r.concat(DIRS.b);
+const sq = (f, r) => FILES[f] + (r + 1);
+const inb = (f, r) => f >= 0 && f < 8 && r >= 0 && r < 8;
+const params = new URLSearchParams(location.search);
+// default: White to move has exactly one mate in one, Ra1-a8
+const fen = params.get('fen') || '6k1/5ppp/8/8/8/8/8/R5K1 w';
+
+function parse(fen) {
+  const [placement, side] = fen.split(' ');
+  const b = {};
+  placement.split('/').forEach((row, i) => { let f = 0;
+    for (const ch of row) { if (/\d/.test(ch)) f += +ch; else { b[sq(f, 7 - i)] = { c: ch === ch.toUpperCase() ? 'w' : 'b', t: ch.toLowerCase() }; f++; } } });
+  return { b, turn: side === 'b' ? 'b' : 'w' };
+}
+function pseudo(b, from) {
+  const p = b[from], f = FILES.indexOf(from[0]), r = +from[1] - 1, out = [];
+  if (p.t === 'p') {
+    const dir = p.c === 'w' ? 1 : -1, start = p.c === 'w' ? 1 : 6;
+    if (inb(f, r + dir) && !b[sq(f, r + dir)]) { out.push(sq(f, r + dir));
+      if (r === start && !b[sq(f, r + 2 * dir)]) out.push(sq(f, r + 2 * dir)); }
+    for (const df of [-1, 1]) if (inb(f + df, r + dir)) { const t = sq(f + df, r + dir); if (b[t] && b[t].c !== p.c) out.push(t); }
+  } else if (p.t === 'n' || p.t === 'k') {
+    for (const [df, dr] of DIRS[p.t]) if (inb(f + df, r + dr)) { const t = sq(f + df, r + dr); if (!b[t] || b[t].c !== p.c) out.push(t); }
+  } else {
+    for (const [df, dr] of DIRS[p.t]) { let ff = f + df, rr = r + dr;
+      while (inb(ff, rr)) { const t = sq(ff, rr); if (b[t]) { if (b[t].c !== p.c) out.push(t); break; } out.push(t); ff += df; rr += dr; } }
+  }
+  return out;
+}
+function attacked(b, color) {
+  const k = Object.keys(b).find(s => b[s].t === 'k' && b[s].c === color); if (!k) return false;
+  return Object.keys(b).some(s => b[s].c !== color && pseudo(b, s).includes(k));
+}
+function legal(b, from) {
+  return pseudo(b, from).filter(to => { const nb = { ...b }; nb[to] = nb[from]; delete nb[from]; return !attacked(nb, b[from].c); });
+}
+const hasMove = (b, color) => Object.keys(b).some(s => b[s].c === color && legal(b, s).length);
+
+const game = Object.assign(parse(fen), { status: 'playing', history: [], illegal: 0 });
+window.__game = game;
+const boardEl = document.getElementById('board'), statusEl = document.getElementById('status'), movesEl = document.getElementById('moves');
+let selected = null, downSq = null, selEl = null;
+
+function render() {
+  boardEl.querySelectorAll('.piece').forEach(n => n.remove());
+  for (const s of Object.keys(game.b)) { const p = game.b[s], el = document.createElement('div');
+    el.className = 'piece ' + (p.c === 'w' ? 'white' : 'black') + ' ' + NAME[p.t]; el.textContent = GLYPH[p.t];
+    el.style.transform = `translate(${FILES.indexOf(s[0]) * 60}px, ${(7 - (+s[1] - 1)) * 60}px)`; boardEl.appendChild(el); }
+}
+function setSelected(s) {
+  if (selEl) { selEl.remove(); selEl = null; } selected = s;
+  if (s) { selEl = document.createElement('div'); selEl.className = 'sel';
+    selEl.style.transform = `translate(${FILES.indexOf(s[0]) * 60}px, ${(7 - (+s[1] - 1)) * 60}px)`; boardEl.appendChild(selEl); }
+}
+function toSq(e) { const r = boardEl.getBoundingClientRect(); const f = Math.floor((e.clientX - r.left) / 60), rk = 7 - Math.floor((e.clientY - r.top) / 60);
+  return inb(f, rk) ? sq(f, rk) : null; }
+function move(from, to) {
+  const piece = game.b[from], cap = game.b[to];
+  game.b[to] = piece; delete game.b[from];
+  if (piece.t === 'p' && (to[1] === '8' || to[1] === '1')) piece.t = 'q';
+  const opp = game.turn === 'w' ? 'b' : 'w', check = attacked(game.b, opp), can = hasMove(game.b, opp);
+  const mark = check ? (can ? '+' : '#') : '';
+  const san = (piece.t === 'p' ? '' : piece.t.toUpperCase()) + from + (cap ? 'x' : '-') + to + mark;
+  game.history.push(san); const li = document.createElement('li'); li.textContent = san; movesEl.appendChild(li);
+  game.turn = opp;
+  if (!can) { game.status = check ? 'checkmate' : 'stalemate'; statusEl.textContent = check ? `Checkmate. ${piece.c === 'w' ? 'White' : 'Black'} wins.` : 'Stalemate.'; }
+  else statusEl.textContent = (opp === 'w' ? 'White' : 'Black') + ' to move' + (check ? ' (check)' : '');
+  game.winner = !can && check ? piece.c : null; setSelected(null); render();
+}
+boardEl.addEventListener('pointerdown', (e) => {
+  if (game.status !== 'playing') return; const s = toSq(e); if (!s) return; downSq = s;
+  if (selected && legal(game.b, selected).includes(s)) { move(selected, s); downSq = null; return; }
+  if (game.b[s] && game.b[s].c === game.turn) setSelected(s);
+  else { if (selected) game.illegal++; setSelected(null); }
+});
+boardEl.addEventListener('pointerup', (e) => {
+  if (game.status !== 'playing' || !downSq) return; const s = toSq(e), from = downSq; downSq = null;
+  if (s && s !== from && selected === from) { if (legal(game.b, from).includes(s)) move(from, s); else { game.illegal++; setSelected(null); } }
+});
+render();
+</script>

@@ -1,0 +1,42 @@
+==================================================
+PHASE 14 V2 VALIDATION EXPERIMENT
+==================================================
+
+============================================================
+Running Task A (Overlay)
+============================================================
+[*] Running BASELINE...
+  -> Success: True, Duration: 12.4s, Tools: 1
+[*] Running PROCEDURAL...
+  -> Retrieved: 2 candidates
+  -> Gated IN: True
+  -> Success: True, Duration: 24.3s, Tools: 1
+
+[EVALUATION OUTCOME]: Neutral
+[REASONING]: Both baseline and procedural conditions successfully identified and dismissed the overlay before clicking the target button using essentially identical code and actions. While the procedure was relevant and its strategy was followed, the agent in the baseline condition already executed the exact same strategy without prompting, resulting in unchanged performance and efficiency.
+
+============================================================
+Running Task B (Inner Scroll)
+============================================================
+[*] Running BASELINE...
+  -> Success: True, Duration: 23.3s, Tools: 3
+[*] Running PROCEDURAL...
+  -> Retrieved: 2 candidates
+  -> Gated IN: True
+  -> Success: True, Duration: 38.0s, Tools: 3
+
+[EVALUATION OUTCOME]: Neutral
+[REASONING]: Both baseline and procedural conditions successfully completed the task in 3 steps by identifying the inner scrollable container and dispatching a scroll event to it. The presence of the procedure did not meaningfully alter execution efficiency or the final outcome.
+
+============================================================
+Running Task C (Hover Reveal)
+============================================================
+[*] Running BASELINE...
+  -> Success: True, Duration: 15.2s, Tools: 2
+[*] Running PROCEDURAL...
+  -> Retrieved: 2 candidates
+  -> Gated IN: True
+  -> Success: True, Duration: 23.7s, Tools: 1
+
+[EVALUATION OUTCOME]: Neutral
+[REASONING]: Both the baseline condition and the procedural condition successfully solved the task in a single turn using nearly identical logic (dispatching a mouseover event on the nav element and clicking the target button). The procedure was relevant and adhered to, but it did not alter the efficiency or outcome compared to the unassisted baseline.

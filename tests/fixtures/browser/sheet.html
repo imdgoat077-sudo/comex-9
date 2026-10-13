@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Sheet</title>
+<!-- A small spreadsheet that behaves like Google Sheets for typing: click a cell to select it, type to enter text, Tab
+     commits and moves right, Enter commits and moves to the next row at the column where the row's typing started. -->
+<style>table{border-collapse:collapse}td{border:1px solid #999;width:90px;height:22px;font:13px sans-serif}td.sel{outline:2px solid #1a73e8}</style>
+<table id="grid"></table>
+<script>
+const ROWS = 60, COLS = 6, cells = [];
+const grid = document.getElementById('grid');
+for (let r = 0; r < ROWS; r++) { const tr = grid.insertRow(); cells.push([]); for (let c = 0; c < COLS; c++) { const td = tr.insertCell(); td.dataset.r = r; td.dataset.c = c; cells[r].push(td); } }
+let sel = {r: 0, c: 0}, rowStart = 0, draft = null;
+const show = () => { document.querySelectorAll('td.sel').forEach(t => t.classList.remove('sel')); cells[sel.r][sel.c].classList.add('sel'); };
+const commit = () => { if (draft !== null) { cells[sel.r][sel.c].textContent = draft; draft = null; } };
+grid.addEventListener('mousedown', (e) => { const td = e.target.closest('td'); if (!td) return; commit(); sel = {r: +td.dataset.r, c: +td.dataset.c}; rowStart = sel.c; show(); });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') { e.preventDefault(); commit(); sel.c = Math.min(COLS - 1, sel.c + 1); show(); }
+  else if (e.key === 'Enter') { e.preventDefault(); commit(); sel = {r: Math.min(ROWS - 1, sel.r + 1), c: rowStart}; show(); }
+  else if (e.key === 'Backspace') { draft = (draft ?? '').slice(0, -1); }
+  else if (e.key.length === 1 && !e.metaKey && !e.ctrlKey) { e.preventDefault(); draft = (draft ?? '') + e.key; }
+});
+// text inserted as a whole (IME / insertText) arrives as beforeinput on the focused body
+document.body.contentEditable = 'true';
+document.body.addEventListener('beforeinput', (e) => { if (e.data) { e.preventDefault(); draft = (draft ?? '') + e.data; } });
+window.sheetValues = (rows, cols) => cells.slice(0, rows).map(r => r.slice(0, cols).map(td => td.textContent));
+show();
+</script>

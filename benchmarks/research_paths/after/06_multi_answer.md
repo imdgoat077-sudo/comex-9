@@ -1,0 +1,23 @@
+Research papers on multi-agent orchestration cover surveys, landmark execution frameworks, and empirical evaluation benchmarks.
+
+### Surveys and Taxonomies
+*   [A survey on large language model based autonomous agents](https://link.springer.com/article/10.1007/s11704-024-40231-1) (Wang et al., 2024, *Frontiers of Computer Science*, 5,525 citations). Foundational survey detailing agent architectural modules, planning, memory, and multi-agent interaction strategies across cooperative and adversarial environments.
+*   [A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges](https://link.springer.com/article/10.1007/s44336-024-00009-2) (Li et al., 2024, *Vicinagearth*, 998 citations). Reviews multi-agent workflow infrastructure, collective intelligence challenges, mutual interaction protocols, and action coordination mechanisms.
+*   [Multi-agent collaboration mechanisms: A survey of llms](https://arxiv.org/abs/2501.06322) (Tran et al., 2025, *arXiv*, 820 citations). Exhaustive survey on collaboration and orchestration mechanisms, focusing on coordination protocols and interaction topologies.
+*   [Beyond self-talk: A communication-centric survey of llm-based multi-agent systems](https://arxiv.org/abs/2502.14321) (Yan et al., 2025, *arXiv*, 150 citations). Communication-focused analysis covering message coordination, routing paradigms, decentralized versus centralized topologies, and execution frameworks.
+
+### Landmark Frameworks and Protocols
+*   [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) (Wu et al., 2023, *arXiv*). Introduces conversational orchestration using programmable conversable agents that blend code execution, tools, human feedback, and multi-party chat topologies.
+*   [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) (Hong et al., 2023, *arXiv*). Encodes Standard Operating Procedures (SOPs) into prompt sequences using an assembly-line paradigm, structured intermediate verification, and role-based decomposition.
+*   [CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760) (Li et al., 2023, *arXiv*). Establishes cooperative role-playing communication protocols orchestrated via inception prompting.
+*   [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) (Qian et al., 2023, *arXiv*). Implements a multi-phase waterfall software lifecycle driven by "chat chains" and communicative dehallucination across design, coding, and testing phases.
+
+### Benchmarks, Failure Modes, and System Efficiency
+*   [Architectural Design, Not Only Model Intelligence, Governs Multi-Agent LLM Performance](https://arxiv.org/abs/2602.03128) (Orogat et al., 2026, *arXiv*). Benchmarks 9 multi-agent frameworks with fixed underlying LLMs. Orchestration alone increased latency by over 60×; communication topology mismatches dropped coordination success from >90% to <30%; schema-constrained planning interfaces lowered accuracy by up to 32 points due to formatting failures.
+*   [OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality](https://arxiv.org/abs/2608.05263) (Chen et al., 2026, *arXiv*). Measures orchestration cascades across enterprise dependency workflows. Keyword routing failed completely (0%) on adversarial cases versus 100% success for intent-reasoning routers; tool faults recovered fully (1.0), ambiguous delegation recovered partially (0.30), and latent semantic faults never recovered (0.0). Cascade radius expanded from 0.9 to 4.7 as pipeline depth scaled from 3 to 7.
+*   [MAESTRO: Multi-Agent Evaluation Suite for Testing, Reliability, and Observability](https://arxiv.org/abs/2601.00481) (Ma et al., 2026, *arXiv*). Evaluates 12 multi-agent systems across repeated runs and tool settings. Finds high run-to-run temporal variance in reliability; system architecture served as the primary driver of cost-latency-accuracy trade-offs over backend model choice.
+
+### Missing and Uncertain Information
+*   Paper `arXiv:2305.14325` (*Improving Factuality and Reasoning in Language Models through Multiagent Debate*) was queued for review but was not extracted due to agent browser action limits.
+*   Citation counts for framework papers (AutoGen, MetaGPT, CAMEL, ChatDev) were omitted due to agent budget limits on querying Semantic Scholar.
+*   Granular experimental ablation tables and static versus dynamic routing sub-taxonomies inside full paper PDFs were not retrieved; findings reflect published abstracts and web index data.

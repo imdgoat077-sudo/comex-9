@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Shop fixture</title>
+<style> body { font: 15px system-ui, sans-serif; margin: 24px; max-width: 640px; } a { color: #1a55d6; } .price { color: #555; } #cart { float: right; } </style>
+<div id="cart">Cart: <span id="cart-count">0</span></div>
+<h1><a href="#/">Demo shop</a></h1>
+<form id="search" role="search"><input type="search" name="q" placeholder="Search products" aria-label="Search products"><button type="submit">Search</button></form>
+<div id="view"></div>
+<script>
+const P = [{ id: 'xm5', name: 'Sony WH-1000XM5 headphones', price: 29990 }, { id: 'tune', name: 'JBL Tune 770NC headphones', price: 6999 },
+           { id: 'space', name: 'Soundcore Space One headphones', price: 7499 }, { id: 'kb', name: 'Mechanical keyboard', price: 4999 }];
+const cart = []; window.__cart = cart;
+const view = document.getElementById('view');
+function route() {
+  const h = location.hash || '#/';
+  if (h.startsWith('#/search/')) { const q = decodeURIComponent(h.slice(9)).toLowerCase(); const hits = P.filter(p => p.name.toLowerCase().includes(q));
+    view.innerHTML = `<h2>Results for "${q}"</h2><ul>` + hits.map(p => `<li><a href="#/p/${p.id}">${p.name}</a> <span class="price">₹${p.price}</span></li>`).join('') + '</ul>'; }
+  else if (h.startsWith('#/p/')) { const p = P.find(x => x.id === h.slice(4)); view.innerHTML = `<h2>${p.name}</h2><p class="price">₹${p.price}</p><button id="add">Add to cart</button>`;
+    document.getElementById('add').onclick = () => { cart.push(p.id); document.getElementById('cart-count').textContent = cart.length; }; }
+  else view.innerHTML = '<p>Search for something to begin.</p>';
+}
+document.getElementById('search').addEventListener('submit', (e) => { e.preventDefault(); location.hash = '#/search/' + encodeURIComponent(e.target.q.value.trim()); });
+window.addEventListener('hashchange', route); route();
+</script>

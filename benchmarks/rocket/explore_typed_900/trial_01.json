@@ -1,0 +1,1508 @@
+{
+  "label": "explore_typed_900",
+  "trial": 1,
+  "error": null,
+  "wall_s": 569.2,
+  "lease_s": 900.0,
+  "lease_likely_expired": false,
+  "score": 1,
+  "complete": false,
+  "components": {
+    "sky": true,
+    "body": false,
+    "nose": false,
+    "stripes": false,
+    "porthole": false,
+    "fins": false,
+    "engine": false,
+    "flames": false,
+    "stars": false
+  },
+  "elements": 2,
+  "solid_ratio": 0.5,
+  "tool_calls": 100,
+  "llm_calls": 101,
+  "llm_s": null,
+  "tool_s": null,
+  "other_s": null,
+  "failed_tool_calls": null,
+  "tools_used": {
+    "browser_click": 7,
+    "browser_evaluate": 13,
+    "browser_extract": 1,
+    "browser_find": 16,
+    "browser_inspect": 2,
+    "browser_screenshot": 28,
+    "browser_scroll": 1,
+    "browser_sequence": 31,
+    "browser_type": 1
+  },
+  "answer": "Task stopped after reaching maximum iterations.",
+  "trace": null,
+  "timeline": [
+    {
+      "t": 5.9,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 6.0,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 12.1,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 12.1,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 15.7,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 15.8,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 21.3,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 21.4,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": false
+    },
+    {
+      "t": 24.9,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 24.9,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 29.6,
+      "e": "step",
+      "tool": "browser_inspect",
+      "label": "Looking at the page",
+      "ok": null
+    },
+    {
+      "t": 29.7,
+      "e": "step_done",
+      "tool": "browser_inspect",
+      "label": "Looking at the page",
+      "ok": true
+    },
+    {
+      "t": 37.9,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 38.3,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 41.9,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 42.0,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 46.2,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 46.2,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 50.0,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 50.5,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 54.1,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 54.1,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 64.2,
+      "e": "step",
+      "tool": "browser_extract",
+      "label": "Reading the page",
+      "ok": null
+    },
+    {
+      "t": 64.3,
+      "e": "step_done",
+      "tool": "browser_extract",
+      "label": "Reading the page",
+      "ok": true
+    },
+    {
+      "t": 67.1,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 67.1,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 70.5,
+      "e": "step",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 70.6,
+      "e": "step_done",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 73.3,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 73.4,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 77.6,
+      "e": "step",
+      "tool": "browser_scroll",
+      "label": "Scrolling",
+      "ok": null
+    },
+    {
+      "t": 77.8,
+      "e": "step_done",
+      "tool": "browser_scroll",
+      "label": "Scrolling",
+      "ok": true
+    },
+    {
+      "t": 82.0,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cFill\u201d",
+      "ok": null
+    },
+    {
+      "t": 82.0,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cFill\u201d",
+      "ok": true
+    },
+    {
+      "t": 86.4,
+      "e": "step",
+      "tool": "browser_inspect",
+      "label": "Looking at the page",
+      "ok": null
+    },
+    {
+      "t": 86.4,
+      "e": "step_done",
+      "tool": "browser_inspect",
+      "label": "Looking at the page",
+      "ok": true
+    },
+    {
+      "t": 90.7,
+      "e": "step",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBlue \u2014 s\u201d",
+      "ok": null
+    },
+    {
+      "t": 90.8,
+      "e": "step_done",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBlue \u2014 s\u201d",
+      "ok": true
+    },
+    {
+      "t": 95.4,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 95.5,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 107.1,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 107.1,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 110.7,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 110.7,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 114.1,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 114.1,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": false
+    },
+    {
+      "t": 118.0,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 118.0,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 121.1,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 121.1,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 125.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 125.6,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 128.8,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 128.8,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 133.1,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 133.5,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 136.5,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 136.5,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 140.9,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 140.9,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 144.3,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 144.3,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 147.4,
+      "e": "step",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 147.4,
+      "e": "step_done",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 151.4,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 151.5,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 163.0,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 163.1,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 167.0,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 167.1,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 171.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 5 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 172.1,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 5 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 176.2,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 176.3,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 181.1,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 181.6,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 197.8,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 197.8,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 202.5,
+      "e": "step",
+      "tool": "browser_click",
+      "label": "Clicking an element",
+      "ok": null
+    },
+    {
+      "t": 202.6,
+      "e": "step_done",
+      "tool": "browser_click",
+      "label": "Clicking an element",
+      "ok": false
+    },
+    {
+      "t": 207.4,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 207.4,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 212.0,
+      "e": "step",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 212.1,
+      "e": "step_done",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 215.3,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 215.3,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 220.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 220.5,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": false
+    },
+    {
+      "t": 225.7,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 225.8,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 230.8,
+      "e": "step",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": null
+    },
+    {
+      "t": 230.9,
+      "e": "step_done",
+      "tool": "browser_evaluate",
+      "label": "Reading the page state",
+      "ok": true
+    },
+    {
+      "t": 235.3,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cblue - 5\u201d",
+      "ok": null
+    },
+    {
+      "t": 235.3,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cblue - 5\u201d",
+      "ok": true
+    },
+    {
+      "t": 239.6,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201c\u21e75\u201d",
+      "ok": null
+    },
+    {
+      "t": 239.7,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201c\u21e75\u201d",
+      "ok": true
+    },
+    {
+      "t": 243.6,
+      "e": "step",
+      "tool": "browser_click",
+      "label": "Clicking \u201cShade\u201d",
+      "ok": null
+    },
+    {
+      "t": 243.6,
+      "e": "step_done",
+      "tool": "browser_click",
+      "label": "Clicking \u201cShade\u201d",
+      "ok": true
+    },
+    {
+      "t": 248.1,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 248.2,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 253.1,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201c1971c2\u201d",
+      "ok": null
+    },
+    {
+      "t": 253.1,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201c1971c2\u201d",
+      "ok": true
+    },
+    {
+      "t": 258.2,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 258.4,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 262.5,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 262.5,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 267.8,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 267.8,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 272.4,
+      "e": "step",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 272.5,
+      "e": "step_done",
+      "tool": "browser_click",
+      "label": "Clicking \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 278.1,
+      "e": "step",
+      "tool": "browser_type",
+      "label": "Searching for \u201c0b132b\u201d",
+      "ok": null
+    },
+    {
+      "t": 278.2,
+      "e": "step_done",
+      "tool": "browser_type",
+      "label": "Searching for \u201c0b132b\u201d",
+      "ok": true
+    },
+    {
+      "t": 282.4,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cStroke\u201d",
+      "ok": null
+    },
+    {
+      "t": 282.4,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cStroke\u201d",
+      "ok": true
+    },
+    {
+      "t": 293.2,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 293.6,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 298.1,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 298.1,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 302.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 302.9,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 307.1,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 307.2,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 312.3,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cWhite\u201d",
+      "ok": null
+    },
+    {
+      "t": 312.3,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cWhite\u201d",
+      "ok": true
+    },
+    {
+      "t": 316.4,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 316.4,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 320.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 320.6,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 324.2,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cStroke\u201d",
+      "ok": null
+    },
+    {
+      "t": 324.2,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cStroke\u201d",
+      "ok": true
+    },
+    {
+      "t": 328.3,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 328.5,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 338.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing a step on the page",
+      "ok": null
+    },
+    {
+      "t": 338.8,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing a step on the page",
+      "ok": true
+    },
+    {
+      "t": 344.9,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 345.0,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 352.5,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 352.7,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 357.1,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 357.2,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 381.7,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 382.2,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 387.2,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 387.3,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 392.8,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing a step on the page",
+      "ok": null
+    },
+    {
+      "t": 393.2,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing a step on the page",
+      "ok": true
+    },
+    {
+      "t": 398.2,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 398.2,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 402.6,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": null
+    },
+    {
+      "t": 402.6,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cBackground\u201d",
+      "ok": true
+    },
+    {
+      "t": 407.1,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 407.2,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 414.7,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cStroke\u201d",
+      "ok": null
+    },
+    {
+      "t": 414.8,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cStroke\u201d",
+      "ok": true
+    },
+    {
+      "t": 420.8,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 421.0,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 429.6,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 429.7,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 435.9,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 436.5,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 440.1,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 440.2,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 461.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 461.7,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 465.3,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cKeep selected tool active after drawing\u201d",
+      "ok": null
+    },
+    {
+      "t": 465.3,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cKeep selected tool active after drawing\u201d",
+      "ok": true
+    },
+    {
+      "t": 469.9,
+      "e": "step",
+      "tool": "browser_find",
+      "label": "Finding \u201cEllipse\u201d",
+      "ok": null
+    },
+    {
+      "t": 469.9,
+      "e": "step_done",
+      "tool": "browser_find",
+      "label": "Finding \u201cEllipse\u201d",
+      "ok": true
+    },
+    {
+      "t": 474.1,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 474.5,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 479.0,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 479.1,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 487.0,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 487.2,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 492.2,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 492.3,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 509.5,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 509.7,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 514.5,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 514.6,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 520.0,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 520.4,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 3 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 523.6,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 523.7,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 532.8,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 532.8,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": false
+    },
+    {
+      "t": 537.5,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 537.9,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 542.2,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 542.2,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 549.0,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 549.4,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 554.3,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 554.3,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    },
+    {
+      "t": 559.4,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 559.8,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 565.2,
+      "e": "step",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": null
+    },
+    {
+      "t": 565.6,
+      "e": "step_done",
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page",
+      "ok": true
+    },
+    {
+      "t": 569.1,
+      "e": "step",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": null
+    },
+    {
+      "t": 569.2,
+      "e": "step_done",
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot",
+      "ok": true
+    }
+  ],
+  "scene": [
+    {
+      "id": "OrK6mC973smd5Uu4kGrLe",
+      "type": "rectangle",
+      "x": 430,
+      "y": -110,
+      "width": 980,
+      "height": 580,
+      "angle": 0,
+      "strokeColor": "#0b132b",
+      "backgroundColor": "#0b132b",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a3",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1546363391,
+      "version": 60,
+      "versionNonce": 955201521,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1791791581669,
+      "created": 1791791409029,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "8LG464HjAO0cedgg7IxJs",
+      "type": "ellipse",
+      "x": 630,
+      "y": 200,
+      "width": 140,
+      "height": 300,
+      "angle": 0,
+      "strokeColor": "#0b132b",
+      "backgroundColor": "#0b132b",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a4",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1831641439,
+      "version": 17,
+      "versionNonce": 1645804785,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1791791503219,
+      "created": 1791791490356,
+      "link": null,
+      "locked": false
+    }
+  ]
+}

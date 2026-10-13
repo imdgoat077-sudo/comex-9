@@ -1,0 +1,241 @@
+
+====================
+Task: Go to http://quotes.toscrape.com/ and extract the text and a...
+
+Step 1 - run_browser_harness (Success=True):
+import json
+
+quotes_data = js("""
+Array.from(document.querySelectorAll('.quote')).slice(0, 3).map(q => ({
+    text: q.querySelector('.text')?.innerText || '',
+    author: q.querySelector('.author')?.innerText || ''
+}))
+""")
+
+print("EXTRACTED_QUOTES:", json.dumps(quotes_data))
+
+# Format structured ex
+
+Step 2 - run_browser_harness (Success=True):
+import json
+import time
+
+wait_for_load()
+time.sleep(1)
+
+quotes_data = js("""
+Array.from(document.querySelectorAll('.quote')).slice(0, 3).map(q => ({
+    text: q.querySelector('.text')?.innerText || '',
+    author: q.querySelector('.author')?.innerText || ''
+}))
+""")
+
+print("EXTRACTED_QUOTES:", json.
+
+Step 3 - run_browser_harness (Success=True):
+goto_url("http://quotes.toscrape.com/")
+wait_for_load()
+
+print("URL:", js("window.location.href"))
+print("TITLE:", js("document.title"))
+print("BODY_SNIPPET:", str(js("document.body.innerText"))[:300])
+
+quotes_data = js("""
+Array.from(document.querySelectorAll('.quote')).slice(0, 3).map(q => ({
+    
+
+====================
+Task: Go to http://quotes.toscrape.com/ and extract the text and a...
+
+Step 0 - search_memory (Success=True):
+{"query": "quotes toscrape top 3 quotes", "domain": "ALL"}
+
+Step 1 - run_browser_harness (Success=True):
+goto_url("http://quotes.toscrape.com/")
+wait_for_load()
+
+import json
+
+quotes_data = js("""
+Array.from(document.querySelectorAll('.quote')).slice(0, 3).map(q => ({
+    text: q.querySelector('.text')?.innerText.trim() || '',
+    author: q.querySelector('.author')?.innerText.trim() || ''
+}))
+""")
+
+prin
+
+====================
+Task: Go to https://en.wikipedia.org/wiki/List_of_countries_by_GDP...
+
+Step 1 - run_browser_harness (Success=True):
+import json
+
+wait_for_load()
+info = page_info()
+print("URL:", info.get("url"))
+print("Title:", info.get("title"))
+
+res = js("""
+(() => {
+    // Find the main table of GDP (nominal)
+    const tables = Array.from(document.querySelectorAll('table.wikitable'));
+    for (let table of tables) {
+        co
+
+Step 2 - run_browser_harness (Success=True):
+goto_url("https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)")
+wait_for_load()
+
+import json
+
+info = page_info()
+print("URL:", info.get("url"))
+print("Title:", info.get("title"))
+
+res = js("""
+(() => {
+    const tables = Array.from(document.querySelectorAll('table.wikitable'));
+    for 
+
+Step 3 - run_browser_harness (Success=True):
+import json
+
+data = {
+    "url": "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)",
+    "title": "List of countries by GDP (nominal) - Wikipedia",
+    "entities": [
+        {
+            "type": "fact",
+            "name": "United States",
+            "attrs": {
+                "ran
+
+====================
+Task: Go to https://en.wikipedia.org/wiki/List_of_countries_by_GDP...
+
+Step 1 - run_browser_harness (Success=True):
+import json
+
+wait_for_load()
+
+# Let's inspect the tables on the page
+data = js("""
+(() => {
+    // Find the main table with GDP nominal data
+    const tables = Array.from(document.querySelectorAll('table.wikitable'));
+    // Usually the first or second wikitable has IMF, World Bank, UN columns
+    f
+
+Step 2 - run_browser_harness (Success=True):
+import json
+
+result = js("""
+(() => {
+    const table = document.querySelector('table.wikitable');
+    const rows = Array.from(table.querySelectorAll('tbody tr'));
+    
+    // Header check
+    const countries = [];
+    for (const row of rows) {
+        const cells = Array.from(row.querySelectorAll('
+
+====================
+Task: Go to https://en.wikipedia.org/wiki/List_of_highest-grossing...
+
+Step 1 - run_browser_harness (Success=True):
+import json
+
+data = js("""
+(() => {
+    const table = document.querySelector('table.wikitable');
+    if (!table) return null;
+    const rows = Array.from(table.querySelectorAll('tbody tr')).slice(1, 4);
+    return rows.map(r => {
+        const cols = r.querySelectorAll('th, td');
+        return {
+  
+
+Step 2 - run_browser_harness (Success=True):
+import json
+
+res = js("""
+(() => {
+    const tables = document.querySelectorAll('table.wikitable');
+    const results = [];
+    tables.forEach((table, idx) => {
+        const header = table.querySelector('tr')?.innerText;
+        results.push({ idx, header });
+    });
+    return results;
+})()
+""")
+
+
+
+Step 3 - run_browser_harness (Success=True):
+print(page_info())
+
+
+Step 4 - run_browser_harness (Success=True):
+goto_url("https://en.wikipedia.org/wiki/List_of_highest-grossing_films")
+wait_for_load()
+print(page_info())
+
+
+Step 5 - run_browser_harness (Success=True):
+import json
+
+data = js("""
+(() => {
+    const table = document.querySelector('table.wikitable');
+    if (!table) return null;
+    const rows = Array.from(table.querySelectorAll('tbody tr')).slice(1, 4);
+    return rows.map(r => {
+        const cols = r.querySelectorAll('th, td');
+        // Let's in
+
+Step 6 - run_browser_harness (Success=True):
+data = js("""
+(() => {
+    const table = document.querySelector('table.wikitable');
+    const rows = Array.from(table.querySelectorAll('tbody tr'));
+    return rows.slice(0, 5).map(r => Array.from(r.querySelectorAll('th, td')).map(c => c.innerText.trim()));
+})()
+""")
+print(data)
+
+
+Step 7 - run_browser_harness (Success=True):
+headers = js("""
+(() => {
+    const table = document.querySelector('table.wikitable');
+    return Array.from(table.querySelectorAll('thead th, tr:first-child th')).map(th => th.innerText.trim());
+})()
+""")
+print("Headers:", headers)
+
+
+Step 8 - run_browser_harness (Success=True):
+import json
+
+extracted = [
+    {"rank": 1, "title": "Avatar", "worldwide_gross": "$2,923,710,708", "year": "2009"},
+    {"rank": 2, "title": "Avengers: Endgame", "worldwide_gross": "$2,797,501,328", "year": "2019"},
+    {"rank": 3, "title": "Spider-Man: Brand New Day", "worldwide_gross": "$2,334,742
+
+====================
+Task: Go to https://en.wikipedia.org/wiki/List_of_highest-grossing...
+
+Step 0 - search_memory (Success=True):
+{"query": "highest grossing films", "domain": "ENTITIES"}
+
+Step 1 - run_browser_harness (Success=False):
+new_tab("https://en.wikipedia.org/wiki/List_of_highest-grossing_films")
+wait_for_load()
+
+res = js("""(() => {
+    const table = document.querySelector('table.wikitable');
+    if (!table) return null;
+    const rows = Array.from(table.querySelectorAll('tbody tr')).filter(r => r.querySelector('td'));
+

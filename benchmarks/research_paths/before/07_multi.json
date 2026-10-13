@@ -1,0 +1,467 @@
+{
+ "answer": "### Foundational Survey Papers\n\n* **[Multi-agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322)**\n  * **Authors:** K. T. Tran, D. Dao, M. D. Nguyen, Q. V. Pham, et al.\n  * **Focus:** Coordination protocols, communication topologies, and collaborative task allocation.\n* **[A Survey on LLM-based Multi-Agent Systems: Workflow, Infrastructure, and Challenges](https://link.springer.com/article/10.1007/s44336-024-00009-2)**\n  * **Authors:** X. Li, S. Wang, S. Zeng, Y. Wu, Y. Yang (*Springer*)\n  * **Focus:** Infrastructure, orchestrator designs, tool integration, and environment feedback loops.\n* **[LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://www.preprints.org/manuscript/202604.2147)**\n  * **Authors:** Y. Zhu, L. Liu, J. Yu, D. Zhang\n  * **Focus:** Centralized vs. decentralized routing, communication protocols, and architectural patterns.\n* **[LLM-based Multi-Agent Systems: Frameworks, Evaluation, Open Challenges, and Research Frontiers](https://link.springer.com/chapter/10.1007/978-3-032-15632-7_9)**\n  * **Authors:** S. H. Shaikh (*Springer*)\n  * **Focus:** Comparative framework evaluations, pipeline reliability, and prompt interfaces.\n* **[A Survey on Large Language Model-based Multi-Agent Systems: Paradigms, Applications, and Challenges](https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177160638.89229642)**\n  * **Authors:** M. Zhu et al.\n  * **Focus:** Static orchestration pipelines vs. dynamic negotiation frameworks.\n* **[Large Language Models in the Loop: A Stability- and Network-Aware Survey in Networked Control, Cyber-Physical, and Multi-Agent Systems](https://arxiv.org/abs/2609.16599)**\n  * **Authors:** H. Du, L. Chan\n  * **Focus:** Network topologies, communication delay bounds, and control-theoretic stability.\n\n---\n\n### Empirical Frameworks & Benchmarks (NeurIPS, ICLR, ICML)\n\n* **[Multi-Agent Collaboration via Evolving Orchestration](https://arxiv.org/abs/2505.19591)** (NeurIPS)\n  * **Framework:** Centralized RL puppeteer dynamically orchestrating specialized LLM agents. Open-source implementation available via [ChatDev/puppeteer](https://github.com/OpenBMB/ChatDev/tree/puppeteer).\n* **[Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration](https://arxiv.org/abs/2604.17148)** (ICLR)\n  * **Framework:** GoA; uses node sampling, dynamic directed relevance edges, and bidirectional message passing. Outperformed Mixture-of-Agents (MoA) on MMLU-Pro, GPQA, and MATH.\n* **[A Two-Tier Perspective on Inference-Time Parallelism in Multi-Agent LLM Systems](https://arxiv.org/abs/2608.05791)** (ICML)\n  * **Framework:** TIPEX; splits inference into Replica Parallelism and Structural Parallelism. Benchmarked on GAIA.\n* **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** (NeurIPS)\n  * **Framework:** Adaptive parallel scheduler resolving multi-agent task dependencies to reduce coordination latency overhead.\n* **[CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets](https://arxiv.org/abs/2609.34821)** (ICLR)\n  * **Benchmark:** Empirical evaluation suite for multi-agent competitive orchestration over long horizons.\n\n---\n\n### Findings Comparison\n\n* **Coverage:** Agent 1 gathered broad surveys, taxonomy papers, and control-theoretic angles. Agent 2 gathered peer-reviewed empirical architectures, scheduling methods, and evaluation benchmarks.\n* **Consistency:** Both agents agree on the primary technical challenges: dynamic task allocation, communication topology bottlenecks, and coordination overhead. No contradictory claims were found.",
+ "success": true,
+ "wall_s": 82.3,
+ "planning_s": 6.66,
+ "after_workers_s": 7.59,
+ "workers": {
+  "find_survey_papers": {
+   "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+   "tool_calls": 6,
+   "navigate_labels": 3,
+   "start_s": 6.67,
+   "end_s": 40.43,
+   "status": "completed",
+   "duration_s": 33.76
+  },
+  "find_framework_papers": {
+   "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+   "tool_calls": 13,
+   "navigate_labels": 7,
+   "start_s": 6.67,
+   "end_s": 74.71,
+   "status": "completed",
+   "duration_s": 68.04
+  }
+ },
+ "slowest_worker_s": 68.04,
+ "tool_calls": 19,
+ "navigations": 10,
+ "backend_timing": {},
+ "follow_up": null,
+ "quality": {
+  "links": [
+   "https://arxiv.org/abs/2501.06322",
+   "https://link.springer.com/article/10.1007/s44336-024-00009-2",
+   "https://www.preprints.org/manuscript/202604.2147",
+   "https://link.springer.com/chapter/10.1007/978-3-032-15632-7_9",
+   "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177160638.89229642",
+   "https://arxiv.org/abs/2609.16599",
+   "https://arxiv.org/abs/2505.19591",
+   "https://github.com/OpenBMB/ChatDev/tree/puppeteer",
+   "https://arxiv.org/abs/2604.17148",
+   "https://arxiv.org/abs/2608.05791",
+   "https://arxiv.org/abs/2610.08647",
+   "https://arxiv.org/abs/2609.34821"
+  ],
+  "paper_ids": [
+   "arxiv:2501.06322",
+   "arxiv:2505.19591",
+   "arxiv:2604.17148",
+   "arxiv:2608.05791",
+   "arxiv:2609.16599",
+   "arxiv:2609.34821",
+   "arxiv:2610.08647"
+  ],
+  "paper_links": [
+   "https://arxiv.org/abs/2501.06322",
+   "https://arxiv.org/abs/2609.16599",
+   "https://arxiv.org/abs/2505.19591",
+   "https://arxiv.org/abs/2604.17148",
+   "https://arxiv.org/abs/2608.05791",
+   "https://arxiv.org/abs/2610.08647",
+   "https://arxiv.org/abs/2609.34821"
+  ],
+  "paper_count": 7,
+  "link_status": {
+   "https://arxiv.org/abs/2501.06322": 200,
+   "https://arxiv.org/abs/2609.16599": 200,
+   "https://arxiv.org/abs/2505.19591": 200,
+   "https://arxiv.org/abs/2604.17148": 200,
+   "https://arxiv.org/abs/2608.05791": 200,
+   "https://arxiv.org/abs/2610.08647": 200,
+   "https://arxiv.org/abs/2609.34821": 200
+  }
+ },
+ "mode": "multi",
+ "trial": 7,
+ "phase": "before",
+ "request": "Find me the best research papers on multi agent orchestration.",
+ "events": [
+  {
+   "t": 0.0,
+   "event": "planning",
+   "data": {}
+  },
+  {
+   "t": 6.66,
+   "event": "run_started",
+   "data": {
+    "run_id": "run_254cd2123f6c",
+    "task_count": 2,
+    "tasks": [
+     {
+      "task_id": "find_survey_papers",
+      "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures."
+     },
+     {
+      "task_id": "find_framework_papers",
+      "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks."
+     }
+    ],
+    "follow_up_action": null
+   }
+  },
+  {
+   "t": 6.67,
+   "event": "task_started",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 6.67,
+   "event": "task_started",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 13.24,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening scholar.google.com"
+   }
+  },
+  {
+   "t": 13.31,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 18.5,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 21.22,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 22.09,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 25.99,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 26.6,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 28.53,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 29.72,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 34.0,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 38.19,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 40.43,
+   "event": "task_completed",
+   "data": {
+    "task_id": "find_survey_papers",
+    "description": "Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.",
+    "worker_id": "worker_find_survey_papers_e36d240f",
+    "tab_id": "tab_find_survey_papers_123f6c",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 42.32,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 45.59,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 47.9,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 52.22,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 54.56,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 59.41,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 63.03,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 66.32,
+   "event": "task_progress",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 74.71,
+   "event": "task_completed",
+   "data": {
+    "task_id": "find_framework_papers",
+    "description": "Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.",
+    "worker_id": "worker_find_framework_papers_4ebe7898",
+    "tab_id": "tab_find_framework_papers_123f6c",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 74.71,
+   "event": "synthesis_started",
+   "data": {
+    "completed": 2,
+    "total": 2
+   }
+  },
+  {
+   "t": 82.3,
+   "event": "done",
+   "data": {
+    "success": true,
+    "run_id": "run_254cd2123f6c",
+    "status": "completed",
+    "final_answer": "### Foundational Survey Papers\n\n* **[Multi-agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322)**\n  * **Authors:** K. T. Tran, D. Dao, M. D. Nguyen, Q. V. Pham, et al.\n  * **Focus:** Coordination protocols, communication topologies, and collaborative task allocation.\n* **[A Survey on LLM-based Multi-Agent Systems: Workflow, Infrastructure, and Challenges](https://link.springer.com/article/10.1007/s44336-024-00009-2)**\n  * **Authors:** X. Li, S. Wang, S. Zeng, Y. Wu, Y. Yang (*Springer*)\n  * **Focus:** Infrastructure, orchestrator designs, tool integration, and environment feedback loops.\n* **[LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://www.preprints.org/manuscript/202604.2147)**\n  * **Authors:** Y. Zhu, L. Liu, J. Yu, D. Zhang\n  * **Focus:** Centralized vs. decentralized routing, communication protocols, and architectural patterns.\n* **[LLM-based Multi-Agent Systems: Frameworks, Evaluation, Open Challenges, and Research Frontiers](https://link.springer.com/chapter/10.1007/978-3-032-15632-7_9)**\n  * **Authors:** S. H. Shaikh (*Springer*)\n  * **Focus:** Comparative framework evaluations, pipeline reliability, and prompt interfaces.\n* **[A Survey on Large Language Model-based Multi-Agent Systems: Paradigms, Applications, and Challenges](https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177160638.89229642)**\n  * **Authors:** M. Zhu et al.\n  * **Focus:** Static orchestration pipelines vs. dynamic negotiation frameworks.\n* **[Large Language Models in the Loop: A Stability- and Network-Aware Survey in Networked Control, Cyber-Physical, and Multi-Agent Systems](https://arxiv.org/abs/2609.16599)**\n  * **Authors:** H. Du, L. Chan\n  * **Focus:** Network topologies, communication delay bounds, and control-theoretic stability.\n\n---\n\n### Empirical Frameworks & Benchmarks (NeurIPS, ICLR, ICML)\n\n* **[Multi-Agent Collaboration via Evolving Orchestration](https://arxiv.org/abs/2505.19591)** (NeurIPS)\n  * **Framework:** Centralized RL puppeteer dynamically orchestrating specialized LLM agents. Open-source implementation available via [ChatDev/puppeteer](https://github.com/OpenBMB/ChatDev/tree/puppeteer).\n* **[Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration](https://arxiv.org/abs/2604.17148)** (ICLR)\n  * **Framework:** GoA; uses node sampling, dynamic directed relevance edges, and bidirectional message passing. Outperformed Mixture-of-Agents (MoA) on MMLU-Pro, GPQA, and MATH.\n* **[A Two-Tier Perspective on Inference-Time Parallelism in Multi-Agent LLM Systems](https://arxiv.org/abs/2608.05791)** (ICML)\n  * **Framework:** TIPEX; splits inference into Replica Parallelism and Structural Parallelism. Benchmarked on GAIA.\n* **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** (NeurIPS)\n  * **Framework:** Adaptive parallel scheduler resolving multi-agent task dependencies to reduce coordination latency overhead.\n* **[CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets](https://arxiv.org/abs/2609.34821)** (ICLR)\n  * **Benchmark:** Empirical evaluation suite for multi-agent competitive orchestration over long horizons.\n\n---\n\n### Findings Comparison\n\n* **Coverage:** Agent 1 gathered broad surveys, taxonomy papers, and control-theoretic angles. Agent 2 gathered peer-reviewed empirical architectures, scheduling methods, and evaluation benchmarks.\n* **Consistency:** Both agents agree on the primary technical challenges: dynamic task allocation, communication topology bottlenecks, and coordination overhead. No contradictory claims were found.",
+    "summary": "Orchestration Summary for: 'Find me the best research papers on multi agent orchestration.'\n\n### Task: Search arXiv and Google Scholar for survey and foundational research papers on multi-agent LLM orchestration architectures.\n- Status: COMPLETED (Worker: worker_find_survey_papers_e36d240f, Tab: tab_find_survey_papers_123f6c)\n- Findings: #### Key Survey and Foundational Papers on Multi-Agent LLM Orchestration Architectures\n\n* **[Multi-agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322)**\n  * **Authors:** K. T. Tran, D. Dao, M. D. Nguyen, Q. V. Pham, et al.\n  * **Citations:** 820+\n  * **Focus:** Systematic taxonomy of collaboration and orchestration mechanisms in multi-agent LLM systems, covering coordination protocols, communication topologies, and collaborative task allocation.\n\n* **[A Survey on LLM-based Multi-Agent Systems: Workflow, Infrastructure, and Challenges](https://link.springer.com/article/10.1007/s44336-024-00009-2)**\n  * **Authors:** X. Li, S. Wang, S. Zeng, Y. Wu, Y. Yang\n  * **Venue:** *Vicinagearth / Springer*\n  * **Citations:** 998+\n  * **Focus:** Foundational infrastructure and workflow architectures for multi-agent LLM execution, examining orchestrator designs, tool integration, and environment feedback loops.\n\n* **[LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://www.preprints.org/manuscript/202604.2147)**\n  * **Authors:** Y. Zhu, L. Liu, J. Yu, D. Zhang\n  * **Citations:** 9\n  * **Focus:** Focuses specifically on orchestration paradigms, interaction topologies (centralized vs. decentralized routing), agent communication protocols, and architectural design patterns.\n\n* **[LLM-based Multi-Agent Systems: Frameworks, Evaluation, Open Challenges, and Research Frontiers](https://link.springer.com/chapter/10.1007/978-3-032-15632-7_9)**\n  * **Authors:** S. H. Shaikh\n  * **Venue:** *International Joint Conference on Computational Sciences / Springer*\n  * **Citations:** 19\n  * **Focus:** Comparative evaluation of foundational frameworks supporting multi-agent workflow orchestration, profiling pipeline reliability, prompt interfaces, and multi-agent coordination.\n\n* **[A Survey on Large Language Model-based Multi-Agent Systems: Paradigms, Applications, and Challenges](https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177160638.89229642)**\n  * **Authors:** M. Zhu, M. Li, M. Cui, Z. Qian, Y. Jiang, M. Han, M. Sun\n  * **Focus:** Architectural paradigms distinguishing predefined static orchestration pipelines from dynamic autonomous multi-agent negotiation frameworks.\n\n* **[Large Language Models in the Loop: A Stability- and Network-Aware Survey in Networked Control, Cyber-Physical, and Multi-Agent Systems](https://arxiv.org/abs/2609.16599)**\n  * **Authors:** H. Du, L. Chan\n  * **Focus:** Multi-agent network topologies, communication delay bounds, and control-theoretic stability in agentic orchestration workflows.\n### Task: Search recent AI conference publications (NeurIPS, ICLR, ICML) for empirical research papers and benchmarks on multi-agent orchestration frameworks.\n- Status: COMPLETED (Worker: worker_find_framework_papers_4ebe7898, Tab: tab_find_framework_papers_123f6c)\n- Findings: Empirical research papers and benchmarks on multi-agent orchestration frameworks accepted to NeurIPS, ICLR, and ICML:\n\n#### 1. Multi-Agent Collaboration via Evolving Orchestration\n- **Venue:** NeurIPS\n- **Paper Link:** [arXiv:2505.19591](https://arxiv.org/abs/2505.19591)\n- **Framework / Core Method:** Puppeteer-style centralized orchestration framework where an RL-trained orchestrator dynamically sequences, prioritizes, and coordinates specialized LLM agents (\"puppets\") instead of maintaining static multi-agent graphs.\n- **Empirical Findings & Benchmarks:** Evaluated across closed- and open-domain multi-step reasoning benchmarks. Demonstrated superior accuracy while cutting computational overhead, driven by the emergence of compact, cyclic coordination structures. Code released on GitHub ([ChatDev/puppeteer](https://github.com/OpenBMB/ChatDev/tree/puppeteer)).\n\n#### 2. Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration\n- **Venue:** ICLR\n- **Paper Link:** [arXiv:2604.17148](https://arxiv.org/abs/2604.17148)\n- **Framework / Core Method:** **GoA** (Graph-of-Agents), an orchestration architecture utilizing node sampling via LLM model cards, dynamic directed relevance graph edges, bidirectional message passing, and graph-based response pooling.\n- **Empirical Findings & Benchmarks:** Benchmarked on general and domain benchmarks including **MMLU, MMLU-Pro, GPQA, MATH, HumanEval, and MedMCQA**. Evaluated with an agent pool of 6 models; GoA achieved top accuracy using only 3 dynamically orchestrated agents, outperforming Mixture-of-Agents (MoA) baselines that invoked all 6 agents.\n\n#### 3. A Two-Tier Perspective on Inference-Time Parallelism in Multi-Agent LLM Systems\n- **Venue:** ICML\n- **Paper Link:** [arXiv:2608.05791](https://arxiv.org/abs/2608.05791)\n- **Framework / Core Method:** **TIPEX**, an execution orchestration framework classifying inference parallelism into Replica Parallelism (multi-path task exploration) and Structural Parallelism (concurrent subtask decomposition).\n- **Empirical Findings & Benchmarks:** Benchmarked rigorously on the **GAIA** agent benchmark. Demonstrated that structured parallel coordination substantially boosts accuracy and decreases latency over sequential orchestration, with intermediate-complexity tasks gaining the highest net improvement.\n\n#### 4. SquidAgent: Parallelize Wisely, Coordinate Efficiently\n- **Venue:** NeurIPS\n- **Paper Link:** [arXiv:2610.08647](https://arxiv.org/abs/2610.08647)\n- **Framework / Core Method:** Adaptive multi-agent parallel scheduler designed to balance intra-agent task dependencies with near-linear parallel execution speedups.\n- **Empirical Findings & Benchmarks:** Analyzed execution bottlenecks in multi-agent orchestration, reporting empirical tradeoffs between coordination overhead and task completion speed across complex multi-step tasks.\n\n#### 5. CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets\n- **Venue:** ICLR\n- **Paper Link:** [arXiv:2609.34821](https://arxiv.org/abs/2609.34821)\n- **Framework / Core Method:** **CEO Arena**, a dedicated benchmark evaluating multi-agent orchestration and competitive coordination over long planning horizons under dynamic market uncertainty.\n- **Empirical Findings & Benchmarks:** 46-page empirical study evaluating leading open and proprietary LLM agent frameworks on long-horizon business and resource orchestration decisions.",
+    "task_results": {
+     "find_survey_papers": {
+      "findings": "#### Key Survey and Foundational Papers on Multi-Agent LLM Orchestration Architectures\n\n* **[Multi-agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322)**\n  * **Authors:** K. T. Tran, D. Dao, M. D. Nguyen, Q. V. Pham, et al.\n  * **Citations:** 820+\n  * **Focus:** Systematic taxonomy of collaboration and orchestration mechanisms in multi-agent LLM systems, covering coordination protocols, communication topologies, and collaborative task allocation.\n\n* **[A Survey on LLM-based Multi-Agent Systems: Workflow, Infrastructure, and Challenges](https://link.springer.com/article/10.1007/s44336-024-00009-2)**\n  * **Authors:** X. Li, S. Wang, S. Zeng, Y. Wu, Y. Yang\n  * **Venue:** *Vicinagearth / Springer*\n  * **Citations:** 998+\n  * **Focus:** Foundational infrastructure and workflow architectures for multi-agent LLM execution, examining orchestrator designs, tool integration, and environment feedback loops.\n\n* **[LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://www.preprints.org/manuscript/202604.2147)**\n  * **Authors:** Y. Zhu, L. Liu, J. Yu, D. Zhang\n  * **Citations:** 9\n  * **Focus:** Focuses specifically on orchestration paradigms, interaction topologies (centralized vs. decentralized routing), agent communication protocols, and architectural design patterns.\n\n* **[LLM-based Multi-Agent Systems: Frameworks, Evaluation, Open Challenges, and Research Frontiers](https://link.springer.com/chapter/10.1007/978-3-032-15632-7_9)**\n  * **Authors:** S. H. Shaikh\n  * **Venue:** *International Joint Conference on Computational Sciences / Springer*\n  * **Citations:** 19\n  * **Focus:** Comparative evaluation of foundational frameworks supporting multi-agent workflow orchestration, profiling pipeline reliability, prompt interfaces, and multi-agent coordination.\n\n* **[A Survey on Large Language Model-based Multi-Agent Systems: Paradigms, Applications, and Challenges](https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177160638.89229642)**\n  * **Authors:** M. Zhu, M. Li, M. Cui, Z. Qian, Y. Jiang, M. Han, M. Sun\n  * **Focus:** Architectural paradigms distinguishing predefined static orchestration pipelines from dynamic autonomous multi-agent negotiation frameworks.\n\n* **[Large Language Models in the Loop: A Stability- and Network-Aware Survey in Networked Control, Cyber-Physical, and Multi-Agent Systems](https://arxiv.org/abs/2609.16599)**\n  * **Authors:** H. Du, L. Chan\n  * **Focus:** Multi-agent network topologies, communication delay bounds, and control-theoretic stability in agentic orchestration workflows.",
+      "success": true,
+      "sources": [
+       "https://scholar.google.com/scholar?q=survey+multi-agent+LLM+orchestration",
+       "https://arxiv.org/search/?query=multi-agent+orchestration+large+language+models&searchtype=all&source=header",
+       "https://arxiv.org/search/?query=survey+multi-agent+systems+llm&searchtype=all&source=header"
+      ],
+      "error": null,
+      "worker_id": "worker_find_survey_papers_e36d240f",
+      "tab_id": "tab_find_survey_papers_123f6c"
+     },
+     "find_framework_papers": {
+      "findings": "Empirical research papers and benchmarks on multi-agent orchestration frameworks accepted to NeurIPS, ICLR, and ICML:\n\n#### 1. Multi-Agent Collaboration via Evolving Orchestration\n- **Venue:** NeurIPS\n- **Paper Link:** [arXiv:2505.19591](https://arxiv.org/abs/2505.19591)\n- **Framework / Core Method:** Puppeteer-style centralized orchestration framework where an RL-trained orchestrator dynamically sequences, prioritizes, and coordinates specialized LLM agents (\"puppets\") instead of maintaining static multi-agent graphs.\n- **Empirical Findings & Benchmarks:** Evaluated across closed- and open-domain multi-step reasoning benchmarks. Demonstrated superior accuracy while cutting computational overhead, driven by the emergence of compact, cyclic coordination structures. Code released on GitHub ([ChatDev/puppeteer](https://github.com/OpenBMB/ChatDev/tree/puppeteer)).\n\n#### 2. Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration\n- **Venue:** ICLR\n- **Paper Link:** [arXiv:2604.17148](https://arxiv.org/abs/2604.17148)\n- **Framework / Core Method:** **GoA** (Graph-of-Agents), an orchestration architecture utilizing node sampling via LLM model cards, dynamic directed relevance graph edges, bidirectional message passing, and graph-based response pooling.\n- **Empirical Findings & Benchmarks:** Benchmarked on general and domain benchmarks including **MMLU, MMLU-Pro, GPQA, MATH, HumanEval, and MedMCQA**. Evaluated with an agent pool of 6 models; GoA achieved top accuracy using only 3 dynamically orchestrated agents, outperforming Mixture-of-Agents (MoA) baselines that invoked all 6 agents.\n\n#### 3. A Two-Tier Perspective on Inference-Time Parallelism in Multi-Agent LLM Systems\n- **Venue:** ICML\n- **Paper Link:** [arXiv:2608.05791](https://arxiv.org/abs/2608.05791)\n- **Framework / Core Method:** **TIPEX**, an execution orchestration framework classifying inference parallelism into Replica Parallelism (multi-path task exploration) and Structural Parallelism (concurrent subtask decomposition).\n- **Empirical Findings & Benchmarks:** Benchmarked rigorously on the **GAIA** agent benchmark. Demonstrated that structured parallel coordination substantially boosts accuracy and decreases latency over sequential orchestration, with intermediate-complexity tasks gaining the highest net improvement.\n\n#### 4. SquidAgent: Parallelize Wisely, Coordinate Efficiently\n- **Venue:** NeurIPS\n- **Paper Link:** [arXiv:2610.08647](https://arxiv.org/abs/2610.08647)\n- **Framework / Core Method:** Adaptive multi-agent parallel scheduler designed to balance intra-agent task dependencies with near-linear parallel execution speedups.\n- **Empirical Findings & Benchmarks:** Analyzed execution bottlenecks in multi-agent orchestration, reporting empirical tradeoffs between coordination overhead and task completion speed across complex multi-step tasks.\n\n#### 5. CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets\n- **Venue:** ICLR\n- **Paper Link:** [arXiv:2609.34821](https://arxiv.org/abs/2609.34821)\n- **Framework / Core Method:** **CEO Arena**, a dedicated benchmark evaluating multi-agent orchestration and competitive coordination over long planning horizons under dynamic market uncertainty.\n- **Empirical Findings & Benchmarks:** 46-page empirical study evaluating leading open and proprietary LLM agent frameworks on long-horizon business and resource orchestration decisions.",
+      "success": true,
+      "sources": [
+       "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22multi-agent%22+orchestration&terms-0-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+       "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22multi-agent%22+NeurIPS&terms-0-field=all&terms-1-operator=AND&terms-1-term=orchestration&terms-1-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+       "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22ICLR%22+multi-agent&terms-0-field=all&terms-1-operator=AND&terms-1-term=orchestration+OR+benchmark&terms-1-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+       "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22ICML%22+multi-agent&terms-0-field=all&terms-1-operator=AND&terms-1-term=orchestration+OR+benchmark&terms-1-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+       "https://arxiv.org/abs/2505.19591",
+       "https://arxiv.org/abs/2604.17148",
+       "https://arxiv.org/abs/2608.05791"
+      ],
+      "error": null,
+      "worker_id": "worker_find_framework_papers_4ebe7898",
+      "tab_id": "tab_find_framework_papers_123f6c"
+     }
+    },
+    "sources": [
+     "https://scholar.google.com/scholar?q=survey+multi-agent+LLM+orchestration",
+     "https://arxiv.org/search/?query=multi-agent+orchestration+large+language+models&searchtype=all&source=header",
+     "https://arxiv.org/search/?query=survey+multi-agent+systems+llm&searchtype=all&source=header",
+     "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22multi-agent%22+orchestration&terms-0-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+     "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22multi-agent%22+NeurIPS&terms-0-field=all&terms-1-operator=AND&terms-1-term=orchestration&terms-1-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+     "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22ICLR%22+multi-agent&terms-0-field=all&terms-1-operator=AND&terms-1-term=orchestration+OR+benchmark&terms-1-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+     "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22ICML%22+multi-agent&terms-0-field=all&terms-1-operator=AND&terms-1-term=orchestration+OR+benchmark&terms-1-field=all&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=all_dates&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first",
+     "https://arxiv.org/abs/2505.19591",
+     "https://arxiv.org/abs/2604.17148",
+     "https://arxiv.org/abs/2608.05791"
+    ],
+    "missing_information": [],
+    "follow_up": null,
+    "duration_ms": 75641.14,
+    "type": "result",
+    "done": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+Running explicit offline procedure induction on dataset...
+
+==================================================
+Episode: ep_multi_form -> Status: PERSISTED
+Inducted Procedure:
+{
+  "title": "E-Commerce User Authentication and Checkout Flow",
+  "capability": "ecommerce_checkout",
+  "goal": "Authenticate as an existing user, navigate to the shopping cart, and complete the checkout process with billing and payment details.",
+  "preconditions": [
+    "User credentials (username/password) are available",
+    "User has at least one item added to the cart",
+    "Valid shipping address and payment details are available"
+  ],
+  "ordered_steps": [
+    "Navigate to the login interface, input the username and password, and submit the login form.",
+    "Verify successful login and locate the shopping cart icon or link in the navigation bar.",
+    "Click the cart icon to view the current cart contents, then proceed by clicking the checkout button.",
+    "Fill out the required billing and shipping information on the checkout form.",
+    "Enter the payment details and submit the order.",
+    "Verify order confirmation and capture the confirmation identifier or receipt."
+  ],
+  "applicability_notes": "Applies to standard e-commerce web applications requiring user authentication prior to or during the checkout funnel.",
+  "limitations_caveats": "Does not handle two-factor authentication (2FA), CAPTCHAs, dynamic discount code applications, or multi-step checkout processes involving external payment gateways like PayPal/Stripe redirects.",
+  "provenance": {
+    "source_episode_id": "ep_multi_form",
+    "source_agent_id": "ag_multi_form",
+    "original_task": "Login to demo site, go to cart, and complete checkout",
+    "induction_model": "ag/gemini-3.7-flash-medium"
+  }
+}
+
+==================================================
+Episode: ep_value_lookup -> Status: REJECTED_ELIGIBILITY

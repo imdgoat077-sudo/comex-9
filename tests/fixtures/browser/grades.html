@@ -1,0 +1,42 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Grade history fixture</title>
+<style>
+  body { font: 14px system-ui, sans-serif; margin: 24px; }
+  table { border-collapse: collapse; width: 100%; } th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; }
+  .paginate_button { display: inline-block; padding: 4px 10px; border: 1px solid #ccc; margin: 0 2px; cursor: pointer; text-decoration: none; color: #222; }
+  .paginate_button.current { background: #dfe7ff; } .paginate_button.disabled { color: #999; cursor: default; }
+  .dataTables_info { margin: 10px 0; }
+</style>
+<h2>Grade History (synthetic test data)</h2>
+<label>Show <select name="gradeTable_length" aria-label="entries per page"><option>10</option><option>25</option><option>50</option><option>100</option></select> entries</label>
+<table id="gradeTable">
+  <thead>
+    <tr><th rowspan="2">Sl.No.</th><th colspan="3">Course</th><th rowspan="2">Credits</th><th rowspan="2">Grade</th><th colspan="3">Result</th></tr>
+    <tr><th>Code</th><th>Title</th><th>Type</th><th>Month</th><th>Declared on</th><th>Distribution</th></tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<div class="dataTables_info" role="status"></div>
+<div class="dataTables_paginate"></div>
+<h3>Credit summary</h3>
+<table id="summary"><thead><tr><th>Total courses</th><th>Total credits</th></tr></thead><tbody><tr><td id="sumCourses"></td><td id="sumCredits"></td></tr></tbody></table>
+<script>
+const DATA = [[1, "TST1000", "Test Course 1", "Lab", 2, "C", "Dec-2024", "01-Feb-2025", "Regular"], [2, "TST1001", "Test Course 2", "Theory", 1, "N", "Dec-2024", "01-Feb-2025", "Regular"], [3, "TST1002", "Test Course 3", "Theory", 3, "D", "Jan-2024", "01-Feb-2025", "Regular"], [4, "TST1003", "Test Course 4", "Project", 2, "S", "Jan-2024", "01-Feb-2025", "Regular"], [5, "TST1004", "Test Course 5", "Lab", 4, "S", "Jan-2024", "01-Feb-2025", "Regular"], [6, "TST1005", "Test Course 6", "Theory", 4, "S", "Dec-2024", "01-Feb-2025", "Regular"], [7, "TST1006", "Test Course 7", "Theory", 2, "E", "Dec-2024", "01-Feb-2025", "Regular"], [8, "TST1007", "Test Course 8", "Project", 1, "D", "Dec-2024", "01-Feb-2025", "Regular"], [9, "TST1008", "Test Course 9", "Lab", 1, "A", "Jan-2024", "01-Feb-2025", "Regular"], [10, "TST1009", "Test Course 10", "Project", 2, "B", "Jun-2024", "01-Feb-2025", "Regular"], [11, "TST1010", "Test Course 11", "Theory", 1, "D", "Jun-2024", "01-Feb-2025", "Regular"], [12, "TST1011", "Test Course 12", "Project", 2, "S", "Dec-2024", "01-Feb-2025", "Regular"], [13, "TST1012", "Test Course 13", "Project", 2, "B", "Jan-2024", "01-Feb-2025", "Regular"], [14, "TST1013", "Test Course 14", "Project", 1, "D", "Jan-2024", "01-Feb-2025", "Regular"], [15, "TST1014", "Test Course 15", "Project", 2, "C", "Dec-2024", "01-Feb-2025", "Regular"], [16, "TST1015", "Test Course 16", "Project", 4, "N", "Jun-2024", "01-Feb-2025", "Regular"], [17, "TST1016", "Test Course 17", "Lab", 4, "B", "Jun-2024", "01-Feb-2025", "Regular"], [18, "TST1017", "Test Course 18", "Theory", 2, "E", "Jan-2024", "01-Feb-2025", "Regular"], [19, "TST1018", "Test Course 19", "Theory", 3, "D", "Jun-2024", "01-Feb-2025", "Regular"], [20, "TST1019", "Test Course 20", "Lab", 4, "B", "Dec-2024", "01-Feb-2025", "Regular"], [21, "TST1020", "Test Course 21", "Theory", 1, "D", "Jun-2024", "01-Feb-2025", "Regular"], [22, "TST1021", "Test Course 22", "Theory", 3, "A", "Jun-2024", "01-Feb-2025", "Regular"], [23, "TST1022", "Test Course 23", "Lab", 1, "E", "Jan-2024", "01-Feb-2025", "Regular"], [24, "TST1023", "Test Course 24", "Project", 3, "B", "Dec-2024", "01-Feb-2025", "Regular"], [25, "TST1024", "Test Course 25", "Lab", 4, "D", "Jun-2024", "01-Feb-2025", "Regular"], [26, "TST1025", "Test Course 26", "Theory", 1, "B", "Jun-2024", "01-Feb-2025", "Regular"], [27, "TST1026", "Test Course 27", "Project", 1, "S", "Dec-2024", "01-Feb-2025", "Regular"], [28, "TST1027", "Test Course 28", "Project", 3, "E", "Dec-2024", "01-Feb-2025", "Regular"], [29, "TST1028", "Test Course 29", "Project", 4, "B", "Dec-2024", "01-Feb-2025", "Regular"], [30, "TST1029", "Test Course 30", "Lab", 3, "S", "Jun-2024", "01-Feb-2025", "Regular"], [31, "TST1030", "Test Course 31", "Lab", 2, "D", "Jan-2024", "01-Feb-2025", "Regular"], [32, "TST1031", "Test Course 32", "Lab", 1, "A", "Jun-2024", "01-Feb-2025", "Regular"], [33, "TST1032", "Test Course 33", "Theory", 2, "C", "Jun-2024", "01-Feb-2025", "Regular"], [34, "TST1033", "Test Course 34", "Lab", 1, "A", "Jun-2024", "01-Feb-2025", "Regular"], [35, "TST1034", "Test Course 35", "Lab", 3, "A", "Jun-2024", "01-Feb-2025", "Regular"], [36, "TST1035", "Test Course 36", "Project", 3, "E", "Jun-2024", "01-Feb-2025", "Regular"], [37, "TST1036", "Test Course 37", "Lab", 4, "A", "Jan-2024", "01-Feb-2025", "Regular"], [38, "TST1037", "Test Course 38", "Theory", 2, "A", "Jan-2024", "01-Feb-2025", "Regular"], [39, "TST1038", "Test Course 39", "Project", 2, "S", "Jun-2024", "01-Feb-2025", "Regular"], [40, "TST1039", "Test Course 40", "Project", 2, "B", "Jun-2024", "01-Feb-2025", "Regular"], [41, "TST1040", "Test Course 41", "Theory", 2, "C", "Dec-2024", "01-Feb-2025", "Regular"], [42, "TST1041", "Test Course 42", "Lab", 3, "A", "Dec-2024", "01-Feb-2025", "Regular"], [43, "TST1042", "Test Course 43", "Project", 1, "C", "Dec-2024", "01-Feb-2025", "Regular"], [44, "TST1043", "Test Course 44", "Project", 4, "C", "Jun-2024", "01-Feb-2025", "Regular"], [45, "TST1044", "Test Course 45", "Lab", 1, "C", "Dec-2024", "01-Feb-2025", "Regular"], [46, "TST1045", "Test Course 46", "Lab", 1, "A", "Jan-2024", "01-Feb-2025", "Regular"], [47, "TST1046", "Test Course 47", "Theory", 4, "A", "Jan-2024", "01-Feb-2025", "Regular"], [48, "TST1047", "Test Course 48", "Lab", 1, "S", "Jan-2024", "01-Feb-2025", "Regular"], [49, "TST1048", "Test Course 49", "Project", 2, "D", "Jan-2024", "01-Feb-2025", "Regular"], [50, "TST1049", "Test Course 50", "Lab", 1, "S", "Jan-2024", "01-Feb-2025", "Regular"], [51, "TST1050", "Test Course 51", "Project", 4, "A", "Dec-2024", "01-Feb-2025", "Regular"], [52, "TST1051", "Test Course 52", "Lab", 3, "D", "Jun-2024", "01-Feb-2025", "Regular"], [53, "TST1052", "Test Course 53", "Lab", 1, "S", "Jun-2024", "01-Feb-2025", "Regular"], [54, "TST1053", "Test Course 54", "Lab", 4, "C", "Jun-2024", "01-Feb-2025", "Regular"], [55, "TST1054", "Test Course 55", "Theory", 2, "S", "Dec-2024", "01-Feb-2025", "Regular"], [56, "TST1055", "Test Course 56", "Lab", 3, "C", "Dec-2024", "01-Feb-2025", "Regular"], [57, "TST1056", "Test Course 57", "Theory", 1, "A", "Dec-2024", "01-Feb-2025", "Regular"]];
+let size = 10, page = 1;
+const tbody = document.querySelector('#gradeTable tbody'), info = document.querySelector('.dataTables_info'), pag = document.querySelector('.dataTables_paginate');
+function render() {
+  const pages = Math.ceil(DATA.length / size), from = (page - 1) * size, to = Math.min(DATA.length, from + size);
+  tbody.innerHTML = DATA.slice(from, to).map(r => '<tr>' + r.map(c => '<td>' + c + '</td>').join('') + '</tr>').join('');
+  info.textContent = `Showing ${from + 1} to ${to} of ${DATA.length} entries`;
+  let h = `<a class="paginate_button ${page === 1 ? 'disabled' : ''}" data-p="${page - 1}" role="button">Previous</a>`;
+  for (let p = 1; p <= pages; p++) h += `<a class="paginate_button ${p === page ? 'current' : ''}" data-p="${p}" role="button">${p}</a>`;
+  h += `<a class="paginate_button ${page === pages ? 'disabled' : ''}" data-p="${page + 1}" role="button">Next</a>`;
+  pag.innerHTML = h;
+}
+pag.addEventListener('click', (e) => { const a = e.target.closest('a'); if (!a || a.classList.contains('disabled')) return; page = +a.dataset.p; render(); });
+document.querySelector('select').addEventListener('change', (e) => { size = +e.target.value; page = 1; render(); });
+document.getElementById('sumCourses').textContent = DATA.length;
+document.getElementById('sumCredits').textContent = DATA.reduce((s, r) => s + r[4], 0);
+render();
+</script>

@@ -1,0 +1,43 @@
+ERROR:root:Failed to initialize AgentGraphStore: IO exception: Could not set lock on file : /Users/pranavkumarn/.comex/graph.db
+See the docs: https://docs.kuzudb.com/concurrency for more information.
+WARNING:agent_service:Router structured output failed: 1 validation error for ProcedureRoute
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  "capabilit...nfidence": 0.95\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+WARNING:agent_service:Procedure route: {'capability': 'web_interaction', 'abstract_query': 'dismiss overlay popup and click underlying target button', 'confidence': 0.95}
+WARNING:agent_service:Retrieved procedure candidates: 1
+WARNING:agent_service:Gating decision: inject=True, reason='The webpage contains a full-screen promo modal overlay with high z-index blocking interaction with the target button. The procedure specifically guides bypassing intercepting overlays by dismissing them first.', conf=0.95
+WARNING:agent_service:Exact procedure context injected into prompt:
+
+---
+[AVAILABLE PROCEDURES]
+The following are candidate procedural patterns that may help you solve this task.
+They are optional guidance. You may ignore them if they do not fit the current website.
+DO NOT use the exact CSS selectors from the procedures. You must determine site-specific selectors.
+
+Title: Bypass Blocking Overlays
+Content:
+{"title": "Bypass Blocking Overlays", "capability": "ui_overlay_bypass", "goal": "Interact with underlying elements when a modal/overlay blocks clicks", "preconditions": [], "ordered_steps": ["Check if an overlay (cookie banner, promo) is intercepting clicks.", "Locate the dismiss/close button inside the overlay and click it.", "Proceed with interacting with target elements."], "applicability_notes": "Use when standard clicks fail due to obscuring elements.", "limitations_caveats": "", "provenance": {"source_episode_id": "ep_v3_a"}}
+---
+[/AVAILABLE PROCEDURES]
+WARNING:agent_service:Router structured output failed: 1 validation error for ProcedureRoute
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  "capabilit...nfidence": 0.95\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+WARNING:agent_service:Procedure route: {'capability': 'ui_interaction', 'abstract_query': 'dismiss overlay modal and click target button', 'confidence': 0.95}
+WARNING:agent_service:Retrieved procedure candidates: 1
+WARNING:agent_service:Gating decision: inject=False, reason='The task involves interacting with a modal overlay to click a button, whereas the candidate procedure is for hover-revealed navigation menus, which is completely irrelevant.', conf=0.98
+WARNING:agent_service:Router structured output failed: 1 validation error for ProcedureRoute
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  "capabilit...nfidence": 0.95\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+WARNING:agent_service:Procedure route: {'capability': 'modal_handling', 'abstract_query': 'dismiss overlay modal to interact with underlying button', 'confidence': 0.95}
+WARNING:agent_service:Retrieved procedure candidates: 0
+WARNING:agent_service:Router structured output failed: 1 validation error for ProcedureRoute
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  "capabilit...nfidence": 0.95\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+WARNING:agent_service:Procedure route: {'capability': 'ui_interaction', 'abstract_query': 'hover over dropdown menu trigger to reveal sub-menu and click button inside', 'confidence': 0.95}
+WARNING:agent_service:Retrieved procedure candidates: 1
+WARNING:agent_service:Gating decision: inject=False, reason='The candidate procedure is for bypassing blocking overlays/modals, whereas the task requires triggering a hover menu to reveal and click a target button.', conf=0.95
+WARNING:agent_service:Router structured output failed: 1 validation error for ProcedureRoute
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  "capabilit...nfidence": 0.95\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid
+WARNING:agent_service:Procedure route: {'capability': 'scroll_element', 'abstract_query': 'scroll down within a scrollable container', 'confidence': 0.95}
+WARNING:agent_service:Retrieved procedure candidates: 0

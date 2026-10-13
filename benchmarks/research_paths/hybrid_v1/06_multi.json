@@ -1,0 +1,477 @@
+{
+ "answer": "Selected research papers on multi-agent orchestration, grouped by taxonomy, system architecture, and evaluation benchmarks:\n\n### Surveys and Taxonomies\n- [Large Language Model Based Multi-agents: A Survey of Progress and Challenges](https://doi.org/10.24963/ijcai.2024/890) (IJCAI 2024)\n  - Authors: Taicheng Guo, Xiuying Chen, Yaqi Wang, Ruidi Chang, Shichao Pei, et al.\n  - Focus: Taxonomies of LLM multi-agent systems covering agent profiling, communication architectures, collaboration mechanisms, and environment simulation.\n- [A survey on large language model based autonomous agents](https://doi.org/10.1007/s11704-024-40231-1) (Frontiers of Computer Science 2024)\n  - Authors: Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, et al.\n  - Focus: Agent composition (architecture, memory, planning, tools), multi-agent coordination environments, cooperative/competitive dynamics, and collective intelligence patterns (1,807 citations).\n\n### System Designs and Frameworks\n- [ChatDev 2.0: A No-Code Multi-Agent Platform for Developing Everything](https://arxiv.org/abs/2609.00714) (EMNLP Demo Track 2026)\n  - Authors: Yufan Dang, Shu Yao, Bowen Lai, Chenting Xu, Ruijie Shi, Wai-Shing Leung, Huatao Li, Chen Qian, Zhiyuan Liu.\n  - Focus: Visual no-code interaction workflow orchestration engine (DevAll) to build, execute, and inspect heterogeneous multi-agent systems.\n- [Nexus Agent: Autonomous Multi-Agent Orchestration Framework and Local GraphRAG Architecture](https://doi.org/10.5281/zenodo.22118830) (Zenodo 2026)\n  - Author: Rudra Sarker.\n  - Focus: Autonomous multi-agent coordination architecture integrated with local GraphRAG retrieval pipelines.\n\n### Benchmarks, Evaluation, and Failure Analysis\n- [PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting](http://arxiv.org/abs/2606.08878v2) (arXiv 2026)\n  - Authors: Youran Sun, Xingyu Ren, Kejia Zhang, Xinpeng Liu, Jiaxuan Guo.\n  - Focus: Evaluates LLMs on composing orchestration prompts and routing information across 10 multi-agent topologies (110 scenarios). Highlights failure modes such as information leakage across sub-agents and low combined pass rates (17.2%).\n- [Towards Effective GenAI Multi-Agent Collaboration: Design and Evaluation for Enterprise Applications](http://arxiv.org/abs/2412.05449v1) (arXiv 2024)\n  - Authors: Raphael Shu, Nilaksh Das, Michelle Yuan, Monica Sunkara, Yi Zhang.\n  - Focus: Enterprise domain benchmark comparing coordination mode (parallel communication, payload referencing) versus message routing mode; analyzes orchestration latency, failure mitigation, and payload referencing efficiency.\n- [EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945) (Zenodo 2026)\n  - Author: Nathan Scott.\n  - Focus: Evaluates framework reliability, task decomposition, and coordination in end-to-end multi-agent execution.\n- [COLLATOR: Compositional Multi-Agent Orchestration with Counterfactual Reinforcement Learning](http://arxiv.org/abs/2605.14483v2) (arXiv 2026)\n  - Authors: Unlisted in retrieved feed record.\n  - Focus: Identifies structural orchestration failure modes (sequential role design, capacity assignment, dependency failure) caused by coarse execution feedback; evaluates accuracy-token trade-offs using localized credit signals across six reasoning and coding benchmarks.\n\n### Missing and Uncertain Information\n- **Foundational frameworks missing:** Primary landing papers for original releases (such as 2023 MetaGPT or original 2023 AutoGen) were omitted due to browsing limits.\n- **Incomplete metadata:** Authors for `COLLATOR` (arXiv 2605.14483v2) were missing from the retrieved feed record. Deep architectural details for `Nexus Agent` could not be retrieved beyond repository metadata.\n- **Incomplete failure mode survey:** The final query on multi-agent failure analysis (`export.arxiv.org/api/query?search_query=...failure+mode...`) was reached but terminated before extracting text, leaving further failure taxonomy papers unparsed.",
+ "success": true,
+ "wall_s": 57.59,
+ "planning_s": 8.25,
+ "after_workers_s": 9.75,
+ "workers": {
+  "surveys_and_taxonomies": {
+   "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.",
+   "tool_calls": 4,
+   "navigate_labels": 2,
+   "start_s": 8.26,
+   "end_s": 42.65,
+   "status": "completed",
+   "duration_s": 34.39
+  },
+  "foundational_frameworks_systems": {
+   "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.",
+   "tool_calls": 4,
+   "navigate_labels": 1,
+   "start_s": 8.26,
+   "end_s": 42.3,
+   "status": "completed",
+   "duration_s": 34.04
+  },
+  "benchmarks_and_evaluation": {
+   "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.",
+   "tool_calls": 4,
+   "navigate_labels": 2,
+   "start_s": 8.26,
+   "end_s": 47.84,
+   "status": "completed",
+   "duration_s": 39.58
+  }
+ },
+ "slowest_worker_s": 39.58,
+ "tool_calls": 12,
+ "navigations": 5,
+ "backend_timing": {
+  "planning_ms": 8248.86,
+  "workers_ms": 39587.03,
+  "synthesis_ms": 9748.78,
+  "total_ms": 57584.74,
+  "workers": {
+   "surveys_and_taxonomies": {
+    "status": "completed",
+    "duration_ms": 34382.99,
+    "tool_calls": 3,
+    "llm_calls": 4,
+    "avg_llm_ms": 7519.0,
+    "stopped_early": "the limit of 3 browser actions was reached"
+   },
+   "foundational_frameworks_systems": {
+    "status": "completed",
+    "duration_ms": 34042.5,
+    "tool_calls": 3,
+    "llm_calls": 4,
+    "avg_llm_ms": 7541.4,
+    "stopped_early": "the limit of 3 browser actions was reached"
+   },
+   "benchmarks_and_evaluation": {
+    "status": "completed",
+    "duration_ms": 39573.76,
+    "tool_calls": 3,
+    "llm_calls": 4,
+    "avg_llm_ms": 8604.8,
+    "stopped_early": "the limit of 3 browser actions was reached"
+   }
+  }
+ },
+ "follow_up": null,
+ "answer_s": 57.59,
+ "quality": {
+  "links": [
+   "https://doi.org/10.24963/ijcai.2024/890",
+   "https://doi.org/10.1007/s11704-024-40231-1",
+   "https://arxiv.org/abs/2609.00714",
+   "https://doi.org/10.5281/zenodo.22118830",
+   "http://arxiv.org/abs/2606.08878v2",
+   "http://arxiv.org/abs/2412.05449v1",
+   "https://doi.org/10.5281/zenodo.20349945",
+   "http://arxiv.org/abs/2605.14483v2"
+  ],
+  "paper_ids": [
+   "arxiv:2412.05449",
+   "arxiv:2605.14483",
+   "arxiv:2606.08878",
+   "arxiv:2609.00714",
+   "doi:10.1007/s11704-024-40231-1",
+   "doi:10.24963/ijcai.2024/890",
+   "doi:10.5281/zenodo.20349945",
+   "doi:10.5281/zenodo.22118830"
+  ],
+  "paper_links": [
+   "https://arxiv.org/abs/2609.00714",
+   "http://arxiv.org/abs/2606.08878v2",
+   "http://arxiv.org/abs/2412.05449v1",
+   "http://arxiv.org/abs/2605.14483v2",
+   "https://doi.org/10.24963/ijcai.2024/890",
+   "https://doi.org/10.1007/s11704-024-40231-1",
+   "https://doi.org/10.5281/zenodo.22118830",
+   "https://doi.org/10.5281/zenodo.20349945"
+  ],
+  "rows_with_paper_link": 8,
+  "rows_with_year": 8,
+  "paper_count": 8,
+  "link_status": {
+   "https://arxiv.org/abs/2609.00714": 200,
+   "http://arxiv.org/abs/2606.08878v2": 200,
+   "http://arxiv.org/abs/2412.05449v1": 200,
+   "http://arxiv.org/abs/2605.14483v2": 200,
+   "https://doi.org/10.24963/ijcai.2024/890": 200,
+   "https://doi.org/10.1007/s11704-024-40231-1": 200,
+   "https://doi.org/10.5281/zenodo.22118830": 200,
+   "https://doi.org/10.5281/zenodo.20349945": 200
+  }
+ },
+ "mode": "multi",
+ "trial": 6,
+ "phase": "hybrid_v1",
+ "request": "Find me the best research papers on multi agent orchestration.",
+ "events": [
+  {
+   "t": 0.0,
+   "event": "planning",
+   "data": {}
+  },
+  {
+   "t": 8.25,
+   "event": "run_started",
+   "data": {
+    "run_id": "run_5b16280da63c",
+    "task_count": 3,
+    "tasks": [
+     {
+      "task_id": "surveys_and_taxonomies",
+      "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems."
+     },
+     {
+      "task_id": "foundational_frameworks_systems",
+      "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks."
+     },
+     {
+      "task_id": "benchmarks_and_evaluation",
+      "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration."
+     }
+    ],
+    "follow_up_action": null
+   }
+  },
+  {
+   "t": 8.26,
+   "event": "task_started",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.",
+    "worker_id": "worker_surveys_and_taxonomies_ddd28b28",
+    "tab_id": "tab_surveys_and_taxonomies_0da63c",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 8.26,
+   "event": "task_started",
+   "data": {
+    "task_id": "foundational_frameworks_systems",
+    "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.",
+    "worker_id": "worker_foundational_frameworks_systems_6fa5b34d",
+    "tab_id": "tab_foundational_frameworks_systems_0da63c",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 8.26,
+   "event": "task_started",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.",
+    "worker_id": "worker_benchmarks_and_evaluation_60f12099",
+    "tab_id": "tab_benchmarks_and_evaluation_0da63c",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 8.32,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.",
+    "worker_id": "worker_surveys_and_taxonomies_ddd28b28",
+    "tab_id": "tab_surveys_and_taxonomies_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Reading scholar.google.com, api.openalex.org"
+   }
+  },
+  {
+   "t": 8.36,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_frameworks_systems",
+    "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.",
+    "worker_id": "worker_foundational_frameworks_systems_6fa5b34d",
+    "tab_id": "tab_foundational_frameworks_systems_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Reading scholar.google.com, api.openalex.org"
+   }
+  },
+  {
+   "t": 8.4,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.",
+    "worker_id": "worker_benchmarks_and_evaluation_60f12099",
+    "tab_id": "tab_benchmarks_and_evaluation_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Reading scholar.google.com, api.openalex.org"
+   }
+  },
+  {
+   "t": 18.12,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_frameworks_systems",
+    "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.",
+    "worker_id": "worker_foundational_frameworks_systems_6fa5b34d",
+    "tab_id": "tab_foundational_frameworks_systems_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 18.12,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.",
+    "worker_id": "worker_surveys_and_taxonomies_ddd28b28",
+    "tab_id": "tab_surveys_and_taxonomies_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Opening api.openalex.org"
+   }
+  },
+  {
+   "t": 22.98,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.",
+    "worker_id": "worker_benchmarks_and_evaluation_60f12099",
+    "tab_id": "tab_benchmarks_and_evaluation_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Opening export.arxiv.org"
+   }
+  },
+  {
+   "t": 24.22,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_frameworks_systems",
+    "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.",
+    "worker_id": "worker_foundational_frameworks_systems_6fa5b34d",
+    "tab_id": "tab_foundational_frameworks_systems_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 24.81,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.",
+    "worker_id": "worker_surveys_and_taxonomies_ddd28b28",
+    "tab_id": "tab_surveys_and_taxonomies_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page state"
+   }
+  },
+  {
+   "t": 29.1,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.",
+    "worker_id": "worker_benchmarks_and_evaluation_60f12099",
+    "tab_id": "tab_benchmarks_and_evaluation_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 29.13,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_frameworks_systems",
+    "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.",
+    "worker_id": "worker_foundational_frameworks_systems_6fa5b34d",
+    "tab_id": "tab_foundational_frameworks_systems_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 29.78,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.",
+    "worker_id": "worker_surveys_and_taxonomies_ddd28b28",
+    "tab_id": "tab_surveys_and_taxonomies_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Opening api.openalex.org"
+   }
+  },
+  {
+   "t": 35.55,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.",
+    "worker_id": "worker_benchmarks_and_evaluation_60f12099",
+    "tab_id": "tab_benchmarks_and_evaluation_0da63c",
+    "status": "running",
+    "error": null,
+    "label": "Opening export.arxiv.org"
+   }
+  },
+  {
+   "t": 42.3,
+   "event": "task_completed",
+   "data": {
+    "task_id": "foundational_frameworks_systems",
+    "description": "Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.",
+    "worker_id": "worker_foundational_frameworks_systems_6fa5b34d",
+    "tab_id": "tab_foundational_frameworks_systems_0da63c",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 42.65,
+   "event": "task_completed",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.",
+    "worker_id": "worker_surveys_and_taxonomies_ddd28b28",
+    "tab_id": "tab_surveys_and_taxonomies_0da63c",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 47.84,
+   "event": "task_completed",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.",
+    "worker_id": "worker_benchmarks_and_evaluation_60f12099",
+    "tab_id": "tab_benchmarks_and_evaluation_0da63c",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 47.84,
+   "event": "synthesis_started",
+   "data": {
+    "completed": 3,
+    "total": 3
+   }
+  },
+  {
+   "t": 57.59,
+   "event": "done",
+   "data": {
+    "success": true,
+    "run_id": "run_5b16280da63c",
+    "status": "completed",
+    "final_answer": "Selected research papers on multi-agent orchestration, grouped by taxonomy, system architecture, and evaluation benchmarks:\n\n### Surveys and Taxonomies\n- [Large Language Model Based Multi-agents: A Survey of Progress and Challenges](https://doi.org/10.24963/ijcai.2024/890) (IJCAI 2024)\n  - Authors: Taicheng Guo, Xiuying Chen, Yaqi Wang, Ruidi Chang, Shichao Pei, et al.\n  - Focus: Taxonomies of LLM multi-agent systems covering agent profiling, communication architectures, collaboration mechanisms, and environment simulation.\n- [A survey on large language model based autonomous agents](https://doi.org/10.1007/s11704-024-40231-1) (Frontiers of Computer Science 2024)\n  - Authors: Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, et al.\n  - Focus: Agent composition (architecture, memory, planning, tools), multi-agent coordination environments, cooperative/competitive dynamics, and collective intelligence patterns (1,807 citations).\n\n### System Designs and Frameworks\n- [ChatDev 2.0: A No-Code Multi-Agent Platform for Developing Everything](https://arxiv.org/abs/2609.00714) (EMNLP Demo Track 2026)\n  - Authors: Yufan Dang, Shu Yao, Bowen Lai, Chenting Xu, Ruijie Shi, Wai-Shing Leung, Huatao Li, Chen Qian, Zhiyuan Liu.\n  - Focus: Visual no-code interaction workflow orchestration engine (DevAll) to build, execute, and inspect heterogeneous multi-agent systems.\n- [Nexus Agent: Autonomous Multi-Agent Orchestration Framework and Local GraphRAG Architecture](https://doi.org/10.5281/zenodo.22118830) (Zenodo 2026)\n  - Author: Rudra Sarker.\n  - Focus: Autonomous multi-agent coordination architecture integrated with local GraphRAG retrieval pipelines.\n\n### Benchmarks, Evaluation, and Failure Analysis\n- [PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting](http://arxiv.org/abs/2606.08878v2) (arXiv 2026)\n  - Authors: Youran Sun, Xingyu Ren, Kejia Zhang, Xinpeng Liu, Jiaxuan Guo.\n  - Focus: Evaluates LLMs on composing orchestration prompts and routing information across 10 multi-agent topologies (110 scenarios). Highlights failure modes such as information leakage across sub-agents and low combined pass rates (17.2%).\n- [Towards Effective GenAI Multi-Agent Collaboration: Design and Evaluation for Enterprise Applications](http://arxiv.org/abs/2412.05449v1) (arXiv 2024)\n  - Authors: Raphael Shu, Nilaksh Das, Michelle Yuan, Monica Sunkara, Yi Zhang.\n  - Focus: Enterprise domain benchmark comparing coordination mode (parallel communication, payload referencing) versus message routing mode; analyzes orchestration latency, failure mitigation, and payload referencing efficiency.\n- [EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945) (Zenodo 2026)\n  - Author: Nathan Scott.\n  - Focus: Evaluates framework reliability, task decomposition, and coordination in end-to-end multi-agent execution.\n- [COLLATOR: Compositional Multi-Agent Orchestration with Counterfactual Reinforcement Learning](http://arxiv.org/abs/2605.14483v2) (arXiv 2026)\n  - Authors: Unlisted in retrieved feed record.\n  - Focus: Identifies structural orchestration failure modes (sequential role design, capacity assignment, dependency failure) caused by coarse execution feedback; evaluates accuracy-token trade-offs using localized credit signals across six reasoning and coding benchmarks.\n\n### Missing and Uncertain Information\n- **Foundational frameworks missing:** Primary landing papers for original releases (such as 2023 MetaGPT or original 2023 AutoGen) were omitted due to browsing limits.\n- **Incomplete metadata:** Authors for `COLLATOR` (arXiv 2605.14483v2) were missing from the retrieved feed record. Deep architectural details for `Nexus Agent` could not be retrieved beyond repository metadata.\n- **Incomplete failure mode survey:** The final query on multi-agent failure analysis (`export.arxiv.org/api/query?search_query=...failure+mode...`) was reached but terminated before extracting text, leaving further failure taxonomy papers unparsed.",
+    "summary": "Orchestration Summary for: 'Find me the best research papers on multi agent orchestration.'\n\n### Task: Identify high-impact survey and taxonomy papers covering multi-agent orchestration architectures, coordination patterns, and taxonomy of LLM-based multi-agent systems.\n- Status: COMPLETED (Worker: worker_surveys_and_taxonomies_ddd28b28, Tab: tab_surveys_and_taxonomies_0da63c)\n- Findings: ### Findings\n- [Large Language Model Based Multi-agents: A Survey of Progress and Challenges](https://doi.org/10.24963/ijcai.2024/890) | **Authors:** Taicheng Guo, Xiuying Chen, Yaqi Wang, Ruidi Chang, Shichao Pei, et al. | **Year:** 2024 | **Venue:** IJCAI 2024 (Proceedings of the 33rd International Joint Conference on Artificial Intelligence) | **Citations:** Indexed in OpenAlex (record W4401023556) | **Core Taxonomy:** Systematic taxonomy of LLM multi-agent systems covering agent profiling, communication architectures, collaboration/coordination mechanisms, and environment simulation. | **Evidence:** Page 2 OpenAlex record provides metadata and IJCAI publication record (`doi:10.24963/ijcai.2024/890`). | **Relevance:** Directly targets LLM multi-agent orchestration taxonomies, coordination patterns, and interaction paradigms.\n- [A survey on large language model based autonomous agents](https://doi.org/10.1007/s11704-024-40231-1) | **Authors:** Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, et al. | **Year:** 2024 | **Venue:** Frontiers of Computer Science | **Citations:** 1,807 | **Core Taxonomy:** Dissects LLM agent composition (architecture, memory, planning, tools) and categorizes multi-agent coordination environments, cooperative/competitive dynamics, and multi-agent collective intelligence patterns. | **Evidence:** OpenAlex record `W4393065402` with 1,807 citations. | **Relevance:** High-impact foundational survey formalizing multi-agent interaction topologies, communication paradigms, and agent architectures.\n\n### Coverage\n- Searched OpenAlex API queries: `survey large language model multi-agent orchestration` (39,629 raw matching entries), `filter=default.search:survey \"multi-agent\" LLM&sort=cited_by_count:desc` (reviewed top 10 items), and `filter=title.search:survey multi-agent,title.search:language`.\n- Reviewed roughly 40 results across the initial provided data block and subsequent OpenAlex API calls.\n\n### Limitations\n- The 3-action budget halted evaluation before parsing the final OpenAlex endpoint response payload for additional arXiv/survey preprints.\n- OpenAlex does not expose real-time citation metrics for newly accepted 2024 conference papers in all endpoint views without additional record queries.\n### Task: Identify foundational papers and system designs for prominent multi-agent orchestration platforms and frameworks.\n- Status: COMPLETED (Worker: worker_foundational_frameworks_systems_6fa5b34d, Tab: tab_foundational_frameworks_systems_0da63c)\n- Findings: ### Findings\n- [ChatDev 2.0: A No-Code Multi-Agent Platform for Developing Everything](https://arxiv.org/abs/2609.00714) | **Authors:** Yufan Dang, Shu Yao, Bowen Lai, Chenting Xu, Ruijie Shi, Wai-Shing Leung, Huatao Li, Chen Qian, Zhiyuan Liu | **Year:** 2026 | **Venue:** EMNLP 2026 Demo Track | **Framework Name:** ChatDev 2.0 (DevAll) | **Primary Orchestration Mechanism:** Visual no-code interaction workflow orchestration for composing, executing, and inspecting heterogeneous multi-agent systems | **Evidence:** Page abstract states: \"We present ChatDev 2.0: DevAll (hereafter DevAll), a no-code platform for building, executing, and inspecting heterogeneous MAS that delivers both high expressiveness and ease of use... Accepted at EMNLP 2026 Demo Track.\" | **Relevance:** Introduces the system design and execution engine of ChatDev 2.0, extending conversational software development orchestration to general multi-agent task execution.\n- [Nexus Agent: Autonomous Multi-Agent Orchestration Framework and Local GraphRAG Architecture](https://doi.org/10.5281/zenodo.22118830) | **Authors:** Rudra Sarker | **Year:** 2026 | **Venue:** Zenodo (CERN European Organization for Nuclear Research) | **Framework Name:** Nexus Agent | **Primary Orchestration Mechanism:** Autonomous multi-agent orchestration coupled with a local GraphRAG retrieval pipeline | **Evidence:** OpenAlex record indexes the work as \"Nexus Agent: Autonomous Multi-Agent Orchestration Framework and Local GraphRAG Architecture\" published via Zenodo. | **Relevance:** Documents an orchestration system design combining graph retrieval-augmented generation with multi-agent coordination.\n\n### Coverage\n- **Sources queried:** OpenAlex API (`https://api.openalex.org/works?search=multi-agent+orchestration+framework+architecture`) and arXiv search (`https://arxiv.org/search/?query=%22AutoGen%22+OR+%22MetaGPT%22+OR+%22ChatDev%22&searchtype=all&source=header`).\n- **Results reviewed:** 25 initial API records from OpenAlex and 50 search results from arXiv.\n\n### Limitations\n- The 3-action browser limit was reached before navigating directly to the original foundational arXiv landing pages for earlier releases (such as original AutoGen 2023 or MetaGPT 2023 papers).\n- Google Scholar search results from the pre-read data block were empty (`about:blank`), preventing extraction from that source.\n- Deep architectural details for Nexus Agent could not be parsed beyond repository metadata due to lack of open-access full-text text extraction within the tool budget.\n### Task: Identify key research papers introducing benchmarks, evaluation metrics, and failure mode analysis for multi-agent orchestration.\n- Status: COMPLETED (Worker: worker_benchmarks_and_evaluation_60f12099, Tab: tab_benchmarks_and_evaluation_0da63c)\n- Findings: ### Findings\n- [PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting](http://arxiv.org/abs/2606.08878v2) | **Authors:** Youran Sun, Xingyu Ren, Kejia Zhang, Xinpeng Liu, Jiaxuan Guo | **Year:** 2026 | **Venue:** arXiv preprint (`cs.CL`, `cs.MA`) | **Benchmark Name:** PerspectiveGap | **Evaluation Focus:** Evaluates LLMs on their ability to compose orchestration prompts and determine information routing across sub-agents in 10 multi-agent topologies (110 scenarios); measures failure modes including orchestration information leakage rate (average leakage rate of 217.9% across models) and combined pass rate across role-fragment assignment and prompt writing | **Evidence:** Page states: \"introduce PerspectiveGap, a benchmark for evaluating LLMs' ability to compose orchestration prompts for multi-agent systems... 110 scenarios... organized into 10 topologies... evaluated models achieve an average combined pass rate of only 17.2%... average overall leakage rate of 217.9%\" | **Relevance:** Directly establishes a dedicated benchmark and specific failure mode metrics (leakage rate, role-fragment assignment failures) for multi-agent orchestration.\n\n- [Towards Effective GenAI Multi-Agent Collaboration: Design and Evaluation for Enterprise Applications](http://arxiv.org/abs/2412.05449v1) | **Authors:** Raphael Shu, Nilaksh Das, Michelle Yuan, Monica Sunkara, Yi Zhang | **Year:** 2024 | **Venue:** Technical report / arXiv preprint (`cs.CL`, `cs.AI`, AWS Bedrock Agents) | **Benchmark Name:** Enterprise Multi-Agent Coordination Benchmark (handcrafted enterprise domain benchmark) | **Evaluation Focus:** Quantitative evaluation of multi-agent orchestration mechanisms comparing coordination mode (parallel communication, payload referencing) versus routing mode (message forwarding); failure analysis regarding orchestration overhead, latency, and code-intensive task failure modes | **Evidence:** Page states: \"presents a comprehensive evaluation of coordination and routing capabilities in a novel multi-agent collaboration framework... benchmark on a set of handcrafted scenarios from three enterprise domains... payload referencing improves performance on code-intensive tasks by 23%; latency can be substantially reduced with a routing mechanism that selectively bypasses agent orchestration\" | **Relevance:** Provides empirical orchestration metrics (end-to-end goal success rates, orchestration latency, payload referencing efficiency) and failure mitigation strategies.\n\n- [EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945) | **Authors:** Nathan Scott | **Year:** 2026 | **Venue:** Zenodo Repository / OpenAlex (`doi:10.5281/zenodo.20349945`) | **Benchmark Name:** EPOB (End-to-End Project Orchestration Benchmark) | **Evaluation Focus:** End-to-end project orchestration evaluation for multi-agent AI frameworks, assessing task decomposition, agent coordination, and framework execution reliability | **Evidence:** OpenAlex metadata record specifies title, DOI, author, publication date (2026-05-23), primary keywords \"multi-agent AI\", \"LLM agents\", \"benchmark\", \"task-decomposition\" | **Relevance:** Introduces an explicit benchmark specifically targeting multi-agent project orchestration evaluation.\n\n- [COLLATOR: Compositional Multi-Agent Orchestration with Counterfactual Reinforcement Learning](http://arxiv.org/abs/2605.14483v2) | **Authors:** Unlisted in excerpt (submitted under arXiv ID 2605.14483) | **Year:** 2026 | **Venue:** Submitted to ICLR 2027 / arXiv preprint (`cs.AI`) | **Benchmark Name:** MMLU, GSM8K, AQuA, MultiArith, SVAMP, HumanEval suite | **Evaluation Focus:** Multi-agent orchestration credit assignment and efficiency metrics; identifies orchestration failure modes where sequential/partial role design, capacity assignment, and dependency construction fail due to coarse execution feedback; evaluates accuracy-token trade-offs using counterfactual localized credit signals | **Evidence:** Page states: \"effectiveness and computational cost depend critically on orchestration design... role design, capacity assignment, and dependency construction jointly affect both solution quality and execution efficiency... rely on execution-level feedback that provides limited credit assignment for local orchestration decisions... Experiments on six reasoning and coding benchmarks... improving the accuracy-token trade-off\" | **Relevance:** Analyzes orchestration structural failure modes (role design, dependency failure, and suboptimal credit assignment) and benchmarks orchestration efficiency.\n\n### Coverage\n- **Sites and queries:**\n  - `https://api.openalex.org/works?search=benchmark+evaluation+multi-agent+orchestration` (25 results provided in initial data block).\n  - `https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+all:benchmark+AND+all:orchestration&start=0&max_results=10` (10 results retrieved and parsed).\n  - `https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+(all:%22failure+mode%22+OR+all:%22failure+modes%22+OR+all:%22failure+analysis%22)+AND+all:evaluation&start=0&max_results=10` (navigated).\n- Roughly 35 total candidate records reviewed across initial data and arXiv search calls.\n\n### Limitations\n- Reached the 3-action browser limit before extracting page text from the final arXiv query on failure mode analysis (`export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+(all:%22failure+mode%22...`).\n- Authors for the arXiv paper `2605.14483v2` (COLLATOR) were cut off in the feed extract and could not be verified from the page.\n- Initial Google Scholar query was blank in the provided data block (`about:blank`).",
+    "task_results": {
+     "surveys_and_taxonomies": {
+      "findings": "### Findings\n- [Large Language Model Based Multi-agents: A Survey of Progress and Challenges](https://doi.org/10.24963/ijcai.2024/890) | **Authors:** Taicheng Guo, Xiuying Chen, Yaqi Wang, Ruidi Chang, Shichao Pei, et al. | **Year:** 2024 | **Venue:** IJCAI 2024 (Proceedings of the 33rd International Joint Conference on Artificial Intelligence) | **Citations:** Indexed in OpenAlex (record W4401023556) | **Core Taxonomy:** Systematic taxonomy of LLM multi-agent systems covering agent profiling, communication architectures, collaboration/coordination mechanisms, and environment simulation. | **Evidence:** Page 2 OpenAlex record provides metadata and IJCAI publication record (`doi:10.24963/ijcai.2024/890`). | **Relevance:** Directly targets LLM multi-agent orchestration taxonomies, coordination patterns, and interaction paradigms.\n- [A survey on large language model based autonomous agents](https://doi.org/10.1007/s11704-024-40231-1) | **Authors:** Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, et al. | **Year:** 2024 | **Venue:** Frontiers of Computer Science | **Citations:** 1,807 | **Core Taxonomy:** Dissects LLM agent composition (architecture, memory, planning, tools) and categorizes multi-agent coordination environments, cooperative/competitive dynamics, and multi-agent collective intelligence patterns. | **Evidence:** OpenAlex record `W4393065402` with 1,807 citations. | **Relevance:** High-impact foundational survey formalizing multi-agent interaction topologies, communication paradigms, and agent architectures.\n\n### Coverage\n- Searched OpenAlex API queries: `survey large language model multi-agent orchestration` (39,629 raw matching entries), `filter=default.search:survey \"multi-agent\" LLM&sort=cited_by_count:desc` (reviewed top 10 items), and `filter=title.search:survey multi-agent,title.search:language`.\n- Reviewed roughly 40 results across the initial provided data block and subsequent OpenAlex API calls.\n\n### Limitations\n- The 3-action budget halted evaluation before parsing the final OpenAlex endpoint response payload for additional arXiv/survey preprints.\n- OpenAlex does not expose real-time citation metrics for newly accepted 2024 conference papers in all endpoint views without additional record queries.",
+      "success": true,
+      "sources": [
+       "https://api.openalex.org/works?filter=default.search:survey%20%22multi-agent%22%20LLM&sort=cited_by_count:desc&per_page=10",
+       "https://api.openalex.org/works?filter=title.search:survey%20multi-agent,title.search:language&sort=cited_by_count:desc&per_page=15"
+      ],
+      "error": null,
+      "worker_id": "worker_surveys_and_taxonomies_ddd28b28",
+      "tab_id": "tab_surveys_and_taxonomies_0da63c"
+     },
+     "foundational_frameworks_systems": {
+      "findings": "### Findings\n- [ChatDev 2.0: A No-Code Multi-Agent Platform for Developing Everything](https://arxiv.org/abs/2609.00714) | **Authors:** Yufan Dang, Shu Yao, Bowen Lai, Chenting Xu, Ruijie Shi, Wai-Shing Leung, Huatao Li, Chen Qian, Zhiyuan Liu | **Year:** 2026 | **Venue:** EMNLP 2026 Demo Track | **Framework Name:** ChatDev 2.0 (DevAll) | **Primary Orchestration Mechanism:** Visual no-code interaction workflow orchestration for composing, executing, and inspecting heterogeneous multi-agent systems | **Evidence:** Page abstract states: \"We present ChatDev 2.0: DevAll (hereafter DevAll), a no-code platform for building, executing, and inspecting heterogeneous MAS that delivers both high expressiveness and ease of use... Accepted at EMNLP 2026 Demo Track.\" | **Relevance:** Introduces the system design and execution engine of ChatDev 2.0, extending conversational software development orchestration to general multi-agent task execution.\n- [Nexus Agent: Autonomous Multi-Agent Orchestration Framework and Local GraphRAG Architecture](https://doi.org/10.5281/zenodo.22118830) | **Authors:** Rudra Sarker | **Year:** 2026 | **Venue:** Zenodo (CERN European Organization for Nuclear Research) | **Framework Name:** Nexus Agent | **Primary Orchestration Mechanism:** Autonomous multi-agent orchestration coupled with a local GraphRAG retrieval pipeline | **Evidence:** OpenAlex record indexes the work as \"Nexus Agent: Autonomous Multi-Agent Orchestration Framework and Local GraphRAG Architecture\" published via Zenodo. | **Relevance:** Documents an orchestration system design combining graph retrieval-augmented generation with multi-agent coordination.\n\n### Coverage\n- **Sources queried:** OpenAlex API (`https://api.openalex.org/works?search=multi-agent+orchestration+framework+architecture`) and arXiv search (`https://arxiv.org/search/?query=%22AutoGen%22+OR+%22MetaGPT%22+OR+%22ChatDev%22&searchtype=all&source=header`).\n- **Results reviewed:** 25 initial API records from OpenAlex and 50 search results from arXiv.\n\n### Limitations\n- The 3-action browser limit was reached before navigating directly to the original foundational arXiv landing pages for earlier releases (such as original AutoGen 2023 or MetaGPT 2023 papers).\n- Google Scholar search results from the pre-read data block were empty (`about:blank`), preventing extraction from that source.\n- Deep architectural details for Nexus Agent could not be parsed beyond repository metadata due to lack of open-access full-text text extraction within the tool budget.",
+      "success": true,
+      "sources": [
+       "https://arxiv.org/search/?query=%22AutoGen%22+OR+%22MetaGPT%22+OR+%22ChatDev%22&searchtype=all&source=header"
+      ],
+      "error": null,
+      "worker_id": "worker_foundational_frameworks_systems_6fa5b34d",
+      "tab_id": "tab_foundational_frameworks_systems_0da63c"
+     },
+     "benchmarks_and_evaluation": {
+      "findings": "### Findings\n- [PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting](http://arxiv.org/abs/2606.08878v2) | **Authors:** Youran Sun, Xingyu Ren, Kejia Zhang, Xinpeng Liu, Jiaxuan Guo | **Year:** 2026 | **Venue:** arXiv preprint (`cs.CL`, `cs.MA`) | **Benchmark Name:** PerspectiveGap | **Evaluation Focus:** Evaluates LLMs on their ability to compose orchestration prompts and determine information routing across sub-agents in 10 multi-agent topologies (110 scenarios); measures failure modes including orchestration information leakage rate (average leakage rate of 217.9% across models) and combined pass rate across role-fragment assignment and prompt writing | **Evidence:** Page states: \"introduce PerspectiveGap, a benchmark for evaluating LLMs' ability to compose orchestration prompts for multi-agent systems... 110 scenarios... organized into 10 topologies... evaluated models achieve an average combined pass rate of only 17.2%... average overall leakage rate of 217.9%\" | **Relevance:** Directly establishes a dedicated benchmark and specific failure mode metrics (leakage rate, role-fragment assignment failures) for multi-agent orchestration.\n\n- [Towards Effective GenAI Multi-Agent Collaboration: Design and Evaluation for Enterprise Applications](http://arxiv.org/abs/2412.05449v1) | **Authors:** Raphael Shu, Nilaksh Das, Michelle Yuan, Monica Sunkara, Yi Zhang | **Year:** 2024 | **Venue:** Technical report / arXiv preprint (`cs.CL`, `cs.AI`, AWS Bedrock Agents) | **Benchmark Name:** Enterprise Multi-Agent Coordination Benchmark (handcrafted enterprise domain benchmark) | **Evaluation Focus:** Quantitative evaluation of multi-agent orchestration mechanisms comparing coordination mode (parallel communication, payload referencing) versus routing mode (message forwarding); failure analysis regarding orchestration overhead, latency, and code-intensive task failure modes | **Evidence:** Page states: \"presents a comprehensive evaluation of coordination and routing capabilities in a novel multi-agent collaboration framework... benchmark on a set of handcrafted scenarios from three enterprise domains... payload referencing improves performance on code-intensive tasks by 23%; latency can be substantially reduced with a routing mechanism that selectively bypasses agent orchestration\" | **Relevance:** Provides empirical orchestration metrics (end-to-end goal success rates, orchestration latency, payload referencing efficiency) and failure mitigation strategies.\n\n- [EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945) | **Authors:** Nathan Scott | **Year:** 2026 | **Venue:** Zenodo Repository / OpenAlex (`doi:10.5281/zenodo.20349945`) | **Benchmark Name:** EPOB (End-to-End Project Orchestration Benchmark) | **Evaluation Focus:** End-to-end project orchestration evaluation for multi-agent AI frameworks, assessing task decomposition, agent coordination, and framework execution reliability | **Evidence:** OpenAlex metadata record specifies title, DOI, author, publication date (2026-05-23), primary keywords \"multi-agent AI\", \"LLM agents\", \"benchmark\", \"task-decomposition\" | **Relevance:** Introduces an explicit benchmark specifically targeting multi-agent project orchestration evaluation.\n\n- [COLLATOR: Compositional Multi-Agent Orchestration with Counterfactual Reinforcement Learning](http://arxiv.org/abs/2605.14483v2) | **Authors:** Unlisted in excerpt (submitted under arXiv ID 2605.14483) | **Year:** 2026 | **Venue:** Submitted to ICLR 2027 / arXiv preprint (`cs.AI`) | **Benchmark Name:** MMLU, GSM8K, AQuA, MultiArith, SVAMP, HumanEval suite | **Evaluation Focus:** Multi-agent orchestration credit assignment and efficiency metrics; identifies orchestration failure modes where sequential/partial role design, capacity assignment, and dependency construction fail due to coarse execution feedback; evaluates accuracy-token trade-offs using counterfactual localized credit signals | **Evidence:** Page states: \"effectiveness and computational cost depend critically on orchestration design... role design, capacity assignment, and dependency construction jointly affect both solution quality and execution efficiency... rely on execution-level feedback that provides limited credit assignment for local orchestration decisions... Experiments on six reasoning and coding benchmarks... improving the accuracy-token trade-off\" | **Relevance:** Analyzes orchestration structural failure modes (role design, dependency failure, and suboptimal credit assignment) and benchmarks orchestration efficiency.\n\n### Coverage\n- **Sites and queries:**\n  - `https://api.openalex.org/works?search=benchmark+evaluation+multi-agent+orchestration` (25 results provided in initial data block).\n  - `https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+all:benchmark+AND+all:orchestration&start=0&max_results=10` (10 results retrieved and parsed).\n  - `https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+(all:%22failure+mode%22+OR+all:%22failure+modes%22+OR+all:%22failure+analysis%22)+AND+all:evaluation&start=0&max_results=10` (navigated).\n- Roughly 35 total candidate records reviewed across initial data and arXiv search calls.\n\n### Limitations\n- Reached the 3-action browser limit before extracting page text from the final arXiv query on failure mode analysis (`export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+(all:%22failure+mode%22...`).\n- Authors for the arXiv paper `2605.14483v2` (COLLATOR) were cut off in the feed extract and could not be verified from the page.\n- Initial Google Scholar query was blank in the provided data block (`about:blank`).",
+      "success": true,
+      "sources": [
+       "https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+all:benchmark+AND+all:orchestration&start=0&max_results=10",
+       "https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+(all:%22failure+mode%22+OR+all:%22failure+modes%22+OR+all:%22failure+analysis%22)+AND+all:evaluation&start=0&max_results=10"
+      ],
+      "error": null,
+      "worker_id": "worker_benchmarks_and_evaluation_60f12099",
+      "tab_id": "tab_benchmarks_and_evaluation_0da63c"
+     }
+    },
+    "sources": [
+     "https://api.openalex.org/works?filter=default.search:survey%20%22multi-agent%22%20LLM&sort=cited_by_count:desc&per_page=10",
+     "https://api.openalex.org/works?filter=title.search:survey%20multi-agent,title.search:language&sort=cited_by_count:desc&per_page=15",
+     "https://arxiv.org/search/?query=%22AutoGen%22+OR+%22MetaGPT%22+OR+%22ChatDev%22&searchtype=all&source=header",
+     "https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+all:benchmark+AND+all:orchestration&start=0&max_results=10",
+     "https://export.arxiv.org/api/query?search_query=all:%22multi-agent%22+AND+(all:%22failure+mode%22+OR+all:%22failure+modes%22+OR+all:%22failure+analysis%22)+AND+all:evaluation&start=0&max_results=10"
+    ],
+    "missing_information": [],
+    "follow_up": null,
+    "duration_ms": 49335.88,
+    "timing": {
+     "planning_ms": 8248.86,
+     "workers_ms": 39587.03,
+     "synthesis_ms": 9748.78,
+     "total_ms": 57584.74,
+     "workers": {
+      "surveys_and_taxonomies": {
+       "status": "completed",
+       "duration_ms": 34382.99,
+       "tool_calls": 3,
+       "llm_calls": 4,
+       "avg_llm_ms": 7519.0,
+       "stopped_early": "the limit of 3 browser actions was reached"
+      },
+      "foundational_frameworks_systems": {
+       "status": "completed",
+       "duration_ms": 34042.5,
+       "tool_calls": 3,
+       "llm_calls": 4,
+       "avg_llm_ms": 7541.4,
+       "stopped_early": "the limit of 3 browser actions was reached"
+      },
+      "benchmarks_and_evaluation": {
+       "status": "completed",
+       "duration_ms": 39573.76,
+       "tool_calls": 3,
+       "llm_calls": 4,
+       "avg_llm_ms": 8604.8,
+       "stopped_early": "the limit of 3 browser actions was reached"
+      }
+     }
+    },
+    "type": "result",
+    "done": true
+   }
+  }
+ ]
+}

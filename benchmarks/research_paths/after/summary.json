@@ -1,0 +1,51 @@
+{
+ "single": {
+  "trials": 5,
+  "success": 5,
+  "wall_s_median": 25.23,
+  "wall_s_all": [
+   23.89,
+   25.23,
+   23.91,
+   31.35,
+   44.09
+  ],
+  "tool_calls_median": 4,
+  "papers_median": 6,
+  "papers_all": [
+   6,
+   5,
+   7,
+   6,
+   7
+  ],
+  "reachable_paper_links": 30,
+  "checked_paper_links": 31
+ },
+ "multi": {
+  "trials": 5,
+  "success": 5,
+  "wall_s_median": 97.22,
+  "wall_s_all": [
+   97.22,
+   71.31,
+   76.98,
+   100.32,
+   100.58
+  ],
+  "tool_calls_median": 23,
+  "papers_median": 11,
+  "papers_all": [
+   12,
+   10,
+   9,
+   11,
+   12
+  ],
+  "reachable_paper_links": 53,
+  "checked_paper_links": 54,
+  "planning_s_median": 10.38,
+  "slowest_worker_s_median": 74.74,
+  "after_workers_s_median": 10.24
+ }
+}

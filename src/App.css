@@ -1,0 +1,37 @@
+.nexus-app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  position: relative;
+}
+
+.browser-body-layout {
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.browser-canvas-area {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keep in-app pages (new tab) clear of the assistant drawer; the native page view is sized separately in Chrome/PageArea */
+.browser-canvas-area.with-drawer {
+  margin-right: min(var(--drawer-w, 440px), 92vw);
+}
+
+/* Width changes animate together so the native page view (sized from these boxes) follows smoothly */
+.browser-canvas-area { transition: margin-right 0.32s var(--ease-out); }
+.drawer-resizing .browser-canvas-area,
+.drawer-resizing .chat-drawer { transition: none; }
+.drawer-resizing { cursor: col-resize; user-select: none; }

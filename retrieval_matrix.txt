@@ -1,0 +1,64 @@
+
+--- QUERY A ---
+Find the first 5 products on this webpage and return their names and prices.
+[1] TARGET? False | ToolCall: 0cb5e1bc-4a70-42ae-ae9a-93d25bd579ed | ...         "price": price_val,         "currency": "GBP",  
+[2] TARGET? False | ToolCall: c2f59e55-b643-4448-92a7-83e1d8ccb14a | ..._browser_harness\nArgs: goto_url("https://www.rtings.com/
+[3] TARGET? False | ToolCall: 968ec86c-6c81-497b-9151-102e8c80e696 | Tool: run_browser_harness\nArgs: import json  wait_for_load(
+[4] TARGET? False | ToolCall: f23473f9-8e04-4973-92c6-8cdf12d80b21 | Task: Go to Wikipedia, search for 'Apollo 11', navigate to t
+[5] TARGET? False | ToolCall: c07c0748-3308-4a9b-8ba9-00ad2044f24b | Task: Go to https://books.toscrape.com/ and list the titles 
+
+--- QUERY B ---
+Open a product listing and extract the top 3 items with title and price.
+[1] TARGET? False | ToolCall: 0cb5e1bc-4a70-42ae-ae9a-93d25bd579ed | ...port json data = js(""" (() => {     const items = Array.
+[2] TARGET? False | ToolCall: a168eea2-8748-4243-a4aa-b9563927c34a | ...ecast: imf });             }         }     }     return c
+[3] TARGET? False | ToolCall: 968ec86c-6c81-497b-9151-102e8c80e696 | ...ding repositories on GitHub today",         "entities": [
+[4] TARGET? False | ToolCall: c07c0748-3308-4a9b-8ba9-00ad2044f24b | Task: Go to https://books.toscrape.com/ and list the titles 
+[5] TARGET? False | ToolCall: 23fe13ce-7979-4a69-b5fc-aae0deb2a040 | Tool: run_browser_harness\nArgs: import json  extracted = [ 
+
+--- QUERY C ---
+From a webpage containing repeated entries, return selected fields for the first N records.
+[1] TARGET? False | ToolCall: 3535575d-9b07-42df-9a96-e366b5454c84 | ...BLE METHOD PATTERN (List Record Extraction): Goal: Extrac
+[2] TARGET? False | ToolCall: f508a485-ac17-4357-aa51-5512d093ff48 | ...BLE METHOD PATTERN (List Record Extraction): Goal: Extrac
+[3] TARGET? False | ToolCall: 94e589ff-b157-4f74-a80f-8119b859b612 | ...BLE METHOD PATTERN (List Record Extraction): Goal: Extrac
+[4] TARGET? False | ToolCall: e3985922-20af-4617-b938-819e86759e9e | Tool: run_browser_harness\nArgs: # Let's inspect the exact e
+[5] TARGET? False | Artifact:  | Artifact [procedure]: Procedural Candidate: List Record Extr
+
+--- QUERY D ---
+Go to a webpage and list the first three product names and prices.
+[1] TARGET? False | ToolCall: 0cb5e1bc-4a70-42ae-ae9a-93d25bd579ed | ...port json data = js(""" (() => {     const items = Array.
+[2] TARGET? False | ToolCall: c07c0748-3308-4a9b-8ba9-00ad2044f24b | Task: Go to https://books.toscrape.com/ and list the titles 
+[3] TARGET? False | ToolCall: 57db01c6-684a-4ed9-9e33-e3f99b265f33 | Tool: run_browser_harness\nArgs: goto_url("https://en.wikipe
+[4] TARGET? False | ToolCall: f23473f9-8e04-4973-92c6-8cdf12d80b21 | Task: Go to Wikipedia, search for 'Apollo 11', navigate to t
+[5] TARGET? False | ToolCall: f6f1afcf-e22c-40c5-9524-e8de960a840c | Tool: run_browser_harness\nArgs: print(page_info()) \nResult
+
+--- QUERY E ---
+Open this webpage and tell me its title.
+[1] TARGET? False | ToolCall: 3e1db61d-4c0c-4695-83b8-fa584fec93d7 | Task: Open example.com and tell me the page title.\nStatus: 
+[2] TARGET? False | ToolCall: 245fedd6-d503-48f2-a478-b90d51ed1053 | Task: Open news.ycombinator.com and list the top 2 story tit
+[3] TARGET? False | ToolCall: c07c0748-3308-4a9b-8ba9-00ad2044f24b | Task: Go to https://books.toscrape.com/ and list the titles 
+[4] TARGET? False | ToolCall: 944de47b-1de4-4e78-be5a-5465ee3f71b8 | Task: Go to https://en.wikipedia.org/wiki/List_of_highest-gr
+[5] TARGET? False | ToolCall: 01cb0405-86fa-4a58-87c1-52e1d26069df | Tool: run_browser_harness\nArgs: wait_for_load() title = js(
+
+--- QUERY F ---
+Search Google for the capital of France.
+[1] TARGET? False | ToolCall: 495369a1-b11d-4a04-b2ca-00ad131bcb21 | Tool: run_browser_harness\nArgs: goto_url("https://www.googl
+[2] TARGET? False | ToolCall: dd8310f0-b4a3-4ecc-aa5b-1e0fc8034d9c | Task: Search Google for the capital of France and return jus
+[3] TARGET? False | ToolCall: 0fbb3b42-0733-4d9b-aeef-8c1292b47db9 | Tool: search_memory\nArgs: {"query": "capital of France", "d
+[4] TARGET? False | ToolCall: abb23e67-4d3e-459d-a560-f9a20fe3f6d1 | ...rgs: import json  wait_for_load() title = js("document.ti
+[5] TARGET? False | ToolCall: 640db27e-6489-4f7f-94df-5a7b9bbc0aae | Tool: run_browser_harness\nArgs: cdp("Page.navigate", url="h
+
+--- QUERY G ---
+Open this page and summarize the article.
+[1] TARGET? False | ToolCall: 3e1db61d-4c0c-4695-83b8-fa584fec93d7 | Task: Open example.com and tell me the page title.\nStatus: 
+[2] TARGET? False | ToolCall: fb5fa0c1-5994-4ad7-b7d3-f3778afe8ad9 | Task: Go to news.ycombinator.com, find a story about AI, cli
+[3] TARGET? False | ToolCall: a9701bf9-6716-4fda-a18f-45af57170b2d | Tool: run_browser_harness\nArgs: goto_url("https://en.wikipe
+[4] TARGET? False | ToolCall: f23473f9-8e04-4973-92c6-8cdf12d80b21 | Task: Go to Wikipedia, search for 'Apollo 11', navigate to t
+[5] TARGET? False | ToolCall: 6daaf759-46e9-4d0e-a467-7285616658eb | ...     return {         title: document.title,         url:
+
+--- QUERY H ---
+Navigate to a broken URL and diagnose the error.
+[1] TARGET? False | ToolCall: e3985922-20af-4617-b938-819e86759e9e | Tool: run_browser_harness\nArgs: # Let's inspect the exact e
+[2] TARGET? False | ToolCall: 640db27e-6489-4f7f-94df-5a7b9bbc0aae | Tool: run_browser_harness\nArgs: cdp("Page.navigate", url="h
+[3] TARGET? False | ToolCall: fa0b920b-9a63-4dcf-adf1-113eb2c37455 | ...rAll('th, td')).map(c => c.innerText.trim());            
+[4] TARGET? False | ToolCall: 0430baf4-e491-46f7-b3d9-fd3d3f5e098c | ...t:9999/does-not-exist") print("Page Info:", page_info()) 
+[5] TARGET? False | ToolCall: 5a0071b0-46c8-499d-9ea0-546811055f23 | Tool: run_browser_harness\nArgs: import json info = page_inf

@@ -1,0 +1,84 @@
+{
+  "scenario": "draw",
+  "trial": 2,
+  "seed": 2,
+  "error": null,
+  "wall_s": 48.55,
+  "tool_calls": 9,
+  "tools": [
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness"
+  ],
+  "llm_calls_derived": 10,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "shapes": [
+      "rectangle",
+      "ellipse"
+    ]
+  },
+  "claimed_in_answer": "Done.\n\n- **Rectangle:** drawn from `(100, 100)` to `(500, 400)`.\n- **Ellipse:** drawn inside bounds `(200, 180)` to `(400, 320)`, fully enclosed within the rectangle.",
+  "answer": "Done.\n\n- **Rectangle:** drawn from `(100, 100)` to `(500, 400)`.\n- **Ellipse:** drawn inside bounds `(200, 180)` to `(400, 320)`, fully enclosed within the rectangle.",
+  "trace": null,
+  "steps": [
+    {
+      "t": 6.2,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 11.74,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 16.54,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 21.54,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 27.14,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 30.89,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 37.0,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 41.43,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 44.58,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    }
+  ]
+}

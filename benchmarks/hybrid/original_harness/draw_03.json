@@ -1,0 +1,54 @@
+{
+  "scenario": "draw",
+  "trial": 3,
+  "seed": 3,
+  "error": null,
+  "wall_s": 30.71,
+  "tool_calls": 4,
+  "tools": [
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness"
+  ],
+  "llm_calls_derived": 5,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "shapes": [
+      "rectangle",
+      "ellipse"
+    ]
+  },
+  "claimed_in_answer": "Drawing complete.\n\n- Selected the **Rectangle** tool and drew a rectangle across coordinates `(150, 100)` to `(450, 350)`.\n- Selected the **Ellipse** tool and drew an ellipse across coordinates `(200, 150)` to `(400, 300)`, positioning it completely inside the rectangle.",
+  "answer": "Drawing complete.\n\n- Selected the **Rectangle** tool and drew a rectangle across coordinates `(150, 100)` to `(450, 350)`.\n- Selected the **Ellipse** tool and drew an ellipse across coordinates `(200, 150)` to `(400, 300)`, positioning it completely inside the rectangle.",
+  "trace": null,
+  "steps": [
+    {
+      "t": 5.71,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 12.41,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 20.66,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 26.38,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    }
+  ]
+}

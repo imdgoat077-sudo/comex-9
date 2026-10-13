@@ -1,0 +1,37 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Canvas draw fixture</title>
+<style>
+  body { margin: 0; font: 14px system-ui, sans-serif; background: #f6f6f6; }
+  #bar { display: flex; gap: 6px; padding: 8px; background: #fff; border-bottom: 1px solid #ddd; }
+  #bar button { padding: 6px 12px; border: 1px solid #ccc; background: #fafafa; border-radius: 6px; cursor: pointer; }
+  #bar button[aria-pressed=true] { background: #dfe7ff; border-color: #7c9cff; }
+  canvas { display: block; background: #fff; touch-action: none; }
+</style>
+<!-- Everything is painted on one canvas: the shapes have no DOM nodes. Shortcuts: v select, r rectangle, o ellipse, l line. -->
+<div id="bar" role="toolbar">
+  <button data-tool="select" aria-pressed="true" title="Select (V)">Select</button>
+  <button data-tool="rectangle" aria-pressed="false" title="Rectangle (R)">Rectangle</button>
+  <button data-tool="ellipse" aria-pressed="false" title="Ellipse (O)">Ellipse</button>
+  <button data-tool="line" aria-pressed="false" title="Line (L)">Line</button>
+</div>
+<canvas id="c" width="900" height="520"></canvas>
+<script>
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const scene = []; window.__scene = scene; window.__tool = 'select';
+const KEYS = { v: 'select', r: 'rectangle', o: 'ellipse', l: 'line' };
+function setTool(t) { window.__tool = t; document.querySelectorAll('#bar button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tool === t))); }
+document.querySelectorAll('#bar button').forEach(b => b.addEventListener('click', () => setTool(b.dataset.tool)));
+document.addEventListener('keydown', (e) => { if (!e.ctrlKey && !e.metaKey && KEYS[e.key.toLowerCase()]) setTool(KEYS[e.key.toLowerCase()]); });
+let cur = null;
+function draw() { ctx.clearRect(0, 0, cv.width, cv.height); ctx.strokeStyle = '#1e1e1e'; ctx.lineWidth = 2;
+  for (const s of scene.concat(cur ? [cur] : [])) { ctx.beginPath();
+    if (s.type === 'rectangle') ctx.rect(Math.min(s.x1, s.x2), Math.min(s.y1, s.y2), Math.abs(s.x2 - s.x1), Math.abs(s.y2 - s.y1));
+    else if (s.type === 'ellipse') ctx.ellipse((s.x1 + s.x2) / 2, (s.y1 + s.y2) / 2, Math.abs(s.x2 - s.x1) / 2, Math.abs(s.y2 - s.y1) / 2, 0, 0, 2 * Math.PI);
+    else { ctx.moveTo(s.x1, s.y1); ctx.lineTo(s.x2, s.y2); } ctx.stroke(); } }
+const pt = (e) => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+cv.addEventListener('pointerdown', (e) => { if (window.__tool === 'select') return; const [x, y] = pt(e); cur = { type: window.__tool, x1: x, y1: y, x2: x, y2: y }; cv.setPointerCapture(e.pointerId); });
+cv.addEventListener('pointermove', (e) => { if (!cur) return; [cur.x2, cur.y2] = pt(e); draw(); });
+cv.addEventListener('pointerup', (e) => { if (!cur) return; [cur.x2, cur.y2] = pt(e); if (Math.hypot(cur.x2 - cur.x1, cur.y2 - cur.y1) > 8) scene.push(cur); cur = null; draw(); });
+draw();
+</script>

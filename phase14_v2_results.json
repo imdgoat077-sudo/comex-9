@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Task A (Overlay)",
+    "baseline_success": true,
+    "baseline_tools": 1,
+    "baseline_duration": 12.406655311584473,
+    "procedural_success": true,
+    "procedural_tools": 1,
+    "procedural_duration": 24.27794909477234,
+    "procedural_retrieved": 2,
+    "procedural_injected": true,
+    "classification": "Neutral",
+    "reasoning": "Both baseline and procedural conditions successfully identified and dismissed the overlay before clicking the target button using essentially identical code and actions. While the procedure was relevant and its strategy was followed, the agent in the baseline condition already executed the exact same strategy without prompting, resulting in unchanged performance and efficiency."
+  },
+  {
+    "name": "Task B (Inner Scroll)",
+    "baseline_success": true,
+    "baseline_tools": 3,
+    "baseline_duration": 23.318119764328003,
+    "procedural_success": true,
+    "procedural_tools": 3,
+    "procedural_duration": 38.039822816848755,
+    "procedural_retrieved": 2,
+    "procedural_injected": true,
+    "classification": "Neutral",
+    "reasoning": "Both baseline and procedural conditions successfully completed the task in 3 steps by identifying the inner scrollable container and dispatching a scroll event to it. The presence of the procedure did not meaningfully alter execution efficiency or the final outcome."
+  },
+  {
+    "name": "Task C (Hover Reveal)",
+    "baseline_success": true,
+    "baseline_tools": 2,
+    "baseline_duration": 15.214042901992798,
+    "procedural_success": true,
+    "procedural_tools": 1,
+    "procedural_duration": 23.730181217193604,
+    "procedural_retrieved": 2,
+    "procedural_injected": true,
+    "classification": "Neutral",
+    "reasoning": "Both the baseline condition and the procedural condition successfully solved the task in a single turn using nearly identical logic (dispatching a mouseover event on the nav element and clicking the target button). The procedure was relevant and adhered to, but it did not alter the efficiency or outcome compared to the unassisted baseline."
+  }
+]

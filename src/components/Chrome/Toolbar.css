@@ -1,0 +1,147 @@
+.toolbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 10px;
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--line);
+}
+
+.toolbar-nav { display: flex; align-items: center; gap: 2px; flex: none; }
+
+.tool-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-2);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.tool-btn:hover:not(:disabled) { background: var(--surface-2); color: var(--text-1); }
+.tool-btn:active:not(:disabled) { background: var(--surface-3); }
+.tool-btn:disabled { color: var(--text-3); opacity: 0.5; cursor: default; }
+.tool-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* address bar */
+.omnibox { position: relative; flex: 1; min-width: 160px; }
+.omnibox-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 6px 0 12px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--surface-0);
+  transition: var(--transition-fast);
+}
+.omnibox:hover .omnibox-form { border-color: var(--line); }
+.omnibox.focused .omnibox-form { border-color: rgba(124, 156, 255, 0.55); background: var(--surface-0); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+.omni-badge { display: flex; align-items: center; flex: none; color: var(--text-3); }
+.omni-warn { color: var(--status-err); }
+.omni-insecure { display: inline-flex; align-items: center; gap: 4px; color: var(--text-2); font-size: var(--text-xs); white-space: nowrap; }
+
+.omni-input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-1);
+  font: var(--text-md) var(--font-sans);
+  text-overflow: ellipsis;
+}
+.omni-input::placeholder { color: var(--text-3); }
+.omni-input::selection { background: rgba(124, 156, 255, 0.35); }
+
+.omni-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  border: none;
+  border-radius: var(--radius-xs);
+  background: transparent;
+  color: var(--text-3);
+  cursor: pointer;
+}
+.omni-star:hover { background: var(--surface-2); color: var(--text-1); }
+.omni-star.on { color: var(--accent); }
+.omni-star:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* inline suggestions (only without Electron; in the app they are drawn above the page by the popup layer) */
+.omni-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 60;
+  padding: 4px;
+  border-radius: var(--radius-md);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-pop);
+}
+.omni-row { display: flex; align-items: center; gap: 10px; height: 34px; padding: 0 10px; border-radius: var(--radius-sm); font-size: var(--text-md); }
+.omni-row:hover { background: var(--surface-2); }
+.omni-row.sel { background: var(--surface-3); }
+.omni-row-icon { color: var(--text-3); flex: none; }
+.omni-row-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.omni-row-sub { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--text-3); font-size: var(--text-sm); }
+.omni-row-sub::before { content: '— '; }
+
+/* assistant */
+.assistant-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 12px;
+  flex: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-1);
+  font: 500 var(--text-sm) var(--font-sans);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.assistant-btn:hover { background: var(--surface-2); }
+.assistant-btn.active { background: var(--accent-soft); border-color: rgba(124, 156, 255, 0.45); color: var(--accent-hover); }
+.assistant-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.assistant-unread {
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+}
+@media (max-width: 1040px) { .assistant-label { display: none; } .assistant-btn { padding: 0 8px; } }
+
+/* page loading: a thin bar under the toolbar */
+.toolbar-progress {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 30%;
+  background: var(--accent);
+  animation: toolbar-progress 1.2s ease-in-out infinite;
+}
+@keyframes toolbar-progress { from { transform: translateX(-100%); } to { transform: translateX(340%); } }
+@media (prefers-reduced-motion: reduce) { .toolbar-progress { animation: none; width: 100%; opacity: 0.5; } }

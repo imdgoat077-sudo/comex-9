@@ -1,0 +1,82 @@
+[
+  {
+    "type": "baseline",
+    "task_text": "Go to http://quotes.toscrape.com/ and extract the text and author of the top 3 quotes.",
+    "duration": 23.430569887161255,
+    "outcome": "completed",
+    "tool_count": 3,
+    "failures": 0,
+    "tool_names": [
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness"
+    ]
+  },
+  {
+    "type": "learned",
+    "task_text": "Go to http://quotes.toscrape.com/ and extract the text and author of the top 3 quotes.\n\nAVAILABLE METHOD PATTERN (List Record Extraction):\nGoal: Extract a subset of repeated structured items from a feed/list/table.\nPreconditions: Data exists on a single URL, visibly rendered in a repeating structural DOM pattern.\nAbstract Operations:\n1. Navigate to URL and wait for load.\n2. Identify Container: Isolate the CSS selector uniquely identifying the repeating wrapper element for each record.\n3. Map Fields: Iterate over selected containers, extracting specific text/attributes per requested field.\n4. Filter/Slice: Apply limits to the extracted collection.\n5. Format & Return: Serialize into JSON payload.\nNote: You must independently determine the site-specific CSS selectors. Do NOT assume any specific selectors or concrete implementation (like Array.map).\n",
+    "duration": 14.541338920593262,
+    "outcome": "completed",
+    "tool_count": 2,
+    "failures": 0,
+    "tool_names": [
+      "search_memory",
+      "run_browser_harness"
+    ]
+  },
+  {
+    "type": "baseline",
+    "task_text": "Go to https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal) and extract the country name and IMF forecast for the top 3 countries.",
+    "duration": 25.190524101257324,
+    "outcome": "completed",
+    "tool_count": 3,
+    "failures": 0,
+    "tool_names": [
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness"
+    ]
+  },
+  {
+    "type": "learned",
+    "task_text": "Go to https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal) and extract the country name and IMF forecast for the top 3 countries.\n\nAVAILABLE METHOD PATTERN (List Record Extraction):\nGoal: Extract a subset of repeated structured items from a feed/list/table.\nPreconditions: Data exists on a single URL, visibly rendered in a repeating structural DOM pattern.\nAbstract Operations:\n1. Navigate to URL and wait for load.\n2. Identify Container: Isolate the CSS selector uniquely identifying the repeating wrapper element for each record.\n3. Map Fields: Iterate over selected containers, extracting specific text/attributes per requested field.\n4. Filter/Slice: Apply limits to the extracted collection.\n5. Format & Return: Serialize into JSON payload.\nNote: You must independently determine the site-specific CSS selectors. Do NOT assume any specific selectors or concrete implementation (like Array.map).\n",
+    "duration": 17.80207085609436,
+    "outcome": "completed",
+    "tool_count": 2,
+    "failures": 0,
+    "tool_names": [
+      "run_browser_harness",
+      "run_browser_harness"
+    ]
+  },
+  {
+    "type": "baseline",
+    "task_text": "Go to https://en.wikipedia.org/wiki/List_of_highest-grossing_films and extract the title and worldwide gross of the top 3 films.",
+    "duration": 45.19718408584595,
+    "outcome": "completed",
+    "tool_count": 8,
+    "failures": 0,
+    "tool_names": [
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness",
+      "run_browser_harness"
+    ]
+  },
+  {
+    "type": "learned",
+    "task_text": "Go to https://en.wikipedia.org/wiki/List_of_highest-grossing_films and extract the title and worldwide gross of the top 3 films.\n\nAVAILABLE METHOD PATTERN (List Record Extraction):\nGoal: Extract a subset of repeated structured items from a feed/list/table.\nPreconditions: Data exists on a single URL, visibly rendered in a repeating structural DOM pattern.\nAbstract Operations:\n1. Navigate to URL and wait for load.\n2. Identify Container: Isolate the CSS selector uniquely identifying the repeating wrapper element for each record.\n3. Map Fields: Iterate over selected containers, extracting specific text/attributes per requested field.\n4. Filter/Slice: Apply limits to the extracted collection.\n5. Format & Return: Serialize into JSON payload.\nNote: You must independently determine the site-specific CSS selectors. Do NOT assume any specific selectors or concrete implementation (like Array.map).\n",
+    "duration": 22.876391172409058,
+    "outcome": "completed",
+    "tool_count": 2,
+    "failures": 1,
+    "tool_names": [
+      "search_memory",
+      "run_browser_harness"
+    ]
+  }
+]

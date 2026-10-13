@@ -1,0 +1,262 @@
+{
+  "scenario": "wordle",
+  "trial": 5,
+  "seed": 5,
+  "error": "timeout",
+  "wall_s": 180.07,
+  "tool_calls": 39,
+  "tools": [
+    "browser_inspect",
+    "browser_extract",
+    "browser_extract",
+    "browser_find",
+    "browser_extract",
+    "browser_extract",
+    "browser_navigate",
+    "browser_find",
+    "browser_inspect",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "search_memory",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_find",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract"
+  ],
+  "llm_calls_derived": 40,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": false,
+  "state": {
+    "s": "playing",
+    "rows": 0
+  },
+  "claimed_in_answer": "",
+  "answer": "",
+  "trace": null,
+  "steps": [
+    {
+      "t": 4.85,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 11.34,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 26.77,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 29.88,
+      "tool": "browser_find",
+      "label": "Finding \u201cA\u201d"
+    },
+    {
+      "t": 36.47,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 39.85,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 46.16,
+      "tool": "browser_navigate",
+      "label": "Opening view-source:http://127.0.0.1:55532/wordle.html?seed=5"
+    },
+    {
+      "t": 49.08,
+      "tool": "browser_find",
+      "label": "Finding \u201cgame\u201d"
+    },
+    {
+      "t": 53.3,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 55.74,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cwordle seed=5\u201d"
+    },
+    {
+      "t": 58.25,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cwordle.html\u201d"
+    },
+    {
+      "t": 61.59,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201c\"Word game fixture\"\u201d"
+    },
+    {
+      "t": 64.86,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cseed=1\u201d"
+    },
+    {
+      "t": 68.94,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 72.77,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 76.32,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 80.41,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cprovenance:7d617910-b7eb-4ae4-95d5-676077a64684\u201d"
+    },
+    {
+      "t": 83.85,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cserver_check\u201d"
+    },
+    {
+      "t": 87.29,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cwordle.html?seed=\u201d"
+    },
+    {
+      "t": 90.63,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201c\"wordle\"\u201d"
+    },
+    {
+      "t": 93.73,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201c\"rate\"\u201d"
+    },
+    {
+      "t": 96.41,
+      "tool": "search_memory",
+      "label": "Checking memory for \u201cb4cf8dc4-b258-4839-a0f6-b44120115965\u201d"
+    },
+    {
+      "t": 101.79,
+      "tool": "browser_type",
+      "label": "Typing \u201cc\u201d"
+    },
+    {
+      "t": 106.06,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 134.03,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 137.36,
+      "tool": "browser_find",
+      "label": "Finding \u201cc\u201d"
+    },
+    {
+      "t": 140.62,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 143.34,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 146.69,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 148.86,
+      "tool": "browser_type",
+      "label": "Typing \u201cc\u201d"
+    },
+    {
+      "t": 152.75,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 156.62,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 159.58,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 162.75,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 166.24,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 170.32,
+      "tool": "browser_type",
+      "label": "Searching for \u201ccrane\u201d"
+    },
+    {
+      "t": 172.89,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 175.68,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 179.58,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    }
+  ]
+}

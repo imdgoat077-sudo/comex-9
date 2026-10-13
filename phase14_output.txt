@@ -1,0 +1,24 @@
+==================================================
+PHASE 14 CONTROLLED EXPERIMENT
+==================================================
+
+[*] Validation Task: Purchase the items in the cart for user testuser with password pass.
+[*] Target URL: data:text/html,%0A%20%20%20%20%3Chtml%3E%0A%20%20%...
+
+--- Running BASELINE (No Procedures) ---
+Baseline Success: True
+Baseline Trace Snippet: [run_browser_harness] Args: {'code': 'goto_url("data:text/html,%0A%20%20%20%20%3Chtml%3E%0A%20%20%20%20%3Cbody%3E%0A%20%20%20%20%20%20%20%3Ch1%3EAnother%20Store%3C/h1%3E%0A%20%20%20%20%20%20%20%3Cbutt...
+
+--- Running PROCEDURAL (Procedures Enabled) ---
+Procedural Success: True
+Procedural Trace Snippet: [create_hidden_tab] Args: {'url': 'data:text/html,%0A%20%20%20%20%3Chtml%3E%0A%20%20%20%20%3Cbody%3E%0A%20%20%20%20%20%20%20%3Ch1%3EAnother%20Store%3C/h1%3E%0A%20%20%20%20%20%20%20%3Cbutton%20class%3D...
+Retrieved Procedures: ['art_d14dd42a78c14bf39b6938649c5c657b']
+
+--- Running TRANSFER EVALUATION ---
+
+[EVALUATION OUTCOME]
+{
+  "classification": "Neutral",
+  "reasoning": "The retrieved procedure outlines the standard e-commerce authentication and checkout sequence. Both the baseline and procedural conditions successfully completed the task on a minimal mock HTML page in a similar number of steps (inspecting the DOM, clicking the sign in button, and interacting with the checkout/pay button). The procedure was generally aligned with the task goal, but its presence did not materially alter efficiency or outcome relative to baseline.",
+  "needs_refinement": false
+}

@@ -1,0 +1,761 @@
+{
+ "answer": "Key research papers on multi-agent orchestration, grouped by focus:\n\n### Surveys and Taxonomies\n* [Large Language Model based Multi-Agents: A Survey of Progress and Challenges](https://arxiv.org/abs/2402.01680) (Guo et al., 2024, IJCAI). Foundational survey categorizing agent profiling, multi-agent communication environments, and skill growth mechanisms.\n* [Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322) (Tran et al., 2025). Presents a five-dimensional orchestration taxonomy: actors, interaction types (cooperation, competition, coopetition), structures (peer-to-peer, centralized, distributed), strategies (role-based, model-based), and coordination protocols.\n* [A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges](https://doi.org/10.1007/s44336-024-00009-2) (Li et al., 2024, *Vicinagearth*). Categorizes orchestration infrastructure and workflows across five components: profile, perception, self-action, mutual interaction, and evolution.\n* [LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326) (Zhu et al., 2026, *Future Internet*). Focuses on structural coordination topologies: centralized, decentralized, and hierarchical, paired with dynamic-adaptive control axes.\n\n### Foundational Architectures and Coordination Patterns\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://www.semanticscholar.org/paper/MetaGPT%3A-Meta-Programming-for-A-Multi-Agent-Hong-Zhuge/792fd55d79d120173e0a944ce6bfe4787239c1d2) (Hong et al., 2023, ICLR). Uses an assembly-line topology encoding human Standard Operating Procedures (SOPs) into structured artifact-passing protocols to reduce hallucination cascades.\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://www.semanticscholar.org/paper/AutoGen%3A-Enabling-Next-Gen-LLM-Applications-via-Wu-Bansal/9ea0757c750ab1222a7442d3485a74d1c526b04c) (Wu et al., 2023). Implements generalized conversable agent topologies supporting pairwise chats, centralized manager hubs, and custom interaction graphs.\n* [ChatDev: Communicative Agents for Software Development](https://www.semanticscholar.org/paper/ChatDev%3A-Communicative-Agents-for-Software-Qian-Liu/9474b463654fd92a62c103b21f95aed94b087907) (Qian et al., 2023, ACL). Introduces multi-phase sequential waterfall orchestration using bilateral (dyadic) peer-to-peer chat rounds.\n* [CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society](https://www.semanticscholar.org/paper/CAMEL%3A-Communicative-Agents-for-%22Mind%22-Exploration-Li-Hammoud/7bf72a3b5fbac8bc0f461780810fbc781c28ef53) (Li et al., 2023, NeurIPS). Establishes autonomous role-playing dyads coordinated via inception prompting without human intervention.\n* [OSC: Cognitive Orchestration through Dynamic Knowledge Alignment in Multi-Agent LLM Collaboration](https://www.semanticscholar.org/paper/OSC%3A-Cognitive-Orchestration-through-Dynamic-in-LLM-Zhang-Fan/ed131ad898f1e9ef0b420e4d3f605abfe055b5f3) (Zhang et al., 2025, EMNLP). Uses dynamic alignment networks and adaptive cognitive routing to coordinate agents dynamically rather than via static pipelines.\n\n### Benchmarks, Evaluation, and Failure Analysis\n* [Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies](https://arxiv.org/pdf/2603.22651.pdf) (Kulkarni & Kulkarni, 2026). Evaluates sequential pipeline, parallel fan-out, hierarchical supervisor-worker, and reflexive loop topologies, finding supervisor and reflexive loops offer superior error mitigation at higher communication cost.\n* [Solving Multi-agent Path Finding as an LLM Benchmark: How, How Good and Why](https://openreview.net/forum?id=8hAxEFRVQT) (Chen et al., 2025). Adapts multi-agent path finding (MAPF) into an LLM benchmark for spatial coordination and collision avoidance.\n* [Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation](https://arxiv.org/pdf/2402.11443.pdf) (Wang et al., 2024). Multi-agent workflow generating and updating evaluation test suites to avoid static benchmark saturation.\n* [SoK: When Safe Agents Fail Together: The Security of Multi Agent LLM Systems](https://arxiv.org/pdf/2609.00595.pdf) (Yang et al., 2026). Systematizes failure analysis across 197 multi-agent pipelines using an Adversary-Interface-Risk (A-I-R) framework, showing emergent collective vulnerabilities in individually safe agents.\n* [Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures](https://www.semanticscholar.org/paper/Adversarial-Attacks-in-Multi-Agent-LLM-Pipelines%3A-Bappy-Hossain/821025dd4e89d9fb61cc6ae08591bb47caa14abc) (Bappy et al., 2026). Identifies boundary verification failures across inter-agent interfaces (identity, state, intent, content) as the primary cause of pipeline breakdown.\n* [AgentLeak: A Full-Stack Benchmark for Privacy Leakage in Multi-Agent LLM Systems](https://doi.org/10.48550/arXiv.2602.11510) (EL Yagoubi et al., 2026). Evaluates coordinator-worker failure modes, showing information leakage propagates predominantly over internal inter-agent channels rather than external outputs.\n\n---\n\n### Limitations and Uncovered Areas\n* **Search engine blocks:** Google Scholar blocked automated queries with bot verification prompts, limiting search results to Semantic Scholar and arXiv. Papers With Code queries redirected to generic trending feeds.\n* **Missing architectures:** Specific dynamic routing frameworks (e.g., Dynamic LLM-Agent Network / DyLAN) were not retrieved before search limits were hit.\n* **Extraction depth:** Full-text evaluation tables, exact benchmark scoreboards, and framework comparison matrices from the Springer survey and benchmark PDFs were not extracted due to browser action limits.",
+ "success": true,
+ "wall_s": 113.76,
+ "planning_s": 9.57,
+ "after_workers_s": 15.31,
+ "workers": {
+  "surveys_and_taxonomies": {
+   "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+   "tool_calls": 10,
+   "navigate_labels": 5,
+   "start_s": 9.58,
+   "end_s": 67.29,
+   "status": "completed",
+   "duration_s": 57.71
+  },
+  "foundational_architectures": {
+   "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+   "tool_calls": 10,
+   "navigate_labels": 5,
+   "start_s": 9.58,
+   "end_s": 76.78,
+   "status": "completed",
+   "duration_s": 67.2
+  },
+  "benchmarks_and_evaluation": {
+   "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+   "tool_calls": 10,
+   "navigate_labels": 6,
+   "start_s": 9.58,
+   "end_s": 98.45,
+   "status": "completed",
+   "duration_s": 88.87
+  }
+ },
+ "slowest_worker_s": 88.87,
+ "tool_calls": 30,
+ "navigations": 16,
+ "backend_timing": {
+  "planning_ms": 9562.67,
+  "workers_ms": 88878.34,
+  "synthesis_ms": 15310.62,
+  "total_ms": 113751.81,
+  "workers": {
+   "surveys_and_taxonomies": {
+    "status": "completed",
+    "duration_ms": 57718.85,
+    "tool_calls": 10,
+    "llm_calls": 11,
+    "avg_llm_ms": 4804.4,
+    "stopped_early": "the limit of 10 browser actions was reached"
+   },
+   "foundational_architectures": {
+    "status": "completed",
+    "duration_ms": 67194.18,
+    "tool_calls": 10,
+    "llm_calls": 11,
+    "avg_llm_ms": 5616.5,
+    "stopped_early": "the limit of 10 browser actions was reached"
+   },
+   "benchmarks_and_evaluation": {
+    "status": "completed",
+    "duration_ms": 88859.66,
+    "tool_calls": 10,
+    "llm_calls": 11,
+    "avg_llm_ms": 5676.5,
+    "stopped_early": "the limit of 10 browser actions was reached"
+   }
+  }
+ },
+ "follow_up": null,
+ "answer_s": 113.76,
+ "quality": {
+  "links": [
+   "https://arxiv.org/abs/2402.01680",
+   "https://arxiv.org/abs/2501.06322",
+   "https://doi.org/10.1007/s44336-024-00009-2",
+   "https://doi.org/10.3390/fi18060326",
+   "https://www.semanticscholar.org/paper/MetaGPT%3A-Meta-Programming-for-A-Multi-Agent-Hong-Zhuge/792fd55d79d120173e0a944ce6bfe4787239c1d2",
+   "https://www.semanticscholar.org/paper/AutoGen%3A-Enabling-Next-Gen-LLM-Applications-via-Wu-Bansal/9ea0757c750ab1222a7442d3485a74d1c526b04c",
+   "https://www.semanticscholar.org/paper/ChatDev%3A-Communicative-Agents-for-Software-Qian-Liu/9474b463654fd92a62c103b21f95aed94b087907",
+   "https://www.semanticscholar.org/paper/CAMEL%3A-Communicative-Agents-for-%22Mind%22-Exploration-Li-Hammoud/7bf72a3b5fbac8bc0f461780810fbc781c28ef53",
+   "https://www.semanticscholar.org/paper/OSC%3A-Cognitive-Orchestration-through-Dynamic-in-LLM-Zhang-Fan/ed131ad898f1e9ef0b420e4d3f605abfe055b5f3",
+   "https://arxiv.org/pdf/2603.22651.pdf",
+   "https://openreview.net/forum?id=8hAxEFRVQT",
+   "https://arxiv.org/pdf/2402.11443.pdf",
+   "https://arxiv.org/pdf/2609.00595.pdf",
+   "https://www.semanticscholar.org/paper/Adversarial-Attacks-in-Multi-Agent-LLM-Pipelines%3A-Bappy-Hossain/821025dd4e89d9fb61cc6ae08591bb47caa14abc",
+   "https://doi.org/10.48550/arXiv.2602.11510"
+  ],
+  "paper_ids": [
+   "arxiv:2402.01680",
+   "arxiv:2402.11443",
+   "arxiv:2501.06322",
+   "arxiv:2603.22651",
+   "arxiv:2609.00595",
+   "doi:10.1007/s44336-024-00009-2",
+   "doi:10.3390/fi18060326",
+   "doi:10.48550/arxiv.2602.11510",
+   "openreview:8haxefrvqt",
+   "semanticscholar:792fd55d79d120173e0a944ce6bfe4787239c1d2",
+   "semanticscholar:7bf72a3b5fbac8bc0f461780810fbc781c28ef53",
+   "semanticscholar:821025dd4e89d9fb61cc6ae08591bb47caa14abc",
+   "semanticscholar:9474b463654fd92a62c103b21f95aed94b087907",
+   "semanticscholar:9ea0757c750ab1222a7442d3485a74d1c526b04c",
+   "semanticscholar:ed131ad898f1e9ef0b420e4d3f605abfe055b5f3"
+  ],
+  "paper_links": [
+   "https://arxiv.org/abs/2402.01680",
+   "https://arxiv.org/abs/2501.06322",
+   "https://arxiv.org/pdf/2603.22651.pdf",
+   "https://arxiv.org/pdf/2402.11443.pdf",
+   "https://arxiv.org/pdf/2609.00595.pdf",
+   "https://doi.org/10.1007/s44336-024-00009-2",
+   "https://doi.org/10.3390/fi18060326",
+   "https://doi.org/10.48550/arXiv.2602.11510",
+   "https://www.semanticscholar.org/paper/MetaGPT%3A-Meta-Programming-for-A-Multi-Agent-Hong-Zhuge/792fd55d79d120173e0a944ce6bfe4787239c1d2",
+   "https://www.semanticscholar.org/paper/AutoGen%3A-Enabling-Next-Gen-LLM-Applications-via-Wu-Bansal/9ea0757c750ab1222a7442d3485a74d1c526b04c",
+   "https://www.semanticscholar.org/paper/ChatDev%3A-Communicative-Agents-for-Software-Qian-Liu/9474b463654fd92a62c103b21f95aed94b087907",
+   "https://www.semanticscholar.org/paper/CAMEL%3A-Communicative-Agents-for-%22Mind%22-Exploration-Li-Hammoud/7bf72a3b5fbac8bc0f461780810fbc781c28ef53",
+   "https://www.semanticscholar.org/paper/OSC%3A-Cognitive-Orchestration-through-Dynamic-in-LLM-Zhang-Fan/ed131ad898f1e9ef0b420e4d3f605abfe055b5f3",
+   "https://www.semanticscholar.org/paper/Adversarial-Attacks-in-Multi-Agent-LLM-Pipelines%3A-Bappy-Hossain/821025dd4e89d9fb61cc6ae08591bb47caa14abc",
+   "https://openreview.net/forum?id=8hAxEFRVQT"
+  ],
+  "rows_with_paper_link": 15,
+  "rows_with_year": 15,
+  "paper_count": 15,
+  "link_status": {
+   "https://arxiv.org/abs/2402.01680": 200,
+   "https://arxiv.org/abs/2501.06322": 200,
+   "https://arxiv.org/pdf/2603.22651.pdf": 200,
+   "https://arxiv.org/pdf/2402.11443.pdf": 200,
+   "https://arxiv.org/pdf/2609.00595.pdf": 200,
+   "https://doi.org/10.1007/s44336-024-00009-2": 200,
+   "https://doi.org/10.3390/fi18060326": 403,
+   "https://doi.org/10.48550/arXiv.2602.11510": 200,
+   "https://www.semanticscholar.org/paper/MetaGPT%3A-Meta-Programming-for-A-Multi-Agent-Hong-Zhuge/792fd55d79d120173e0a944ce6bfe4787239c1d2": 202,
+   "https://www.semanticscholar.org/paper/AutoGen%3A-Enabling-Next-Gen-LLM-Applications-via-Wu-Bansal/9ea0757c750ab1222a7442d3485a74d1c526b04c": 202,
+   "https://www.semanticscholar.org/paper/ChatDev%3A-Communicative-Agents-for-Software-Qian-Liu/9474b463654fd92a62c103b21f95aed94b087907": 202,
+   "https://www.semanticscholar.org/paper/CAMEL%3A-Communicative-Agents-for-%22Mind%22-Exploration-Li-Hammoud/7bf72a3b5fbac8bc0f461780810fbc781c28ef53": 202,
+   "https://www.semanticscholar.org/paper/OSC%3A-Cognitive-Orchestration-through-Dynamic-in-LLM-Zhang-Fan/ed131ad898f1e9ef0b420e4d3f605abfe055b5f3": 202,
+   "https://www.semanticscholar.org/paper/Adversarial-Attacks-in-Multi-Agent-LLM-Pipelines%3A-Bappy-Hossain/821025dd4e89d9fb61cc6ae08591bb47caa14abc": 202,
+   "https://openreview.net/forum?id=8hAxEFRVQT": 200
+  }
+ },
+ "mode": "multi",
+ "trial": 10,
+ "phase": "baseline_clean",
+ "request": "Find me the best research papers on multi agent orchestration.",
+ "events": [
+  {
+   "t": 0.01,
+   "event": "planning",
+   "data": {}
+  },
+  {
+   "t": 9.57,
+   "event": "run_started",
+   "data": {
+    "run_id": "run_3350a3752e00",
+    "task_count": 3,
+    "tasks": [
+     {
+      "task_id": "surveys_and_taxonomies",
+      "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration."
+     },
+     {
+      "task_id": "foundational_architectures",
+      "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies."
+     },
+     {
+      "task_id": "benchmarks_and_evaluation",
+      "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems."
+     }
+    ],
+    "follow_up_action": null
+   }
+  },
+  {
+   "t": 9.58,
+   "event": "task_started",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 9.58,
+   "event": "task_started",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 9.58,
+   "event": "task_started",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 13.95,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 14.39,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 14.8,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 18.61,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 18.78,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 21.0,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 22.04,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 27.0,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 29.22,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 30.0,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 31.56,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 32.88,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 33.49,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 35.77,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 37.21,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 38.58,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 39.14,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 42.64,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 43.2,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 45.52,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 46.06,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 46.85,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 55.62,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 55.93,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening paperswithcode.com"
+   }
+  },
+  {
+   "t": 57.12,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 60.35,
+   "event": "task_progress",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 60.83,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 64.3,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 67.29,
+   "event": "task_completed",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.",
+    "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+    "tab_id": "tab_surveys_and_taxonomies_752e00",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 67.73,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 73.47,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "running",
+    "error": null,
+    "label": "Opening semanticscholar.org"
+   }
+  },
+  {
+   "t": 76.78,
+   "event": "task_completed",
+   "data": {
+    "task_id": "foundational_architectures",
+    "description": "Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.",
+    "worker_id": "worker_foundational_architectures_75928f82",
+    "tab_id": "tab_foundational_architectures_752e00",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 98.45,
+   "event": "task_completed",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.",
+    "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+    "tab_id": "tab_benchmarks_and_evaluation_752e00",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 98.45,
+   "event": "synthesis_started",
+   "data": {
+    "completed": 3,
+    "total": 3
+   }
+  },
+  {
+   "t": 113.76,
+   "event": "done",
+   "data": {
+    "success": true,
+    "run_id": "run_3350a3752e00",
+    "status": "completed",
+    "final_answer": "Key research papers on multi-agent orchestration, grouped by focus:\n\n### Surveys and Taxonomies\n* [Large Language Model based Multi-Agents: A Survey of Progress and Challenges](https://arxiv.org/abs/2402.01680) (Guo et al., 2024, IJCAI). Foundational survey categorizing agent profiling, multi-agent communication environments, and skill growth mechanisms.\n* [Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322) (Tran et al., 2025). Presents a five-dimensional orchestration taxonomy: actors, interaction types (cooperation, competition, coopetition), structures (peer-to-peer, centralized, distributed), strategies (role-based, model-based), and coordination protocols.\n* [A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges](https://doi.org/10.1007/s44336-024-00009-2) (Li et al., 2024, *Vicinagearth*). Categorizes orchestration infrastructure and workflows across five components: profile, perception, self-action, mutual interaction, and evolution.\n* [LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326) (Zhu et al., 2026, *Future Internet*). Focuses on structural coordination topologies: centralized, decentralized, and hierarchical, paired with dynamic-adaptive control axes.\n\n### Foundational Architectures and Coordination Patterns\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://www.semanticscholar.org/paper/MetaGPT%3A-Meta-Programming-for-A-Multi-Agent-Hong-Zhuge/792fd55d79d120173e0a944ce6bfe4787239c1d2) (Hong et al., 2023, ICLR). Uses an assembly-line topology encoding human Standard Operating Procedures (SOPs) into structured artifact-passing protocols to reduce hallucination cascades.\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://www.semanticscholar.org/paper/AutoGen%3A-Enabling-Next-Gen-LLM-Applications-via-Wu-Bansal/9ea0757c750ab1222a7442d3485a74d1c526b04c) (Wu et al., 2023). Implements generalized conversable agent topologies supporting pairwise chats, centralized manager hubs, and custom interaction graphs.\n* [ChatDev: Communicative Agents for Software Development](https://www.semanticscholar.org/paper/ChatDev%3A-Communicative-Agents-for-Software-Qian-Liu/9474b463654fd92a62c103b21f95aed94b087907) (Qian et al., 2023, ACL). Introduces multi-phase sequential waterfall orchestration using bilateral (dyadic) peer-to-peer chat rounds.\n* [CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society](https://www.semanticscholar.org/paper/CAMEL%3A-Communicative-Agents-for-%22Mind%22-Exploration-Li-Hammoud/7bf72a3b5fbac8bc0f461780810fbc781c28ef53) (Li et al., 2023, NeurIPS). Establishes autonomous role-playing dyads coordinated via inception prompting without human intervention.\n* [OSC: Cognitive Orchestration through Dynamic Knowledge Alignment in Multi-Agent LLM Collaboration](https://www.semanticscholar.org/paper/OSC%3A-Cognitive-Orchestration-through-Dynamic-in-LLM-Zhang-Fan/ed131ad898f1e9ef0b420e4d3f605abfe055b5f3) (Zhang et al., 2025, EMNLP). Uses dynamic alignment networks and adaptive cognitive routing to coordinate agents dynamically rather than via static pipelines.\n\n### Benchmarks, Evaluation, and Failure Analysis\n* [Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies](https://arxiv.org/pdf/2603.22651.pdf) (Kulkarni & Kulkarni, 2026). Evaluates sequential pipeline, parallel fan-out, hierarchical supervisor-worker, and reflexive loop topologies, finding supervisor and reflexive loops offer superior error mitigation at higher communication cost.\n* [Solving Multi-agent Path Finding as an LLM Benchmark: How, How Good and Why](https://openreview.net/forum?id=8hAxEFRVQT) (Chen et al., 2025). Adapts multi-agent path finding (MAPF) into an LLM benchmark for spatial coordination and collision avoidance.\n* [Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation](https://arxiv.org/pdf/2402.11443.pdf) (Wang et al., 2024). Multi-agent workflow generating and updating evaluation test suites to avoid static benchmark saturation.\n* [SoK: When Safe Agents Fail Together: The Security of Multi Agent LLM Systems](https://arxiv.org/pdf/2609.00595.pdf) (Yang et al., 2026). Systematizes failure analysis across 197 multi-agent pipelines using an Adversary-Interface-Risk (A-I-R) framework, showing emergent collective vulnerabilities in individually safe agents.\n* [Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures](https://www.semanticscholar.org/paper/Adversarial-Attacks-in-Multi-Agent-LLM-Pipelines%3A-Bappy-Hossain/821025dd4e89d9fb61cc6ae08591bb47caa14abc) (Bappy et al., 2026). Identifies boundary verification failures across inter-agent interfaces (identity, state, intent, content) as the primary cause of pipeline breakdown.\n* [AgentLeak: A Full-Stack Benchmark for Privacy Leakage in Multi-Agent LLM Systems](https://doi.org/10.48550/arXiv.2602.11510) (EL Yagoubi et al., 2026). Evaluates coordinator-worker failure modes, showing information leakage propagates predominantly over internal inter-agent channels rather than external outputs.\n\n---\n\n### Limitations and Uncovered Areas\n* **Search engine blocks:** Google Scholar blocked automated queries with bot verification prompts, limiting search results to Semantic Scholar and arXiv. Papers With Code queries redirected to generic trending feeds.\n* **Missing architectures:** Specific dynamic routing frameworks (e.g., Dynamic LLM-Agent Network / DyLAN) were not retrieved before search limits were hit.\n* **Extraction depth:** Full-text evaluation tables, exact benchmark scoreboards, and framework comparison matrices from the Springer survey and benchmark PDFs were not extracted due to browser action limits.",
+    "summary": "Orchestration Summary for: 'Find me the best research papers on multi agent orchestration.'\n\n### Task: Identify top review and survey papers providing taxonomies and design patterns for multi-agent LLM orchestration.\n- Status: COMPLETED (Worker: worker_surveys_and_taxonomies_469ecdf5, Tab: tab_surveys_and_taxonomies_752e00)\n- Findings: ### Findings\n- [Large Language Model based Multi-Agents: A Survey of Progress and Challenges](https://arxiv.org/abs/2402.01680) | Authors: Taicheng Guo, Xiuying Chen, Yaqi Wang, Ruidi Chang, Shichao Pei, Nitesh V. Chawla, Olaf Wiest, Xiangliang Zhang | Year: 2024 | Venue / arXiv ID: arXiv:2402.01680 [cs.CL] / IJCAI | Citation count: 1,252 (Semantic Scholar) | Orchestration taxonomy summary: Systematic review of LLM-based multi-agent systems categorizing agent profiling, multi-agent communication environments/paradigms, and mechanisms for agent capacity growth and skill acquisition | Evidence: arXiv abstract states: \"What domains and environments do LLM-based multi-agents simulate? How are these agents profiled and how do they communicate? What mechanisms contribute to the growth of agents' capacities? ... summarize the commonly used datasets or benchmarks\" | Relevance: Primary highly cited 2024 foundational survey organizing multi-agent architectures, communication protocols, and simulation environments.\n- [Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322) | Authors: Khanh-Tung Tran, Dung Dao, Minh-Duong Nguyen, Quoc-Viet Pham, Barry O'Sullivan, Hoang D. Nguyen | Year: 2025 | Venue / arXiv ID: arXiv:2501.06322 [cs.AI] | Citation count: 614 (Semantic Scholar) | Orchestration taxonomy summary: Five-dimensional orchestration taxonomy decomposing collaboration mechanisms across actors, interaction types (cooperation, competition, coopetition), structures (peer-to-peer, centralized, distributed), strategies (role-based, model-based), and coordination protocols | Evidence: arXiv abstract states: \"Our framework characterizes collaboration mechanisms based on key dimensions: actors (agents involved), types (e.g., cooperation, competition, or coopetition), structures (e.g., peer-to-peer, centralized, or distributed), strategies (e.g., role-based or model-based), and coordination protocols.\" | Relevance: Directly provides explicit multi-agent orchestration design patterns, topologies, and coordination mechanisms.\n- [A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges](https://doi.org/10.1007/s44336-024-00009-2) | Authors: Xinyi Li, Sai Wang, Si-Qi Zeng, Yu Wu, Yi Yang | Year: 2024 | Venue / arXiv ID: Vicinagearth (Springer Nature) / DOI 10.1007/s44336-024-00009-2 | Citation count: 699 (Semantic Scholar) | Orchestration taxonomy summary: Workflow and infrastructure taxonomy classifying systems into five core components: profile, perception, self-action, mutual interaction, and evolution | Evidence: Semantic Scholar listing states: \"A comprehensive survey of LLM-based multi-agent systems is presented, offering a systematic review of these studies, and a general structure encompassing five key components: profile, perception, self-action, mutual interaction, and evolution is synthesized.\" | Relevance: Categorizes orchestration infrastructure and operational interaction workflows between LLM agents.\n- [LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326) | Authors: Yi-Wen Zhu, Lihe Liu, Jia-Qian Yu, Dingyan Zhang | Year: 2026 | Venue / arXiv ID: Future Internet / DOI 10.1007 / 10.3390/fi18060326 | Citation count: 8 (Semantic Scholar) | Orchestration taxonomy summary: Orchestration topology taxonomy classifying coordination models into centralized, decentralized, and hierarchical coordination topologies, augmented with dynamic-adaptive control axes | Evidence: Semantic Scholar listing states: \"A three-topology, one-adaptivity taxonomy is proposed—centralized, decentralized, and hierarchical coordination topologies, each optionally augmented with a dynamic–adaptive control axis—grounded in classical multi-agent systems theory and recent empirical evidence.\" | Relevance: Focuses specifically on orchestration frameworks, communication protocols, and structural coordination topologies.\n\n### Coverage\n- Sites searched: Google Scholar (blocked with CAPTCHA/bot check), Semantic Scholar, arXiv.org.\n- Queries executed: `survey multi-agent LLM orchestration` (Google Scholar), `LLM multi-agent orchestration survey` (Semantic Scholar), `survey multi-agent LLM` (Semantic Scholar with sort by total citations), and direct lookups on arXiv for verified entries.\n- Results reviewed: ~25 total listings across Semantic Scholar result pages and direct paper abstracts.\n\n### Limitations\n- Google Scholar was blocked immediately with an automated bot detection / CAPTCHA prompt (\"Please show you're not a robot\").\n- Browser action limit reached before completing full text extraction of individual framework comparison tables inside the final Springer paper.\n### Task: Find foundational papers introducing core multi-agent orchestration architectures, workflow patterns, and communication topologies.\n- Status: COMPLETED (Worker: worker_foundational_architectures_75928f82, Tab: tab_foundational_architectures_752e00)\n- Findings: ### Findings\n- [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://www.semanticscholar.org/paper/MetaGPT%3A-Meta-Programming-for-A-Multi-Agent-Hong-Zhuge/792fd55d79d120173e0a944ce6bfe4787239c1d2) | **Authors:** Si-Rui Hong, Ming-Chen Zhuge, Xia-Wu Zheng, Chenglin Wu, Jurgen Schmidhuber, et al. | **Year:** 2023 (ICLR) | **System Name:** MetaGPT | **Coordination Topology:** Workflow-driven assembly line / role-based pipeline with structured communication protocols (SOPs) | **Primary Contribution:** Encodes human standard operating procedures (SOPs) as meta-programming prompts and structured document artifacts across specialized agents to prevent hallucination cascades and coordinate complex software development workflows | **Evidence:** Paper summary states it \"incorporates efficient human workflows as a meta programming approach into LLM-based multi-agent collaboration and leverages the assembly line paradigm to assign diverse roles to various agents\" (2,595+ citations) | **Relevance:** Foundational multi-agent framework defining role specialization and structured artifact-passing workflow topologies.\n\n- [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://www.semanticscholar.org/paper/AutoGen%3A-Enabling-Next-Gen-LLM-Applications-via-Wu-Bansal/9ea0757c750ab1222a7442d3485a74d1c526b04c) | **Authors:** Qingyun Wu, Gagan Bansal, Chi Wang, et al. | **Year:** 2023 | **System Name:** AutoGen | **Coordination Topology:** Conversable agent topology supporting pairwise, group chat (hub-and-spoke manager), and customizable flexible interaction graphs | **Primary Contribution:** Generic conversational multi-agent abstraction where agents are conversable, customizable, and capable of seamless human-in-the-loop interaction, simplifying execution of complex multi-agent workflows into modular chat rounds | **Evidence:** Page notes it \"enables development of LLM applications using multiple agents that can converse with each other to solve tasks, which simplifies and unifies the implementation of complex LLM workflows as automated agent chats\" (2,873+ citations) | **Relevance:** Foundational architecture establishing conversational primitives as the generalized control mechanism for multi-agent LLM orchestration.\n\n- [ChatDev: Communicative Agents for Software Development](https://www.semanticscholar.org/paper/ChatDev%3A-Communicative-Agents-for-Software-Qian-Liu/9474b463654fd92a62c103b21f95aed94b087907) | **Authors:** Cheng Qian, Wei Liu, Maosong Sun, et al. | **Year:** 2023 (ACL) | **System Name:** ChatDev | **Coordination Topology:** Sequential waterfall/stage-gate multi-phase topology composed of atomic bilateral (dyadic) peer chats | **Primary Contribution:** Deconstructs multi-agent workflows into distinct software development phases (designing, coding, testing, documenting) executed via paired conversational role-playing (e.g., instructor-assistant) to solve subtasks autonomously | **Evidence:** Paper states ChatDev is \"a chat-powered software development framework in which specialized agents driven by large language models (LLMs) are guided in what to communicate and how to communicate, establishing language as a unifying bridge\" (1,309+ citations) | **Relevance:** Foundational system demonstrating staged peer-to-peer conversational orchestration for structured multi-step task execution.\n\n- [CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society](https://www.semanticscholar.org/paper/CAMEL%3A-Communicative-Agents-for-%22Mind%22-Exploration-Li-Hammoud/7bf72a3b5fbac8bc0f461780810fbc781c28ef53) | **Authors:** Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, Dmitrii Khizbullin, Bernard Ghanem | **Year:** 2023 (NeurIPS) | **System Name:** CAMEL | **Coordination Topology:** Bilateral peer-to-peer / role-playing dyad guided by inception prompts | **Primary Contribution:** Introduces cooperative role-playing communication architectures where an AI user agent and an AI assistant agent converse autonomously via inception prompting to achieve goals without human intervention | **Evidence:** Record highlights a \"novel communicative agent framework named role-playing, using inception prompting to guide chat agents toward task completion while maintaining consistency with human intentions\" (1,998+ citations) | **Relevance:** Pioneer foundational paper establishing autonomous agent-to-agent prompt negotiation and communicative role assignment.\n\n- [OSC: Cognitive Orchestration through Dynamic Knowledge Alignment in Multi-Agent LLM Collaboration](https://www.semanticscholar.org/paper/OSC%3A-Cognitive-Orchestration-through-Dynamic-in-LLM-Zhang-Fan/ed131ad898f1e9ef0b420e4d3f605abfe055b5f3) | **Authors:** Jusheng Zhang, Yi-Jia Fan, Kaitong Cai, Xiaofei Sun, Ke-Ze Wang | **Year:** 2025 (EMNLP) | **System Name:** OSC (Cognitive Orchestration) | **Coordination Topology:** Dynamic alignment network / adaptive cognitive routing | **Primary Contribution:** Implements cognitive orchestration and dynamic knowledge alignment to dynamically transform parallel uncoordinated agents into collaborative teams, optimizing routing and inter-agent communication overhead | **Evidence:** Evaluated in EMNLP 2025; record demonstrates that \"OSC significantly improves task performance and communication efficiency, transforming parallel-working individuals into a deeply collaborative cognitive team\" (40 citations) | **Relevance:** Addresses dynamic routing and adaptive coordination topology beyond static pipelines.\n\n### Coverage\n- **Sites Searched:** Semantic Scholar (`semanticscholar.org`).\n- **Queries Executed:**\n  - `multi-agent orchestration framework LLM`\n  - `MetaGPT multi-agent meta programming`\n  - `AutoGen Enabling Next-Gen LLM Applications via Multi-Agent Conversation`\n  - `ChatDev Communicative Agents for Software Development`\n  - `CAMEL Communicative Agents for Mind Exploration of Large Scale Language Model Society`\n  - `dynamic LLM-agent network routing topology`\n- **Volume Reviewed:** ~50 results across returned query listings.\n\n### Limitations\n- The 10 browser action execution limit prevented navigating arXiv and Papers With Code directly to extract additional dynamic graph routing architectures (e.g., DyLAN / Dynamic LLM-Agent Network).\n- Citation counts reflect numbers recorded live on Semantic Scholar at time of retrieval.\n### Task: Locate key research papers on benchmarking, evaluation methodologies, and failure analysis for multi-agent orchestration systems.\n- Status: COMPLETED (Worker: worker_benchmarks_and_evaluation_5074a78b, Tab: tab_benchmarks_and_evaluation_752e00)\n- Findings: ### Findings\n- [Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies](https://arxiv.org/pdf/2603.22651.pdf) | **Authors:** Siddha Kulkarni, Yukta R. Kulkarni | **Year:** 2026 | **Benchmark name:** Multi-Agent Orchestration Architecture Benchmark | **Evaluated orchestration tasks:** Financial document processing across sequential pipeline, parallel fan-out with merge, hierarchical supervisor-worker, and reflexive self-correcting loops | **Core findings:** Evaluates architectural cost-accuracy tradeoffs and empirical scaling bottlenecks; supervisor-worker and reflexive loop topologies offer superior error mitigation at higher communication overhead | **Evidence:** Page states: \"A systematic benchmark comparing four multi-agent orchestration architectures: sequential pipeline, parallel fan-out with merge, hierarchical supervisor-worker and reflexive self-correcting loop is presented, providing actionable guidance for practitioners deploying multi-agent LLM systems in regulated financial environments.\" | **Relevance:** Directly evaluates multi-agent orchestration topologies, coordination efficacy, and task decomposition efficiency.\n- [AgentLeak: A Full-Stack Benchmark for Privacy Leakage in Multi-Agent LLM Systems](https://doi.org/10.48550/arXiv.2602.11510) | **Authors:** Faouzi EL Yagoubi, Ranwa Al Mallah, Godwin Badu-Marfo | **Year:** 2026 | **Benchmark name:** AgentLeak | **Evaluated orchestration tasks:** Coordinator-worker multi-agent task execution and internal message passing channels | **Core findings:** Standard output-only evaluations fail to capture multi-agent failure modes; sensitive data leakage primarily propagates across internal inter-agent coordination channels | **Evidence:** Page states: \"Results establish that output-only auditing is fundamentally insufficient for multi-agent systems and that privacy controls must be extended to inter-agent communication channels, and introduces AgentLeak, the first full-stack benchmark for privacy leakage covering internal channels.\" | **Relevance:** Serves as a failure analysis and evaluation benchmark measuring information and hallucination/privacy leakage across internal orchestration channels.\n- [SoK: When Safe Agents Fail Together: The Security of Multi Agent LLM Systems](https://arxiv.org/pdf/2609.00595.pdf) | **Authors:** Rui Yang, Jun-Jie Xu, Yin-Zhi Cao, et al. | **Year:** 2026 | **Benchmark name:** A-I-R Evaluation Framework | **Evaluated orchestration tasks:** Multi-agent collaborative execution pipelines across 197 analyzed systems | **Core findings:** Safe individual agents fail collectively when integrated into multi-agent systems due to emergent interface and orchestration vulnerabilities | **Evidence:** Page states: \"This work systematizes MAS security through an execution-centered analysis of 197 works, introducing an A-I-R framework that organizes attacks by adversary position, interaction interface, and resulting system-level risk, unifying otherwise fragmented attack mechanisms across MAS.\" | **Relevance:** Provides systemic failure analysis and empirical evaluation methodology for collaborative multi-agent execution pipelines.\n- [Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures](https://www.semanticscholar.org/paper/Adversarial-Attacks-in-Multi-Agent-LLM-Pipelines%3A-Bappy-Hossain/821025dd4e89d9fb61cc6ae08591bb47caa14abc) | **Authors:** Faisal Haque Bappy, Tahrim Hossain, T. S. Zaman, Raiful Hasan, Kamrul Hasan, Tariqul Islam | **Year:** 2026 | **Benchmark name:** Multi-Agent Pipeline Boundary Vulnerability Evaluation | **Evaluated orchestration tasks:** Multi-agent pipeline data passing, role boundary execution, and state propagation | **Core findings:** Structural failures in multi-agent orchestration arise from lack of boundary verification across agent communication interfaces (content, identity, intent, state) | **Evidence:** Page states: \"Adversarial vulnerability stems from the absence of boundary verification, a security primitive that enforces explicit validation of data as it crosses inter-agent boundaries, including content, identity, execution intent, and state integrity.\" | **Relevance:** Targets error propagation and communication failure analysis across multi-agent orchestration pipelines.\n- [Solving Multi-agent Path Finding as an LLM Benchmark: How, How Good and Why](https://openreview.net/forum?id=8hAxEFRVQT) | **Authors:** Weizhe Chen, Sven Koenig, B. Dilkina | **Year:** 2025 | **Benchmark name:** MAPF-LLM Benchmark | **Evaluated orchestration tasks:** Multi-agent route planning, spatial reasoning, collision avoidance, and multi-agent coordination workflows | **Core findings:** Adapts multi-agent path finding into a benchmark for LLM coordination; tests agent reasoning and coordination efficacy in constrained multi-agent environments | **Evidence:** Page states: \"This paper introduces Multi-Agent Path Finding (MAPF), also known as multi-robot route planning, as a novel benchmark for evaluating the reasoning capabilities of LLMs and describes how the MAPF benchmark can be adapted for LLM-based evaluation, including dataset curation and an agentic workflow for LLMs.\" | **Relevance:** Standardized coordination and task completion benchmark measuring collaborative multi-agent problem-solving.\n- [Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation](https://arxiv.org/pdf/2402.11443.pdf) | **Authors:** Siyuan Wang, Zhuo-Han Long, Zhihao Fan, Zhong-Yu Wei, Xuan-Jing Huang | **Year:** 2024 | **Benchmark name:** Benchmark Self-Evolving | **Evaluated orchestration tasks:** Multi-agent dynamic task formulation, context alteration, and evaluation instance generation | **Core findings:** Multi-agent orchestration allows automated generation and validation of dynamic evaluation suites, mitigating benchmark saturation | **Evidence:** Page states: \"A benchmark self-evolving framework to dynamically evaluate rapidly advancing Large Language Models, utilizing a multi-agent system to manipulate the context or question of original instances, reframing new evolving instances with high confidence that dynamically extend existing benchmarks.\" | **Relevance:** Multi-agent collaboration framework designed specifically for dynamic evaluation methodology and test suite maintenance.\n\n### Coverage\n- **Google Scholar:** Searched initial query (`benchmark evaluation multi-agent orchestration LLM`); blocked by CAPTCHA verification immediately.\n- **arXiv:** Searched `benchmark evaluation multi-agent LLM`, `\"multi-agent\" benchmark collaboration LLM`, and `\"multi-agent\" benchmark evaluation`; screened over 25 paper listings across search result lists.\n- **Papers With Code / Hugging Face:** Navigated to search endpoint; redirected to Hugging Face Trending Papers feed.\n- **Semantic Scholar:** Searched `multi-agent LLM benchmark evaluation` and `multi-agent collaboration benchmark LLM`; reviewed 10 top relevant results.\n\n### Limitations\n- Google Scholar was blocked by an automated robot check (\"Please show you're not a robot\") and could not be scraped.\n- Papers With Code search redirected to general Hugging Face paper listings.\n- Action limit reached before extracting complete numerical evaluation scoreboards from full PDF bodies of the identified benchmarks.",
+    "task_results": {
+     "surveys_and_taxonomies": {
+      "findings": "### Findings\n- [Large Language Model based Multi-Agents: A Survey of Progress and Challenges](https://arxiv.org/abs/2402.01680) | Authors: Taicheng Guo, Xiuying Chen, Yaqi Wang, Ruidi Chang, Shichao Pei, Nitesh V. Chawla, Olaf Wiest, Xiangliang Zhang | Year: 2024 | Venue / arXiv ID: arXiv:2402.01680 [cs.CL] / IJCAI | Citation count: 1,252 (Semantic Scholar) | Orchestration taxonomy summary: Systematic review of LLM-based multi-agent systems categorizing agent profiling, multi-agent communication environments/paradigms, and mechanisms for agent capacity growth and skill acquisition | Evidence: arXiv abstract states: \"What domains and environments do LLM-based multi-agents simulate? How are these agents profiled and how do they communicate? What mechanisms contribute to the growth of agents' capacities? ... summarize the commonly used datasets or benchmarks\" | Relevance: Primary highly cited 2024 foundational survey organizing multi-agent architectures, communication protocols, and simulation environments.\n- [Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322) | Authors: Khanh-Tung Tran, Dung Dao, Minh-Duong Nguyen, Quoc-Viet Pham, Barry O'Sullivan, Hoang D. Nguyen | Year: 2025 | Venue / arXiv ID: arXiv:2501.06322 [cs.AI] | Citation count: 614 (Semantic Scholar) | Orchestration taxonomy summary: Five-dimensional orchestration taxonomy decomposing collaboration mechanisms across actors, interaction types (cooperation, competition, coopetition), structures (peer-to-peer, centralized, distributed), strategies (role-based, model-based), and coordination protocols | Evidence: arXiv abstract states: \"Our framework characterizes collaboration mechanisms based on key dimensions: actors (agents involved), types (e.g., cooperation, competition, or coopetition), structures (e.g., peer-to-peer, centralized, or distributed), strategies (e.g., role-based or model-based), and coordination protocols.\" | Relevance: Directly provides explicit multi-agent orchestration design patterns, topologies, and coordination mechanisms.\n- [A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges](https://doi.org/10.1007/s44336-024-00009-2) | Authors: Xinyi Li, Sai Wang, Si-Qi Zeng, Yu Wu, Yi Yang | Year: 2024 | Venue / arXiv ID: Vicinagearth (Springer Nature) / DOI 10.1007/s44336-024-00009-2 | Citation count: 699 (Semantic Scholar) | Orchestration taxonomy summary: Workflow and infrastructure taxonomy classifying systems into five core components: profile, perception, self-action, mutual interaction, and evolution | Evidence: Semantic Scholar listing states: \"A comprehensive survey of LLM-based multi-agent systems is presented, offering a systematic review of these studies, and a general structure encompassing five key components: profile, perception, self-action, mutual interaction, and evolution is synthesized.\" | Relevance: Categorizes orchestration infrastructure and operational interaction workflows between LLM agents.\n- [LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326) | Authors: Yi-Wen Zhu, Lihe Liu, Jia-Qian Yu, Dingyan Zhang | Year: 2026 | Venue / arXiv ID: Future Internet / DOI 10.1007 / 10.3390/fi18060326 | Citation count: 8 (Semantic Scholar) | Orchestration taxonomy summary: Orchestration topology taxonomy classifying coordination models into centralized, decentralized, and hierarchical coordination topologies, augmented with dynamic-adaptive control axes | Evidence: Semantic Scholar listing states: \"A three-topology, one-adaptivity taxonomy is proposed—centralized, decentralized, and hierarchical coordination topologies, each optionally augmented with a dynamic–adaptive control axis—grounded in classical multi-agent systems theory and recent empirical evidence.\" | Relevance: Focuses specifically on orchestration frameworks, communication protocols, and structural coordination topologies.\n\n### Coverage\n- Sites searched: Google Scholar (blocked with CAPTCHA/bot check), Semantic Scholar, arXiv.org.\n- Queries executed: `survey multi-agent LLM orchestration` (Google Scholar), `LLM multi-agent orchestration survey` (Semantic Scholar), `survey multi-agent LLM` (Semantic Scholar with sort by total citations), and direct lookups on arXiv for verified entries.\n- Results reviewed: ~25 total listings across Semantic Scholar result pages and direct paper abstracts.\n\n### Limitations\n- Google Scholar was blocked immediately with an automated bot detection / CAPTCHA prompt (\"Please show you're not a robot\").\n- Browser action limit reached before completing full text extraction of individual framework comparison tables inside the final Springer paper.",
+      "success": true,
+      "sources": [
+       "https://www.semanticscholar.org/search?q=LLM+multi-agent+orchestration+survey&sort=relevance",
+       "https://www.semanticscholar.org/search?q=survey+multi-agent+LLM&sort=total-citations",
+       "https://arxiv.org/abs/2402.01680",
+       "https://arxiv.org/abs/2501.06322",
+       "https://www.semanticscholar.org/paper/A-survey-on-LLM-based-multi-agent-systems%3A-and-Li-Wang/fc8ce12d6186ddaa797e2b36d5e8eb7921425308"
+      ],
+      "error": null,
+      "worker_id": "worker_surveys_and_taxonomies_469ecdf5",
+      "tab_id": "tab_surveys_and_taxonomies_752e00"
+     },
+     "foundational_architectures": {
+      "findings": "### Findings\n- [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://www.semanticscholar.org/paper/MetaGPT%3A-Meta-Programming-for-A-Multi-Agent-Hong-Zhuge/792fd55d79d120173e0a944ce6bfe4787239c1d2) | **Authors:** Si-Rui Hong, Ming-Chen Zhuge, Xia-Wu Zheng, Chenglin Wu, Jurgen Schmidhuber, et al. | **Year:** 2023 (ICLR) | **System Name:** MetaGPT | **Coordination Topology:** Workflow-driven assembly line / role-based pipeline with structured communication protocols (SOPs) | **Primary Contribution:** Encodes human standard operating procedures (SOPs) as meta-programming prompts and structured document artifacts across specialized agents to prevent hallucination cascades and coordinate complex software development workflows | **Evidence:** Paper summary states it \"incorporates efficient human workflows as a meta programming approach into LLM-based multi-agent collaboration and leverages the assembly line paradigm to assign diverse roles to various agents\" (2,595+ citations) | **Relevance:** Foundational multi-agent framework defining role specialization and structured artifact-passing workflow topologies.\n\n- [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://www.semanticscholar.org/paper/AutoGen%3A-Enabling-Next-Gen-LLM-Applications-via-Wu-Bansal/9ea0757c750ab1222a7442d3485a74d1c526b04c) | **Authors:** Qingyun Wu, Gagan Bansal, Chi Wang, et al. | **Year:** 2023 | **System Name:** AutoGen | **Coordination Topology:** Conversable agent topology supporting pairwise, group chat (hub-and-spoke manager), and customizable flexible interaction graphs | **Primary Contribution:** Generic conversational multi-agent abstraction where agents are conversable, customizable, and capable of seamless human-in-the-loop interaction, simplifying execution of complex multi-agent workflows into modular chat rounds | **Evidence:** Page notes it \"enables development of LLM applications using multiple agents that can converse with each other to solve tasks, which simplifies and unifies the implementation of complex LLM workflows as automated agent chats\" (2,873+ citations) | **Relevance:** Foundational architecture establishing conversational primitives as the generalized control mechanism for multi-agent LLM orchestration.\n\n- [ChatDev: Communicative Agents for Software Development](https://www.semanticscholar.org/paper/ChatDev%3A-Communicative-Agents-for-Software-Qian-Liu/9474b463654fd92a62c103b21f95aed94b087907) | **Authors:** Cheng Qian, Wei Liu, Maosong Sun, et al. | **Year:** 2023 (ACL) | **System Name:** ChatDev | **Coordination Topology:** Sequential waterfall/stage-gate multi-phase topology composed of atomic bilateral (dyadic) peer chats | **Primary Contribution:** Deconstructs multi-agent workflows into distinct software development phases (designing, coding, testing, documenting) executed via paired conversational role-playing (e.g., instructor-assistant) to solve subtasks autonomously | **Evidence:** Paper states ChatDev is \"a chat-powered software development framework in which specialized agents driven by large language models (LLMs) are guided in what to communicate and how to communicate, establishing language as a unifying bridge\" (1,309+ citations) | **Relevance:** Foundational system demonstrating staged peer-to-peer conversational orchestration for structured multi-step task execution.\n\n- [CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society](https://www.semanticscholar.org/paper/CAMEL%3A-Communicative-Agents-for-%22Mind%22-Exploration-Li-Hammoud/7bf72a3b5fbac8bc0f461780810fbc781c28ef53) | **Authors:** Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, Dmitrii Khizbullin, Bernard Ghanem | **Year:** 2023 (NeurIPS) | **System Name:** CAMEL | **Coordination Topology:** Bilateral peer-to-peer / role-playing dyad guided by inception prompts | **Primary Contribution:** Introduces cooperative role-playing communication architectures where an AI user agent and an AI assistant agent converse autonomously via inception prompting to achieve goals without human intervention | **Evidence:** Record highlights a \"novel communicative agent framework named role-playing, using inception prompting to guide chat agents toward task completion while maintaining consistency with human intentions\" (1,998+ citations) | **Relevance:** Pioneer foundational paper establishing autonomous agent-to-agent prompt negotiation and communicative role assignment.\n\n- [OSC: Cognitive Orchestration through Dynamic Knowledge Alignment in Multi-Agent LLM Collaboration](https://www.semanticscholar.org/paper/OSC%3A-Cognitive-Orchestration-through-Dynamic-in-LLM-Zhang-Fan/ed131ad898f1e9ef0b420e4d3f605abfe055b5f3) | **Authors:** Jusheng Zhang, Yi-Jia Fan, Kaitong Cai, Xiaofei Sun, Ke-Ze Wang | **Year:** 2025 (EMNLP) | **System Name:** OSC (Cognitive Orchestration) | **Coordination Topology:** Dynamic alignment network / adaptive cognitive routing | **Primary Contribution:** Implements cognitive orchestration and dynamic knowledge alignment to dynamically transform parallel uncoordinated agents into collaborative teams, optimizing routing and inter-agent communication overhead | **Evidence:** Evaluated in EMNLP 2025; record demonstrates that \"OSC significantly improves task performance and communication efficiency, transforming parallel-working individuals into a deeply collaborative cognitive team\" (40 citations) | **Relevance:** Addresses dynamic routing and adaptive coordination topology beyond static pipelines.\n\n### Coverage\n- **Sites Searched:** Semantic Scholar (`semanticscholar.org`).\n- **Queries Executed:**\n  - `multi-agent orchestration framework LLM`\n  - `MetaGPT multi-agent meta programming`\n  - `AutoGen Enabling Next-Gen LLM Applications via Multi-Agent Conversation`\n  - `ChatDev Communicative Agents for Software Development`\n  - `CAMEL Communicative Agents for Mind Exploration of Large Scale Language Model Society`\n  - `dynamic LLM-agent network routing topology`\n- **Volume Reviewed:** ~50 results across returned query listings.\n\n### Limitations\n- The 10 browser action execution limit prevented navigating arXiv and Papers With Code directly to extract additional dynamic graph routing architectures (e.g., DyLAN / Dynamic LLM-Agent Network).\n- Citation counts reflect numbers recorded live on Semantic Scholar at time of retrieval.",
+      "success": true,
+      "sources": [
+       "https://www.semanticscholar.org/search?q=MetaGPT+multi-agent+meta+programming",
+       "https://www.semanticscholar.org/search?q=AutoGen+Enabling+Next-Gen+LLM+Applications+via+Multi-Agent+Conversation",
+       "https://www.semanticscholar.org/search?q=ChatDev+Communicative+Agents+for+Software+Development",
+       "https://www.semanticscholar.org/search?q=CAMEL+Communicative+Agents+for+Mind+Exploration+of+Large+Scale+Language+Model+Society",
+       "https://www.semanticscholar.org/search?q=dynamic+LLM-agent+network+routing+topology"
+      ],
+      "error": null,
+      "worker_id": "worker_foundational_architectures_75928f82",
+      "tab_id": "tab_foundational_architectures_752e00"
+     },
+     "benchmarks_and_evaluation": {
+      "findings": "### Findings\n- [Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies](https://arxiv.org/pdf/2603.22651.pdf) | **Authors:** Siddha Kulkarni, Yukta R. Kulkarni | **Year:** 2026 | **Benchmark name:** Multi-Agent Orchestration Architecture Benchmark | **Evaluated orchestration tasks:** Financial document processing across sequential pipeline, parallel fan-out with merge, hierarchical supervisor-worker, and reflexive self-correcting loops | **Core findings:** Evaluates architectural cost-accuracy tradeoffs and empirical scaling bottlenecks; supervisor-worker and reflexive loop topologies offer superior error mitigation at higher communication overhead | **Evidence:** Page states: \"A systematic benchmark comparing four multi-agent orchestration architectures: sequential pipeline, parallel fan-out with merge, hierarchical supervisor-worker and reflexive self-correcting loop is presented, providing actionable guidance for practitioners deploying multi-agent LLM systems in regulated financial environments.\" | **Relevance:** Directly evaluates multi-agent orchestration topologies, coordination efficacy, and task decomposition efficiency.\n- [AgentLeak: A Full-Stack Benchmark for Privacy Leakage in Multi-Agent LLM Systems](https://doi.org/10.48550/arXiv.2602.11510) | **Authors:** Faouzi EL Yagoubi, Ranwa Al Mallah, Godwin Badu-Marfo | **Year:** 2026 | **Benchmark name:** AgentLeak | **Evaluated orchestration tasks:** Coordinator-worker multi-agent task execution and internal message passing channels | **Core findings:** Standard output-only evaluations fail to capture multi-agent failure modes; sensitive data leakage primarily propagates across internal inter-agent coordination channels | **Evidence:** Page states: \"Results establish that output-only auditing is fundamentally insufficient for multi-agent systems and that privacy controls must be extended to inter-agent communication channels, and introduces AgentLeak, the first full-stack benchmark for privacy leakage covering internal channels.\" | **Relevance:** Serves as a failure analysis and evaluation benchmark measuring information and hallucination/privacy leakage across internal orchestration channels.\n- [SoK: When Safe Agents Fail Together: The Security of Multi Agent LLM Systems](https://arxiv.org/pdf/2609.00595.pdf) | **Authors:** Rui Yang, Jun-Jie Xu, Yin-Zhi Cao, et al. | **Year:** 2026 | **Benchmark name:** A-I-R Evaluation Framework | **Evaluated orchestration tasks:** Multi-agent collaborative execution pipelines across 197 analyzed systems | **Core findings:** Safe individual agents fail collectively when integrated into multi-agent systems due to emergent interface and orchestration vulnerabilities | **Evidence:** Page states: \"This work systematizes MAS security through an execution-centered analysis of 197 works, introducing an A-I-R framework that organizes attacks by adversary position, interaction interface, and resulting system-level risk, unifying otherwise fragmented attack mechanisms across MAS.\" | **Relevance:** Provides systemic failure analysis and empirical evaluation methodology for collaborative multi-agent execution pipelines.\n- [Adversarial Attacks in Multi-Agent LLM Pipelines: Unveiling Structural Vulnerabilities in Agentic AI Architectures](https://www.semanticscholar.org/paper/Adversarial-Attacks-in-Multi-Agent-LLM-Pipelines%3A-Bappy-Hossain/821025dd4e89d9fb61cc6ae08591bb47caa14abc) | **Authors:** Faisal Haque Bappy, Tahrim Hossain, T. S. Zaman, Raiful Hasan, Kamrul Hasan, Tariqul Islam | **Year:** 2026 | **Benchmark name:** Multi-Agent Pipeline Boundary Vulnerability Evaluation | **Evaluated orchestration tasks:** Multi-agent pipeline data passing, role boundary execution, and state propagation | **Core findings:** Structural failures in multi-agent orchestration arise from lack of boundary verification across agent communication interfaces (content, identity, intent, state) | **Evidence:** Page states: \"Adversarial vulnerability stems from the absence of boundary verification, a security primitive that enforces explicit validation of data as it crosses inter-agent boundaries, including content, identity, execution intent, and state integrity.\" | **Relevance:** Targets error propagation and communication failure analysis across multi-agent orchestration pipelines.\n- [Solving Multi-agent Path Finding as an LLM Benchmark: How, How Good and Why](https://openreview.net/forum?id=8hAxEFRVQT) | **Authors:** Weizhe Chen, Sven Koenig, B. Dilkina | **Year:** 2025 | **Benchmark name:** MAPF-LLM Benchmark | **Evaluated orchestration tasks:** Multi-agent route planning, spatial reasoning, collision avoidance, and multi-agent coordination workflows | **Core findings:** Adapts multi-agent path finding into a benchmark for LLM coordination; tests agent reasoning and coordination efficacy in constrained multi-agent environments | **Evidence:** Page states: \"This paper introduces Multi-Agent Path Finding (MAPF), also known as multi-robot route planning, as a novel benchmark for evaluating the reasoning capabilities of LLMs and describes how the MAPF benchmark can be adapted for LLM-based evaluation, including dataset curation and an agentic workflow for LLMs.\" | **Relevance:** Standardized coordination and task completion benchmark measuring collaborative multi-agent problem-solving.\n- [Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation](https://arxiv.org/pdf/2402.11443.pdf) | **Authors:** Siyuan Wang, Zhuo-Han Long, Zhihao Fan, Zhong-Yu Wei, Xuan-Jing Huang | **Year:** 2024 | **Benchmark name:** Benchmark Self-Evolving | **Evaluated orchestration tasks:** Multi-agent dynamic task formulation, context alteration, and evaluation instance generation | **Core findings:** Multi-agent orchestration allows automated generation and validation of dynamic evaluation suites, mitigating benchmark saturation | **Evidence:** Page states: \"A benchmark self-evolving framework to dynamically evaluate rapidly advancing Large Language Models, utilizing a multi-agent system to manipulate the context or question of original instances, reframing new evolving instances with high confidence that dynamically extend existing benchmarks.\" | **Relevance:** Multi-agent collaboration framework designed specifically for dynamic evaluation methodology and test suite maintenance.\n\n### Coverage\n- **Google Scholar:** Searched initial query (`benchmark evaluation multi-agent orchestration LLM`); blocked by CAPTCHA verification immediately.\n- **arXiv:** Searched `benchmark evaluation multi-agent LLM`, `\"multi-agent\" benchmark collaboration LLM`, and `\"multi-agent\" benchmark evaluation`; screened over 25 paper listings across search result lists.\n- **Papers With Code / Hugging Face:** Navigated to search endpoint; redirected to Hugging Face Trending Papers feed.\n- **Semantic Scholar:** Searched `multi-agent LLM benchmark evaluation` and `multi-agent collaboration benchmark LLM`; reviewed 10 top relevant results.\n\n### Limitations\n- Google Scholar was blocked by an automated robot check (\"Please show you're not a robot\") and could not be scraped.\n- Papers With Code search redirected to general Hugging Face paper listings.\n- Action limit reached before extracting complete numerical evaluation scoreboards from full PDF bodies of the identified benchmarks.",
+      "success": true,
+      "sources": [
+       "https://arxiv.org/search/?query=benchmark+evaluation+multi-agent+LLM&searchtype=all&source=header",
+       "https://arxiv.org/search/?query=%22multi-agent%22+benchmark+collaboration+LLM&searchtype=all&source=header",
+       "https://arxiv.org/search/?searchtype=all&query=%22multi-agent%22+benchmark+evaluation&order=-announced_date_first",
+       "https://paperswithcode.com/search?q_meta=&q_type=&q=multi-agent+benchmark",
+       "https://www.semanticscholar.org/search?q=multi-agent+LLM+benchmark+evaluation&sort=relevance",
+       "https://www.semanticscholar.org/search?q=multi-agent+collaboration+benchmark+LLM&sort=total-citations"
+      ],
+      "error": null,
+      "worker_id": "worker_benchmarks_and_evaluation_5074a78b",
+      "tab_id": "tab_benchmarks_and_evaluation_752e00"
+     }
+    },
+    "sources": [
+     "https://www.semanticscholar.org/search?q=LLM+multi-agent+orchestration+survey&sort=relevance",
+     "https://www.semanticscholar.org/search?q=survey+multi-agent+LLM&sort=total-citations",
+     "https://arxiv.org/abs/2402.01680",
+     "https://arxiv.org/abs/2501.06322",
+     "https://www.semanticscholar.org/paper/A-survey-on-LLM-based-multi-agent-systems%3A-and-Li-Wang/fc8ce12d6186ddaa797e2b36d5e8eb7921425308",
+     "https://www.semanticscholar.org/search?q=MetaGPT+multi-agent+meta+programming",
+     "https://www.semanticscholar.org/search?q=AutoGen+Enabling+Next-Gen+LLM+Applications+via+Multi-Agent+Conversation",
+     "https://www.semanticscholar.org/search?q=ChatDev+Communicative+Agents+for+Software+Development",
+     "https://www.semanticscholar.org/search?q=CAMEL+Communicative+Agents+for+Mind+Exploration+of+Large+Scale+Language+Model+Society",
+     "https://www.semanticscholar.org/search?q=dynamic+LLM-agent+network+routing+topology",
+     "https://arxiv.org/search/?query=benchmark+evaluation+multi-agent+LLM&searchtype=all&source=header",
+     "https://arxiv.org/search/?query=%22multi-agent%22+benchmark+collaboration+LLM&searchtype=all&source=header",
+     "https://arxiv.org/search/?searchtype=all&query=%22multi-agent%22+benchmark+evaluation&order=-announced_date_first",
+     "https://paperswithcode.com/search?q_meta=&q_type=&q=multi-agent+benchmark",
+     "https://www.semanticscholar.org/search?q=multi-agent+LLM+benchmark+evaluation&sort=relevance",
+     "https://www.semanticscholar.org/search?q=multi-agent+collaboration+benchmark+LLM&sort=total-citations"
+    ],
+    "missing_information": [],
+    "follow_up": null,
+    "duration_ms": 104189.14,
+    "timing": {
+     "planning_ms": 9562.67,
+     "workers_ms": 88878.34,
+     "synthesis_ms": 15310.62,
+     "total_ms": 113751.81,
+     "workers": {
+      "surveys_and_taxonomies": {
+       "status": "completed",
+       "duration_ms": 57718.85,
+       "tool_calls": 10,
+       "llm_calls": 11,
+       "avg_llm_ms": 4804.4,
+       "stopped_early": "the limit of 10 browser actions was reached"
+      },
+      "foundational_architectures": {
+       "status": "completed",
+       "duration_ms": 67194.18,
+       "tool_calls": 10,
+       "llm_calls": 11,
+       "avg_llm_ms": 5616.5,
+       "stopped_early": "the limit of 10 browser actions was reached"
+      },
+      "benchmarks_and_evaluation": {
+       "status": "completed",
+       "duration_ms": 88859.66,
+       "tool_calls": 10,
+       "llm_calls": 11,
+       "avg_llm_ms": 5676.5,
+       "stopped_early": "the limit of 10 browser actions was reached"
+      }
+     }
+    },
+    "type": "result",
+    "done": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+  "scenario": "draw",
+  "trial": 1,
+  "seed": 1,
+  "error": null,
+  "wall_s": 38.33,
+  "tool_calls": 6,
+  "tools": [
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness",
+    "run_browser_harness"
+  ],
+  "llm_calls_derived": 7,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "shapes": [
+      "rectangle",
+      "ellipse"
+    ]
+  },
+  "claimed_in_answer": "The rectangle and inner ellipse have been drawn on the canvas.\n\n- **Rectangle bounds:** `(x: 100..500, y: 100..400)`\n- **Ellipse bounds:** `(x: 200..400, y: 175..325)` (positioned entirely within the rectangle)",
+  "answer": "The rectangle and inner ellipse have been drawn on the canvas.\n\n- **Rectangle bounds:** `(x: 100..500, y: 100..400)`\n- **Ellipse bounds:** `(x: 200..400, y: 175..325)` (positioned entirely within the rectangle)",
+  "trace": null,
+  "steps": [
+    {
+      "t": 6.93,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 13.84,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 18.29,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 22.59,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 27.23,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    },
+    {
+      "t": 33.49,
+      "tool": "run_browser_harness",
+      "label": "Interacting with browser page"
+    }
+  ]
+}

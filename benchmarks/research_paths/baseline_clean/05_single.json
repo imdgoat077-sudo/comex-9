@@ -1,0 +1,353 @@
+{
+ "answer": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)**\n  * **Authors:** Weize Chen, Yusheng Su, Jingwei Zuo, et al.\n  * **Key contribution:** Formalizes group dynamics for LLM agents across four orchestration stages: Expert Recruitment, Collaborative Decision-Making, Action Execution, and Evaluation/Refinement. Supports both autonomous and guided collaboration structures.\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)**\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al. (Microsoft Research)\n  * **Key contribution:** Introduces conversational programming where multi-agent orchestration is structured as customizable, conversable agents using event-driven control flows, human-in-the-loop triggers, and dynamic routing.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)**\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Key contribution:** Introduces Standard Operating Procedures (SOPs) into multi-agent systems, enforcing structured communication diagrams and role-playing architectures to eliminate orchestration drift and cascading hallucination.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)**\n  * **Authors:** Chen Qian, Xin Cong, Wei Liu, et al.\n  * **Key contribution:** Employs the waterfall model (Designing, Coding, Testing, Documenting) orchestrated via alternating peer review and sequential conversational phases.\n\n#### 2. Communication Topology & Graph-Based Orchestration\n- **[Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems](https://arxiv.org/abs/2502.11098)**\n  * **Authors:** Zhao Wang, Sota Moriyama, Wei-Yao Wang, et al.\n  * **Key contribution:** Introduces *TalkHier*, organizing agent interaction into hierarchical topologies to avoid flat communication overhead and semantic distortion across complex subtask trees.\n- **[DHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning](https://arxiv.org/abs/2610.07835)**\n  * **Authors:** Jie Ren, Jiakang Yuan, Chenyu Huang, et al.\n  * **Key contribution:** Dynamically constructs Directed Acyclic Graphs (DAGs) representing agent-task dependencies at runtime instead of relying on fixed communication paths.\n- **[WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)**\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, et al.\n  * **Key contribution:** Formulates workflow composition as a learned graph optimization problem, selecting agent interaction routes based on task-specific competency profiles.\n\n#### 3. Efficiency, Routing & Latency Optimization\n- **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** *(NeurIPS 2026)*\n  * **Authors:** Yexiong Lin, Shanshan Ye, Yu Yao, et al.\n  * **Key contribution:** Addresses the latency bottleneck of sequential multi-agent execution by dynamically identifying parallelizable subproblems versus sequential dependencies.\n- **[Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155)**\n  * **Authors:** Zihan Zhou, Xinzhe Hu, Hanxu Yang, et al.\n  * **Key contribution:** Decouples coordination tasks (message routing, scheduling, role assignment) from heavy reasoning agents using lightweight controller routing, slashing token footprints.\n\n#### 4. Diagnostic & Failure Analysis\n- **[Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)**\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, et al.\n  * **Key contribution:** Systematically categorizes failure modes (deadlocks, echo chambers, cascading errors) based on the structural topology (chain, star, tree, mesh) of multi-agent orchestration.",
+ "success": true,
+ "wall_s": 45.14,
+ "tool_calls": 6,
+ "navigations": 2,
+ "llm_calls": 7,
+ "avg_llm_ms": 5754.0,
+ "step_labels": [
+  "Checking memory for “multi agent orchestration research papers”",
+  "Opening arxiv.org",
+  "Reading the page",
+  "Reading the page",
+  "Opening arxiv.org",
+  "Reading the page"
+ ],
+ "answer_s": 45.14,
+ "quality": {
+  "links": [
+   "https://arxiv.org/abs/2308.10848",
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/abs/2308.00352",
+   "https://arxiv.org/abs/2307.07924",
+   "https://arxiv.org/abs/2502.11098",
+   "https://arxiv.org/abs/2610.07835",
+   "https://arxiv.org/abs/2610.07860",
+   "https://arxiv.org/abs/2610.08647",
+   "https://arxiv.org/abs/2610.08155",
+   "https://arxiv.org/abs/2610.10126"
+  ],
+  "paper_ids": [
+   "arxiv:2307.07924",
+   "arxiv:2308.00352",
+   "arxiv:2308.08155",
+   "arxiv:2308.10848",
+   "arxiv:2502.11098",
+   "arxiv:2610.07835",
+   "arxiv:2610.07860",
+   "arxiv:2610.08155",
+   "arxiv:2610.08647",
+   "arxiv:2610.10126"
+  ],
+  "paper_links": [
+   "https://arxiv.org/abs/2308.10848",
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/abs/2308.00352",
+   "https://arxiv.org/abs/2307.07924",
+   "https://arxiv.org/abs/2502.11098",
+   "https://arxiv.org/abs/2610.07835",
+   "https://arxiv.org/abs/2610.07860",
+   "https://arxiv.org/abs/2610.08647",
+   "https://arxiv.org/abs/2610.08155",
+   "https://arxiv.org/abs/2610.10126"
+  ],
+  "rows_with_paper_link": 10,
+  "rows_with_year": 1,
+  "paper_count": 10,
+  "link_status": {
+   "https://arxiv.org/abs/2308.10848": 200,
+   "https://arxiv.org/abs/2308.08155": 200,
+   "https://arxiv.org/abs/2308.00352": 200,
+   "https://arxiv.org/abs/2307.07924": 200,
+   "https://arxiv.org/abs/2502.11098": 200,
+   "https://arxiv.org/abs/2610.07835": 200,
+   "https://arxiv.org/abs/2610.07860": 200,
+   "https://arxiv.org/abs/2610.08647": 200,
+   "https://arxiv.org/abs/2610.08155": 200,
+   "https://arxiv.org/abs/2610.10126": 200
+  }
+ },
+ "mode": "single",
+ "trial": 5,
+ "phase": "baseline_clean",
+ "request": "Find me the best research papers on multi agent orchestration.",
+ "events": [
+  {
+   "t": 0.05,
+   "event": "perception",
+   "data": {
+    "url": "",
+    "tabId": "active_tab",
+    "detail": "Working in the current tab"
+   }
+  },
+  {
+   "t": 0.05,
+   "event": "thinking",
+   "data": {
+    "detail": "Reading your request"
+   }
+  },
+  {
+   "t": 5.37,
+   "event": "step",
+   "data": {
+    "step": 1,
+    "tool": "search_memory",
+    "label": "Checking memory for “multi agent orchestration research papers”",
+    "status": "running"
+   }
+  },
+  {
+   "t": 5.42,
+   "event": "step_done",
+   "data": {
+    "step": 1,
+    "tool": "search_memory",
+    "label": "Checking memory for “multi agent orchestration research papers”",
+    "success": true
+   }
+  },
+  {
+   "t": 10.63,
+   "event": "step",
+   "data": {
+    "step": 2,
+    "tool": "browser_navigate",
+    "label": "Opening arxiv.org",
+    "status": "running"
+   }
+  },
+  {
+   "t": 14.29,
+   "event": "step_done",
+   "data": {
+    "step": 2,
+    "tool": "browser_navigate",
+    "label": "Opening arxiv.org",
+    "success": true
+   }
+  },
+  {
+   "t": 17.98,
+   "event": "step",
+   "data": {
+    "step": 3,
+    "tool": "browser_extract",
+    "label": "Reading the page",
+    "status": "running"
+   }
+  },
+  {
+   "t": 17.98,
+   "event": "step_done",
+   "data": {
+    "step": 3,
+    "tool": "browser_extract",
+    "label": "Reading the page",
+    "success": false
+   }
+  },
+  {
+   "t": 20.92,
+   "event": "step",
+   "data": {
+    "step": 4,
+    "tool": "browser_extract",
+    "label": "Reading the page",
+    "status": "running"
+   }
+  },
+  {
+   "t": 20.95,
+   "event": "step_done",
+   "data": {
+    "step": 4,
+    "tool": "browser_extract",
+    "label": "Reading the page",
+    "success": true
+   }
+  },
+  {
+   "t": 30.24,
+   "event": "step",
+   "data": {
+    "step": 5,
+    "tool": "browser_navigate",
+    "label": "Opening arxiv.org",
+    "status": "running"
+   }
+  },
+  {
+   "t": 31.26,
+   "event": "step_done",
+   "data": {
+    "step": 5,
+    "tool": "browser_navigate",
+    "label": "Opening arxiv.org",
+    "success": true
+   }
+  },
+  {
+   "t": 34.43,
+   "event": "step",
+   "data": {
+    "step": 6,
+    "tool": "browser_extract",
+    "label": "Reading the page",
+    "status": "running"
+   }
+  },
+  {
+   "t": 34.45,
+   "event": "step_done",
+   "data": {
+    "step": 6,
+    "tool": "browser_extract",
+    "label": "Reading the page",
+    "success": true
+   }
+  },
+  {
+   "t": 45.14,
+   "event": "completed",
+   "data": {
+    "type": "result",
+    "is_conversational": false,
+    "content": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)**\n  * **Authors:** Weize Chen, Yusheng Su, Jingwei Zuo, et al.\n  * **Key contribution:** Formalizes group dynamics for LLM agents across four orchestration stages: Expert Recruitment, Collaborative Decision-Making, Action Execution, and Evaluation/Refinement. Supports both autonomous and guided collaboration structures.\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)**\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al. (Microsoft Research)\n  * **Key contribution:** Introduces conversational programming where multi-agent orchestration is structured as customizable, conversable agents using event-driven control flows, human-in-the-loop triggers, and dynamic routing.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)**\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Key contribution:** Introduces Standard Operating Procedures (SOPs) into multi-agent systems, enforcing structured communication diagrams and role-playing architectures to eliminate orchestration drift and cascading hallucination.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)**\n  * **Authors:** Chen Qian, Xin Cong, Wei Liu, et al.\n  * **Key contribution:** Employs the waterfall model (Designing, Coding, Testing, Documenting) orchestrated via alternating peer review and sequential conversational phases.\n\n#### 2. Communication Topology & Graph-Based Orchestration\n- **[Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems](https://arxiv.org/abs/2502.11098)**\n  * **Authors:** Zhao Wang, Sota Moriyama, Wei-Yao Wang, et al.\n  * **Key contribution:** Introduces *TalkHier*, organizing agent interaction into hierarchical topologies to avoid flat communication overhead and semantic distortion across complex subtask trees.\n- **[DHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning](https://arxiv.org/abs/2610.07835)**\n  * **Authors:** Jie Ren, Jiakang Yuan, Chenyu Huang, et al.\n  * **Key contribution:** Dynamically constructs Directed Acyclic Graphs (DAGs) representing agent-task dependencies at runtime instead of relying on fixed communication paths.\n- **[WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)**\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, et al.\n  * **Key contribution:** Formulates workflow composition as a learned graph optimization problem, selecting agent interaction routes based on task-specific competency profiles.\n\n#### 3. Efficiency, Routing & Latency Optimization\n- **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** *(NeurIPS 2026)*\n  * **Authors:** Yexiong Lin, Shanshan Ye, Yu Yao, et al.\n  * **Key contribution:** Addresses the latency bottleneck of sequential multi-agent execution by dynamically identifying parallelizable subproblems versus sequential dependencies.\n- **[Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155)**\n  * **Authors:** Zihan Zhou, Xinzhe Hu, Hanxu Yang, et al.\n  * **Key contribution:** Decouples coordination tasks (message routing, scheduling, role assignment) from heavy reasoning agents using lightweight controller routing, slashing token footprints.\n\n#### 4. Diagnostic & Failure Analysis\n- **[Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)**\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, et al.\n  * **Key contribution:** Systematically categorizes failure modes (deadlocks, echo chambers, cascading errors) based on the structural topology (chain, star, tree, mesh) of multi-agent orchestration.",
+    "text": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)**\n  * **Authors:** Weize Chen, Yusheng Su, Jingwei Zuo, et al.\n  * **Key contribution:** Formalizes group dynamics for LLM agents across four orchestration stages: Expert Recruitment, Collaborative Decision-Making, Action Execution, and Evaluation/Refinement. Supports both autonomous and guided collaboration structures.\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)**\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al. (Microsoft Research)\n  * **Key contribution:** Introduces conversational programming where multi-agent orchestration is structured as customizable, conversable agents using event-driven control flows, human-in-the-loop triggers, and dynamic routing.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)**\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Key contribution:** Introduces Standard Operating Procedures (SOPs) into multi-agent systems, enforcing structured communication diagrams and role-playing architectures to eliminate orchestration drift and cascading hallucination.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)**\n  * **Authors:** Chen Qian, Xin Cong, Wei Liu, et al.\n  * **Key contribution:** Employs the waterfall model (Designing, Coding, Testing, Documenting) orchestrated via alternating peer review and sequential conversational phases.\n\n#### 2. Communication Topology & Graph-Based Orchestration\n- **[Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems](https://arxiv.org/abs/2502.11098)**\n  * **Authors:** Zhao Wang, Sota Moriyama, Wei-Yao Wang, et al.\n  * **Key contribution:** Introduces *TalkHier*, organizing agent interaction into hierarchical topologies to avoid flat communication overhead and semantic distortion across complex subtask trees.\n- **[DHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning](https://arxiv.org/abs/2610.07835)**\n  * **Authors:** Jie Ren, Jiakang Yuan, Chenyu Huang, et al.\n  * **Key contribution:** Dynamically constructs Directed Acyclic Graphs (DAGs) representing agent-task dependencies at runtime instead of relying on fixed communication paths.\n- **[WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)**\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, et al.\n  * **Key contribution:** Formulates workflow composition as a learned graph optimization problem, selecting agent interaction routes based on task-specific competency profiles.\n\n#### 3. Efficiency, Routing & Latency Optimization\n- **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** *(NeurIPS 2026)*\n  * **Authors:** Yexiong Lin, Shanshan Ye, Yu Yao, et al.\n  * **Key contribution:** Addresses the latency bottleneck of sequential multi-agent execution by dynamically identifying parallelizable subproblems versus sequential dependencies.\n- **[Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155)**\n  * **Authors:** Zihan Zhou, Xinzhe Hu, Hanxu Yang, et al.\n  * **Key contribution:** Decouples coordination tasks (message routing, scheduling, role assignment) from heavy reasoning agents using lightweight controller routing, slashing token footprints.\n\n#### 4. Diagnostic & Failure Analysis\n- **[Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)**\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, et al.\n  * **Key contribution:** Systematically categorizes failure modes (deadlocks, echo chambers, cascading errors) based on the structural topology (chain, star, tree, mesh) of multi-agent orchestration.",
+    "result": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)**\n  * **Authors:** Weize Chen, Yusheng Su, Jingwei Zuo, et al.\n  * **Key contribution:** Formalizes group dynamics for LLM agents across four orchestration stages: Expert Recruitment, Collaborative Decision-Making, Action Execution, and Evaluation/Refinement. Supports both autonomous and guided collaboration structures.\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)**\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al. (Microsoft Research)\n  * **Key contribution:** Introduces conversational programming where multi-agent orchestration is structured as customizable, conversable agents using event-driven control flows, human-in-the-loop triggers, and dynamic routing.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)**\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Key contribution:** Introduces Standard Operating Procedures (SOPs) into multi-agent systems, enforcing structured communication diagrams and role-playing architectures to eliminate orchestration drift and cascading hallucination.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)**\n  * **Authors:** Chen Qian, Xin Cong, Wei Liu, et al.\n  * **Key contribution:** Employs the waterfall model (Designing, Coding, Testing, Documenting) orchestrated via alternating peer review and sequential conversational phases.\n\n#### 2. Communication Topology & Graph-Based Orchestration\n- **[Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems](https://arxiv.org/abs/2502.11098)**\n  * **Authors:** Zhao Wang, Sota Moriyama, Wei-Yao Wang, et al.\n  * **Key contribution:** Introduces *TalkHier*, organizing agent interaction into hierarchical topologies to avoid flat communication overhead and semantic distortion across complex subtask trees.\n- **[DHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning](https://arxiv.org/abs/2610.07835)**\n  * **Authors:** Jie Ren, Jiakang Yuan, Chenyu Huang, et al.\n  * **Key contribution:** Dynamically constructs Directed Acyclic Graphs (DAGs) representing agent-task dependencies at runtime instead of relying on fixed communication paths.\n- **[WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)**\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, et al.\n  * **Key contribution:** Formulates workflow composition as a learned graph optimization problem, selecting agent interaction routes based on task-specific competency profiles.\n\n#### 3. Efficiency, Routing & Latency Optimization\n- **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** *(NeurIPS 2026)*\n  * **Authors:** Yexiong Lin, Shanshan Ye, Yu Yao, et al.\n  * **Key contribution:** Addresses the latency bottleneck of sequential multi-agent execution by dynamically identifying parallelizable subproblems versus sequential dependencies.\n- **[Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155)**\n  * **Authors:** Zihan Zhou, Xinzhe Hu, Hanxu Yang, et al.\n  * **Key contribution:** Decouples coordination tasks (message routing, scheduling, role assignment) from heavy reasoning agents using lightweight controller routing, slashing token footprints.\n\n#### 4. Diagnostic & Failure Analysis\n- **[Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)**\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, et al.\n  * **Key contribution:** Systematically categorizes failure modes (deadlocks, echo chambers, cascading errors) based on the structural topology (chain, star, tree, mesh) of multi-agent orchestration.",
+    "done": true,
+    "duration_seconds": 45.10906679200707,
+    "task_outcome": {
+     "action": "browser_extract",
+     "status": "partial",
+     "url": null,
+     "details": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collabora"
+    }
+   }
+  },
+  {
+   "t": 45.14,
+   "event": "done",
+   "data": {
+    "type": "result",
+    "is_conversational": false,
+    "success": true,
+    "done": true,
+    "result": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)**\n  * **Authors:** Weize Chen, Yusheng Su, Jingwei Zuo, et al.\n  * **Key contribution:** Formalizes group dynamics for LLM agents across four orchestration stages: Expert Recruitment, Collaborative Decision-Making, Action Execution, and Evaluation/Refinement. Supports both autonomous and guided collaboration structures.\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)**\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al. (Microsoft Research)\n  * **Key contribution:** Introduces conversational programming where multi-agent orchestration is structured as customizable, conversable agents using event-driven control flows, human-in-the-loop triggers, and dynamic routing.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)**\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Key contribution:** Introduces Standard Operating Procedures (SOPs) into multi-agent systems, enforcing structured communication diagrams and role-playing architectures to eliminate orchestration drift and cascading hallucination.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)**\n  * **Authors:** Chen Qian, Xin Cong, Wei Liu, et al.\n  * **Key contribution:** Employs the waterfall model (Designing, Coding, Testing, Documenting) orchestrated via alternating peer review and sequential conversational phases.\n\n#### 2. Communication Topology & Graph-Based Orchestration\n- **[Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems](https://arxiv.org/abs/2502.11098)**\n  * **Authors:** Zhao Wang, Sota Moriyama, Wei-Yao Wang, et al.\n  * **Key contribution:** Introduces *TalkHier*, organizing agent interaction into hierarchical topologies to avoid flat communication overhead and semantic distortion across complex subtask trees.\n- **[DHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning](https://arxiv.org/abs/2610.07835)**\n  * **Authors:** Jie Ren, Jiakang Yuan, Chenyu Huang, et al.\n  * **Key contribution:** Dynamically constructs Directed Acyclic Graphs (DAGs) representing agent-task dependencies at runtime instead of relying on fixed communication paths.\n- **[WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)**\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, et al.\n  * **Key contribution:** Formulates workflow composition as a learned graph optimization problem, selecting agent interaction routes based on task-specific competency profiles.\n\n#### 3. Efficiency, Routing & Latency Optimization\n- **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** *(NeurIPS 2026)*\n  * **Authors:** Yexiong Lin, Shanshan Ye, Yu Yao, et al.\n  * **Key contribution:** Addresses the latency bottleneck of sequential multi-agent execution by dynamically identifying parallelizable subproblems versus sequential dependencies.\n- **[Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155)**\n  * **Authors:** Zihan Zhou, Xinzhe Hu, Hanxu Yang, et al.\n  * **Key contribution:** Decouples coordination tasks (message routing, scheduling, role assignment) from heavy reasoning agents using lightweight controller routing, slashing token footprints.\n\n#### 4. Diagnostic & Failure Analysis\n- **[Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)**\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, et al.\n  * **Key contribution:** Systematically categorizes failure modes (deadlocks, echo chambers, cascading errors) based on the structural topology (chain, star, tree, mesh) of multi-agent orchestration.",
+    "content": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)**\n  * **Authors:** Weize Chen, Yusheng Su, Jingwei Zuo, et al.\n  * **Key contribution:** Formalizes group dynamics for LLM agents across four orchestration stages: Expert Recruitment, Collaborative Decision-Making, Action Execution, and Evaluation/Refinement. Supports both autonomous and guided collaboration structures.\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)**\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al. (Microsoft Research)\n  * **Key contribution:** Introduces conversational programming where multi-agent orchestration is structured as customizable, conversable agents using event-driven control flows, human-in-the-loop triggers, and dynamic routing.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)**\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Key contribution:** Introduces Standard Operating Procedures (SOPs) into multi-agent systems, enforcing structured communication diagrams and role-playing architectures to eliminate orchestration drift and cascading hallucination.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)**\n  * **Authors:** Chen Qian, Xin Cong, Wei Liu, et al.\n  * **Key contribution:** Employs the waterfall model (Designing, Coding, Testing, Documenting) orchestrated via alternating peer review and sequential conversational phases.\n\n#### 2. Communication Topology & Graph-Based Orchestration\n- **[Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems](https://arxiv.org/abs/2502.11098)**\n  * **Authors:** Zhao Wang, Sota Moriyama, Wei-Yao Wang, et al.\n  * **Key contribution:** Introduces *TalkHier*, organizing agent interaction into hierarchical topologies to avoid flat communication overhead and semantic distortion across complex subtask trees.\n- **[DHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning](https://arxiv.org/abs/2610.07835)**\n  * **Authors:** Jie Ren, Jiakang Yuan, Chenyu Huang, et al.\n  * **Key contribution:** Dynamically constructs Directed Acyclic Graphs (DAGs) representing agent-task dependencies at runtime instead of relying on fixed communication paths.\n- **[WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)**\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, et al.\n  * **Key contribution:** Formulates workflow composition as a learned graph optimization problem, selecting agent interaction routes based on task-specific competency profiles.\n\n#### 3. Efficiency, Routing & Latency Optimization\n- **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** *(NeurIPS 2026)*\n  * **Authors:** Yexiong Lin, Shanshan Ye, Yu Yao, et al.\n  * **Key contribution:** Addresses the latency bottleneck of sequential multi-agent execution by dynamically identifying parallelizable subproblems versus sequential dependencies.\n- **[Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155)**\n  * **Authors:** Zihan Zhou, Xinzhe Hu, Hanxu Yang, et al.\n  * **Key contribution:** Decouples coordination tasks (message routing, scheduling, role assignment) from heavy reasoning agents using lightweight controller routing, slashing token footprints.\n\n#### 4. Diagnostic & Failure Analysis\n- **[Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)**\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, et al.\n  * **Key contribution:** Systematically categorizes failure modes (deadlocks, echo chambers, cascading errors) based on the structural topology (chain, star, tree, mesh) of multi-agent orchestration.",
+    "text": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)**\n  * **Authors:** Weize Chen, Yusheng Su, Jingwei Zuo, et al.\n  * **Key contribution:** Formalizes group dynamics for LLM agents across four orchestration stages: Expert Recruitment, Collaborative Decision-Making, Action Execution, and Evaluation/Refinement. Supports both autonomous and guided collaboration structures.\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)**\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al. (Microsoft Research)\n  * **Key contribution:** Introduces conversational programming where multi-agent orchestration is structured as customizable, conversable agents using event-driven control flows, human-in-the-loop triggers, and dynamic routing.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)**\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Key contribution:** Introduces Standard Operating Procedures (SOPs) into multi-agent systems, enforcing structured communication diagrams and role-playing architectures to eliminate orchestration drift and cascading hallucination.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)**\n  * **Authors:** Chen Qian, Xin Cong, Wei Liu, et al.\n  * **Key contribution:** Employs the waterfall model (Designing, Coding, Testing, Documenting) orchestrated via alternating peer review and sequential conversational phases.\n\n#### 2. Communication Topology & Graph-Based Orchestration\n- **[Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems](https://arxiv.org/abs/2502.11098)**\n  * **Authors:** Zhao Wang, Sota Moriyama, Wei-Yao Wang, et al.\n  * **Key contribution:** Introduces *TalkHier*, organizing agent interaction into hierarchical topologies to avoid flat communication overhead and semantic distortion across complex subtask trees.\n- **[DHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning](https://arxiv.org/abs/2610.07835)**\n  * **Authors:** Jie Ren, Jiakang Yuan, Chenyu Huang, et al.\n  * **Key contribution:** Dynamically constructs Directed Acyclic Graphs (DAGs) representing agent-task dependencies at runtime instead of relying on fixed communication paths.\n- **[WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)**\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, et al.\n  * **Key contribution:** Formulates workflow composition as a learned graph optimization problem, selecting agent interaction routes based on task-specific competency profiles.\n\n#### 3. Efficiency, Routing & Latency Optimization\n- **[SquidAgent: Parallelize Wisely, Coordinate Efficiently](https://arxiv.org/abs/2610.08647)** *(NeurIPS 2026)*\n  * **Authors:** Yexiong Lin, Shanshan Ye, Yu Yao, et al.\n  * **Key contribution:** Addresses the latency bottleneck of sequential multi-agent execution by dynamically identifying parallelizable subproblems versus sequential dependencies.\n- **[Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor](https://arxiv.org/abs/2610.08155)**\n  * **Authors:** Zihan Zhou, Xinzhe Hu, Hanxu Yang, et al.\n  * **Key contribution:** Decouples coordination tasks (message routing, scheduling, role assignment) from heavy reasoning agents using lightweight controller routing, slashing token footprints.\n\n#### 4. Diagnostic & Failure Analysis\n- **[Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)**\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, et al.\n  * **Key contribution:** Systematically categorizes failure modes (deadlocks, echo chambers, cascading errors) based on the structural topology (chain, star, tree, mesh) of multi-agent orchestration.",
+    "durationMs": 45135,
+    "metadata": {
+     "use_procedures": false,
+     "procedure_mode": "none",
+     "procedure_capability": null,
+     "procedure_abstract_query": null,
+     "procedure_confidence": 0.0,
+     "retrieved_procedure_ids": [],
+     "retrieved_procedure_scores": [],
+     "procedure_retrieval_threshold": 0.5,
+     "procedure_context_injected": false,
+     "exact_procedure_context": "",
+     "tool_call_count": 6,
+     "failed_tool_call_count": 1,
+     "duration_seconds": 45.10906679200707,
+     "tool_traces": [
+      {
+       "tool": "search_memory",
+       "args": {
+        "domain": "ALL",
+        "query": "multi agent orchestration research papers"
+       },
+       "success": true,
+       "duration_ms": 48.13,
+       "result": "{\n  \"results\": [\n    {\n      \"relevance_score\": 2.469708957242539,\n      \"source_id\": \"bdc28671-027c-4e80-99ad-15bbfb87c403\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:32:33.891756\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://scholar.google.com/scholar?q=multi+agent+orchestration+llm\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://scholar.google.com/scholar?q=multi+agent+orchestration+llm\\\", \\\"frameId\\\": \\\"61E3031E7398BEC5787DAF6B2EAE982E\\\", \\\"duration_ms\\\": 1174}\",\n      \"provenance\": \"74666d3b-aff6-478a-af80-dc7c68b311a4\"\n    },\n    {\n      \"relevance_score\": 2.4411258989872464,\n      \"source_id\": \"b79ef520-dc4a-4cb5-a1a1-de7d92eb4f03\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:36:44.172347\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://scholar.google.com/scholar?q=multi+agent+orchestration+llm\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://scholar.google.com/scholar?q=multi+agent+orchestration+llm\\\", \\\"frameId\\\": \\\"7692CA333A8ABF5E7E3AC6C94F0ACBA9\\\", \\\"duration_ms\\\": 2232}\",\n      \"provenance\": \"c495bc3b-1c20-47d5-bdd5-7ec0b95535fd\"\n    },\n    {\n      \"relevance_score\": 2.3075918788945966,\n      \"source_id\": \"225241ca-2e3b-4fdb-99db-e6f1adfc03b3\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:32:53.989003\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://arxiv.org/search/?query=multi-agent+orchestration&searchtype=all&source=header\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://arxiv.org/search/?query=multi-agent+orchestration&searchtype=all&source=header\\\", \\\"frameId\\\": \\\"61E3031E7398BEC5787DAF6B2EAE982E\\\", \\\"duration_ms\\\": 1555}\",\n      \"provenance\": \"74666d3b-aff6-478a-af80-dc7c68b311a4\"\n    },\n    {\n      \"relevance_score\": 2.2342609982966217,\n      \"source_id\": \"3d3dbd6e-f515-4261-b065-ad7b8f58758c\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:36:57.163401\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://arxiv.org/search/?query=%22multi-agent%22+orchestration+LLM&searchtype=all&source=header\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://arxiv.org/search/?query=%22multi-agent%22+orchestration+LLM&searchtype=all&source=header\\\", \\\"frameId\\\": \\\"7692CA333A8ABF5E7E3AC6C94F0ACBA9\\\", \\\"duration_ms\\\": 1152}\",\n      \"provenance\": \"c495bc3b-1c20-47d5-bdd5-7ec0b95535fd\"\n    },\n    {\n      \"relevance_score\": 1.968556658735459,\n      \"source_id\": \"ea8ab28c-a950-4588-bbe7-fbf85e5388e4\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:34:16.451384\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://www.semanticscholar.org/paper/Beyond-Self-Talk%3A-A-Communication-Centric-Survey-of-Yan-Zhang/77137fc47a569d66952cdf656ed6e99f3b027c26\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://www.semanticscholar.org/paper/Beyond-Self-Talk%3A-A-Communication-Centric-Survey-of-Yan-Zhang/77137fc47a569d66952cdf656ed6e99f3b027c26\\\", \\\"frameId\\\": \\\"B1528D010885C06\",\n      \"provenance\": \"ca28015b-5562-4374-8357-a562ed83f551\"\n    },\n    {\n      \"relevance_score\": 0.9314967090756054,\n      \"source_id\": \"9ecba164-05d6-4869-9ca7-badf3a033b57\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:33:06.481011\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://arxiv.org/search/?query=%22AutoGen%22+multi-agent&searchtype=all\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://arxiv.org/search/?query=%22AutoGen%22+multi-agent&searchtype=all\\\", \\\"frameId\\\": \\\"61E3031E7398BEC5787DAF6B2EAE982E\\\", \\\"duration_ms\\\": 1611}\",\n      \"provenance\": \"74666d3b-aff6-478a-af80-dc7c68b311a4\"\n    },\n    {\n      \"relevance_score\": 0.9005857954255749,\n      \"source_id\": \"268d2a37-0383-4562-939c-bc2f0ccd2958\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:33:48.965364\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://arxiv.org/search/?query=%22multi-agent%22+benchmark+coordination+evaluation&searchtype=all\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://arxiv.org/search/?query=%22multi-agent%22+benchmark+coordination+evaluation&searchtype=all\\\", \\\"frameId\\\": \\\"7675A1B8237769280C2D3B7C734DC0EC\\\", \\\"duration_ms\\\": 1693}\",\n      \"provenance\": \"317dfa6b-1f4a-47e5-b402-09163c283c90\"\n    },\n    {\n      \"relevance_score\": 0.8957548907427708,\n      \"source_id\": \"529ab03c-2428-4a7a-a276-c21b80f8647f\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:34:11.086029\",\n      \"content_excerpt\": \"Tool: browser_extract\\nArgs: {\\\"selector\\\": null}\\nResult: Extracted 6289 chars from 'LLM multi-agent survey | Semantic Scholar' via service.\",\n      \"provenance\": \"ca28015b-5562-4374-8357-a562ed83f551\"\n    },\n    {\n      \"relevance_score\": 0.8907330597062573,\n      \"source_id\": \"fd82792f-08a4-4f0b-8663-191f00c026d1\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:35:22.851144\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://arxiv.org/search/?query=multi-agent+benchmark&searchtype=all&source=header\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://arxiv.org/search/?query=multi-agent+benchmark&searchtype=all&source=header\\\", \\\"frameId\\\": \\\"EC8FD3CC31942D7284429F2474C84F87\\\", \\\"duration_ms\\\": 1194}\",\n      \"provenance\": \"914d40a5-ba56-47bd-8997-5411631d680f\"\n    },\n    {\n      \"relevance_score\": 0.8810935759481298,\n      \"source_id\": \"76168cdb-243c-4fb4-962c-4d4d6f40421d\",\n      \"memory_type\": \"ToolCall\",\n      \"timestamp\": \"2026-10-12 05:33:49.893752\",\n      \"content_excerpt\": \"Tool: browser_navigate\\nArgs: {\\\"url\\\": \\\"https://arxiv.org/search/?query=multi-agent+survey+LLM&searchtype=all&source=header\\\"}\\nResult: {\\\"navigated\\\": true, \\\"url\\\": \\\"https://arxiv.org/search/?query=multi-agent+survey+LLM&searchtype=all&source=header\\\", \\\"frameId\\\": \\\"B1528D010885C0612C00DC1767CEEEA2\\\", \\\"duration_ms\\\": 1176}\",\n      \"provenance\": \"ca28015b-5562-4374-8357-a562ed83f551\"\n    }\n  ],\n  \"count\": 10,\n  \"truncated\": false,\n  \"omitted_count\": 0,\n  \"partial_failure\": false\n}"
+      },
+      {
+       "tool": "browser_navigate",
+       "args": {
+        "url": "https://arxiv.org/search/?query=%22multi-agent%22+orchestration&searchtype=all&source=header"
+       },
+       "success": true,
+       "duration_ms": 3660.08,
+       "result": "{\"navigated\": true, \"url\": \"https://arxiv.org/search/?query=%22multi-agent%22+orchestration&searchtype=all&source=header\", \"frameId\": \"7692CA333A8ABF5E7E3AC6C94F0ACBA9\", \"duration_ms\": 3637}"
+      },
+      {
+       "tool": "browser_extract",
+       "args": {
+        "selector": "ol.bison-search-results"
+       },
+       "success": false,
+       "duration_ms": 6.33,
+       "error": "[OPERATION_FAILED] Error extracting content: Selector 'ol.bison-search-results' not found",
+       "result": "[OPERATION_FAILED] Error extracting content: Selector 'ol.bison-search-results' not found"
+      },
+      {
+       "tool": "browser_extract",
+       "args": {},
+       "success": true,
+       "duration_ms": 25.95,
+       "result": "{\"title\": \"Search | arXiv e-print repository\", \"url\": \"https://arxiv.org/search/?query=%22multi-agent%22+orchestration&searchtype=all&source=header\", \"matched\": 1, \"text\": \"Skip to main content\\narXiv is now an independent nonprofit!\\nLearn more\\n\\u00d7\\nSearch\\nSubmit\\nDonate\\nLog in\\nShowing 1\\u201350 of 908 results for all: \\\"multi-agent\\\" orchestration\\nSearch v0.5.6 released 2020-02-24\\u00a0\\u00a0\\nSearch term or terms\\nAll fields\\nTitle\\nAuthor(s)\\nAbstract\\nComments\\nJournal reference\\nACM classification\\nMSC classification\\nReport number\\narXiv identifier\\nDOI\\nORCID\\nLicense (URI)\\narXiv author ID\\nHelp pages\\nFull text\\nSearch\\n Show abstracts  Hide abstracts\\nAdvanced Search\\n25\\n50\\n100\\n200\\n results per page.\\nSort results by \\nAnnouncement date (newest first)\\nAnnouncement date (oldest first)\\nSubmission date (newest first)\\nSubmission date (oldest first)\\nRelevance\\nGo\\nNext\\n1\\n2\\n3\\n4\\n5\\n\\u2026\\n\\narXiv:2610.13144 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI\\n\\nCompetence-Aware Orchestration for LLM-Based Multi-Agent Systems\\n\\nAuthors: Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\\n\\nAbstract: LLM-based multi-\\u2026 \\u25bd More\\n\\nSubmitted 9 October, 2026; originally announced October 2026.\\n\\nComments: 16 pages, 4 figures\\n\\narXiv:2610.12176 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI\\n\\nRecursive Self-Improvement through Multi-Agent Self-Supervision\\n\\nAuthors: Hyunin Lee, Jinglue Xu, Jeffrey Seely, Donghyun Lee, Somayeh Sojoudi, Matei Zaharia, Yujin Tang\\n\\nAbstract: \\u2026optimizer and evaluator. However, a single model instance struggles to critique and improve its own complex reasoning under this homogeneous loop. To address this, we propose Multi-\\u2026 \\u25bd More\\n\\nSubmitted 8 October, 2026; originally announced October 2026.\\n\\nComments: 39 pages\\n\\narXiv:2610.11344 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI cs.CE\\n\\nEvoSim: Learning to Model, Modeling to Learn\\n\\nAuthors: Yun-Wei Song, Jinkai Tao, Jun-Dong Zhang, Rui Zhang, Yi-Min Wu, Qiang Zhang\\n\\nAbstract: \\u2026discrepancies to drive mechanism and equation revisions and held-out experimental data to test physical plausibility. Exploration traces make updates to knowledge, skills, and multi-agent orchestration. This co-evolution improves physics-based models and EvoSim's ability to s\\u2026 \\u25bd More\\n\\nSubmitted 8 October, 2026; originally announced October 2026.\\n\\nComments: 43 pages, 6 figures\\n\\narXiv:2610.10858 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AR cs.AI cs.LG cs.MA eess.SY\\n\\nRFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design\\n\\nAuthors: Awani Khodkumbhe, Yunfei Feng, Raj Rangarajan, Kevin Wang, Kamal Sahota\\n\\nAbstract: \\u20267 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-its-kind multi-\\u2026 \\u25bd More\\n\\nSubmitted 7 October, 2026; originally announced October 2026.\\n\\nComments: 6 pages, 4 figures. Submitted to ACM/IEEE for possible publication\\n\\nACM Class: B.7.2; I.2.11\\n\\narXiv:2610.10628 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.SE cs.AI \\ndoi\\n10.1145/3843779.3844634\\n\\nAgent4RE: A Self-Refining Multi-agent Framework for End-to-End Software Requirements Engineering and Benchmarking\\n\\nAuthors: Yongjian Tang, Linhan Li, Thomas Runkler\\n\\nAbstract: \\u2026approaches for software Requirements Engineering (RE) typically rely on basic prompting strategies or rudimentary agent collaboration, under-utilizing the full potential of multi-\\u2026 \\u25bd More\\n\\nSubmitted 7 October, 2026; originally announced October 2026.\\n\\nComments: Accepted to the ASE@POVC track; The E2E requirements engineering benchmark is available https://zenodo.org/records/22815961\\n\\narXiv:2610.10184 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI cs.SE\\n\\nAgentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming\\n\\nAuthors: \\u00c1ngel S\\u00e1nchez-Fern\\u00e1ndez, Javier Pernas-\\u00c1lvarez, Diego Crespo-Pereira\\n\\nAbstract: \\u2026decision support, which generally assumes that the optimization model already exists. This study bridges both directions by assessing whether general-purpose LLMs, orchestrated as agents without task-specific training, can formulate and implement constraint programming models from natural-language problem descriptions. Singleagent and\\u2026 \\u25bd More\\n\\nSubmitted 7 October, 2026; originally announced October 2026.\\n\\nComments: 29 pages, 9 figures\\n\\narXiv:2610.10126 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.MA cs.AI\\n\\nKnow the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures\\n\\nAuthors: Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, Xudong Liu, Tianyu Wo\\n\\nAbstract: Multi-\\u2026 \\u25bd More\\n\\nSubmitted 7 October, 2026; originally announced October 2026.\\n\\narXiv:2610.09995 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.SE\\n\\nDesigning Collaborative AI-Driven Workflows for Scientific Software Engineering\\n\\nAuthors: Akash Dhruv, Max Knobbe, Pedro Machado, Anshu Dubey\\n\\nAbstract: \\u2026team structures rather than as full automation. In the workflows we propose, domain experts write the specification and plan, and agents operate under a deterministic orchestration pattern to write the target code. Each stage ends with a numerical comparison against the reference code and requires human review and approval before the next begins. We evaluate\\u2026 \\u25bd More\\n\\nSubmitted 7 October, 2026; originally announced October 2026.\\n\\narXiv:2610.09466 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI eess.SY\\n\\nLLM-Enabled UAV Dispatch: A System-Level Survey and Taxonomy\\n\\nAuthors: Xiao Han, Aoyang Quan, Xiangyu Zhao, Xiangjie Kong, Guojiang Shen\\n\\nAbstract: \\u2026semantic intent, symbolic decision-making, and physical UAV execution. Rather than treating LLMs as standalone add-ons, we conceptualize them as a cross-layer semantic orchestration layer connecting human instructions, external solvers, and distributed control modules. We organize the literature into four representative dispatch paradigms: pipeline dispatch,\\u2026 \\u25bd More\\n\\nSubmitted 7 October, 2026; originally announced October 2026.\\n\\nComments: Under Review\\n\\narXiv:2610.08900 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI cs.CY\\n\\nHumanize: Judgement Engineering for Agentic Coding\\n\\nAuthors: Sihao Liu, Ligeng Zhu, Zijian Zhang, Dongyun Zou, Zhengyang Zhang, Changye Li, Song Bian, Song Han, Tony Nowatzki\\n\\nAbstract: \\u2026coding makes code generation cheap, but reliable completion remains difficult: the agent that writes the code is a weak judge of whether it is done. We present Humanize, a multi-agent orchestration workflow for agentic coding built around judgement engineering: explicit, mechan\\u2026 \\u25bd More\\n\\nSubmitted 7 October, 2026; v1 submitted 6 October, 2026; originally announced October 2026.\\n\\narXiv:2610.08647 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI cs.CL cs.LG\\n\\nSquidAgent: Parallelize Wisely, Coordinate Efficiently\\n\\nAuthors: Yexiong Lin, Shanshan Ye, Yu Yao, Zhen Fang, Bo Han, Tongliang Liu\\n\\nAbstract: \\u2026tasks, but sequential execution incurs substantial latency. In principle, parallelizing work across multiple agents should yield near-linear speedups. Yet existing parallel multi-\\u2026 \\u25bd More\\n\\nSubmitted 6 October, 2026; originally announced October 2026.\\n\\nComments: Accepted at NeurIPS 2026. 37 pages, including appendices\\n\\narXiv:2610.08378 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AR cs.DC\\n\\nLachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash\\n\\nAuthors: Jaehoon Yang, Jeongmin Lee, Haneul Park, Seung Yul Lee, Nam Sung Kim, Jae W. Lee\\n\\nAbstract: \\u2026lets HBM absorb more of an agent run's writes and sends less of them to HBF. As the lifetime of KV cache in agentic serving is dictated by the harness, the program that orchestrates the agents, we analyze its behavior and identify three axes along which lifetime diverges, temporal, structural, and inter-worker. Guided by these observations, we present La\\u2026 \\u25bd More\\n\\nSubmitted 6 October, 2026; originally announced October 2026.\\n\\narXiv:2610.07860 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI\\n\\nWorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration\\n\\nAuthors: Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, Xiaowei Jia, Haoyu Wang, Haifeng Chen\\n\\nAbstract: Multi-\\u2026 \\u25bd More\\n\\nSubmitted 6 October, 2026; originally announced October 2026.\\n\\narXiv:2610.07835 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI\\n\\nDHCG: Dynamic Construction of Hierarchical Collaboration Graphs for LLM-Based Multi-Agent Reasoning\\n\\nAuthors: Jie Ren, Jiakang Yuan, Chenyu Huang, Hezeer Ma, Jiayuan Fan, Tao Chen\\n\\nAbstract: LLM-based multi-agent systems (MAS) have \", \"truncated\": true, \"length\": 27387, \"links\": [{\"text\": \"Search v0.5.6 released 2020-02-24\", \"href\": \"https://github.com/arXiv/arxiv-search/releases\"}, {\"text\": \"Advanced Search\", \"href\": \"https://arxiv.org/search/advanced?terms-0-term=%22multi-agent%22+orchestration&terms-0-field=all&size=50&order=-announced_date_first\"}, {\"text\": \"arXiv:2610.13144\", \"href\": \"https://arxiv.org/abs/2610.13144\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.13144\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.13144\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.13144\"}, {\"text\": \"Songmiao Wang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Wang%2C+S\"}, {\"text\": \"Yuchen Wang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Wang%2C+Y\"}, {\"text\": \"Chenglin Yu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Yu%2C+C\"}, {\"text\": \"Hongxia Yang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Yang%2C+H\"}, {\"text\": \"Ming Li\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Li%2C+M\"}, {\"text\": \"arXiv:2610.12176\", \"href\": \"https://arxiv.org/abs/2610.12176\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.12176\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.12176\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.12176\"}, {\"text\": \"Hyunin Lee\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Lee%2C+H\"}, {\"text\": \"Jinglue Xu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Xu%2C+J\"}, {\"text\": \"Jeffrey Seely\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Seely%2C+J\"}, {\"text\": \"Donghyun Lee\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Lee%2C+D\"}, {\"text\": \"Somayeh Sojoudi\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Sojoudi%2C+S\"}, {\"text\": \"Matei Zaharia\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zaharia%2C+M\"}, {\"text\": \"Yujin Tang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Tang%2C+Y\"}, {\"text\": \"arXiv:2610.11344\", \"href\": \"https://arxiv.org/abs/2610.11344\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.11344\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.11344\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.11344\"}, {\"text\": \"Yun-Wei Song\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Song%2C+Y\"}, {\"text\": \"Jinkai Tao\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Tao%2C+J\"}, {\"text\": \"Jun-Dong Zhang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhang%2C+J\"}, {\"text\": \"Rui Zhang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhang%2C+R\"}, {\"text\": \"Yi-Min Wu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Wu%2C+Y\"}, {\"text\": \"Qiang Zhang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhang%2C+Q\"}, {\"text\": \"arXiv:2610.10858\", \"href\": \"https://arxiv.org/abs/2610.10858\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.10858\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.10858\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.10858\"}, {\"text\": \"Awani Khodkumbhe\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Khodkumbhe%2C+A\"}, {\"text\": \"Yunfei Feng\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Feng%2C+Y\"}, {\"text\": \"Raj Rangarajan\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Rangarajan%2C+R\"}, {\"text\": \"Kevin Wang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Wang%2C+K\"}, {\"text\": \"Kamal Sahota\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Sahota%2C+K\"}, {\"text\": \"arXiv:2610.10628\", \"href\": \"https://arxiv.org/abs/2610.10628\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.10628\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.10628\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.10628\"}, {\"text\": \"10.1145/3843779.3844634\", \"href\": \"https://doi.org/10.1145/3843779.3844634\"}, {\"text\": \"Linhan Li\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Li%2C+L\"}, {\"text\": \"Thomas Runkler\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Runkler%2C+T\"}, {\"text\": \"arXiv:2610.10184\", \"href\": \"https://arxiv.org/abs/2610.10184\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.10184\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.10184\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.10184\"}, {\"text\": \"\\u00c1ngel S\\u00e1nchez-Fern\\u00e1ndez\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=S%C3%A1nchez-Fern%C3%A1ndez%2C+%C3%81\"}, {\"text\": \"Javier Pernas-\\u00c1lvarez\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Pernas-%C3%81lvarez%2C+J\"}, {\"text\": \"Diego Crespo-Pereira\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Crespo-Pereira%2C+D\"}, {\"text\": \"arXiv:2610.10126\", \"href\": \"https://arxiv.org/abs/2610.10126\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.10126\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.10126\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.10126\"}, {\"text\": \"Xinwen Liu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Liu%2C+X\"}]}"
+      },
+      {
+       "tool": "browser_navigate",
+       "args": {
+        "url": "https://arxiv.org/search/?query=%22AgentVerse%22+collaboration&searchtype=all"
+       },
+       "success": true,
+       "duration_ms": 1022.33,
+       "result": "{\"navigated\": true, \"url\": \"https://arxiv.org/search/?query=%22AgentVerse%22+collaboration&searchtype=all\", \"frameId\": \"7692CA333A8ABF5E7E3AC6C94F0ACBA9\", \"duration_ms\": 999}"
+      },
+      {
+       "tool": "browser_extract",
+       "args": {},
+       "success": true,
+       "duration_ms": 22.4,
+       "result": "{\"title\": \"Search | arXiv e-print repository\", \"url\": \"https://arxiv.org/search/?query=%22AgentVerse%22+collaboration&searchtype=all\", \"matched\": 1, \"text\": \"Skip to main content\\narXiv is now an independent nonprofit!\\nLearn more\\n\\u00d7\\nSearch\\nSubmit\\nDonate\\nLog in\\nShowing 1\\u20135 of 5 results for all: \\\"AgentVerse\\\" collaboration\\nSearch v0.5.6 released 2020-02-24\\u00a0\\u00a0\\nSearch term or terms\\nAll fields\\nTitle\\nAuthor(s)\\nAbstract\\nComments\\nJournal reference\\nACM classification\\nMSC classification\\nReport number\\narXiv identifier\\nDOI\\nORCID\\nLicense (URI)\\narXiv author ID\\nHelp pages\\nFull text\\nSearch\\n Show abstracts  Hide abstracts\\nAdvanced Search\\n25\\n50\\n100\\n200\\n results per page.\\nSort results by \\nAnnouncement date (newest first)\\nAnnouncement date (oldest first)\\nSubmission date (newest first)\\nSubmission date (oldest first)\\nRelevance\\nGo\\n\\narXiv:2610.08155 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.MA cs.AI\\n\\nToken-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor\\n\\nAuthors: Zihan Zhou, Xinzhe Hu, Hanxu Yang, Liangjian Wen, Zhao Kang\\n\\nAbstract: Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operations, including task selection, role assignment, message rout\\u2026 \\u25bd More\\n\\nSubmitted 6 October, 2026; originally announced October 2026.\\n\\narXiv:2504.09772 \\u00a0[pdf, ps, other]\\u00a0\\n\\n cs.AI\\n\\nTwo Heads are Better Than One: Test-time Scaling of Multi-agent Collaborative Reasoning\\n\\nAuthors: Can Jin, Hongwu Peng, Qixin Zhang, Yang Zhou, Yujin Tang, Tong Che, Dimitris N. Metaxas\\n\\nAbstract: \\u2026MAS offers a more robust framework for scaling reasoning. We validate this approach by introducing M500, a dataset comprising 500 high-quality multi-agent, multi-turn collaborative reasoning traces generated via DeepSeek-R1. Through Supervised Fine-Tuning on M500, we enable open-source models to internalize\\u2026 \\u25bd More\\n\\nSubmitted 25 August, 2026; v1 submitted 13 April, 2025; originally announced April 2025.\\n\\narXiv:2502.11098 \\u00a0[pdf, other]\\u00a0\\n\\n cs.AI cs.LG cs.MA\\n\\nTalk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems\\n\\nAuthors: Zhao Wang, Sota Moriyama, Wei-Yao Wang, Briti Gangopadhyay, Shingo Takamatsu\\n\\nAbstract: Recent advancements in LLM-based multi-agent (LLM-MA) systems have shown promise, yet significant challenges remain in managing communication and refinement when agents collaborate on complex tasks. In this paper, we propose \\\\textit{Talk Structurally, Act Hierarchically (TalkHier)}, a novel framework that introduces a structured communication protocol for co\\u2026 \\u25bd More\\n\\nSubmitted 16 February, 2025; originally announced February 2025.\\n\\narXiv:2406.05720 \\u00a0[pdf, other]\\u00a0\\n\\n cs.AI cs.MA\\n\\nVillagerAgent: A Graph-Based Multi-Agent Framework for Coordinating Complex Task Dependencies in Minecraft\\n\\nAuthors: Yubo Dong, Xukun Zhu, Zhengzhe Pan, Linchao Zhu, Yi Yang\\n\\nAbstract: \\u2026we construct a new benchmark, named VillagerBench, within the Minecraft environment.VillagerBench comprises diverse tasks crafted to test various aspects of multi-agent collaboration, from workload distribution to dynamic adaptation and synchronized task execution. Second, we introduce a Directed Acyclic Graph Multi-Agent Framework VillagerAgent to resolve\\u2026 \\u25bd More\\n\\nSubmitted 9 June, 2024; originally announced June 2024.\\n\\narXiv:2308.10848 \\u00a0[pdf, other]\\u00a0\\n\\n cs.CL\\n\\nAgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors\\n\\nAuthors: Weize Chen, Yusheng Su, Jingwei Zuo, Cheng Yang, Chenfei Yuan, Chi-Min Chan, Heyang Yu, Yaxi Lu, Yi-Hsin Hung, Chen Qian, Yujia Qin, Xin Cong, Ruobing Xie, Zhiyuan Liu, Maosong Sun, Jie Zhou\\n\\nAbstract: \\u2026to enhance the efficiency and effectiveness of task accomplishment. Hence, inspired by human group dynamics, we propose a multi-agent framework \\\\framework that can collaboratively and dynamically adjust its composition as a greater-than-the-sum-of-its-parts system. Our experiments demonstrate that \\\\framework framework can effectively deploy multi-agent group\\u2026 \\u25bd More\\n\\nSubmitted 23 October, 2023; v1 submitted 21 August, 2023; originally announced August 2023.\\n\\nComments: Under review. Code at https://github.com/OpenBMB/AgentVerse/\\n\\nWe gratefully acknowledge support from our major funders, member institutions, and all contributors.\\nAbout\\n\\u00b7\\nHelp\\n\\u00b7\\nContact\\n\\u00b7\\nSubscribe\\n\\u00b7\\nCopyright\\n\\u00b7\\nPrivacy\\n\\u00b7\\nAccessibility\\n\\u00b7\\nOperational Status\\n(opens in new tab)\\nMajor funding support from\", \"truncated\": false, \"length\": 4422, \"links\": [{\"text\": \"Search v0.5.6 released 2020-02-24\", \"href\": \"https://github.com/arXiv/arxiv-search/releases\"}, {\"text\": \"Advanced Search\", \"href\": \"https://arxiv.org/search/advanced?terms-0-term=%22AgentVerse%22+collaboration&terms-0-field=all&size=50&order=-announced_date_first\"}, {\"text\": \"arXiv:2610.08155\", \"href\": \"https://arxiv.org/abs/2610.08155\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2610.08155\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2610.08155\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2610.08155\"}, {\"text\": \"Zihan Zhou\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhou%2C+Z\"}, {\"text\": \"Xinzhe Hu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Hu%2C+X\"}, {\"text\": \"Hanxu Yang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Yang%2C+H\"}, {\"text\": \"Liangjian Wen\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Wen%2C+L\"}, {\"text\": \"Zhao Kang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Kang%2C+Z\"}, {\"text\": \"arXiv:2504.09772\", \"href\": \"https://arxiv.org/abs/2504.09772\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2504.09772\"}, {\"text\": \"ps\", \"href\": \"https://arxiv.org/ps/2504.09772\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2504.09772\"}, {\"text\": \"Can Jin\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Jin%2C+C\"}, {\"text\": \"Hongwu Peng\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Peng%2C+H\"}, {\"text\": \"Qixin Zhang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhang%2C+Q\"}, {\"text\": \"Yang Zhou\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhou%2C+Y\"}, {\"text\": \"Yujin Tang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Tang%2C+Y\"}, {\"text\": \"Tong Che\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Che%2C+T\"}, {\"text\": \"Dimitris N. Metaxas\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Metaxas%2C+D+N\"}, {\"text\": \"arXiv:2502.11098\", \"href\": \"https://arxiv.org/abs/2502.11098\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2502.11098\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2502.11098\"}, {\"text\": \"Zhao Wang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Wang%2C+Z\"}, {\"text\": \"Sota Moriyama\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Moriyama%2C+S\"}, {\"text\": \"Wei-Yao Wang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Wang%2C+W\"}, {\"text\": \"Briti Gangopadhyay\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Gangopadhyay%2C+B\"}, {\"text\": \"Shingo Takamatsu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Takamatsu%2C+S\"}, {\"text\": \"arXiv:2406.05720\", \"href\": \"https://arxiv.org/abs/2406.05720\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2406.05720\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2406.05720\"}, {\"text\": \"Yubo Dong\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Dong%2C+Y\"}, {\"text\": \"Xukun Zhu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhu%2C+X\"}, {\"text\": \"Zhengzhe Pan\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Pan%2C+Z\"}, {\"text\": \"Linchao Zhu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhu%2C+L\"}, {\"text\": \"Yi Yang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Yang%2C+Y\"}, {\"text\": \"arXiv:2308.10848\", \"href\": \"https://arxiv.org/abs/2308.10848\"}, {\"text\": \"pdf\", \"href\": \"https://arxiv.org/pdf/2308.10848\"}, {\"text\": \"other\", \"href\": \"https://arxiv.org/format/2308.10848\"}, {\"text\": \"Weize Chen\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Chen%2C+W\"}, {\"text\": \"Yusheng Su\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Su%2C+Y\"}, {\"text\": \"Jingwei Zuo\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zuo%2C+J\"}, {\"text\": \"Cheng Yang\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Yang%2C+C\"}, {\"text\": \"Chenfei Yuan\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Yuan%2C+C\"}, {\"text\": \"Chi-Min Chan\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Chan%2C+C\"}, {\"text\": \"Heyang Yu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Yu%2C+H\"}, {\"text\": \"Yaxi Lu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Lu%2C+Y\"}, {\"text\": \"Yi-Hsin Hung\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Hung%2C+Y\"}, {\"text\": \"Chen Qian\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Qian%2C+C\"}, {\"text\": \"Yujia Qin\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Qin%2C+Y\"}, {\"text\": \"Xin Cong\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Cong%2C+X\"}, {\"text\": \"Ruobing Xie\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Xie%2C+R\"}, {\"text\": \"Zhiyuan Liu\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Liu%2C+Z\"}, {\"text\": \"Maosong Sun\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Sun%2C+M\"}, {\"text\": \"Jie Zhou\", \"href\": \"https://arxiv.org/search/?searchtype=author&query=Zhou%2C+J\"}]}"
+      }
+     ],
+     "timing": {
+      "memory_prep_ms": 0.44,
+      "db_query_ms": 0.41,
+      "llm_roundtrips_ms": [
+       5321.54,
+       5207.97,
+       3685.49,
+       2941.85,
+       9286.17,
+       3171.09,
+       10661.99
+      ],
+      "total_llm_ms": 40276.1,
+      "tool_durations_ms": [
+       48.13,
+       3660.08,
+       6.33,
+       25.95,
+       1022.33,
+       22.4
+      ],
+      "total_tool_ms": 4785.22,
+      "time_to_first_token_ms": 5366.6,
+      "total_duration_ms": 45109.1
+     },
+     "worker_id": null,
+     "tab_id": "active_tab",
+     "trusted_app_context": true,
+     "legacy_mode": false,
+     "conversation_id": null,
+     "task_context": null,
+     "is_conversational": false,
+     "task_outcome": {
+      "action": "browser_extract",
+      "status": "partial",
+      "url": null,
+      "details": "Here are the foundational and most impactful research papers on multi-agent orchestration and coordination:\n\n#### 1. Core Frameworks & Architectures\n- **[AgentVerse: Facilitating Multi-Agent Collabora"
+     }
+    }
+   }
+  }
+ ]
+}

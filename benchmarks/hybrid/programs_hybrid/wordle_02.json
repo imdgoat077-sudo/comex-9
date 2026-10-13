@@ -1,0 +1,178 @@
+{
+  "scenario": "wordle",
+  "mode": "hybrid",
+  "trial": 2,
+  "seed": 2,
+  "error": null,
+  "wall_s": 61.62,
+  "tool_calls": 11,
+  "tools": [
+    "browser_observe",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate"
+  ],
+  "llm_calls_derived": 12,
+  "llm_calls_measured": 12,
+  "failed_tool_calls": 0,
+  "llm_ms": 54477.6,
+  "tool_ms": 7005.97,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [
+    "browser_keys"
+  ],
+  "program_calls": 0,
+  "success": true,
+  "state": {
+    "s": "won",
+    "rows": 2
+  },
+  "claimed_in_answer": "The hidden word was **PILOT**. Solved in **2** guesses.\n\n#### Guess History\n1. `CRANE` \u2013 all letters absent (`C`, `R`, `A`, `N`, `E`)\n2. `PILOT` \u2013 all letters correct (`P`, `I`, `L`, `O`, `T`)",
+  "quality": 1.0,
+  "recovered": false,
+  "answer": "The hidden word was **PILOT**. Solved in **2** guesses.\n\n#### Guess History\n1. `CRANE` \u2013 all letters absent (`C`, `R`, `A`, `N`, `E`)\n2. `PILOT` \u2013 all letters correct (`P`, `I`, `L`, `O`, `T`)",
+  "trace": [
+    {
+      "tool": "browser_observe",
+      "args": "{\"reason\": \"Inspect the game structure and interactive elements\"}",
+      "ok": true,
+      "result": "Page: Word game fixture (http://127.0.0.1:60838/wordle.html?seed=2)\nStrategy: visual because the page has no text and no interactive elements: the content is probably drawn. Suggested tools: browser_screenshot, browser_pointer, browser_keys, browser_evaluate.\nViewport 1280x713, scrolled to y=0 of 71",
+      "ms": 19.95
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    html: document.body.innerHTML,\\n    scripts: Array.from(document.scripts).map(s => s.src || s.textContent)\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"html\": \"<div id=\\\"game\\\" data-status=\\\"playing\\\" tabindex=\\\"-1\\\">\\n  <h1>Word game</h1>\\n  <div id=\\\"rows\\\" role=\\\"group\\\" aria-label=\\\"Guesses\\\"><div class=\\\"row\\\" role=\\\"group\\\" aria-label=\\\"Row 1\\\"><div class=\\\"tile\\\" data-state=\\\"empty\\\" aria-label=\\\"empty\\\"></div><div class=\\\"tile\\\" data-stat",
+      "ms": 21.57
+    },
+    {
+      "tool": "browser_keys",
+      "args": "{\"keys\": [\"c\", \"r\", \"a\", \"n\", \"e\", \"Enter\"]}",
+      "ok": true,
+      "result": "Pressed 6 key(s): c r a n e Enter. Page changed: yes.",
+      "ms": 273.49
+    },
+    {
+      "tool": "browser_wait",
+      "args": "{\"condition\": {\"type\": \"js\", \"reason\": \"Wait for score API response\"}}",
+      "ok": true,
+      "result": "NOT met after 5101 ms (timed out; last: expression -> False).",
+      "ms": 5125.72
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const rows = Array.from(document.querySelectorAll('.row'));\\n  return {\\n    status: document.getElementById('game').dataset.status,\\n    msg: document.getElementById('message').textContent,\\n    rows: rows.map((r, rIdx) => {\\n      const tiles = Array.from(r.querySelecto",
+      "ok": true,
+      "result": "{\"status\": \"playing\", \"msg\": \"\", \"rows\": [[{\"char\": \"c\", \"state\": \"absent\", \"aria\": \"1st letter, C, absent\"}, {\"char\": \"r\", \"state\": \"absent\", \"aria\": \"2nd letter, R, absent\"}, {\"char\": \"a\", \"state\": \"absent\", \"aria\": \"3rd letter, A, absent\"}, {\"char\": \"n\", \"state\": \"absent\", \"aria\": \"4th letter, N,",
+      "ms": 20.23
+    },
+    {
+      "tool": "browser_keys",
+      "args": "{\"keys\": [\"t\", \"o\", \"i\", \"l\", \"s\", \"Enter\"]}",
+      "ok": true,
+      "result": "Pressed 6 key(s): t o i l s Enter. Page changed: yes.",
+      "ms": 239.36
+    },
+    {
+      "tool": "browser_wait",
+      "args": "{\"condition\": {\"reason\": \"Wait for guess 2 evaluation\", \"type\": \"idle\", \"expected\": \"Row 2\"}}",
+      "ok": true,
+      "result": "Condition met after 414 ms (page is idle).",
+      "ms": 434.94
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const rows = Array.from(document.querySelectorAll('.row'));\\n  return {\\n    status: document.getElementById('game').dataset.status,\\n    msg: document.getElementById('message').textContent,\\n    row2: Array.from(rows[1].querySelectorAll('.tile')).map(t => ({\\n      char:",
+      "ok": true,
+      "result": "{\"status\": \"playing\", \"msg\": \"Not in word list\", \"row2\": [{\"char\": \"t\", \"state\": \"tbd\", \"aria\": \"t, tbd\"}, {\"char\": \"o\", \"state\": \"tbd\", \"aria\": \"o, tbd\"}, {\"char\": \"i\", \"state\": \"tbd\", \"aria\": \"i, tbd\"}, {\"char\": \"l\", \"state\": \"tbd\", \"aria\": \"l, tbd\"}, {\"char\": \"s\", \"state\": \"tbd\", \"aria\": \"s, tbd\"",
+      "ms": 21.65
+    },
+    {
+      "tool": "browser_keys",
+      "args": "{\"keys\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"p\", \"i\", \"l\", \"o\", \"t\", \"Enter\"]}",
+      "ok": true,
+      "result": "Pressed 11 key(s): Backspace Backspace Backspace Backspace Backspace p i l o t Enter. Page changed: yes.",
+      "ms": 389.45
+    },
+    {
+      "tool": "browser_wait",
+      "args": "{\"condition\": {\"reason\": \"Wait for idle\", \"type\": \"idle\"}}",
+      "ok": true,
+      "result": "Condition met after 413 ms (page is idle).",
+      "ms": 434.32
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const rows = Array.from(document.querySelectorAll('.row'));\\n  return {\\n    status: document.getElementById('game').dataset.status,\\n    msg: document.getElementById('message').textContent,\\n    row2: Array.from(rows[1].querySelectorAll('.tile')).map(t => ({\\n      char:",
+      "ok": true,
+      "result": "{\"status\": \"won\", \"msg\": \"You won in 2\", \"row2\": [{\"char\": \"p\", \"state\": \"correct\", \"aria\": \"1st letter, P, correct\"}, {\"char\": \"i\", \"state\": \"correct\", \"aria\": \"2nd letter, I, correct\"}, {\"char\": \"l\", \"state\": \"correct\", \"aria\": \"3rd letter, L, correct\"}, {\"char\": \"o\", \"state\": \"correct\", \"aria\": \"",
+      "ms": 25.29
+    }
+  ],
+  "steps": [
+    {
+      "t": 5.84,
+      "tool": "browser_observe",
+      "label": "Checking what kind of page this is"
+    },
+    {
+      "t": 10.96,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 17.27,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cc r a n e Enter\u201d"
+    },
+    {
+      "t": 20.95,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 35.11,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 40.37,
+      "tool": "browser_keys",
+      "label": "Pressing \u201ct o i l s Enter\u201d"
+    },
+    {
+      "t": 43.22,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 47.34,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 50.77,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 54.29,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 58.82,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    }
+  ]
+}

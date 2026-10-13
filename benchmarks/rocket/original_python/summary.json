@@ -1,0 +1,16 @@
+{
+  "label": "original_python",
+  "trials": 1,
+  "complete": 1,
+  "score_median": 9,
+  "scores": [
+    9
+  ],
+  "wall_median_s": 473.6,
+  "walls": [
+    473.6
+  ],
+  "tool_calls_median": 28,
+  "llm_calls_median": 29,
+  "lease_expired_in": 1
+}

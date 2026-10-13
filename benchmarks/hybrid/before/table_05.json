@@ -1,0 +1,173 @@
+{
+  "scenario": "table",
+  "trial": 5,
+  "seed": 5,
+  "error": null,
+  "wall_s": 75.09,
+  "tool_calls": 24,
+  "tools": [
+    "browser_extract",
+    "browser_find",
+    "browser_inspect",
+    "browser_type",
+    "browser_extract",
+    "browser_click",
+    "browser_inspect",
+    "browser_sequence",
+    "browser_type",
+    "browser_extract",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract"
+  ],
+  "llm_calls_derived": 25,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "rows_correct": 57,
+    "rows_expected": 57,
+    "totals_stated": true
+  },
+  "claimed_in_answer": "| Course Code | Course Title | Credits | Grade |\n| :--- | :--- | :--- | :--- |\n| TST1000 | Test Course 1 | 2 | C |\n| TST1001 | Test Course 2 | 1 | N |\n| TST1002 | Test Course 3 | 3 | D |\n| TST1003 | Test Course 4 | 2 | S |\n| TST1004 | Test Course 5 | 4 | S |\n| TST1005 | Test Course 6 | 4 | S |\n| TST1006 | Test Course 7 | 2 | E |\n| TST1007 | Test Course 8 | 1 | D |\n| TST1008 | Test Course 9 | 1 | A",
+  "answer": "| Course Code | Course Title | Credits | Grade |\n| :--- | :--- | :--- | :--- |\n| TST1000 | Test Course 1 | 2 | C |\n| TST1001 | Test Course 2 | 1 | N |\n| TST1002 | Test Course 3 | 3 | D |\n| TST1003 | Test Course 4 | 2 | S |\n| TST1004 | Test Course 5 | 4 | S |\n| TST1005 | Test Course 6 | 4 | S |\n| TST1006 | Test Course 7 | 2 | E |\n| TST1007 | Test Course 8 | 1 | D |\n| TST1008 | Test Course 9 | 1 | A |\n| TST1009 | Test Course 10 | 2 | B |\n| TST1010 | Test Course 11 | 1 | D |\n| TST1011 | Test Course 12 | 2 | S |\n| TST1012 | Test Course 13 | 2 | B |\n| TST1013 | Test Course 14 | 1 | D |\n| TST1014 | Test Course 15 | 2 | C |\n| TST1015 | Test Course 16 | 4 | N |\n| TST1016 | Test Course 17 | 4 | B |\n| TST1017 | Test Course 18 | 2 | E |\n| TST1018 | Test Course 19 | 3 | D |\n| TST1019 | Test Course 20 | 4 | B |\n| TST1020 | Test Course 21 | 1 | D |\n| TST1021 | Test Course 22 | 3 | A |\n| TST1022 | Test Course 23 | 1 | E |\n| TST1023 | Test Course 24 | 3 | B |\n| TST1024 | Test Course 25 | 4 | D |\n| TST1025 | Test Course 26 | 1 | B |\n| TST1026 | Test Course 27 | 1 | S |\n| TST1027 | Test Course 28 | 3 | E |\n| TST1028 | Test Course 29 | 4 | B |\n| TST1029 | Test Course 30 | 3 | S |\n| TST1030 | Test Course 31 | 2 | D |\n| TST1031 | Test Course 32 | 1 | A |\n| TST1032 | Test Course 33 | 2 | C |\n| TST1033 | Test Course 34 | 1 | A |\n| TST1034 | Test Course 35 | 3 | A |\n| TST1035 | Test Course 36 | 3 | E |\n| TST1036 | Test Course 37 | 4 | A |\n| TST1037 | Test Course 38 | 2 | A |\n| TST1038 | Test Course 39 | 2 | S |\n| TST1039 | Test Course 40 | 2 | B |\n| TST1040 | Test Course 41 | 2 | C |\n| TST1041 | Test Course 42 | 3 | A |\n| TST1042 | Test Course 43 | 1 | C |\n| TST1043 | Test Course 44 | 4 | C |\n| TST1044 | Test Course 45 | 1 | C |\n| TST1045 | Test Course 46 | 1 | A |\n| TST1046 | Test Course 47 | 4 | A |\n| TST1047 | Test Course 48 | 1 | S |\n| TST1048 | Test Course 49 | 2 | D |\n| TST1049 | Test Course 50 | 1 | S |\n| TST1050 | Test Course 51 | 4 | A |\n| TST1051 | Test Course 52 | 3 | D |\n| TST1052 | Test Course 53 | 1 | S |\n| TST1053 | Test Course 54 | 4 | C |\n| TST1054 | Test Course 55 | 2 | S |\n| TST1055 | Test Course 56 | 3 | C |\n| TST1056 | Test Course 57 | 1 | A |\n\n#### Summary\n- **Total courses:** 57\n- **Total credits:** 131",
+  "trace": null,
+  "steps": [
+    {
+      "t": 3.73,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 6.2,
+      "tool": "browser_find",
+      "label": "Finding \u201c100\u201d"
+    },
+    {
+      "t": 8.81,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 11.06,
+      "tool": "browser_type",
+      "label": "Typing \u201c100\u201d"
+    },
+    {
+      "t": 12.85,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 15.78,
+      "tool": "browser_click",
+      "label": "Clicking \u201centries per page\u201d"
+    },
+    {
+      "t": 18.43,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 22.1,
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page"
+    },
+    {
+      "t": 25.37,
+      "tool": "browser_type",
+      "label": "Searching for \u201c100\u201d"
+    },
+    {
+      "t": 28.75,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 31.48,
+      "tool": "browser_click",
+      "label": "Clicking \u201c2\u201d"
+    },
+    {
+      "t": 33.68,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 36.78,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 39.19,
+      "tool": "browser_click",
+      "label": "Clicking \u201c3\u201d"
+    },
+    {
+      "t": 41.48,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 44.9,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 47.32,
+      "tool": "browser_click",
+      "label": "Clicking \u201c4\u201d"
+    },
+    {
+      "t": 50.17,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 52.47,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 55.4,
+      "tool": "browser_click",
+      "label": "Clicking \u201c5\u201d"
+    },
+    {
+      "t": 58.51,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 61.08,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 63.59,
+      "tool": "browser_click",
+      "label": "Clicking \u201c6\u201d"
+    },
+    {
+      "t": 66.03,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    }
+  ]
+}

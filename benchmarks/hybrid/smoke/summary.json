@@ -1,0 +1,52 @@
+{
+  "chess": {
+    "trials": 1,
+    "success": 1,
+    "wall_median_s": 31.14,
+    "wall_min_s": 31.14,
+    "wall_max_s": 31.14,
+    "tool_calls_median": 4,
+    "llm_calls_derived_median": 5,
+    "vision_used_in": 0
+  },
+  "wordle": {
+    "trials": 1,
+    "success": 1,
+    "wall_median_s": 111.13,
+    "wall_min_s": 111.13,
+    "wall_max_s": 111.13,
+    "tool_calls_median": 6,
+    "llm_calls_derived_median": 7,
+    "vision_used_in": 0
+  },
+  "draw": {
+    "trials": 1,
+    "success": 1,
+    "wall_median_s": 26.31,
+    "wall_min_s": 26.31,
+    "wall_max_s": 26.31,
+    "tool_calls_median": 4,
+    "llm_calls_derived_median": 5,
+    "vision_used_in": 1
+  },
+  "table": {
+    "trials": 1,
+    "success": 1,
+    "wall_median_s": 59.83,
+    "wall_min_s": 59.83,
+    "wall_max_s": 59.83,
+    "tool_calls_median": 5,
+    "llm_calls_derived_median": 6,
+    "vision_used_in": 0
+  },
+  "shop": {
+    "trials": 1,
+    "success": 1,
+    "wall_median_s": 51.46,
+    "wall_min_s": 51.46,
+    "wall_max_s": 51.46,
+    "tool_calls_median": 9,
+    "llm_calls_derived_median": 10,
+    "vision_used_in": 0
+  }
+}

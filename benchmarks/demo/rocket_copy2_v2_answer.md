@@ -1,0 +1,1 @@
+Error code: 503 - {'error': {'message': '[antigravity/gemini-3.7-flash-medium] [404]: {\n  "error": {\n    "code": 404,\n    "message": "Requested entity was not found.",\n    "status": "NOT_FOUND"\n  }\n}\n (reset after 1m 59s)'}}

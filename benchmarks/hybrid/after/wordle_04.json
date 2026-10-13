@@ -1,0 +1,213 @@
+{
+  "scenario": "wordle",
+  "trial": 4,
+  "seed": 4,
+  "error": null,
+  "wall_s": 50.47,
+  "tool_calls": 14,
+  "tools": [
+    "browser_evaluate",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate",
+    "browser_keys",
+    "browser_wait",
+    "browser_evaluate"
+  ],
+  "llm_calls_derived": 15,
+  "llm_calls_measured": 15,
+  "failed_tool_calls": 0,
+  "llm_ms": 47202.3,
+  "tool_ms": 3158.78,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [
+    "browser_keys"
+  ],
+  "success": true,
+  "state": {
+    "s": "won",
+    "rows": 2
+  },
+  "claimed_in_answer": "- **Hidden word:** `HOUSE`\n- **Guesses used:** 2 (`CRANE`, `HOUSE`)",
+  "answer": "- **Hidden word:** `HOUSE`\n- **Guesses used:** 2 (`CRANE`, `HOUSE`)",
+  "trace": [
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    title: document.title,\\n    url: window.location.href,\\n    body: document.body.innerText.slice(0, 1000)\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"title\": \"Word game fixture\", \"url\": \"http://127.0.0.1:58053/wordle.html?seed=4\", \"body\": \"Word game\"}",
+      "ms": 25.35
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    html: document.body.innerHTML,\\n    scripts: [...document.scripts].map(s => s.src || s.innerText.slice(0, 500))\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"html\": \"<div id=\\\"game\\\" data-status=\\\"playing\\\" tabindex=\\\"-1\\\">\\n  <h1>Word game</h1>\\n  <div id=\\\"rows\\\" role=\\\"group\\\" aria-label=\\\"Guesses\\\"><div class=\\\"row\\\" role=\\\"group\\\" aria-label=\\\"Row 1\\\"><div class=\\\"tile\\\" data-state=\\\"empty\\\" aria-label=\\\"empty\\\"></div><div class=\\\"tile\\\" data-stat",
+      "ms": 25.14
+    },
+    {
+      "tool": "browser_keys",
+      "args": "{\"keys\": [\"c\", \"r\", \"a\", \"n\", \"e\", \"Enter\"]}",
+      "ok": true,
+      "result": "Pressed 6 key(s): c r a n e Enter. Page changed: yes.",
+      "ms": 249.84
+    },
+    {
+      "tool": "browser_wait",
+      "args": "{\"condition\": {\"type\": \"idle\", \"reason\": \"Wait for score fetch to finish\"}}",
+      "ok": true,
+      "result": "Condition met after 416 ms (page is idle).",
+      "ms": 436.98
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const rows = [...document.querySelectorAll('.row')];\\n  return rows.map((r, rIdx) => {\\n    const tiles = [...r.querySelectorAll('.tile')];\\n    return tiles.map(t => ({\\n      text: t.textContent,\\n      state: t.dataset.state,\\n      label: t.getAttribute('aria-label')\\",
+      "ok": true,
+      "result": "[[{\"text\": \"c\", \"state\": \"absent\", \"label\": \"1st letter, C, absent\"}, {\"text\": \"r\", \"state\": \"absent\", \"label\": \"2nd letter, R, absent\"}, {\"text\": \"a\", \"state\": \"absent\", \"label\": \"3rd letter, A, absent\"}, {\"text\": \"n\", \"state\": \"absent\", \"label\": \"4th letter, N, absent\"}, {\"text\": \"e\", \"state\": \"co",
+      "ms": 17.3
+    },
+    {
+      "tool": "browser_keys",
+      "args": "{\"keys\": [\"t\", \"o\", \"i\", \"l\", \"e\", \"Enter\"]}",
+      "ok": true,
+      "result": "Pressed 6 key(s): t o i l e Enter. Page changed: yes.",
+      "ms": 248.13
+    },
+    {
+      "tool": "browser_wait",
+      "args": "{\"condition\": {\"reason\": \"Wait for score response\", \"type\": \"idle\"}}",
+      "ok": true,
+      "result": "Condition met after 416 ms (page is idle).",
+      "ms": 439.49
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const r = document.querySelectorAll('.row')[1];\\n  return {\\n    msg: document.getElementById('message').textContent,\\n    tiles: [...r.querySelectorAll('.tile')].map(t => ({ text: t.textContent, state: t.dataset.state, label: t.getAttribute('aria-label') }))\\n  };\\n})()\"",
+      "ok": true,
+      "result": "{\"msg\": \"Not in word list\", \"tiles\": [{\"text\": \"t\", \"state\": \"tbd\", \"label\": \"t, tbd\"}, {\"text\": \"o\", \"state\": \"tbd\", \"label\": \"o, tbd\"}, {\"text\": \"i\", \"state\": \"tbd\", \"label\": \"i, tbd\"}, {\"text\": \"l\", \"state\": \"tbd\", \"label\": \"l, tbd\"}, {\"text\": \"e\", \"state\": \"tbd\", \"label\": \"e, tbd\"}]}",
+      "ms": 22.82
+    },
+    {
+      "tool": "browser_keys",
+      "args": "{\"keys\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"p\", \"o\", \"i\", \"s\", \"e\", \"Enter\"]}",
+      "ok": true,
+      "result": "Pressed 11 key(s): Backspace Backspace Backspace Backspace Backspace p o i s e Enter. Page changed: no.",
+      "ms": 392.7
+    },
+    {
+      "tool": "browser_wait",
+      "args": "{\"condition\": {\"type\": \"idle\", \"reason\": \"Wait for response\"}}",
+      "ok": true,
+      "result": "Condition met after 411 ms (page is idle).",
+      "ms": 434.81
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const r = document.querySelectorAll('.row')[1];\\n  return {\\n    msg: document.getElementById('message').textContent,\\n    tiles: [...r.querySelectorAll('.tile')].map(t => ({ text: t.textContent, state: t.dataset.state, label: t.getAttribute('aria-label') }))\\n  };\\n})()\"",
+      "ok": true,
+      "result": "{\"msg\": \"Not in word list\", \"tiles\": [{\"text\": \"p\", \"state\": \"tbd\", \"label\": \"p, tbd\"}, {\"text\": \"o\", \"state\": \"tbd\", \"label\": \"o, tbd\"}, {\"text\": \"i\", \"state\": \"tbd\", \"label\": \"i, tbd\"}, {\"text\": \"s\", \"state\": \"tbd\", \"label\": \"s, tbd\"}, {\"text\": \"e\", \"state\": \"tbd\", \"label\": \"e, tbd\"}]}",
+      "ms": 23.0
+    },
+    {
+      "tool": "browser_keys",
+      "args": "{\"keys\": [\"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"Backspace\", \"h\", \"o\", \"u\", \"s\", \"e\", \"Enter\"]}",
+      "ok": true,
+      "result": "Pressed 11 key(s): Backspace Backspace Backspace Backspace Backspace h o u s e Enter. Page changed: yes.",
+      "ms": 382.51
+    },
+    {
+      "tool": "browser_wait",
+      "args": "{\"condition\": {\"reason\": \"Wait for response\", \"type\": \"idle\"}}",
+      "ok": true,
+      "result": "Condition met after 416 ms (page is idle).",
+      "ms": 441.64
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const r = document.querySelectorAll('.row')[1];\\n  return {\\n    msg: document.getElementById('message').textContent,\\n    tiles: [...r.querySelectorAll('.tile')].map(t => ({ text: t.textContent, state: t.dataset.state, label: t.getAttribute('aria-label') }))\\n  };\\n})()\"",
+      "ok": true,
+      "result": "{\"msg\": \"You won in 2\", \"tiles\": [{\"text\": \"h\", \"state\": \"correct\", \"label\": \"1st letter, H, correct\"}, {\"text\": \"o\", \"state\": \"correct\", \"label\": \"2nd letter, O, correct\"}, {\"text\": \"u\", \"state\": \"correct\", \"label\": \"3rd letter, U, correct\"}, {\"text\": \"s\", \"state\": \"correct\", \"label\": \"4th letter, ",
+      "ms": 19.07
+    }
+  ],
+  "steps": [
+    {
+      "t": 5.65,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 9.93,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 14.94,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cc r a n e Enter\u201d"
+    },
+    {
+      "t": 18.02,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 21.1,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 24.34,
+      "tool": "browser_keys",
+      "label": "Pressing \u201ct o i l e Enter\u201d"
+    },
+    {
+      "t": 26.85,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 30.51,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 32.77,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 35.59,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 39.48,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 42.07,
+      "tool": "browser_keys",
+      "label": "Pressing \u201cBackspace Backspace Backspace B\u2026\u201d"
+    },
+    {
+      "t": 44.58,
+      "tool": "browser_wait",
+      "label": "Waiting for the page"
+    },
+    {
+      "t": 47.85,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    }
+  ]
+}

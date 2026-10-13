@@ -1,0 +1,267 @@
+/* Tab strip: tabs and tab groups. Graphite tokens from index.css; group colours are muted so they read on dark chrome. */
+:root {
+  --g-blue: #6f94e8;
+  --g-red: #e0716a;
+  --g-yellow: #d6b04f;
+  --g-green: #5bb48a;
+  --g-pink: #d97ab0;
+  --g-purple: #a588e6;
+  --g-cyan: #4fb8c4;
+  --g-orange: #e0905a;
+  --g-grey: #8d939c;
+  --tab-h: 32px;
+}
+
+.tab-strip {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  -webkit-app-region: no-drag;
+}
+
+.tab-strip-scroll {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+.tab-strip-scroll::-webkit-scrollbar { display: none; }
+.tab-strip.fade-left .tab-strip-scroll { mask-image: linear-gradient(to right, transparent 0, #000 24px); }
+.tab-strip.fade-right .tab-strip-scroll { mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent 100%); }
+.tab-strip.fade-left.fade-right .tab-strip-scroll { mask-image: linear-gradient(to right, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%); }
+
+/* A run of tabs sharing a group: no box of its own, so every tab shares the strip's width evenly (and shrinks only
+   when tabs run out of room, as in Chrome). Tab widths use size containment, which a wrapper box would collapse. */
+.tab-run { display: contents; }
+
+/* ── tab ── */
+.tab {
+  position: relative;
+  container-type: inline-size;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 1 220px;
+  min-width: 44px;
+  max-width: 240px;
+  height: var(--tab-h);
+  padding: 0 6px 0 10px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  color: var(--text-2);
+  font-size: var(--text-sm);
+  cursor: default;
+  user-select: none;
+  outline: none;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+.tab:hover { background: var(--surface-1); color: var(--text-1); }
+.tab.active { background: var(--surface-1); color: var(--text-1); }
+.tab:focus-visible { box-shadow: inset 0 0 0 2px rgba(124, 156, 255, 0.7); }
+.tab:not(.active):not(:hover) + .tab:not(.active):not(:hover)::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 9px;
+  bottom: 9px;
+  width: 1px;
+  background: var(--line);
+}
+
+/* a group's tabs share a line in the group colour */
+.tab.grouped::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--group-color);
+  opacity: 0.85;
+}
+
+.tab-icon { display: flex; width: 16px; height: 16px; align-items: center; justify-content: center; flex: none; }
+.tab-favicon-img { width: 16px; height: 16px; border-radius: 3px; }
+.tab-globe { color: var(--text-3); }
+.tab-err-icon { color: var(--status-err); }
+.tab-spinner { color: var(--text-3); animation: tab-spin 0.9s linear infinite; }
+@keyframes tab-spin { to { transform: rotate(360deg); } }
+
+.tab-title { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; mask-image: linear-gradient(to right, #000 calc(100% - 14px), transparent); }
+.tab-audio { color: var(--text-2); flex: none; }
+
+.tab-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex: none;
+  border: none;
+  border-radius: var(--radius-xs);
+  background: transparent;
+  color: var(--text-3);
+  opacity: 0;
+  cursor: pointer;
+}
+.tab:hover .tab-close, .tab.active .tab-close { opacity: 1; }
+.tab-close:hover { background: var(--surface-3); color: var(--text-1); }
+
+/* narrow tabs: inactive tabs drop their close button first, then the title; the active tab keeps its close button */
+@container (max-width: 96px) { .tab:not(.active) .tab-close { display: none; } }
+@container (max-width: 40px) { .tab-title { display: none; } }
+.tab.active { min-width: 72px; }
+
+/* agent tabs */
+.tab-agent-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: -4px;
+  border-radius: var(--radius-xs);
+  background: var(--surface-3);
+  color: var(--text-2);
+  flex: none;
+}
+.tab.agent-working .tab-agent-badge { color: var(--status-run); }
+.tab.agent-completed .tab-agent-badge { color: var(--status-ok); }
+.tab.agent-failed .tab-agent-badge, .tab.agent-blocked .tab-agent-badge { color: var(--status-err); }
+.tab-agent-track {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 3px;
+  height: 2px;
+  border-radius: 1px;
+  /* a solid segment sliding along the tab (no gradient): a single-colour image is used only to size it */
+  background-image: linear-gradient(var(--status-run), var(--status-run));
+  background-size: 35% 100%;
+  background-repeat: no-repeat;
+  animation: tab-track 1.6s ease-in-out infinite;
+}
+@keyframes tab-track { from { background-position: -50% 0; } to { background-position: 150% 0; } }
+
+/* AI state dot (group chip, or a single tab whose chat is busy) */
+.ai-dot {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  flex: none;
+  border-radius: 50%;
+  color: var(--surface-0);
+}
+.ai-dot.ai-working { width: 8px; height: 8px; background: var(--status-run); }
+.ai-dot.ai-working::after { content: ''; position: absolute; inset: -3px; border-radius: 50%; border: 1.5px solid var(--status-run); opacity: 0; animation: ai-ping 1.6s ease-out infinite; }
+@keyframes ai-ping { 0% { transform: scale(0.6); opacity: 0.8; } 100% { transform: scale(1.4); opacity: 0; } }
+.ai-dot.ai-done { background: var(--status-ok); }
+.ai-dot.ai-failed { background: var(--status-err); }
+.ai-dot.ai-stopped { width: 8px; height: 8px; background: var(--text-3); }
+
+/* ── group chip ── */
+.group-chip {
+  display: flex;
+  align-items: center;
+  height: var(--tab-h);
+  flex: none;
+  padding-bottom: 4px;
+  box-sizing: border-box;
+}
+.group-chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 22px;
+  max-width: 180px;
+  padding: 0 9px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--group-color) 22%, transparent);
+  color: var(--text-1);
+  font: 600 var(--text-xs) / 1 var(--font-sans);
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.12s ease;
+}
+.group-chip-btn:hover { background: color-mix(in srgb, var(--group-color) 34%, transparent); }
+.group-chip-btn:focus-visible { box-shadow: var(--focus-ring); }
+.group-chip.collapsed .group-chip-btn { background: var(--group-color); color: var(--surface-0); }
+.group-chip-label { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.group-chip-timer { color: var(--text-2); font-weight: 500; font-variant-numeric: tabular-nums; }
+.group-chip.collapsed .group-chip-timer { color: inherit; opacity: 0.8; }
+.group-chip-count {
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: var(--radius-full);
+  background: rgba(0, 0, 0, 0.22);
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+}
+.group-chip-input {
+  width: 140px;
+  height: 22px;
+  padding: 0 8px;
+  border: 1px solid var(--group-color);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--text-1);
+  font: 600 var(--text-xs) var(--font-sans);
+  outline: none;
+}
+
+/* ── drag and drop ── */
+.tab-strip.dragging .tab { transition: none; }
+.tab.drop-before::before, .tab.drop-after::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  border-radius: 1px;
+  background: var(--accent);
+  z-index: 2;
+}
+.tab.drop-before::before { left: -2px; }
+.tab.drop-after::before { left: auto; right: -2px; }
+
+.tab-strip-end {
+  display: flex;
+  align-items: center;
+  height: var(--tab-h);
+  min-width: 40px;
+  flex: 1 0 40px;
+  padding-left: 2px;
+}
+.new-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-2);
+  cursor: pointer;
+}
+.new-tab-btn:hover { background: var(--surface-2); color: var(--text-1); }
+.new-tab-btn:focus-visible { box-shadow: var(--focus-ring); outline: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tab-spinner, .tab-agent-track, .ai-dot.ai-working::after { animation: none; }
+  .tab, .group-chip-btn { transition: none; }
+}

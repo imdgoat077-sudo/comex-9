@@ -1,0 +1,280 @@
+/* ==========================================================================
+   Comex design tokens
+   Graphite chrome that recedes behind web content. Colour is reserved for
+   state: accent for focus/primary actions, amber/green/red for agent status.
+   ========================================================================== */
+
+:root {
+  /* Surfaces */
+  --surface-0: #17191d;   /* window chrome, page backdrop */
+  --surface-1: #1d2025;   /* toolbar, drawer */
+  --surface-2: #262a30;   /* inputs, hover, user messages */
+  --surface-3: #2f343b;   /* pressed / selected */
+  --line: #30343b;
+  --line-strong: #3d424a;
+
+  /* Text */
+  --text-1: #ecedef;
+  --text-2: #a2a7b0;
+  --text-3: #6c717a;
+
+  /* Accent & state */
+  --accent: #7c9cff;
+  --accent-hover: #93adff;
+  --accent-ink: #0f1424;          /* text on accent fills */
+  --accent-soft: rgba(124, 156, 255, 0.14);
+  --status-run: #e5b44a;
+  --status-ok: #4fb286;
+  --status-err: #e5675c;
+  --focus-ring: 0 0 0 2px var(--surface-0), 0 0 0 4px rgba(124, 156, 255, 0.7);
+
+  /* Type: the platform UI font, like native browsers */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-md: 13px;
+  --text-lg: 15px;
+  --text-xl: 20px;
+  --text-display: 30px;
+
+  /* Shape & motion */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--line);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: background-color 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+  --transition-normal: all 0.2s var(--ease-out);
+  --transition-bounce: all 0.2s var(--ease-out);
+
+  /* Legacy names, mapped onto the system so older views follow it */
+  --bg-dark: var(--surface-0);
+  --bg-surface: var(--surface-1);
+  --bg-surface-elevated: var(--surface-2);
+  --bg-glass: var(--surface-1);
+  --bg-glass-hover: var(--surface-2);
+  --bg-glass-active: var(--surface-3);
+  --border-glass: var(--line);
+  --border-glass-bright: var(--line-strong);
+  --border-accent: rgba(124, 156, 255, 0.45);
+  --accent-primary: var(--accent);
+  --accent-primary-hover: var(--accent-hover);
+  --accent-glow: var(--accent-soft);
+  --accent-cyan: var(--accent);
+  --accent-purple: var(--accent);
+  --accent-emerald: var(--status-ok);
+  --accent-amber: var(--status-run);
+  --accent-rose: var(--status-err);
+  --text-main: var(--text-1);
+  --text-muted: var(--text-2);
+  --text-dim: var(--text-3);
+  --text-secondary: var(--text-2);
+  --glass-shadow: var(--shadow-pop);
+  --glass-shadow-lg: var(--shadow-pop);
+  --neon-glow: none;
+}
+
+/* Reset & base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  background-color: var(--surface-0);
+  color: var(--text-1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+::selection {
+  background: rgba(124, 156, 255, 0.35);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover { background-color: var(--line-strong); }
+
+/* Motion */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-fade-in { animation: fadeIn 0.2s var(--ease-out) both; }
+.animate-slide-right { animation: slideInRight 0.22s var(--ease-out) both; }
+.animate-spin { animation: spin 0.9s linear infinite; }
+.animate-pulse { animation: pulse 1.6s ease-in-out infinite; }
+.animate-pulse-glow { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Shared controls (used by in-app pages) */
+.glass-panel,
+.glass-panel-elevated {
+  background: var(--surface-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.glass-button {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--text-1);
+  border-radius: var(--radius-md);
+  padding: 6px 12px;
+  font-size: var(--text-md);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.glass-button:hover { background: var(--surface-3); border-color: var(--line-strong); }
+
+.glass-button-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.glass-button-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+.glass-input {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--text-1);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  font-size: var(--text-md);
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.glass-input:focus { border-color: var(--accent); }
+
+/* Segmented control (agent mode on the new-tab page and in the assistant) */
+.mode-switch {
+  position: relative;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  padding: 2px;
+  gap: 2px;
+  border-radius: var(--radius-md);
+  background: var(--surface-0);
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+/* The selected background slides between options */
+.mode-thumb {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  width: calc(50% - 3px);
+  border-radius: var(--radius-sm);
+  background: var(--surface-3);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 1px 2px rgba(0, 0, 0, 0.3);
+  transform: translateX(calc(var(--idx, 0) * (100% + 2px)));
+  transition: transform 0.32s var(--ease-out);
+}
+
+.mode-option {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 12px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-2);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.mode-option:hover:not(:disabled):not(.selected) { color: var(--text-1); }
+.mode-option.selected { color: var(--text-1); }
+.mode-option:disabled { cursor: default; }
+.mode-option:disabled:not(.selected) { opacity: 0.5; }
+
+/* Tooltips */
+[data-tooltip] { position: relative; }
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-3);
+  border: 1px solid var(--line-strong);
+  color: var(--text-1);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  z-index: 100;
+}
+
+[data-tooltip]:hover::after { opacity: 1; }

@@ -1,0 +1,292 @@
+{
+  "scenario": "wordle",
+  "trial": 1,
+  "seed": 1,
+  "error": "timeout",
+  "wall_s": 180.04,
+  "tool_calls": 44,
+  "tools": [
+    "browser_inspect",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_type",
+    "browser_extract",
+    "browser_navigate",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type"
+  ],
+  "llm_calls_derived": 45,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": false,
+  "state": {
+    "s": "playing",
+    "rows": 0
+  },
+  "claimed_in_answer": "",
+  "answer": "",
+  "trace": null,
+  "steps": [
+    {
+      "t": 33.04,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 37.07,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 42.52,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 45.61,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 51.83,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 54.38,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 57.24,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 60.16,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 65.43,
+      "tool": "browser_type",
+      "label": "Searching for \u201ccrate\u201d"
+    },
+    {
+      "t": 68.03,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 80.3,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 82.37,
+      "tool": "browser_type",
+      "label": "Typing \u201cc\u201d"
+    },
+    {
+      "t": 85.66,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 88.95,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 92.21,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 95.5,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 98.52,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 100.97,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 103.6,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 106.85,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 110.23,
+      "tool": "browser_type",
+      "label": "Typing \u201crate\u201d"
+    },
+    {
+      "t": 112.99,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 115.17,
+      "tool": "browser_type",
+      "label": "Searching for \u201c\u201d"
+    },
+    {
+      "t": 118.61,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 121.04,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 123.65,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 126.63,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 128.93,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 132.0,
+      "tool": "browser_type",
+      "label": "Typing \u201ccrate\u201d"
+    },
+    {
+      "t": 134.8,
+      "tool": "browser_type",
+      "label": "Searching for \u201c\u201d"
+    },
+    {
+      "t": 138.18,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 141.81,
+      "tool": "browser_navigate",
+      "label": "Opening 127.0.0.1"
+    },
+    {
+      "t": 145.01,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 148.29,
+      "tool": "browser_type",
+      "label": "Typing \u201ca\u201d"
+    },
+    {
+      "t": 151.51,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 155.07,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 157.71,
+      "tool": "browser_type",
+      "label": "Typing \u201ca\u201d"
+    },
+    {
+      "t": 160.12,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 162.83,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 166.42,
+      "tool": "browser_type",
+      "label": "Searching for \u201c\u201d"
+    },
+    {
+      "t": 170.04,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 173.06,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 175.67,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 178.67,
+      "tool": "browser_type",
+      "label": "Typing \u201cc\u201d"
+    }
+  ]
+}

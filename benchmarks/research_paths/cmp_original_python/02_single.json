@@ -1,0 +1,233 @@
+{
+ "answer": "Key research papers on multi-agent orchestration:\n\n#### Foundational Frameworks & Dynamic Orchestration\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  * **Core Idea:** Introduces a multi-agent conversation framework where customizable, conversable agents interact through automated chat flows to solve tasks collaboratively.\n* [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **Authors:** Chen Qian, Xin Cong, Cheng Yang, et al.\n  * **Core Idea:** Orchestrates specialized agents (designer, programmer, tester, reviewer) across waterfall-phase communication chains with chat-chain verification loops.\n* [WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, et al.\n  * **Core Idea:** Learns collaboration priors across agent topologies to optimize execution flows, reduce coordination overhead, and automate agent role handoffs.\n\n#### Adaptive & Competence-Aware Routing\n* [Competence-Aware Orchestration for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2610.13144)\n  * **Authors:** Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\n  * **Core Idea:** Dynamically routes queries and alters the interaction graph based on the model's query-level competence, cutting token cost by over 36% while improving reasoning accuracy.\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Core Idea:** Encodes Standard Operating Procedures (SOPs) into structured prompt schemas and message-broker architectures to prevent cascading errors in large collaborative agent setups.\n\n#### Topology, Diagnosis, & Reliability\n* [Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, et al.\n  * **Core Idea:** Introduces MAScope, mapping communication topologies from multi-agent execution traces to classify orchestration bottlenecks and coordination failures at reduced diagnosis cost.\n* [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)\n  * **Authors:** Junyou Li, Qin Zhang, Yanghua Xiao, et al.\n  * **Core Idea:** Analyzes scaling properties of multi-agent ensembles, demonstrating when simple voting vs. hierarchical orchestration scales performance across diverse benchmarks.",
+ "success": true,
+ "wall_s": 46.22,
+ "tool_calls": 4,
+ "navigations": 0,
+ "llm_calls": null,
+ "avg_llm_ms": null,
+ "step_labels": [
+  "Searching knowledge memory for 'multi agent orchestration research papers'",
+  "Interacting with browser page",
+  "Interacting with browser page",
+  "Interacting with browser page"
+ ],
+ "answer_s": 46.22,
+ "quality": {
+  "links": [
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/abs/2307.07924",
+   "https://arxiv.org/abs/2610.07860",
+   "https://arxiv.org/abs/2610.13144",
+   "https://arxiv.org/abs/2308.00352",
+   "https://arxiv.org/abs/2610.10126",
+   "https://arxiv.org/abs/2402.05120"
+  ],
+  "paper_ids": [
+   "arxiv:2307.07924",
+   "arxiv:2308.00352",
+   "arxiv:2308.08155",
+   "arxiv:2402.05120",
+   "arxiv:2610.07860",
+   "arxiv:2610.10126",
+   "arxiv:2610.13144"
+  ],
+  "paper_links": [
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/abs/2307.07924",
+   "https://arxiv.org/abs/2610.07860",
+   "https://arxiv.org/abs/2610.13144",
+   "https://arxiv.org/abs/2308.00352",
+   "https://arxiv.org/abs/2610.10126",
+   "https://arxiv.org/abs/2402.05120"
+  ],
+  "rows_with_paper_link": 7,
+  "rows_with_year": 0,
+  "paper_count": 7,
+  "link_status": {
+   "https://arxiv.org/abs/2308.08155": 200,
+   "https://arxiv.org/abs/2307.07924": 200,
+   "https://arxiv.org/abs/2610.07860": 200,
+   "https://arxiv.org/abs/2610.13144": 200,
+   "https://arxiv.org/abs/2308.00352": 200,
+   "https://arxiv.org/abs/2610.10126": 200,
+   "https://arxiv.org/abs/2402.05120": 200
+  }
+ },
+ "mode": "single",
+ "trial": 2,
+ "phase": "cmp_original_python",
+ "request": "Find me the best research papers on multi agent orchestration.",
+ "events": [
+  {
+   "t": 0.05,
+   "event": "perception",
+   "data": {
+    "url": "",
+    "tabId": "active_tab",
+    "detail": "Connected to tab: Current page"
+   }
+  },
+  {
+   "t": 0.05,
+   "event": "thinking",
+   "data": {
+    "detail": "Analyzing user task and retrieving context..."
+   }
+  },
+  {
+   "t": 5.65,
+   "event": "step",
+   "data": {
+    "step": 1,
+    "tool": "search_memory",
+    "label": "Searching knowledge memory for 'multi agent orchestration research papers'",
+    "status": "running"
+   }
+  },
+  {
+   "t": 5.69,
+   "event": "step_done",
+   "data": {
+    "step": 1,
+    "tool": "search_memory",
+    "label": "Searching knowledge memory for 'multi agent orchestration research papers'",
+    "success": true
+   }
+  },
+  {
+   "t": 15.2,
+   "event": "step",
+   "data": {
+    "step": 2,
+    "tool": "run_browser_harness",
+    "label": "Interacting with browser page",
+    "status": "running"
+   }
+  },
+  {
+   "t": 17.67,
+   "event": "step_done",
+   "data": {
+    "step": 2,
+    "tool": "run_browser_harness",
+    "label": "Interacting with browser page",
+    "success": true
+   }
+  },
+  {
+   "t": 25.74,
+   "event": "step",
+   "data": {
+    "step": 3,
+    "tool": "run_browser_harness",
+    "label": "Interacting with browser page",
+    "status": "running"
+   }
+  },
+  {
+   "t": 30.36,
+   "event": "step_done",
+   "data": {
+    "step": 3,
+    "tool": "run_browser_harness",
+    "label": "Interacting with browser page",
+    "success": true
+   }
+  },
+  {
+   "t": 35.29,
+   "event": "step",
+   "data": {
+    "step": 4,
+    "tool": "run_browser_harness",
+    "label": "Interacting with browser page",
+    "status": "running"
+   }
+  },
+  {
+   "t": 36.77,
+   "event": "step_done",
+   "data": {
+    "step": 4,
+    "tool": "run_browser_harness",
+    "label": "Interacting with browser page",
+    "success": true
+   }
+  },
+  {
+   "t": 46.22,
+   "event": "completed",
+   "data": {
+    "type": "result",
+    "is_conversational": false,
+    "content": "Key research papers on multi-agent orchestration:\n\n#### Foundational Frameworks & Dynamic Orchestration\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  * **Core Idea:** Introduces a multi-agent conversation framework where customizable, conversable agents interact through automated chat flows to solve tasks collaboratively.\n* [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **Authors:** Chen Qian, Xin Cong, Cheng Yang, et al.\n  * **Core Idea:** Orchestrates specialized agents (designer, programmer, tester, reviewer) across waterfall-phase communication chains with chat-chain verification loops.\n* [WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, et al.\n  * **Core Idea:** Learns collaboration priors across agent topologies to optimize execution flows, reduce coordination overhead, and automate agent role handoffs.\n\n#### Adaptive & Competence-Aware Routing\n* [Competence-Aware Orchestration for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2610.13144)\n  * **Authors:** Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\n  * **Core Idea:** Dynamically routes queries and alters the interaction graph based on the model's query-level competence, cutting token cost by over 36% while improving reasoning accuracy.\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Core Idea:** Encodes Standard Operating Procedures (SOPs) into structured prompt schemas and message-broker architectures to prevent cascading errors in large collaborative agent setups.\n\n#### Topology, Diagnosis, & Reliability\n* [Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, et al.\n  * **Core Idea:** Introduces MAScope, mapping communication topologies from multi-agent execution traces to classify orchestration bottlenecks and coordination failures at reduced diagnosis cost.\n* [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)\n  * **Authors:** Junyou Li, Qin Zhang, Yanghua Xiao, et al.\n  * **Core Idea:** Analyzes scaling properties of multi-agent ensembles, demonstrating when simple voting vs. hierarchical orchestration scales performance across diverse benchmarks.",
+    "text": "Key research papers on multi-agent orchestration:\n\n#### Foundational Frameworks & Dynamic Orchestration\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  * **Core Idea:** Introduces a multi-agent conversation framework where customizable, conversable agents interact through automated chat flows to solve tasks collaboratively.\n* [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **Authors:** Chen Qian, Xin Cong, Cheng Yang, et al.\n  * **Core Idea:** Orchestrates specialized agents (designer, programmer, tester, reviewer) across waterfall-phase communication chains with chat-chain verification loops.\n* [WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, et al.\n  * **Core Idea:** Learns collaboration priors across agent topologies to optimize execution flows, reduce coordination overhead, and automate agent role handoffs.\n\n#### Adaptive & Competence-Aware Routing\n* [Competence-Aware Orchestration for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2610.13144)\n  * **Authors:** Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\n  * **Core Idea:** Dynamically routes queries and alters the interaction graph based on the model's query-level competence, cutting token cost by over 36% while improving reasoning accuracy.\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Core Idea:** Encodes Standard Operating Procedures (SOPs) into structured prompt schemas and message-broker architectures to prevent cascading errors in large collaborative agent setups.\n\n#### Topology, Diagnosis, & Reliability\n* [Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, et al.\n  * **Core Idea:** Introduces MAScope, mapping communication topologies from multi-agent execution traces to classify orchestration bottlenecks and coordination failures at reduced diagnosis cost.\n* [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)\n  * **Authors:** Junyou Li, Qin Zhang, Yanghua Xiao, et al.\n  * **Core Idea:** Analyzes scaling properties of multi-agent ensembles, demonstrating when simple voting vs. hierarchical orchestration scales performance across diverse benchmarks.",
+    "result": "Key research papers on multi-agent orchestration:\n\n#### Foundational Frameworks & Dynamic Orchestration\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  * **Core Idea:** Introduces a multi-agent conversation framework where customizable, conversable agents interact through automated chat flows to solve tasks collaboratively.\n* [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **Authors:** Chen Qian, Xin Cong, Cheng Yang, et al.\n  * **Core Idea:** Orchestrates specialized agents (designer, programmer, tester, reviewer) across waterfall-phase communication chains with chat-chain verification loops.\n* [WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, et al.\n  * **Core Idea:** Learns collaboration priors across agent topologies to optimize execution flows, reduce coordination overhead, and automate agent role handoffs.\n\n#### Adaptive & Competence-Aware Routing\n* [Competence-Aware Orchestration for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2610.13144)\n  * **Authors:** Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\n  * **Core Idea:** Dynamically routes queries and alters the interaction graph based on the model's query-level competence, cutting token cost by over 36% while improving reasoning accuracy.\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Core Idea:** Encodes Standard Operating Procedures (SOPs) into structured prompt schemas and message-broker architectures to prevent cascading errors in large collaborative agent setups.\n\n#### Topology, Diagnosis, & Reliability\n* [Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, et al.\n  * **Core Idea:** Introduces MAScope, mapping communication topologies from multi-agent execution traces to classify orchestration bottlenecks and coordination failures at reduced diagnosis cost.\n* [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)\n  * **Authors:** Junyou Li, Qin Zhang, Yanghua Xiao, et al.\n  * **Core Idea:** Analyzes scaling properties of multi-agent ensembles, demonstrating when simple voting vs. hierarchical orchestration scales performance across diverse benchmarks.",
+    "done": true,
+    "duration_seconds": 46.17644854198443
+   }
+  },
+  {
+   "t": 46.22,
+   "event": "done",
+   "data": {
+    "type": "result",
+    "is_conversational": false,
+    "success": true,
+    "done": true,
+    "result": "Key research papers on multi-agent orchestration:\n\n#### Foundational Frameworks & Dynamic Orchestration\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  * **Core Idea:** Introduces a multi-agent conversation framework where customizable, conversable agents interact through automated chat flows to solve tasks collaboratively.\n* [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **Authors:** Chen Qian, Xin Cong, Cheng Yang, et al.\n  * **Core Idea:** Orchestrates specialized agents (designer, programmer, tester, reviewer) across waterfall-phase communication chains with chat-chain verification loops.\n* [WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, et al.\n  * **Core Idea:** Learns collaboration priors across agent topologies to optimize execution flows, reduce coordination overhead, and automate agent role handoffs.\n\n#### Adaptive & Competence-Aware Routing\n* [Competence-Aware Orchestration for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2610.13144)\n  * **Authors:** Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\n  * **Core Idea:** Dynamically routes queries and alters the interaction graph based on the model's query-level competence, cutting token cost by over 36% while improving reasoning accuracy.\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Core Idea:** Encodes Standard Operating Procedures (SOPs) into structured prompt schemas and message-broker architectures to prevent cascading errors in large collaborative agent setups.\n\n#### Topology, Diagnosis, & Reliability\n* [Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, et al.\n  * **Core Idea:** Introduces MAScope, mapping communication topologies from multi-agent execution traces to classify orchestration bottlenecks and coordination failures at reduced diagnosis cost.\n* [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)\n  * **Authors:** Junyou Li, Qin Zhang, Yanghua Xiao, et al.\n  * **Core Idea:** Analyzes scaling properties of multi-agent ensembles, demonstrating when simple voting vs. hierarchical orchestration scales performance across diverse benchmarks.",
+    "content": "Key research papers on multi-agent orchestration:\n\n#### Foundational Frameworks & Dynamic Orchestration\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  * **Core Idea:** Introduces a multi-agent conversation framework where customizable, conversable agents interact through automated chat flows to solve tasks collaboratively.\n* [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **Authors:** Chen Qian, Xin Cong, Cheng Yang, et al.\n  * **Core Idea:** Orchestrates specialized agents (designer, programmer, tester, reviewer) across waterfall-phase communication chains with chat-chain verification loops.\n* [WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, et al.\n  * **Core Idea:** Learns collaboration priors across agent topologies to optimize execution flows, reduce coordination overhead, and automate agent role handoffs.\n\n#### Adaptive & Competence-Aware Routing\n* [Competence-Aware Orchestration for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2610.13144)\n  * **Authors:** Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\n  * **Core Idea:** Dynamically routes queries and alters the interaction graph based on the model's query-level competence, cutting token cost by over 36% while improving reasoning accuracy.\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Core Idea:** Encodes Standard Operating Procedures (SOPs) into structured prompt schemas and message-broker architectures to prevent cascading errors in large collaborative agent setups.\n\n#### Topology, Diagnosis, & Reliability\n* [Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, et al.\n  * **Core Idea:** Introduces MAScope, mapping communication topologies from multi-agent execution traces to classify orchestration bottlenecks and coordination failures at reduced diagnosis cost.\n* [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)\n  * **Authors:** Junyou Li, Qin Zhang, Yanghua Xiao, et al.\n  * **Core Idea:** Analyzes scaling properties of multi-agent ensembles, demonstrating when simple voting vs. hierarchical orchestration scales performance across diverse benchmarks.",
+    "text": "Key research papers on multi-agent orchestration:\n\n#### Foundational Frameworks & Dynamic Orchestration\n* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.\n  * **Core Idea:** Introduces a multi-agent conversation framework where customizable, conversable agents interact through automated chat flows to solve tasks collaboratively.\n* [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **Authors:** Chen Qian, Xin Cong, Cheng Yang, et al.\n  * **Core Idea:** Orchestrates specialized agents (designer, programmer, tester, reviewer) across waterfall-phase communication chains with chat-chain verification loops.\n* [WorkflowOps: Learning Agent Collaboration Priors for Multi-Agent Workflow Orchestration](https://arxiv.org/abs/2610.07860)\n  * **Authors:** Qi Cheng, Shengyu Chen, Wei Cheng, Zhengzhang Chen, et al.\n  * **Core Idea:** Learns collaboration priors across agent topologies to optimize execution flows, reduce coordination overhead, and automate agent role handoffs.\n\n#### Adaptive & Competence-Aware Routing\n* [Competence-Aware Orchestration for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2610.13144)\n  * **Authors:** Songmiao Wang, Yuchen Wang, Chenglin Yu, Hongxia Yang, Ming Li\n  * **Core Idea:** Dynamically routes queries and alters the interaction graph based on the model's query-level competence, cutting token cost by over 36% while improving reasoning accuracy.\n* [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jonathan Chen, et al.\n  * **Core Idea:** Encodes Standard Operating Procedures (SOPs) into structured prompt schemas and message-broker architectures to prevent cascading errors in large collaborative agent setups.\n\n#### Topology, Diagnosis, & Reliability\n* [Know the Shape, Find the Fault: Topology-Conditioned Diagnosis of Multi-Agent LLM Failures](https://arxiv.org/abs/2610.10126)\n  * **Authors:** Xinwen Liu, Zhuocheng Pan, Isabella Zhu, Jawei Zhang, et al.\n  * **Core Idea:** Introduces MAScope, mapping communication topologies from multi-agent execution traces to classify orchestration bottlenecks and coordination failures at reduced diagnosis cost.\n* [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)\n  * **Authors:** Junyou Li, Qin Zhang, Yanghua Xiao, et al.\n  * **Core Idea:** Analyzes scaling properties of multi-agent ensembles, demonstrating when simple voting vs. hierarchical orchestration scales performance across diverse benchmarks.",
+    "durationMs": 46213,
+    "metadata": {
+     "use_procedures": false,
+     "procedure_mode": "blind",
+     "procedure_capability": null,
+     "procedure_abstract_query": null,
+     "procedure_confidence": 0.0,
+     "retrieved_procedure_ids": [],
+     "retrieved_procedure_scores": [],
+     "procedure_retrieval_threshold": 0.5,
+     "procedure_context_injected": false,
+     "exact_procedure_context": "",
+     "tool_call_count": 4,
+     "failed_tool_call_count": 0,
+     "duration_seconds": 46.17644854198443,
+     "tool_traces": [
+      {
+       "tool": "search_memory",
+       "args": {
+        "domain": "ALL",
+        "query": "multi agent orchestration research papers"
+       },
+       "success": true
+      },
+      {
+       "tool": "run_browser_harness",
+       "args": {
+        "code": "import urllib.parse\nimport json\n\nquery = \"multi agent orchestration llm\"\nencoded = urllib.parse.quote_plus(query)\ngoto_url(f\"https://scholar.google.com/scholar?q={encoded}&hl=en\")\nwait_for_load()\n\nres = js(\"\"\"\nArray.from(document.querySelectorAll('.gs_ri')).slice(0, 7).map(el => {\n  const titleEl = el.querySelector('.gs_rt a');\n  const pubEl = el.querySelector('.gs_a');\n  const snippetEl = el.querySelector('.gs_rs');\n  return {\n    title: titleEl ? titleEl.innerText : (el.querySelector('.gs_rt') ? el.querySelector('.gs_rt').innerText : ''),\n    link: titleEl ? titleEl.href : '',\n    authors: pubEl ? pubEl.innerText : '',\n    snippet: snippetEl ? snippetEl.innerText : ''\n  };\n})\n\"\"\")\nprint(json.dumps(res, indent=2))\n"
+       },
+       "success": true
+      },
+      {
+       "tool": "run_browser_harness",
+       "args": {
+        "code": "goto_url(\"https://arxiv.org/search/?query=multi-agent+orchestration+llm&searchtype=all&source=header\")\nwait_for_load()\n\nres = js(\"\"\"\nArray.from(document.querySelectorAll('.arxiv-result')).slice(0, 6).map(el => {\n  const titleEl = el.querySelector('.title');\n  const authorsEl = el.querySelector('.authors');\n  const abstractEl = el.querySelector('.abstract-full');\n  const shortAbstractEl = el.querySelector('.abstract-short');\n  const linkEl = el.querySelector('.list-title a');\n  return {\n    title: titleEl ? titleEl.innerText.replace(/^Title:\\s*/, '').trim() : '',\n    link: linkEl ? linkEl.href : '',\n    authors: authorsEl ? authorsEl.innerText.replace(/^Authors:\\s*/, '').trim() : '',\n    summary: abstractEl ? abstractEl.innerText.trim() : (shortAbstractEl ? shortAbstractEl.innerText.trim() : '')\n  };\n})\n\"\"\")\nimport json\nprint(json.dumps(res, indent=2))\n"
+       },
+       "success": true
+      },
+      {
+       "tool": "run_browser_harness",
+       "args": {
+        "code": "goto_url(\"https://arxiv.org/search/?query=%22multi-agent%22+orchestration+framework&searchtype=all&source=header\")\nwait_for_load()\n\nres = js(\"\"\"\nArray.from(document.querySelectorAll('.arxiv-result')).slice(0, 5).map(el => {\n  const titleEl = el.querySelector('.title');\n  const authorsEl = el.querySelector('.authors');\n  const linkEl = el.querySelector('.list-title a');\n  return {\n    title: titleEl ? titleEl.innerText.replace(/^Title:\\\\s*/, '').trim() : '',\n    link: linkEl ? linkEl.href : '',\n    authors: authorsEl ? authorsEl.innerText.replace(/^Authors:\\\\s*/, '').trim() : ''\n  };\n})\n\"\"\")\nimport json\nprint(json.dumps(res, indent=2))\n"
+       },
+       "success": true
+      }
+     ],
+     "is_conversational": false
+    }
+   }
+  }
+ ]
+}

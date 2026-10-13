@@ -1,0 +1,89 @@
+{
+  "scenario": "shop",
+  "trial": 2,
+  "seed": 2,
+  "error": null,
+  "wall_s": 37.9,
+  "tool_calls": 10,
+  "tools": [
+    "browser_extract",
+    "browser_inspect",
+    "browser_type",
+    "browser_extract",
+    "browser_inspect",
+    "browser_sequence",
+    "browser_click",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract"
+  ],
+  "llm_calls_derived": 11,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "cart": [
+      "tune"
+    ]
+  },
+  "claimed_in_answer": "Added **JBL Tune 770NC headphones** to the cart.\n\n- **Product:** JBL Tune 770NC headphones\n- **Price:** \u20b96999",
+  "answer": "Added **JBL Tune 770NC headphones** to the cart.\n\n- **Product:** JBL Tune 770NC headphones\n- **Price:** \u20b96999",
+  "trace": null,
+  "steps": [
+    {
+      "t": 4.6,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 8.27,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 11.21,
+      "tool": "browser_type",
+      "label": "Searching for \u201cheadphones\u201d"
+    },
+    {
+      "t": 13.81,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 17.53,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 20.25,
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page"
+    },
+    {
+      "t": 23.06,
+      "tool": "browser_click",
+      "label": "Clicking \u201cJBL Tune 770NC headphones\u201d"
+    },
+    {
+      "t": 26.86,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 29.51,
+      "tool": "browser_click",
+      "label": "Clicking \u201cAdd to cart\u201d"
+    },
+    {
+      "t": 32.05,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    }
+  ]
+}

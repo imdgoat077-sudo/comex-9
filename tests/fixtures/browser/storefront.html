@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Storefront fixture</title>
+<style>
+  body { font: 15px system-ui, sans-serif; margin: 24px; max-width: 640px; }
+  /* how real shops hide an accessibility-only shortcut label: far off-screen, still "visible" to the layout engine */
+  .shortcut-label { position: absolute; left: -10000px; top: 90px; }
+</style>
+<h1>Problems in General Physics</h1>
+<span id="shortcut" class="shortcut-label" role="button" tabindex="0" aria-label="Add to cart, shift, option, K"
+      onclick="window.hiddenClicks = (window.hiddenClicks || 0) + 1">Add to cart, shift, option, K</span>
+<button id="add" onclick="added()">Add to Cart</button>
+<button id="noop">Save for later</button>
+<a id="next" href="storefront.html?page=2">Next page</a>
+<div id="status" role="status"></div>
+<script>
+  window.adds = 0;
+  function added() { window.adds += 1; document.getElementById('status').textContent = 'Added to cart'; }
+</script>

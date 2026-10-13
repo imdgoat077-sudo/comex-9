@@ -1,0 +1,8 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Editor fixture</title>
+<style> body { font: 15px system-ui, sans-serif; margin: 24px; } iframe { width: 520px; height: 220px; border: 1px solid #999; } </style>
+<h1>Rich text in an iframe</h1>
+<input id="title" placeholder="Title">
+<!-- the body of the note lives in an iframe, like the editors on paste and note sites: browser_type cannot reach it -->
+<iframe id="ed" srcdoc="<body contenteditable='true' style='font:16px sans-serif;margin:8px'></body>"></iframe>

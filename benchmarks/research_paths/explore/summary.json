@@ -1,0 +1,20 @@
+{
+ "multi": {
+  "trials": 1,
+  "success": 1,
+  "wall_s_median": 47.73,
+  "wall_s_all": [
+   47.73
+  ],
+  "tool_calls_median": 12,
+  "papers_median": 7,
+  "papers_all": [
+   7
+  ],
+  "reachable_paper_links": 6,
+  "checked_paper_links": 7,
+  "planning_s_median": 8.71,
+  "slowest_worker_s_median": 31.07,
+  "after_workers_s_median": 7.94
+ }
+}

@@ -1,0 +1,473 @@
+{
+ "answer": "Key research papers on multi-agent orchestration, categorized by system architecture, survey, and benchmarking:\n\n### Foundational Execution Architectures\n\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)** (2023)  \n  *Authors:* Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.  \n  *Mechanism:* Multi-agent conversation framework using customizable, conversable agents. Orchestrates execution through multi-turn dialogue patterns, tool calling, and human-in-the-loop intervention programmable via natural language and code.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)** (2023) | [Code Repository](https://github.com/geekan/MetaGPT)  \n  *Authors:* Sirui Hong, Mingchen Zhuge, Jiaqi Chen, et al.  \n  *Mechanism:* Encodes Standard Operating Procedures (SOPs) into prompt sequences. Orchestrates tasks across specialized agent roles using an assembly-line workflow paradigm and structured communication interfaces.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)** (2023) | [Code Repository](https://github.com/OpenBMB/ChatDev)  \n  *Authors:* Chen Qian, Wei Liu, Hongzhang Liu, et al.  \n  *Mechanism:* Sequential waterfall orchestration executed via peer chats. Uses \"chat chains\" and communicative dehallucination across design, coding, and testing phases.\n\n### Surveys and Framework Taxonomies\n\n- **[LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326)** (2026, *Future Internet*)  \n  *Authors:* Yiwen Zhu, Lihe Liu, Jiaqian Yu, Di Zhang  \n  *Scope:* Analyzes orchestration framework architectures, inter-agent communication protocols, and multi-agent coordination patterns.\n\n### Benchmarks and Evaluation Frameworks\n\n- **[MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability](https://arxiv.org/abs/2610.04672)** (2026)  \n  *Authors:* Qizhi Chu, Zekai Yu, Sijie Wen, et al.  \n  *Focus:* Benchmarks multi-agent coordination under partially observable settings across Reasoning, Scheduling, and Game tasks. Evaluates three collaboration mechanisms (Protocol, Memory, Routing) using performance score, communication overhead, and cost-effectiveness metrics.\n- **[GraphMAS: A Systematic Benchmark of Multi-Agent Coordination for Graph Learning](https://arxiv.org/abs/2609.39777)** (2026)  \n  *Authors:* Jiayi Yang, Yifang Chen, Yuanfu Sun, et al.  \n  *Focus:* Evaluates seven coordination methods across four interaction paradigms under a unified protocol. Finds richer inter-agent communication does not consistently yield improvements, whereas dynamic specialist selection optimizes the accuracy-efficiency trade-off.\n- **[EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945)** (2026)  \n  *Authors:* Nathan Scott  \n  *Focus:* Evaluates multi-agent frameworks on end-to-end task decomposition, orchestration workflows, and execution efficiency.\n\n---\n\n### Limitations and Missing Coverage\n\n- **Competitive and adversarial orchestration:** Competitive architectures (such as multi-agent debate and game-theoretic setups) were not retrieved.\n- **Access limits:** Google Scholar queries were blocked by a bot-detection CAPTCHA.\n- **Unverified metadata:** AutoGen's direct source repository was not verified on its abstract page. Full numerical benchmark score tables and deeper sub-taxonomies were not retrieved.",
+ "success": true,
+ "wall_s": 54.96,
+ "planning_s": 8.67,
+ "after_workers_s": 6.96,
+ "workers": {
+  "surveys_and_taxonomies": {
+   "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.",
+   "tool_calls": 4,
+   "navigate_labels": 2,
+   "start_s": 8.68,
+   "end_s": 48.0,
+   "status": "completed",
+   "duration_s": 39.32
+  },
+  "frameworks_and_architectures": {
+   "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.",
+   "tool_calls": 4,
+   "navigate_labels": 1,
+   "start_s": 8.68,
+   "end_s": 38.38,
+   "status": "completed",
+   "duration_s": 29.7
+  },
+  "benchmarks_and_evaluation": {
+   "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.",
+   "tool_calls": 4,
+   "navigate_labels": 1,
+   "start_s": 8.68,
+   "end_s": 42.38,
+   "status": "completed",
+   "duration_s": 33.7
+  }
+ },
+ "slowest_worker_s": 39.32,
+ "tool_calls": 12,
+ "navigations": 4,
+ "backend_timing": {
+  "planning_ms": 8667.09,
+  "workers_ms": 39328.9,
+  "synthesis_ms": 6951.16,
+  "total_ms": 54947.25,
+  "workers": {
+   "surveys_and_taxonomies": {
+    "status": "completed",
+    "duration_ms": 39315.65,
+    "tool_calls": 3,
+    "llm_calls": 4,
+    "avg_llm_ms": 8590.6,
+    "stopped_early": "the limit of 3 browser actions was reached"
+   },
+   "frameworks_and_architectures": {
+    "status": "completed",
+    "duration_ms": 29699.72,
+    "tool_calls": 3,
+    "llm_calls": 4,
+    "avg_llm_ms": 6128.9,
+    "stopped_early": "the limit of 3 browser actions was reached"
+   },
+   "benchmarks_and_evaluation": {
+    "status": "completed",
+    "duration_ms": 33691.23,
+    "tool_calls": 3,
+    "llm_calls": 4,
+    "avg_llm_ms": 6845.7,
+    "stopped_early": "the limit of 3 browser actions was reached"
+   }
+  }
+ },
+ "follow_up": null,
+ "answer_s": 54.96,
+ "quality": {
+  "links": [
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/abs/2308.00352",
+   "https://github.com/geekan/MetaGPT",
+   "https://arxiv.org/abs/2307.07924",
+   "https://github.com/OpenBMB/ChatDev",
+   "https://doi.org/10.3390/fi18060326",
+   "https://arxiv.org/abs/2610.04672",
+   "https://arxiv.org/abs/2609.39777",
+   "https://doi.org/10.5281/zenodo.20349945"
+  ],
+  "paper_ids": [
+   "arxiv:2307.07924",
+   "arxiv:2308.00352",
+   "arxiv:2308.08155",
+   "arxiv:2609.39777",
+   "arxiv:2610.04672",
+   "doi:10.3390/fi18060326",
+   "doi:10.5281/zenodo.20349945"
+  ],
+  "paper_links": [
+   "https://arxiv.org/abs/2308.08155",
+   "https://arxiv.org/abs/2308.00352",
+   "https://arxiv.org/abs/2307.07924",
+   "https://arxiv.org/abs/2610.04672",
+   "https://arxiv.org/abs/2609.39777",
+   "https://doi.org/10.3390/fi18060326",
+   "https://doi.org/10.5281/zenodo.20349945"
+  ],
+  "rows_with_paper_link": 7,
+  "rows_with_year": 7,
+  "paper_count": 7,
+  "link_status": {
+   "https://arxiv.org/abs/2308.08155": 200,
+   "https://arxiv.org/abs/2308.00352": 200,
+   "https://arxiv.org/abs/2307.07924": 200,
+   "https://arxiv.org/abs/2610.04672": 200,
+   "https://arxiv.org/abs/2609.39777": 200,
+   "https://doi.org/10.3390/fi18060326": 403,
+   "https://doi.org/10.5281/zenodo.20349945": 200
+  }
+ },
+ "mode": "multi",
+ "trial": 2,
+ "phase": "hybrid_v1",
+ "request": "Find me the best research papers on multi agent orchestration.",
+ "events": [
+  {
+   "t": 0.01,
+   "event": "planning",
+   "data": {}
+  },
+  {
+   "t": 8.67,
+   "event": "run_started",
+   "data": {
+    "run_id": "run_4aa7d2fd47f9",
+    "task_count": 3,
+    "tasks": [
+     {
+      "task_id": "surveys_and_taxonomies",
+      "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures."
+     },
+     {
+      "task_id": "frameworks_and_architectures",
+      "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems."
+     },
+     {
+      "task_id": "benchmarks_and_evaluation",
+      "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination."
+     }
+    ],
+    "follow_up_action": null
+   }
+  },
+  {
+   "t": 8.68,
+   "event": "task_started",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.",
+    "worker_id": "worker_surveys_and_taxonomies_2ab65bf0",
+    "tab_id": "tab_surveys_and_taxonomies_fd47f9",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 8.68,
+   "event": "task_started",
+   "data": {
+    "task_id": "frameworks_and_architectures",
+    "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.",
+    "worker_id": "worker_frameworks_and_architectures_90c47d02",
+    "tab_id": "tab_frameworks_and_architectures_fd47f9",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 8.68,
+   "event": "task_started",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.",
+    "worker_id": "worker_benchmarks_and_evaluation_96a61ecd",
+    "tab_id": "tab_benchmarks_and_evaluation_fd47f9",
+    "status": "running",
+    "error": null
+   }
+  },
+  {
+   "t": 8.75,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.",
+    "worker_id": "worker_surveys_and_taxonomies_2ab65bf0",
+    "tab_id": "tab_surveys_and_taxonomies_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Reading scholar.google.com, api.openalex.org"
+   }
+  },
+  {
+   "t": 8.87,
+   "event": "task_progress",
+   "data": {
+    "task_id": "frameworks_and_architectures",
+    "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.",
+    "worker_id": "worker_frameworks_and_architectures_90c47d02",
+    "tab_id": "tab_frameworks_and_architectures_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Reading scholar.google.com, api.openalex.org"
+   }
+  },
+  {
+   "t": 8.87,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.",
+    "worker_id": "worker_benchmarks_and_evaluation_96a61ecd",
+    "tab_id": "tab_benchmarks_and_evaluation_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Reading scholar.google.com, api.openalex.org"
+   }
+  },
+  {
+   "t": 19.49,
+   "event": "task_progress",
+   "data": {
+    "task_id": "frameworks_and_architectures",
+    "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.",
+    "worker_id": "worker_frameworks_and_architectures_90c47d02",
+    "tab_id": "tab_frameworks_and_architectures_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 20.52,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.",
+    "worker_id": "worker_surveys_and_taxonomies_2ab65bf0",
+    "tab_id": "tab_surveys_and_taxonomies_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Opening scholar.google.com"
+   }
+  },
+  {
+   "t": 22.84,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.",
+    "worker_id": "worker_benchmarks_and_evaluation_96a61ecd",
+    "tab_id": "tab_benchmarks_and_evaluation_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Opening arxiv.org"
+   }
+  },
+  {
+   "t": 23.07,
+   "event": "task_progress",
+   "data": {
+    "task_id": "frameworks_and_architectures",
+    "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.",
+    "worker_id": "worker_frameworks_and_architectures_90c47d02",
+    "tab_id": "tab_frameworks_and_architectures_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 26.75,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.",
+    "worker_id": "worker_surveys_and_taxonomies_2ab65bf0",
+    "tab_id": "tab_surveys_and_taxonomies_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 27.87,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.",
+    "worker_id": "worker_benchmarks_and_evaluation_96a61ecd",
+    "tab_id": "tab_benchmarks_and_evaluation_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Reading the page"
+   }
+  },
+  {
+   "t": 27.9,
+   "event": "task_progress",
+   "data": {
+    "task_id": "frameworks_and_architectures",
+    "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.",
+    "worker_id": "worker_frameworks_and_architectures_90c47d02",
+    "tab_id": "tab_frameworks_and_architectures_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Doing 4 steps on the page"
+   }
+  },
+  {
+   "t": 31.96,
+   "event": "task_progress",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.",
+    "worker_id": "worker_benchmarks_and_evaluation_96a61ecd",
+    "tab_id": "tab_benchmarks_and_evaluation_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Doing 4 steps on the page"
+   }
+  },
+  {
+   "t": 33.88,
+   "event": "task_progress",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.",
+    "worker_id": "worker_surveys_and_taxonomies_2ab65bf0",
+    "tab_id": "tab_surveys_and_taxonomies_fd47f9",
+    "status": "running",
+    "error": null,
+    "label": "Opening api.openalex.org"
+   }
+  },
+  {
+   "t": 38.38,
+   "event": "task_completed",
+   "data": {
+    "task_id": "frameworks_and_architectures",
+    "description": "Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.",
+    "worker_id": "worker_frameworks_and_architectures_90c47d02",
+    "tab_id": "tab_frameworks_and_architectures_fd47f9",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 42.38,
+   "event": "task_completed",
+   "data": {
+    "task_id": "benchmarks_and_evaluation",
+    "description": "Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.",
+    "worker_id": "worker_benchmarks_and_evaluation_96a61ecd",
+    "tab_id": "tab_benchmarks_and_evaluation_fd47f9",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 48.0,
+   "event": "task_completed",
+   "data": {
+    "task_id": "surveys_and_taxonomies",
+    "description": "Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.",
+    "worker_id": "worker_surveys_and_taxonomies_2ab65bf0",
+    "tab_id": "tab_surveys_and_taxonomies_fd47f9",
+    "status": "completed",
+    "error": null
+   }
+  },
+  {
+   "t": 48.0,
+   "event": "synthesis_started",
+   "data": {
+    "completed": 3,
+    "total": 3
+   }
+  },
+  {
+   "t": 54.96,
+   "event": "done",
+   "data": {
+    "success": true,
+    "run_id": "run_4aa7d2fd47f9",
+    "status": "completed",
+    "final_answer": "Key research papers on multi-agent orchestration, categorized by system architecture, survey, and benchmarking:\n\n### Foundational Execution Architectures\n\n- **[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)** (2023)  \n  *Authors:* Qingyun Wu, Gagan Bansal, Jieyu Zhang, et al.  \n  *Mechanism:* Multi-agent conversation framework using customizable, conversable agents. Orchestrates execution through multi-turn dialogue patterns, tool calling, and human-in-the-loop intervention programmable via natural language and code.\n- **[MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)** (2023) | [Code Repository](https://github.com/geekan/MetaGPT)  \n  *Authors:* Sirui Hong, Mingchen Zhuge, Jiaqi Chen, et al.  \n  *Mechanism:* Encodes Standard Operating Procedures (SOPs) into prompt sequences. Orchestrates tasks across specialized agent roles using an assembly-line workflow paradigm and structured communication interfaces.\n- **[ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)** (2023) | [Code Repository](https://github.com/OpenBMB/ChatDev)  \n  *Authors:* Chen Qian, Wei Liu, Hongzhang Liu, et al.  \n  *Mechanism:* Sequential waterfall orchestration executed via peer chats. Uses \"chat chains\" and communicative dehallucination across design, coding, and testing phases.\n\n### Surveys and Framework Taxonomies\n\n- **[LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326)** (2026, *Future Internet*)  \n  *Authors:* Yiwen Zhu, Lihe Liu, Jiaqian Yu, Di Zhang  \n  *Scope:* Analyzes orchestration framework architectures, inter-agent communication protocols, and multi-agent coordination patterns.\n\n### Benchmarks and Evaluation Frameworks\n\n- **[MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability](https://arxiv.org/abs/2610.04672)** (2026)  \n  *Authors:* Qizhi Chu, Zekai Yu, Sijie Wen, et al.  \n  *Focus:* Benchmarks multi-agent coordination under partially observable settings across Reasoning, Scheduling, and Game tasks. Evaluates three collaboration mechanisms (Protocol, Memory, Routing) using performance score, communication overhead, and cost-effectiveness metrics.\n- **[GraphMAS: A Systematic Benchmark of Multi-Agent Coordination for Graph Learning](https://arxiv.org/abs/2609.39777)** (2026)  \n  *Authors:* Jiayi Yang, Yifang Chen, Yuanfu Sun, et al.  \n  *Focus:* Evaluates seven coordination methods across four interaction paradigms under a unified protocol. Finds richer inter-agent communication does not consistently yield improvements, whereas dynamic specialist selection optimizes the accuracy-efficiency trade-off.\n- **[EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945)** (2026)  \n  *Authors:* Nathan Scott  \n  *Focus:* Evaluates multi-agent frameworks on end-to-end task decomposition, orchestration workflows, and execution efficiency.\n\n---\n\n### Limitations and Missing Coverage\n\n- **Competitive and adversarial orchestration:** Competitive architectures (such as multi-agent debate and game-theoretic setups) were not retrieved.\n- **Access limits:** Google Scholar queries were blocked by a bot-detection CAPTCHA.\n- **Unverified metadata:** AutoGen's direct source repository was not verified on its abstract page. Full numerical benchmark score tables and deeper sub-taxonomies were not retrieved.",
+    "summary": "Orchestration Summary for: 'Find me the best research papers on multi agent orchestration.'\n\n### Task: Identify top survey and review papers covering multi-agent orchestration, coordination frameworks, and architectures.\n- Status: COMPLETED (Worker: worker_surveys_and_taxonomies_2ab65bf0, Tab: tab_surveys_and_taxonomies_fd47f9)\n- Findings: ### Findings\n- [LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326) | **Authors:** Yiwen Zhu, Lihe Liu, Jiaqian Yu, Di Zhang | **Year:** 2026 | **Venue:** *Future Internet* (MDPI) | **Citations count:** Unverified (0 indexed in initial record) | **Key architectural taxonomy proposed:** Framework architectures, inter-agent communication protocols, and emerging multi-agent orchestration patterns | **Evidence:** OpenAlex record indexes the work under DOI `10.3390/fi18060326`, published in *Future Internet*, detailing multi-agent orchestration frameworks and communication protocols | **Relevance:** Directly synthesizes orchestration architectures and coordination protocols in LLM-driven multi-agent environments.\n\n### Coverage\n- **Sites and queries:**\n  - OpenAlex API: `survey multi-agent orchestration llm`\n  - Google Scholar: `https://scholar.google.com/scholar?q=%22multi-agent%22+survey+LLM+OR+%22large+language+models%22`\n  - OpenAlex API: `survey \"large language model\" \"multi-agent\"` (sorted by citation count)\n- **Results reviewed:** Evaluated initial search responses across OpenAlex and Google Scholar.\n\n### Limitations\n- Google Scholar blocked queries with a bot detection CAPTCHA (\"Please show you're not a robot\").\n- Browser action limit reached before reading results from the sorted OpenAlex citation endpoint.\n- Detailed sub-taxonomies and updated citation metrics were unverified beyond the initial OpenAlex metadata excerpt.\n### Task: Identify foundational system papers and execution architectures designed for orchestrating cooperative and competitive multi-agent systems.\n- Status: COMPLETED (Worker: worker_frameworks_and_architectures_90c47d02, Tab: tab_frameworks_and_architectures_fd47f9)\n- Findings: ### Findings\n- [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **System name:** AutoGen\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu, Li Jiang, Xiaoyun Zhang, Shaokun Zhang, Jiale Liu, Ahmed Hassan Awadallah, Ryen W White, Doug Burger, Chi Wang\n  * **Year:** 2023\n  * **Code repository link:** Unverified on abstract page (referenced as open-source framework)\n  * **Orchestration mechanism:** Multi-agent conversation framework where customizable, conversable agents interact via multi-turn dialogues, tool invocation, and human-in-the-loop participation. Supports programming flexible conversation patterns via both natural language and code.\n  * **Evidence:** Abstract states AutoGen is an open-source framework where \"developers to build LLM applications via multiple agents that can converse with each other to accomplish tasks\" using \"customizable, conversable\" agents operating across LLMs, human inputs, and tools.\n  * **Relevance:** Foundational execution architecture establishing conversable multi-agent execution and programmable dialogue patterns.\n\n- [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **System name:** MetaGPT\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jiaqi Chen, Xiawu Zheng, Yuheng Cheng, Ceyao Zhang, Jinlin Wang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran, Lingfeng Xiao, Chenglin Wu, Jürgen Schmidhuber\n  * **Year:** 2023\n  * **Code repository link:** [https://github.com/geekan/MetaGPT](https://github.com/geekan/MetaGPT)\n  * **Orchestration mechanism:** Meta-programming framework encoding Standard Operating Procedures (SOPs) into prompt sequences, utilizing an assembly line workflow paradigm and structured communication interfaces to break down tasks among specialized roles.\n  * **Evidence:** Abstract states MetaGPT \"incorporates efficient human workflows into LLM-based multi-agent collaborations\" by encoding \"Standardized Operating Procedures (SOPs) into prompt sequences\" and utilizing an \"assembly line paradigm to assign diverse roles to various agents.\"\n  * **Relevance:** Foundational execution architecture structured around assembly-line workflows and formal SOPs for collaborative problem-solving.\n\n- [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **System name:** ChatDev\n  * **Authors:** Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang, Weize Chen, Yusheng Su, Xin Cong, Juyuan Xu, Dahai Li, Zhiyuan Liu, Maosong Sun\n  * **Year:** 2023\n  * **Code repository link:** [https://github.com/OpenBMB/ChatDev](https://github.com/OpenBMB/ChatDev)\n  * **Orchestration mechanism:** Sequential multi-phase waterfall orchestration executed via multi-turn peer chats, guided by \"chat chains\" and communicative dehallucination across design, coding, and testing phases.\n  * **Evidence:** Abstract notes ChatDev guides agents \"in what to communicate (via chat chain) and how to communicate (via communicative dehallucination)\" across \"design, coding, and testing phases through unified language-based communication.\"\n  * **Relevance:** Core multi-agent execution framework coordinating specialized cooperative agents via sequential role-playing chat chains.\n\n### Coverage\n- Sites and queries reviewed:\n  * OpenAlex API search (`multi-agent collaboration framework llm`) provided in initial data block (~25 results examined).\n  * Direct inspection on arXiv for primary canonical framework papers:\n    - AutoGen (`https://arxiv.org/abs/2308.08155`)\n    - MetaGPT (`https://arxiv.org/abs/2308.00352`)\n    - ChatDev (`https://arxiv.org/abs/2307.07924`)\n  * Total results reviewed: 28 items across API records and arXiv landing pages.\n\n### Limitations\n- The exact public code repository link for AutoGen was not printed directly on the arXiv abstract overview text (only described as open source) and could not be navigated to within the 3-action budget constraint.\n- Competitive orchestration architectures (such as adversarial debate and game-theoretic framework papers) could not be retrieved before reaching the action limit.\n### Task: Find research papers introducing benchmarks, communication protocols, and evaluation metrics for multi-agent coordination.\n- Status: COMPLETED (Worker: worker_benchmarks_and_evaluation_96a61ecd, Tab: tab_benchmarks_and_evaluation_fd47f9)\n- Findings: ### Findings\n- [MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability](https://arxiv.org/abs/2610.04672) | **Authors:** Qizhi Chu, Zekai Yu, Sijie Wen, Yang Liu, Chen Qian, Cheng Yang, Chuan Shi, Zhiyuan Liu | **Year:** 2026 | **Benchmark name:** MASBench | **Evaluated metrics:** Deterministic evaluation metrics including performance score, communication cost, and cost effectiveness | **Key findings:** Addresses real-world multi-agent collaboration under partial observability across three progressive task categories (Reasoning, Scheduling, Game). Systematically evaluates three collaboration mechanisms: Protocol, Memory, and Routing. Benchmarking diverse LLM backbones indicates that collaboration mechanism design and communication overhead directly dictate overall system cost effectiveness | **Evidence:** Page states: \"we introduce MASBench, a multi-agent collaboration benchmark designed under partially observable constraints... progressively evaluate three representative collaboration mechanisms: Protocol, Memory, and Routing. MASBench further provides deterministic evaluation metrics, including performance score, communication cost, and cost effectiveness...\" | **Relevance:** Directly establishes a benchmark, evaluates multi-agent communication/collaboration protocols, and introduces formal metrics for multi-agent coordination.\n\n- [GraphMAS: A Systematic Benchmark of Multi-Agent Coordination for Graph Learning](https://arxiv.org/abs/2609.39777) | **Authors:** Jiayi Yang, Yifang Chen, Yuanfu Sun, Xinyan Ge, Qiaoyu Tan | **Year:** 2026 | **Benchmark name:** GraphMAS | **Evaluated metrics:** Task accuracy/performance on graph learning benchmarks, accuracy-efficiency trade-offs, and cross-graph generalization/transfer | **Key findings:** Evaluates 7 representative coordination methods across 4 paradigms categorized by inter-agent interaction and runtime adaptivity under a unified protocol. Finds that decomposing reasoning across specialized agents outperforms single-agent baselines; however, richer inter-agent interaction does not reliably improve performance, whereas instance-adaptive specialist selection achieves the best accuracy-efficiency trade-off | **Evidence:** Page states: \"introduce GraphMAS, a systematic benchmark of multi-agent coordination for graph learning... Under a unified protocol, we evaluate these methods across seven text-attributed graphs... richer inter-agent interaction does not reliably help, whereas instance-adaptive specialist selection yields the strongest accuracy-efficiency trade-off\" | **Relevance:** Benchmarks multi-agent coordination paradigms, protocol-level interactions, and adaptive communication trade-offs.\n\n- [EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945) | **Authors:** Nathan Scott | **Year:** 2026 | **Benchmark name:** EPOB (End-to-End Project Orchestration Benchmark) | **Evaluated metrics:** Task decomposition, multi-agent AI framework execution efficiency, project orchestration success rate | **Key findings:** Benchmarks multi-agent AI frameworks executing full end-to-end task decomposition and multi-agent orchestration workflows | **Evidence:** OpenAlex record indexes the work with keywords: `multi-agent AI`, `LLM agents`, `benchmark`, `task-decomposition` under DOI `10.5281/zenodo.20349945` | **Relevance:** Targets comparative benchmarking and evaluation of multi-agent orchestration frameworks.\n\n### Coverage\n- Searched OpenAlex API (`https://api.openalex.org/works?search=multi-agent+orchestration+benchmark+evaluation`) and arXiv (`https://arxiv.org/search/?query=%22multi-agent%22+benchmark+coordination&searchtype=all&source=header`).\n- Reviewed over 50 search listing entries across both sources and inspected detailed abstracts on candidate benchmark/protocol papers.\n\n### Limitations\n- The 3 browser action quota was reached, preventing in-depth full-text extraction of additional arXiv results identified in listings (such as *MAGMA-Bench* `arXiv:2610.13534` and communication compression works `arXiv:2610.03769`). Full numerical score tables from MASBench and GraphMAS could not be retrieved beyond the published abstracts.",
+    "task_results": {
+     "surveys_and_taxonomies": {
+      "findings": "### Findings\n- [LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns](https://doi.org/10.3390/fi18060326) | **Authors:** Yiwen Zhu, Lihe Liu, Jiaqian Yu, Di Zhang | **Year:** 2026 | **Venue:** *Future Internet* (MDPI) | **Citations count:** Unverified (0 indexed in initial record) | **Key architectural taxonomy proposed:** Framework architectures, inter-agent communication protocols, and emerging multi-agent orchestration patterns | **Evidence:** OpenAlex record indexes the work under DOI `10.3390/fi18060326`, published in *Future Internet*, detailing multi-agent orchestration frameworks and communication protocols | **Relevance:** Directly synthesizes orchestration architectures and coordination protocols in LLM-driven multi-agent environments.\n\n### Coverage\n- **Sites and queries:**\n  - OpenAlex API: `survey multi-agent orchestration llm`\n  - Google Scholar: `https://scholar.google.com/scholar?q=%22multi-agent%22+survey+LLM+OR+%22large+language+models%22`\n  - OpenAlex API: `survey \"large language model\" \"multi-agent\"` (sorted by citation count)\n- **Results reviewed:** Evaluated initial search responses across OpenAlex and Google Scholar.\n\n### Limitations\n- Google Scholar blocked queries with a bot detection CAPTCHA (\"Please show you're not a robot\").\n- Browser action limit reached before reading results from the sorted OpenAlex citation endpoint.\n- Detailed sub-taxonomies and updated citation metrics were unverified beyond the initial OpenAlex metadata excerpt.",
+      "success": true,
+      "sources": [
+       "https://scholar.google.com/scholar?q=%22multi-agent%22+survey+LLM+OR+%22large+language+models%22",
+       "https://api.openalex.org/works?search=survey+%22large+language+model%22+%22multi-agent%22&sort=cited_by_count:desc&per_page=5"
+      ],
+      "error": null,
+      "worker_id": "worker_surveys_and_taxonomies_2ab65bf0",
+      "tab_id": "tab_surveys_and_taxonomies_fd47f9"
+     },
+     "frameworks_and_architectures": {
+      "findings": "### Findings\n- [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)\n  * **System name:** AutoGen\n  * **Authors:** Qingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu, Li Jiang, Xiaoyun Zhang, Shaokun Zhang, Jiale Liu, Ahmed Hassan Awadallah, Ryen W White, Doug Burger, Chi Wang\n  * **Year:** 2023\n  * **Code repository link:** Unverified on abstract page (referenced as open-source framework)\n  * **Orchestration mechanism:** Multi-agent conversation framework where customizable, conversable agents interact via multi-turn dialogues, tool invocation, and human-in-the-loop participation. Supports programming flexible conversation patterns via both natural language and code.\n  * **Evidence:** Abstract states AutoGen is an open-source framework where \"developers to build LLM applications via multiple agents that can converse with each other to accomplish tasks\" using \"customizable, conversable\" agents operating across LLMs, human inputs, and tools.\n  * **Relevance:** Foundational execution architecture establishing conversable multi-agent execution and programmable dialogue patterns.\n\n- [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)\n  * **System name:** MetaGPT\n  * **Authors:** Sirui Hong, Mingchen Zhuge, Jiaqi Chen, Xiawu Zheng, Yuheng Cheng, Ceyao Zhang, Jinlin Wang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran, Lingfeng Xiao, Chenglin Wu, Jürgen Schmidhuber\n  * **Year:** 2023\n  * **Code repository link:** [https://github.com/geekan/MetaGPT](https://github.com/geekan/MetaGPT)\n  * **Orchestration mechanism:** Meta-programming framework encoding Standard Operating Procedures (SOPs) into prompt sequences, utilizing an assembly line workflow paradigm and structured communication interfaces to break down tasks among specialized roles.\n  * **Evidence:** Abstract states MetaGPT \"incorporates efficient human workflows into LLM-based multi-agent collaborations\" by encoding \"Standardized Operating Procedures (SOPs) into prompt sequences\" and utilizing an \"assembly line paradigm to assign diverse roles to various agents.\"\n  * **Relevance:** Foundational execution architecture structured around assembly-line workflows and formal SOPs for collaborative problem-solving.\n\n- [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)\n  * **System name:** ChatDev\n  * **Authors:** Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang, Weize Chen, Yusheng Su, Xin Cong, Juyuan Xu, Dahai Li, Zhiyuan Liu, Maosong Sun\n  * **Year:** 2023\n  * **Code repository link:** [https://github.com/OpenBMB/ChatDev](https://github.com/OpenBMB/ChatDev)\n  * **Orchestration mechanism:** Sequential multi-phase waterfall orchestration executed via multi-turn peer chats, guided by \"chat chains\" and communicative dehallucination across design, coding, and testing phases.\n  * **Evidence:** Abstract notes ChatDev guides agents \"in what to communicate (via chat chain) and how to communicate (via communicative dehallucination)\" across \"design, coding, and testing phases through unified language-based communication.\"\n  * **Relevance:** Core multi-agent execution framework coordinating specialized cooperative agents via sequential role-playing chat chains.\n\n### Coverage\n- Sites and queries reviewed:\n  * OpenAlex API search (`multi-agent collaboration framework llm`) provided in initial data block (~25 results examined).\n  * Direct inspection on arXiv for primary canonical framework papers:\n    - AutoGen (`https://arxiv.org/abs/2308.08155`)\n    - MetaGPT (`https://arxiv.org/abs/2308.00352`)\n    - ChatDev (`https://arxiv.org/abs/2307.07924`)\n  * Total results reviewed: 28 items across API records and arXiv landing pages.\n\n### Limitations\n- The exact public code repository link for AutoGen was not printed directly on the arXiv abstract overview text (only described as open source) and could not be navigated to within the 3-action budget constraint.\n- Competitive orchestration architectures (such as adversarial debate and game-theoretic framework papers) could not be retrieved before reaching the action limit.",
+      "success": true,
+      "sources": [
+       "https://arxiv.org/abs/2308.08155"
+      ],
+      "error": null,
+      "worker_id": "worker_frameworks_and_architectures_90c47d02",
+      "tab_id": "tab_frameworks_and_architectures_fd47f9"
+     },
+     "benchmarks_and_evaluation": {
+      "findings": "### Findings\n- [MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability](https://arxiv.org/abs/2610.04672) | **Authors:** Qizhi Chu, Zekai Yu, Sijie Wen, Yang Liu, Chen Qian, Cheng Yang, Chuan Shi, Zhiyuan Liu | **Year:** 2026 | **Benchmark name:** MASBench | **Evaluated metrics:** Deterministic evaluation metrics including performance score, communication cost, and cost effectiveness | **Key findings:** Addresses real-world multi-agent collaboration under partial observability across three progressive task categories (Reasoning, Scheduling, Game). Systematically evaluates three collaboration mechanisms: Protocol, Memory, and Routing. Benchmarking diverse LLM backbones indicates that collaboration mechanism design and communication overhead directly dictate overall system cost effectiveness | **Evidence:** Page states: \"we introduce MASBench, a multi-agent collaboration benchmark designed under partially observable constraints... progressively evaluate three representative collaboration mechanisms: Protocol, Memory, and Routing. MASBench further provides deterministic evaluation metrics, including performance score, communication cost, and cost effectiveness...\" | **Relevance:** Directly establishes a benchmark, evaluates multi-agent communication/collaboration protocols, and introduces formal metrics for multi-agent coordination.\n\n- [GraphMAS: A Systematic Benchmark of Multi-Agent Coordination for Graph Learning](https://arxiv.org/abs/2609.39777) | **Authors:** Jiayi Yang, Yifang Chen, Yuanfu Sun, Xinyan Ge, Qiaoyu Tan | **Year:** 2026 | **Benchmark name:** GraphMAS | **Evaluated metrics:** Task accuracy/performance on graph learning benchmarks, accuracy-efficiency trade-offs, and cross-graph generalization/transfer | **Key findings:** Evaluates 7 representative coordination methods across 4 paradigms categorized by inter-agent interaction and runtime adaptivity under a unified protocol. Finds that decomposing reasoning across specialized agents outperforms single-agent baselines; however, richer inter-agent interaction does not reliably improve performance, whereas instance-adaptive specialist selection achieves the best accuracy-efficiency trade-off | **Evidence:** Page states: \"introduce GraphMAS, a systematic benchmark of multi-agent coordination for graph learning... Under a unified protocol, we evaluate these methods across seven text-attributed graphs... richer inter-agent interaction does not reliably help, whereas instance-adaptive specialist selection yields the strongest accuracy-efficiency trade-off\" | **Relevance:** Benchmarks multi-agent coordination paradigms, protocol-level interactions, and adaptive communication trade-offs.\n\n- [EPOB: End-to-End Project Orchestration Benchmark - Evaluating Multi-Agent AI Frameworks](https://doi.org/10.5281/zenodo.20349945) | **Authors:** Nathan Scott | **Year:** 2026 | **Benchmark name:** EPOB (End-to-End Project Orchestration Benchmark) | **Evaluated metrics:** Task decomposition, multi-agent AI framework execution efficiency, project orchestration success rate | **Key findings:** Benchmarks multi-agent AI frameworks executing full end-to-end task decomposition and multi-agent orchestration workflows | **Evidence:** OpenAlex record indexes the work with keywords: `multi-agent AI`, `LLM agents`, `benchmark`, `task-decomposition` under DOI `10.5281/zenodo.20349945` | **Relevance:** Targets comparative benchmarking and evaluation of multi-agent orchestration frameworks.\n\n### Coverage\n- Searched OpenAlex API (`https://api.openalex.org/works?search=multi-agent+orchestration+benchmark+evaluation`) and arXiv (`https://arxiv.org/search/?query=%22multi-agent%22+benchmark+coordination&searchtype=all&source=header`).\n- Reviewed over 50 search listing entries across both sources and inspected detailed abstracts on candidate benchmark/protocol papers.\n\n### Limitations\n- The 3 browser action quota was reached, preventing in-depth full-text extraction of additional arXiv results identified in listings (such as *MAGMA-Bench* `arXiv:2610.13534` and communication compression works `arXiv:2610.03769`). Full numerical score tables from MASBench and GraphMAS could not be retrieved beyond the published abstracts.",
+      "success": true,
+      "sources": [
+       "https://arxiv.org/search/?query=%22multi-agent%22+benchmark+coordination&searchtype=all&source=header"
+      ],
+      "error": null,
+      "worker_id": "worker_benchmarks_and_evaluation_96a61ecd",
+      "tab_id": "tab_benchmarks_and_evaluation_fd47f9"
+     }
+    },
+    "sources": [
+     "https://scholar.google.com/scholar?q=%22multi-agent%22+survey+LLM+OR+%22large+language+models%22",
+     "https://api.openalex.org/works?search=survey+%22large+language+model%22+%22multi-agent%22&sort=cited_by_count:desc&per_page=5",
+     "https://arxiv.org/abs/2308.08155",
+     "https://arxiv.org/search/?query=%22multi-agent%22+benchmark+coordination&searchtype=all&source=header"
+    ],
+    "missing_information": [],
+    "follow_up": null,
+    "duration_ms": 46280.16,
+    "timing": {
+     "planning_ms": 8667.09,
+     "workers_ms": 39328.9,
+     "synthesis_ms": 6951.16,
+     "total_ms": 54947.25,
+     "workers": {
+      "surveys_and_taxonomies": {
+       "status": "completed",
+       "duration_ms": 39315.65,
+       "tool_calls": 3,
+       "llm_calls": 4,
+       "avg_llm_ms": 8590.6,
+       "stopped_early": "the limit of 3 browser actions was reached"
+      },
+      "frameworks_and_architectures": {
+       "status": "completed",
+       "duration_ms": 29699.72,
+       "tool_calls": 3,
+       "llm_calls": 4,
+       "avg_llm_ms": 6128.9,
+       "stopped_early": "the limit of 3 browser actions was reached"
+      },
+      "benchmarks_and_evaluation": {
+       "status": "completed",
+       "duration_ms": 33691.23,
+       "tool_calls": 3,
+       "llm_calls": 4,
+       "avg_llm_ms": 6845.7,
+       "stopped_early": "the limit of 3 browser actions was reached"
+      }
+     }
+    },
+    "type": "result",
+    "done": true
+   }
+  }
+ ]
+}

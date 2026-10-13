@@ -1,0 +1,74 @@
+{
+  "scenario": "excalidraw",
+  "mode": "hybrid",
+  "trial": 3,
+  "seed": 3,
+  "error": null,
+  "wall_s": 24.01,
+  "tool_calls": 3,
+  "tools": [
+    "browser_inspect",
+    "browser_sequence",
+    "browser_screenshot"
+  ],
+  "llm_calls_derived": 4,
+  "llm_calls_measured": 4,
+  "failed_tool_calls": 0,
+  "llm_ms": 22721.0,
+  "tool_ms": 1078.89,
+  "screenshots": 1,
+  "used_vision": true,
+  "used_input_tools": [],
+  "program_calls": 0,
+  "success": true,
+  "state": {
+    "elements": [
+      "rectangle",
+      "ellipse"
+    ]
+  },
+  "claimed_in_answer": "The rectangle and inner ellipse have been drawn on the canvas. The task is complete.",
+  "quality": 1.0,
+  "recovered": false,
+  "answer": "The rectangle and inner ellipse have been drawn on the canvas. The task is complete.",
+  "trace": [
+    {
+      "tool": "browser_inspect",
+      "args": "{}",
+      "ok": true,
+      "result": "Page: Excalidraw Whiteboard (https://excalidraw.com/)\n29 of 29 interactive elements returned (in view first). Act on them by ref number.\n[1] div \"Your drawings are saved in your browser's storage. Browser storage can be cleared unexpectedly. Save\"\n[2] button \"Open Cmd+O\"\n[3] button \"Help ?\"\n[4] butt",
+      "ms": 25.19
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"ref\": 10, \"action\": \"click\", \"reason\": \"Select rectangle tool\"}, {\"x\": 300, \"reason\": \"Draw rectangle\", \"y\": 300, \"to_x\": 700, \"action\": \"drag\", \"to_y\": 600}, {\"reason\": \"Select ellipse tool\", \"action\": \"click\", \"ref\": 12}, {\"to_x\": 650, \"action\": \"drag\", \"to_y\": 550, \"y\": 350, \"reason\"",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"click\", \"data\": {\"clicked\": true, \"x\": 520.0, \"y\": 38.0, \"backend_node_id\": 126, \"validation_to_dispatch_ns\": 2135041}, \"evidence\": {\"rule\": \"AllRulesPassed\", \"handler_invoked\": false, \"action_dispatched\": true}, \"duration_ms\": 29}, {\"step_index\": 1,",
+      "ms": 1014.62
+    },
+    {
+      "tool": "browser_screenshot",
+      "args": "{\"reason\": \"Confirm shapes are drawn properly on canvas\"}",
+      "ok": true,
+      "result": "Screenshot 736c3e94: 1280x713 px image of a 1280x713 viewport (scrolled to y=0). The image is attached in the next message. Use screenshot_id=\"736c3e94\" with browser_pointer and coordinates in this image's pixels.",
+      "ms": 39.08
+    }
+  ],
+  "steps": [
+    {
+      "t": 6.12,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 13.64,
+      "tool": "browser_sequence",
+      "label": "Doing 5 steps on the page"
+    },
+    {
+      "t": 19.22,
+      "tool": "browser_screenshot",
+      "label": "Taking a screenshot"
+    }
+  ]
+}

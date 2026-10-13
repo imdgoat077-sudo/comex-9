@@ -1,0 +1,184 @@
+{
+  "scenario": "wordle",
+  "trial": 2,
+  "seed": 2,
+  "error": "timeout",
+  "wall_s": 180.06,
+  "tool_calls": 26,
+  "tools": [
+    "browser_inspect",
+    "browser_extract",
+    "browser_extract",
+    "browser_find",
+    "browser_extract",
+    "browser_navigate",
+    "browser_extract",
+    "browser_extract",
+    "browser_find",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_extract",
+    "browser_type",
+    "browser_type"
+  ],
+  "llm_calls_derived": 27,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": false,
+  "state": {
+    "s": "playing",
+    "rows": 0
+  },
+  "claimed_in_answer": "",
+  "answer": "",
+  "trace": null,
+  "steps": [
+    {
+      "t": 5.45,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 10.22,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 14.39,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 19.57,
+      "tool": "browser_find",
+      "label": "Finding \u201ca\u201d"
+    },
+    {
+      "t": 31.48,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 37.48,
+      "tool": "browser_navigate",
+      "label": "Opening 127.0.0.1"
+    },
+    {
+      "t": 44.52,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 82.96,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 91.02,
+      "tool": "browser_find",
+      "label": "Finding \u201cWord game\u201d"
+    },
+    {
+      "t": 93.55,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 104.86,
+      "tool": "browser_type",
+      "label": "Typing \u201cslate\u201d"
+    },
+    {
+      "t": 107.09,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 109.44,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 111.98,
+      "tool": "browser_type",
+      "label": "Searching for \u201c\u201d"
+    },
+    {
+      "t": 114.37,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 117.11,
+      "tool": "browser_type",
+      "label": "Searching for \u201ccrane\u201d"
+    },
+    {
+      "t": 119.98,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 122.42,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 138.84,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 142.1,
+      "tool": "browser_type",
+      "label": "Typing \u201ca\u201d"
+    },
+    {
+      "t": 145.61,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 147.83,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 151.48,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 153.91,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 167.14,
+      "tool": "browser_type",
+      "label": "Typing \u201cb\u201d"
+    },
+    {
+      "t": 170.39,
+      "tool": "browser_type",
+      "label": "Typing \u201cc\u201d"
+    }
+  ]
+}

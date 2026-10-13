@@ -1,0 +1,88 @@
+{
+  "scenario": "chess",
+  "mode": "typed",
+  "trial": 3,
+  "seed": 3,
+  "error": null,
+  "wall_s": 23.55,
+  "tool_calls": 4,
+  "tools": [
+    "browser_evaluate",
+    "browser_evaluate",
+    "browser_sequence",
+    "browser_evaluate"
+  ],
+  "llm_calls_derived": 5,
+  "llm_calls_measured": 5,
+  "failed_tool_calls": 0,
+  "llm_ms": 23229.5,
+  "tool_ms": 225.26,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "program_calls": 0,
+  "success": true,
+  "state": {
+    "s": "checkmate",
+    "h": [
+      "Ra1-a8#"
+    ],
+    "ill": 0
+  },
+  "claimed_in_answer": "Move played: **Ra1-a8#** (Rook from a1 to a8).\n\nThe game is over: **Checkmate. White wins.**",
+  "quality": 1.0,
+  "recovered": false,
+  "answer": "Move played: **Ra1-a8#** (Rook from a1 to a8).\n\nThe game is over: **Checkmate. White wins.**",
+  "trace": [
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    html: document.body.innerHTML,\\n    fen: window.game ? window.game.fen() : null,\\n    chess: typeof Chess !== 'undefined'\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"html\": \"<div id=\\\"wrap\\\">\\n  <div id=\\\"board\\\" aria-label=\\\"Chess board\\\"><div class=\\\"piece black king\\\" style=\\\"transform: translate(360px, 0px);\\\">\u265a</div><div class=\\\"piece black pawn\\\" style=\\\"transform: translate(300px, 60px);\\\">\u265f</div><div class=\\\"piece black pawn\\\" style=\\\"transform: transl",
+      "ms": 19.16
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  const r = document.getElementById('board').getBoundingClientRect();\\n  return { left: r.left, top: r.top, width: r.width, height: r.height };\\n})()\"}",
+      "ok": true,
+      "result": "{\"left\": 24, \"top\": 24, \"width\": 480, \"height\": 480}",
+      "ms": 23.76
+    },
+    {
+      "tool": "browser_sequence",
+      "args": "{\"steps\": [{\"y\": 474, \"x\": 54, \"reason\": \"Click on White Rook at a1\", \"action\": \"click_at\"}, {\"x\": 54, \"action\": \"click_at\", \"reason\": \"Click on square a8 to play Ra1-a8#\", \"y\": 54, \"postconditions\": [{\"expected\": \"Checkmate\", \"type\": \"text_contains\"}]}]}",
+      "ok": true,
+      "result": "{\"completed_steps\": [{\"step_index\": 0, \"action\": \"click_at\", \"data\": {\"kind\": \"click\", \"target\": {\"found\": true, \"tag\": \"div\", \"id\": \"board\", \"class\": \"\", \"label\": \"Chess board\", \"backend_node_id\": 10}, \"page_changed\": true}, \"evidence\": {\"action_dispatched\": true}, \"duration_ms\": 69}, {\"step_index\"",
+      "ms": 160.59
+    },
+    {
+      "tool": "browser_evaluate",
+      "args": "{\"expression\": \"(() => {\\n  return {\\n    status: document.getElementById('status').innerText,\\n    moves: Array.from(document.querySelectorAll('#moves li')).map(li => li.innerText),\\n    gameStatus: window.__game ? window.__game.status : null\\n  };\\n})()\"}",
+      "ok": true,
+      "result": "{\"status\": \"Checkmate. White wins.\", \"moves\": [\"Ra1-a8#\"], \"gameStatus\": \"checkmate\"}",
+      "ms": 21.75
+    }
+  ],
+  "steps": [
+    {
+      "t": 6.17,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 13.83,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    },
+    {
+      "t": 16.77,
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page"
+    },
+    {
+      "t": 19.87,
+      "tool": "browser_evaluate",
+      "label": "Reading the page state"
+    }
+  ]
+}

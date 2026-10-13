@@ -1,0 +1,83 @@
+{
+  "scenario": "shop",
+  "trial": 4,
+  "seed": 4,
+  "error": null,
+  "wall_s": 40.38,
+  "tool_calls": 9,
+  "tools": [
+    "browser_inspect",
+    "browser_sequence",
+    "browser_type",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract"
+  ],
+  "llm_calls_derived": 10,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "cart": [
+      "tune"
+    ]
+  },
+  "claimed_in_answer": "Added the cheapest headphones to the cart:\n\n- **Product:** JBL Tune 770NC headphones\n- **Price:** \u20b96,999",
+  "answer": "Added the cheapest headphones to the cart:\n\n- **Product:** JBL Tune 770NC headphones\n- **Price:** \u20b96,999",
+  "trace": null,
+  "steps": [
+    {
+      "t": 4.89,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 8.78,
+      "tool": "browser_sequence",
+      "label": "Doing a step on the page"
+    },
+    {
+      "t": 20.83,
+      "tool": "browser_type",
+      "label": "Searching for \u201cheadphones\u201d"
+    },
+    {
+      "t": 23.16,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 25.25,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 27.07,
+      "tool": "browser_click",
+      "label": "Clicking \u201cJBL Tune 770NC headphones\u201d"
+    },
+    {
+      "t": 30.44,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 33.93,
+      "tool": "browser_click",
+      "label": "Clicking \u201cAdd to cart\u201d"
+    },
+    {
+      "t": 35.89,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+==================================================
+PHASE 14 CONTROLLED EXPERIMENT
+==================================================
+
+[*] Validation Task: Purchase the items in the cart for user testuser with password pass.
+[*] Target URL: data:text/html,%0A%20%20%20%20%3Chtml%3E%0A%20%20%...
+
+--- Running BASELINE (No Procedures) ---
+Baseline Success: True
+Baseline Trace Snippet: [run_browser_harness] Args: {'code': 'url = "data:text/html,%0A%20%20%20%20%3Chtml%3E%0A%20%20%20%20%3Cbody%3E%0A%20%20%20%20%20%20%20%3Ch1%3EAnother%20Store%3C/h1%3E%0A%20%20%20%20%20%20%20%3Cbutton%...
+
+--- Running PROCEDURAL (Procedures Enabled) ---
+Procedural Success: True
+Procedural Trace Snippet: [run_browser_harness] Args: {'code': 'url = "data:text/html,%0A%20%20%20%20%3Chtml%3E%0A%20%20%20%20%3Cbody%3E%0A%20%20%20%20%20%20%20%3Ch1%3EAnother%20Store%3C/h1%3E%0A%20%20%20%20%20%20%20%3Cbutton%...
+Retrieved Procedures: ['art_5153d67bb01843a7bfe98fb9c968085d']
+
+--- Running TRANSFER EVALUATION ---
+
+[EVALUATION OUTCOME]
+{
+  "classification": "Neutral",
+  "reasoning": "Both the baseline and procedural agents completed the task successfully using a similar exploratory approach to interact with the mock e-commerce page (inspecting DOM, clicking the sign-in button, and clicking the pay-now button). The high-level generic procedure ('Authenticate, go to cart, and checkout') did not provide site-specific advantages or distinct execution patterns over baseline exploration, resulting in essentially identical efficiency and outcome.",
+  "needs_refinement": false
+}
+
+==================================================
+[*] Validation Task 2: Checkout the items.
+
+--- Running PROCEDURAL (Blind Force Inject) ---
+
+[EVALUATION OUTCOME 2]
+{
+  "classification": "Harmful",
+  "reasoning": "In the baseline condition without the procedure, the agent successfully completed the task by clicking '#modern-checkout'. When provided with the procedure, the agent followed the strict constraint to use '#legacy-checkout-btn', which did not exist on the target page, resulting in failure.",
+  "needs_refinement": true,
+  "refinement_rationale": "The procedure contains an overly strict and hardcoded source-specific selector (#legacy-checkout-btn) and explicitly forbade using any other button. Generalizing the step to look for available checkout buttons (e.g., modern checkout or generic checkout selectors) will prevent failure on different UI variations.",
+  "refined_procedure_candidate": {
+    "title": "General Checkout",
+    "capability": "ecommerce_checkout",
+    "goal": "Checkout items in shopping cart",
+    "preconditions": [
+      "Items are in the cart and the user is on the cart/checkout page"
+    ],
+    "ordered_steps": [
+      "Locate the checkout button on the page (e.g., #modern-checkout, #checkout-btn, or standard 'Checkout' button/link).",
+      "Click the checkout button to proceed."
+    ],
+    "applicability_notes": "Applies across e-commerce cart pages.",
+    "limitations_caveats": "Specific selector IDs may vary across site versions."
+  }
+}
+
+[REFINEMENT TRIGGERED] New Procedure ID: art_5b6b1a1e13664c3795ac32f571518486
+{
+  "title": "General Checkout",
+  "capability": "ecommerce_checkout",
+  "goal": "Checkout items in shopping cart",
+  "preconditions": [
+    "Items are in the cart and the user is on the cart/checkout page"
+  ],
+  "ordered_steps": [
+    "Locate the checkout button on the page (e.g., #modern-checkout, #checkout-btn, or standard 'Checkout' button/link).",
+    "Click the checkout button to proceed."
+  ],
+  "applicability_notes": "Applies across e-commerce cart pages.",
+  "limitations_caveats": "Specific selector IDs may vary across site versions.",
+  "provenance": {
+    "refined_from_procedure_id": "art_aaa457a0635d434d80def17b46a9b8f7",
+    "validation_episode_id": "ep_val_harmful",
+    "refinement_rationale": "The procedure contains an overly strict and hardcoded source-specific selector (#legacy-checkout-btn) and explicitly forbade using any other button. Generalizing the step to look for available checkout buttons (e.g., modern checkout or generic checkout selectors) will prevent failure on different UI variations.",
+    "induction_model": "ag/gemini-3.7-flash-medium",
+    "original_source_episode_id": "ep_harmful"
+  }
+}

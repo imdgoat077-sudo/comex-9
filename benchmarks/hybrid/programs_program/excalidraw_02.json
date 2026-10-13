@@ -1,0 +1,48 @@
+{
+  "scenario": "excalidraw",
+  "mode": "program",
+  "trial": 2,
+  "seed": 2,
+  "error": null,
+  "wall_s": 32.78,
+  "tool_calls": 1,
+  "tools": [
+    "browser_program"
+  ],
+  "llm_calls_derived": 2,
+  "llm_calls_measured": 2,
+  "failed_tool_calls": 0,
+  "llm_ms": 28858.9,
+  "tool_ms": 3807.44,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "program_calls": 1,
+  "success": true,
+  "state": {
+    "elements": [
+      "rectangle",
+      "ellipse"
+    ]
+  },
+  "claimed_in_answer": "Drawing completed.\n\n- **Rectangle:** Drawn at coordinates `(300, 250)` to `(700, 550)` via tool shortcut `r`.\n- **Ellipse:** Drawn completely inside at coordinates `(350, 300)` to `(650, 500)` via tool shortcut `o`.\n- **State verified:** Captured screenshot and validated canvas state.",
+  "quality": 1.0,
+  "recovered": false,
+  "answer": "Drawing completed.\n\n- **Rectangle:** Drawn at coordinates `(300, 250)` to `(700, 550)` via tool shortcut `r`.\n- **Ellipse:** Drawn completely inside at coordinates `(350, 300)` to `(650, 500)` via tool shortcut `o`.\n- **State verified:** Captured screenshot and validated canvas state.",
+  "trace": [
+    {
+      "tool": "browser_program",
+      "args": "{\"code\": \"click_at_xy(500, 400)\\nwait(0.2)\\npress_key('Escape')\\nwait(0.2)\\n\\n# Select rectangle tool and draw\\npress_key('r')\\nwait(0.3)\\ndrag(300, 250, 700, 550)\\nwait(0.5)\\n\\npress_key('Escape')\\nwait(0.2)\\n\\n# Select ellipse tool and draw inside the rectangle\\npress_key('o')\\nwait(0.3)\\ndrag(350",
+      "ok": true,
+      "result": "program finished in 3.8s; 10 browser operations (keys x5, pointer x3, read_js x1, screenshot x1); 1.3s of that was browser time\nstdout:\nVerified drawn shapes. Canvas title: Excalidraw Whiteboard, screenshot: /private/var/folders/2j/3y9wh_s55fl_vxvj7f8ndl1h0000gn/T/comex-hybrid-db-b6t88f6x/workspace/",
+      "ms": 3807.44
+    }
+  ],
+  "steps": [
+    {
+      "t": 25.43,
+      "tool": "browser_program",
+      "label": "Browser program"
+    }
+  ]
+}

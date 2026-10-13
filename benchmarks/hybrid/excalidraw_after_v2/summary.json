@@ -1,0 +1,12 @@
+{
+  "excalidraw": {
+    "trials": 5,
+    "success": 5,
+    "wall_median_s": 23.16,
+    "wall_min_s": 21.78,
+    "wall_max_s": 32.01,
+    "tool_calls_median": 4,
+    "llm_calls_derived_median": 5,
+    "vision_used_in": 5
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "scenario": "table",
+  "trial": 3,
+  "seed": 3,
+  "error": null,
+  "wall_s": 83.54,
+  "tool_calls": 24,
+  "tools": [
+    "browser_extract",
+    "browser_inspect",
+    "browser_type",
+    "browser_extract",
+    "browser_click",
+    "browser_find",
+    "browser_click",
+    "browser_extract",
+    "browser_type",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_sequence",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract",
+    "browser_inspect",
+    "browser_click",
+    "browser_extract"
+  ],
+  "llm_calls_derived": 25,
+  "llm_calls_measured": null,
+  "failed_tool_calls": null,
+  "llm_ms": null,
+  "tool_ms": null,
+  "screenshots": 0,
+  "used_vision": false,
+  "used_input_tools": [],
+  "success": true,
+  "state": {
+    "rows_correct": 57,
+    "rows_expected": 57,
+    "totals_stated": true
+  },
+  "claimed_in_answer": "#### Grade History\n\n| Sl.No. | Course Code | Course Title | Credits | Grade |\n| :--- | :--- | :--- | :--- | :--- |\n| 1 | TST1000 | Test Course 1 | 2 | C |\n| 2 | TST1001 | Test Course 2 | 1 | N |\n| 3 | TST1002 | Test Course 3 | 3 | D |\n| 4 | TST1003 | Test Course 4 | 2 | S |\n| 5 | TST1004 | Test Course 5 | 4 | S |\n| 6 | TST1005 | Test Course 6 | 4 | S |\n| 7 | TST1006 | Test Course 7 | 2 | E |\n| 8 |",
+  "answer": "#### Grade History\n\n| Sl.No. | Course Code | Course Title | Credits | Grade |\n| :--- | :--- | :--- | :--- | :--- |\n| 1 | TST1000 | Test Course 1 | 2 | C |\n| 2 | TST1001 | Test Course 2 | 1 | N |\n| 3 | TST1002 | Test Course 3 | 3 | D |\n| 4 | TST1003 | Test Course 4 | 2 | S |\n| 5 | TST1004 | Test Course 5 | 4 | S |\n| 6 | TST1005 | Test Course 6 | 4 | S |\n| 7 | TST1006 | Test Course 7 | 2 | E |\n| 8 | TST1007 | Test Course 8 | 1 | D |\n| 9 | TST1008 | Test Course 9 | 1 | A |\n| 10 | TST1009 | Test Course 10 | 2 | B |\n| 11 | TST1010 | Test Course 11 | 1 | D |\n| 12 | TST1011 | Test Course 12 | 2 | S |\n| 13 | TST1012 | Test Course 13 | 2 | B |\n| 14 | TST1013 | Test Course 14 | 1 | D |\n| 15 | TST1014 | Test Course 15 | 2 | C |\n| 16 | TST1015 | Test Course 16 | 4 | N |\n| 17 | TST1016 | Test Course 17 | 4 | B |\n| 18 | TST1017 | Test Course 18 | 2 | E |\n| 19 | TST1018 | Test Course 19 | 3 | D |\n| 20 | TST1019 | Test Course 20 | 4 | B |\n| 21 | TST1020 | Test Course 21 | 1 | D |\n| 22 | TST1021 | Test Course 22 | 3 | A |\n| 23 | TST1022 | Test Course 23 | 1 | E |\n| 24 | TST1023 | Test Course 24 | 3 | B |\n| 25 | TST1024 | Test Course 25 | 4 | D |\n| 26 | TST1025 | Test Course 26 | 1 | B |\n| 27 | TST1026 | Test Course 27 | 1 | S |\n| 28 | TST1027 | Test Course 28 | 3 | E |\n| 29 | TST1028 | Test Course 29 | 4 | B |\n| 30 | TST1029 | Test Course 30 | 3 | S |\n| 31 | TST1030 | Test Course 31 | 2 | D |\n| 32 | TST1031 | Test Course 32 | 1 | A |\n| 33 | TST1032 | Test Course 33 | 2 | C |\n| 34 | TST1033 | Test Course 34 | 1 | A |\n| 35 | TST1034 | Test Course 35 | 3 | A |\n| 36 | TST1035 | Test Course 36 | 3 | E |\n| 37 | TST1036 | Test Course 37 | 4 | A |\n| 38 | TST1037 | Test Course 38 | 2 | A |\n| 39 | TST1038 | Test Course 39 | 2 | S |\n| 40 | TST1039 | Test Course 40 | 2 | B |\n| 41 | TST1040 | Test Course 41 | 2 | C |\n| 42 | TST1041 | Test Course 42 | 3 | A |\n| 43 | TST1042 | Test Course 43 | 1 | C |\n| 44 | TST1043 | Test Course 44 | 4 | C |\n| 45 | TST1044 | Test Course 45 | 1 | C |\n| 46 | TST1045 | Test Course 46 | 1 | A |\n| 47 | TST1046 | Test Course 47 | 4 | A |\n| 48 | TST1047 | Test Course 48 | 1 | S |\n| 49 | TST1048 | Test Course 49 | 2 | D |\n| 50 | TST1049 | Test Course 50 | 1 | S |\n| 51 | TST1050 | Test Course 51 | 4 | A |\n| 52 | TST1051 | Test Course 52 | 3 | D |\n| 53 | TST1052 | Test Course 53 | 1 | S |\n| 54 | TST1053 | Test Course 54 | 4 | C |\n| 55 | TST1054 | Test Course 55 | 2 | S |\n| 56 | TST1055 | Test Course 56 | 3 | C |\n| 57 | TST1056 | Test Course 57 | 1 | A |\n\n#### Summary\n- **Total Courses:** 57\n- **Total Credits:** 131",
+  "trace": null,
+  "steps": [
+    {
+      "t": 5.99,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 10.29,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 13.57,
+      "tool": "browser_type",
+      "label": "Typing \u201c100\u201d"
+    },
+    {
+      "t": 16.46,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 18.58,
+      "tool": "browser_click",
+      "label": "Clicking \u201centries per page\u201d"
+    },
+    {
+      "t": 20.84,
+      "tool": "browser_find",
+      "label": "Finding \u201c100\u201d"
+    },
+    {
+      "t": 23.99,
+      "tool": "browser_click",
+      "label": "Clicking an element"
+    },
+    {
+      "t": 26.1,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 30.8,
+      "tool": "browser_type",
+      "label": "Typing \u201c100\u201d"
+    },
+    {
+      "t": 32.99,
+      "tool": "browser_click",
+      "label": "Clicking \u201c2\u201d"
+    },
+    {
+      "t": 36.09,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 38.42,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 42.44,
+      "tool": "browser_sequence",
+      "label": "Doing 2 steps on the page"
+    },
+    {
+      "t": 44.87,
+      "tool": "browser_click",
+      "label": "Clicking \u201c3\u201d"
+    },
+    {
+      "t": 48.38,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 51.15,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 53.63,
+      "tool": "browser_click",
+      "label": "Clicking \u201c4\u201d"
+    },
+    {
+      "t": 57.07,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 59.35,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 61.9,
+      "tool": "browser_click",
+      "label": "Clicking \u201c5\u201d"
+    },
+    {
+      "t": 64.25,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    },
+    {
+      "t": 66.83,
+      "tool": "browser_inspect",
+      "label": "Looking at the page"
+    },
+    {
+      "t": 69.63,
+      "tool": "browser_click",
+      "label": "Clicking \u201c6\u201d"
+    },
+    {
+      "t": 73.47,
+      "tool": "browser_extract",
+      "label": "Reading the page"
+    }
+  ]
+}
